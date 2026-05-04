@@ -3,37 +3,37 @@ from datetime import datetime
 
 # Configurações de acesso
 JIRA_SERVER = 'https://alabs.atlassian.net'
-EMAIL = 'felipe-s-henriques@openlabs.com.br'
-API_TOKEN = 'ATATT3xFfGF0E4Whh0N8BG4GAEEa2ot7dvFitdx_15-7UF0ijKXexUgRNUuxX0a3PS02K-G9oPNgSHtus6nHu8spgf2dPtxEVHGdqfQ8OiHm6TCTkZdoA7tEw74WQcZAAK6vLgiL4whG-s3FZTCfCnPRgbckmhdgcurjuD-2Kgbdb5KJrmP1Dwo=42264AD5'
+# EMAIL = 'felipe-s-henriques@openlabs.com.br'
+# API_TOKEN = 'ATATT3xFfGF0E4Whh0N8BG4GAEEa2ot7dvFitdx_15-7UF0ijKXexUgRNUuxX0a3PS02K-G9oPNgSHtus6nHu8spgf2dPtxEVHGdqfQ8OiHm6TCTkZdoA7tEw74WQcZAAK6vLgiL4whG-s3FZTCfCnPRgbckmhdgcurjuD-2Kgbdb5KJrmP1Dwo=42264AD5'
 
 # Filtros do relatório
-PROJETO = 'ALTAIAVIVO'
-DATA_INICIO = datetime(2026, 4, 27)
-DATA_FIM = datetime(2026, 4, 30)
+DATA_INICIO = datetime(2026, 4, 27)        # Data de início
+DATA_FIM = datetime(2026, 5, 4)           # Data de fim
 
 jira = JIRA(server=JIRA_SERVER, basic_auth=(EMAIL, API_TOKEN))
 
 def buscar_meus_lancamentos():
-    print(f"Buscando lançamentos de {EMAIL} no projeto {PROJETO}...")
+    print(f"Buscando lançamentos globais de {EMAIL} no período...")
     
-    # JQL específica para evitar o erro de "consulta ilimitada" [cite: 25, 41]
-    # Filtra apenas issues do projeto onde você lançou horas no período
-    jql = f'project = "{PROJETO}" AND worklogAuthor = currentUser() AND worklogDate >= "{DATA_INICIO.strftime("%Y-%m-%d")}"'
+    # JQL atualizada: Removemos o projeto.
+    # O filtro de worklogAuthor = currentUser() garante que não dê erro de "consulta ilimitada".
+    # E adicionamos a DATA_FIM na query para o Jira já trazer mastigado.
+    jql = f'worklogAuthor = currentUser() AND worklogDate >= "{DATA_INICIO.strftime("%Y-%m-%d")}" AND worklogDate <= "{DATA_FIM.strftime("%Y-%m-%d")}"'
     
     issues = jira.search_issues(jql, maxResults=100)
     relatorio = {}
 
     for issue in issues:
-        # Busca TODOS os worklogs da tarefa para não cair no limite de 20 da API [cite: 60, 63]
+        # Busca TODOS os worklogs da tarefa para não cair no limite de 20 da API [cite: 346]
         worklogs = jira.worklogs(issue.key)
         
         for wl in worklogs:
-            # Filtra pelo seu e-mail e pelo intervalo de datas [cite: 55, 92]
+            # Filtra pelo seu e-mail e pelo intervalo de datas
             wl_date = datetime.strptime(wl.started.split('T')[0], '%Y-%m-%d')
             
             if wl.author.emailAddress == EMAIL and DATA_INICIO <= wl_date <= DATA_FIM:
                 data_str = wl_date.strftime('%d/%m/%Y')
-                horas = wl.timeSpentSeconds / 3600 # Converte segundos para horas 
+                horas = wl.timeSpentSeconds / 3600 # Converte segundos para horas decimais [cite: 348]
                 
                 if data_str not in relatorio:
                     relatorio[data_str] = []
@@ -44,18 +44,17 @@ def buscar_meus_lancamentos():
                     'comentario': getattr(wl, 'comment', 'Sem descrição')
                 })
 
-    # Exibição dos dados organizados [cite: 95]
-    print(f"\n--- Extrato de Horas: {PROJETO} ---")
+    # Exibição dos dados organizados
+    print(f"\n--- Extrato Geral de Horas (Todos os Projetos) ---")
     total_geral = 0
-    # Lista de referência (deve estar antes do loop)
+    # Lista de referência
     DIAS_DA_SEMANA = ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"]
 
-    # O seu bloco ajustado:
     for dia in sorted(relatorio.keys(), key=lambda x: datetime.strptime(x, '%d/%m/%Y')):
-        # 1. Transformamos o texto 'dia' em um objeto de data para liberar as funções
+        # Transformamos o texto 'dia' em um objeto de data para liberar as funções
         data_obj = datetime.strptime(dia, '%d/%m/%Y') 
         
-        # 2. Usamos a função .weekday() para descobrir o dia (0 a 6) e pegar o nome na lista
+        # Usamos a função .weekday() para descobrir o dia e pegar o nome na lista
         nome_dia = DIAS_DA_SEMANA[data_obj.weekday()] 
         
         print(f"\n📅 Dia: {dia} - {nome_dia}")

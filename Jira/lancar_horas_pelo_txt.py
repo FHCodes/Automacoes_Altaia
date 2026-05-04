@@ -1,35 +1,48 @@
 import os
 from jira import JIRA
 from datetime import datetime
+import csv
 
 # --- Configurações de Acesso ---
 JIRA_SERVER = 'https://alabs.atlassian.net'
-JIRA_EMAIL = 'felipe-s-henriques@openlabs.com.br'
-API_TOKEN = 'ATATT3xFfGF0E4Whh0N8BG4GAEEa2ot7dvFitdx_15-7UF0ijKXexUgRNUuxX0a3PS02K-G9oPNgSHtus6nHu8spgf2dPtxEVHGdqfQ8OiHm6TCTkZdoA7tEw74WQcZAAK6vLgiL4whG-s3FZTCfCnPRgbckmhdgcurjuD-2Kgbdb5KJrmP1Dwo=42264AD5'
+# JIRA_EMAIL = 'felipe-s-henriques@openlabs.com.br'
+# API_TOKEN = 'ATATT3xFfGF0E4Whh0N8BG4GAEEa2ot7dvFitdx_15-7UF0ijKXexUgRNUuxX0a3PS02K-G9oPNgSHtus6nHu8spgf2dPtxEVHGdqfQ8OiHm6TCTkZdoA7tEw74WQcZAAK6vLgiL4whG-s3FZTCfCnPRgbckmhdgcurjuD-2Kgbdb5KJrmP1Dwo=42264AD5'
 
 # Conexão
 jira = JIRA(server=JIRA_SERVER, basic_auth=(JIRA_EMAIL, API_TOKEN))
 
-def lancar_horas_txt_puro(caminho_arquivo):
+import csv
+import os
+
+def lancar_horas_por_csv(caminho_arquivo):
     if not os.path.exists(caminho_arquivo):
         print(f"❌ Arquivo {caminho_arquivo} não encontrado.")
         return
 
-    print(f"🚀 Lendo arquivo TXT: {caminho_arquivo}")
+    print(f"🚀 Lendo arquivo CSV: {caminho_arquivo}")
 
-    with open(caminho_arquivo, 'r', encoding='utf-8-sig') as file:
+    with open(caminho_arquivo, mode='r', encoding='latin-1') as file:
+        
+        # ⚠️ MUDANÇA AQUI: Trocamos o delimiter para vírgula ','
+        leitor = csv.reader(file, delimiter=';') 
+        
         # Pula a primeira linha (cabeçalho)
-        linhas = file.readlines()[1:]
-
-        for num_linha, conteudo in enumerate(linhas, start=2):
-            # Remove quebras de linha e separa por '|'
-            partes = conteudo.split('|')
-
-            # Limpeza absoluta de espaços em cada campo
-            issue_key = partes[0].strip()
-            tempo_gasto = partes[1].strip()
-            comentario = partes[2].strip()
-            data_str = partes[3].strip()
+        next(leitor, None) 
+        
+        for linha in leitor:
+            
+            # PROTEÇÃO: Se a linha for vazia ou não tiver pelo menos 2 colunas, pula e não quebra o código
+            if not linha:
+                continue
+            
+            # Pega os dados direto pela posição da coluna
+            issue = linha[0].strip()
+            horas = linha[1].strip()
+            comentario = linha[2].strip() if linha[2] else "lançamento de horas"  # Comentário é opcional
+            data_str = linha[3].strip() if linha[3] else None  # Data é opcional
+    
+            
+            # ... continuação com o bloco try/except da data e lançamento ...
 
             try:
                 
@@ -42,24 +55,23 @@ def lancar_horas_txt_puro(caminho_arquivo):
 
 
             except Exception as e:
-                print(f"❌ Erro na linha {num_linha} ({issue_key}): {e}")
+                print(f"❌ ({issue}): {e}")
 
 
-            # 3. Define comentário padrão se estiver vazio
-            txt_comentario = comentario if comentario else " "
+            print(f"⏳ Issue: {issue}, Horas: {horas}, Comentário: {comentario}, Data: {data_str}...")
 
             try:
                 # Executa o lançamento oficial
                 jira.add_worklog(
-                    issue=issue_key,
-                    timeSpent=tempo_gasto,
-                    comment=txt_comentario,
+                    issue=issue,
+                    timeSpent=horas,
+                    comment=comentario,
                     started=data_obj
                 )
-                print(f"✅ Sucesso na linha {num_linha} - Lançando {tempo_gasto} na issue {issue_key} (Data: {data_str})...")
+                print(f"✅ Lançando {horas} na issue {issue} (Data: {data_str})...")
             
             except Exception as e:
-                print(f"❌ Erro na linha {num_linha} ({issue_key}): {e}")
+                print(f"❌ ({issue}): {e}")
             
 # Execução
-lancar_horas_txt_puro('horas.txt')
+lancar_horas_por_csv('horas.csv')

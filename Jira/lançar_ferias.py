@@ -3,8 +3,8 @@ from datetime import datetime, timedelta
 
 # Configurações de acesso
 JIRA_SERVER = 'https://alabs.atlassian.net'
-USER_EMAIL = 'felipe-s-henriques@openlabs.com.br'
-API_TOKEN = 'ATATT3xFfGF0E4Whh0N8BG4GAEEa2ot7dvFitdx_15-7UF0ijKXexUgRNUuxX0a3PS02K-G9oPNgSHtus6nHu8spgf2dPtxEVHGdqfQ8OiHm6TCTkZdoA7tEw74WQcZAAK6vLgiL4whG-s3FZTCfCnPRgbckmhdgcurjuD-2Kgbdb5KJrmP1Dwo=42264AD5'
+# USER_EMAIL = 'felipe-s-henriques@openlabs.com.br'
+# API_TOKEN = 'ATATT3xFfGF0E4Whh0N8BG4GAEEa2ot7dvFitdx_15-7UF0ijKXexUgRNUuxX0a3PS02K-G9oPNgSHtus6nHu8spgf2dPtxEVHGdqfQ8OiHm6TCTkZdoA7tEw74WQcZAAK6vLgiL4whG-s3FZTCfCnPRgbckmhdgcurjuD-2Kgbdb5KJrmP1Dwo=42264AD5'
 
 
 ISSUE_KEY = 'RHBR-282'
