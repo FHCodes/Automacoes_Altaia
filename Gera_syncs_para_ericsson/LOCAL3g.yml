@@ -1,0 +1,25 @@
+operations:
+  rsync:
+    arguments: ["-al", "--no-perms", "--chmod=ugo=rwX", "-O",
+                "--include", "'SubNetwork=ONRM_ROOT_MO,SubNetwork=RNC*.xml'",
+                "--exclude", "'*'"]
+    src: "{{source_path}}/{{date}}/ParsedFiles/"
+    dest: "{{dest_path}}/{{date}}/"
+  post_operations:
+    - execute_bash:
+        command: "mkdir -p /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/${VENDOR}/Parameters${SOURCE_SUBDOMAIN}/config/"
+    - execute_bash:
+      command: "python3 /opt/alticelabs/namf/tools/ericssonCharacterization.py -indir ${PATH_DESTINO}/${IP_COLETA}/${DATE}/ -outdir /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/${VENDOR}/Parameters${SOURCE_SUBDOMAIN}/config/ -ip ${IP_COLETA} -vendor ${SOURCE}"
+
+parameters:
+  VENDOR: "${VENDOR}"
+  SOURCE_TYPE: "${SOURCE_TYPE}"
+  SOURCE_DOMAIN: "${SOURCE_DOMAIN}"
+  LABEL: "${LABEL}"
+  FUNCTION: "${FUNCTION}"
+  SOURCE_SUBDOMAIN: "${SOURCE_SUBDOMAIN}"
+  MODEL: "${MODEL}"
+  SPEC: "${SPEC}"
+  OSSVERSION: "${OSSVERSION}"
+  PERIOD: ${PERIOD}
+  HOST_ID: "${HOST_ID}"

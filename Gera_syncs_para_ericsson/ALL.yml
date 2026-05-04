@@ -1,0 +1,53 @@
+operations:
+  rsync:
+    arguments: ["-al", "--no-perms", "--chmod=ugo=rwX", "-O",
+                "--include", "'Daily_export.zip'",
+                "--exclude", "'*'"]
+    src: "{{source_path}}/"
+    dest: "{{dest_path}}/{{ip_omc}}/{{date}}/"
+    sshpass: true
+
+  post_operations:
+    - execute_bash:
+        command: "unzip {{dest_path}}/{{ip_omc}}/{{date}}/Daily_export.zip -d {{dest_path}}/{{ip_omc}}/{{date}}"
+    - remove_files:
+        filters:
+          - fnmatch:
+              search: "Daily_export.zip"
+    - execute_bash:
+        command: "mv {{dest_path}}/{{ip_omc}}/{{date}}/Daily_export.xml {{dest_path}}/{{ip_omc}}/{{date}}/CM_EXPORT_{{date}}.xml"
+    - execute_bash:
+        command: "mkdir -p {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles"
+    - execute_bash:
+        command: >
+          bash /opt/alticelabs/namf/tools/splitEricssonCmFile.sh
+          {{dest_path}}/{{ip_omc}}/{{date}}/
+          {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles/
+          >> {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles/EricssonCMpreParser_executionLog_{{date}}.log
+    - execute_bash:
+        command: >
+          bash /opt/alticelabs/namf/tools/generateMeContext.sh
+          {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles/
+          >> {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles/EricssonCMpreParser_executionLog_{{date}}.log
+    - execute_bash:
+        command: >
+          /usr/bin/java -jar /opt/alticelabs/namf/tools/EricssonCMPreParser.jar
+          --indir {{dest_path}}/{{ip_omc}}/{{date}}/
+          --outdir {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles/
+          -v
+          >> {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles/EricssonCMpreParser_executionLog_{{date}}.log
+    - execute_bash:
+        command: "rm -r {{dest_path}}/{{ip_omc}}/{{date}}/ParsedFiles/*/"
+
+parameters:
+  SOURCE_TYPE: "${SOURCE_TYPE}"
+  SOURCE_DOMAIN: "${SOURCE_DOMAIN}"
+  SOURCE_SUBDOMAIN: "${SOURCE_SUBDOMAIN}"
+  MODEL: "${MODEL}"
+  SPEC: "${SPEC}"
+  VENDOR: "${VENDOR}"
+  OSSVERSION: "${OSSVERSION}"
+  LABEL: "${LABEL}"
+  FUNCTION: "${FUNCTION}"
+  PERIOD: ${PERIOD}
+  HOST_ID: "${HOST_ID}"

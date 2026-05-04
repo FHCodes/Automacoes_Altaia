@@ -1,0 +1,21 @@
+operations:
+  rsync:
+    arguments: ["-al", "--no-perms", "--chmod=ugo=rwX", "-O",
+                "--exclude", "'SubNetwork=ONRM_ROOT_MO,SubNetwork=RNC*.xml'",
+                "--include", "'SubNetwork=ONRM_ROOT_MO,SubNetwork=*.xml'",
+                "--exclude", "'*'"]
+    src: "{{source_path}}/{{date}}/ParsedFiles/"
+    dest: "{{dest_path}}/{{date}}/"
+
+parameters:
+  SOURCE_TYPE: "${SOURCE_TYPE}"
+  SOURCE_DOMAIN: "${SOURCE_DOMAIN}"
+  SOURCE_SUBDOMAIN: "${SOURCE_SUBDOMAIN}"
+  MODEL: "${MODEL}"
+  SPEC: "${SPEC}"
+  VENDOR: "${VENDOR}"
+  OSSVERSION: "${OSSVERSION}"
+  LABEL: "${LABEL}"
+  FUNCTION: "${FUNCTION}"
+  PERIOD: ${PERIOD}
+  HOST_ID: "${HOST_ID}"

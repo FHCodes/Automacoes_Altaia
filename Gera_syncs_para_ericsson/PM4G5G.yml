@@ -1,0 +1,32 @@
+operations:
+  rsync:
+    arguments: ["-al", "--no-perms", "--chmod=ugo=rwX", "-O", "--min-size=1",
+            "--include", "'*/'",
+
+            # 4G
+            "--include", "'A*MeContext=M*statsfile.xml.gz'",
+            "--include", "'A*MeContext=T*statsfile.xml.gz'",
+
+            # 5G
+            "--include", "'A*MeContext=S*statsfile.xml.gz'",
+            "--include", "'A*SubNetwork=NR*statsfile.xml.gz'",
+
+            "--exclude", "'*'",
+            "--prune-empty-dirs"]
+
+    src: "{{source_path}}"
+    dest: "{{dest_path}}/{{ip_omc}}/{{date}}"
+    sshpass: true
+
+parameters:
+  SOURCE_TYPE: "${SOURCE_TYPE}"
+  SOURCE_DOMAIN: "${SOURCE_DOMAIN}"
+  SOURCE_SUBDOMAIN: "${SOURCE_SUBDOMAIN}"
+  MODEL: "${MODEL}"
+  VENDOR: "${VENDOR}"
+  LABEL: "${LABEL}"
+  FUNCTION: "${FUNCTION}"
+  SPEC: "${SPEC}"
+  OSSVERSION: "${OSSVERSION}"
+  PERIOD: ${PERIOD}
+  HOST_ID: "${HOST_ID}"

@@ -1,0 +1,75 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ${CRONJOB_NAME}
+spec:
+  schedule: "${SCHEDULE}"
+  timeZone: "America/Sao_Paulo"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          securityContext:
+            runAsUser: 0
+            runAsGroup: 0
+          containers:
+            - name: ${CRONJOB_NAME}
+              image: namf/namf-sync
+              imagePullPolicy: Always
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') cfg ssh server - Iniciando processamento..."; \
+                  ssh-keygen -A; \
+                  su namf -c 'ssh-keygen -t rsa -b 2048 -N "" -f ~/.ssh/id_rsa' ; \
+                  su namf -c 'cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys' ; \
+                  su namf -c 'chmod 600 ~/.ssh/authorized_keys' ; \
+                  (/usr/sbin/sshd -D &) ; \
+                  sleep 7; \
+                  su namf -c 'ssh-keyscan 127.0.0.1 >> ~/.ssh/known_hosts' ; \
+                  su namf -c 'ssh-keyscan localhost >> ~/.ssh/known_hosts' ; \
+                  su namf -c 'chmod 600 ~/.ssh/known_hosts' ; \
+                  echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') cfg ssh server - Processamento concluido"; \
+                  su namf -c '\
+                  python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \
+                  /opt/alticelabs/namf/python/na-mf/collect/config/customization/${CUSTOM_FILE} \
+                  ${IP_COLETA} \
+                  ${PATH_ORIGEM} \
+                  ${PATH_DESTINO} \
+                  $(date +"%Y%m%d") ${LOGIN} \
+                  --pingskip \
+                  --statsreporting=MESSAGE \
+                  --triggerparse \
+                  --sourceid="${IP_COLETA}" '
+              volumeMounts:
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/logging.cfg
+                  subPath: logging.cfg
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/customization/${CUSTOM_FILE}
+                  subPath: ${CUSTOM_FILE}
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging/synchronizedRepository
+                - name: ssh-known-hosts
+                  mountPath: /etc/ssh/ssh_known_hosts
+                  subPath: ssh_known_hosts
+                  readOnly: true
+              resources:
+                limits:
+                  memory: 512Mi
+                  cpu: 1
+                requests:
+                  memory: 250Mi
+                  cpu: 0.2
+          volumes:
+            - name: configmap-namf-sync
+              configMap:
+                name: configmap-namf-sync
+            - name: storage
+              persistentVolumeClaim:
+                claimName: namf-shared-filesystem
+            - name: ssh-known-hosts
+              secret:
+                secretName: secret-namf-sync
+          restartPolicy: OnFailure

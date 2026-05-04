@@ -1,0 +1,65 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ${CRONJOB_NAME}
+spec:
+  schedule: "${SCHEDULE}"
+  timeZone: "America/Sao_Paulo"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: ${CRONJOB_NAME}
+              image: namf/namf-sync
+              imagePullPolicy: Always
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') ln namf/tools - Iniciando processamento..."; \
+                  if [ ! -r /opt/alticelabs/namf/tools ]; then \
+                     ln -s /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/preProcess/ /opt/alticelabs/namf/tools; \
+                     echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') ln namf/tools - Link simbolico criado"; \
+                  fi; \
+                  echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') ln namf/tools - Processamento concluido"; \
+                  python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \
+                  /opt/alticelabs/namf/python/na-mf/collect/config/customization/${CUSTOM_FILE} \
+                  ${IP_COLETA} \
+                  ${PATH_ORIGEM} \
+                  ${PATH_DESTINO} \
+                  $(date +'%Y%m%d') ${LOGIN} --password=${PASSWORD} \
+                  --pingskip \
+                  --statsreporting=MESSAGE \
+                  --triggerparse
+              volumeMounts:
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/logging.cfg
+                  subPath: logging.cfg
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/customization/${CUSTOM_FILE}
+                  subPath: ${CUSTOM_FILE}
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging/synchronizedRepository
+                - name: ssh-known-hosts
+                  mountPath: /etc/ssh/ssh_known_hosts
+                  subPath: ssh_known_hosts
+                  readOnly: true
+              resources:
+                limits:
+                  memory: 1024Mi
+                  cpu: 1
+                requests:
+                  memory: 250Mi
+                  cpu: 0.2
+          volumes:
+            - name: configmap-namf-sync
+              configMap:
+                name: configmap-namf-sync
+            - name: storage
+              persistentVolumeClaim:
+                claimName: namf-shared-filesystem
+            - name: ssh-known-hosts
+              secret:
+                secretName: secret-namf-sync
+          restartPolicy: OnFailure

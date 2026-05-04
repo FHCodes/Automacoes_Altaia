@@ -1,0 +1,31 @@
+operations:
+    rsync:
+        arguments: ["-al", "--no-perms", "--chmod=ugo=rwX", "-O", "--min-size=1",
+            "--include", "'*/'",
+
+            # CM GSM
+            "--include", "'CM_VIVO_GSM.txt'",
+
+            "--exclude", "'*'",
+            "--prune-empty-dirs"]
+        src: "{{source_path}}"
+        dest: "{{dest_path}}/{{ip_omc}}/{{date}}"
+        sshpass: true
+
+parameters:
+  SOURCE_TYPE: "${SOURCE_TYPE}"
+  SOURCE_DOMAIN: "${SOURCE_DOMAIN}"
+  SOURCE_SUBDOMAIN: "${SOURCE_SUBDOMAIN}"
+  MODEL: "${MODEL}"
+  VENDOR: "${VENDOR}"
+  LABEL: "${LABEL}"
+  FUNCTION: "${FUNCTION}"
+  SPEC: "${SPEC}"
+  OSSVERSION: "${OSSVERSION}"
+  PERIOD: ${PERIOD}
+  HOST_ID: "${HOST_ID}"
+
+filetime_extraction:
+    regex: '.*/[^_]*__C(\d{8})\.(\d{2}).*'
+    regex_replacement: '\g<1>\g<2>'
+    date_pattern: '%Y%m%d%H'
