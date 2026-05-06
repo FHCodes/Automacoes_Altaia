@@ -1,9 +1,0 @@
-ISSUE_KEY	    |HORAS_GASTAS | COMENTARIO|               DATA
-ALTAIAVIVO-1501	|   30m	      |           |               27/04/2026
-ALTAIAVIVO-2175 |	7h 30m	  |           |               27/04/2026
-ALTAIAVIVO-2175 |	8h	      |           |               28/04/2026
-ALTAIAVIVO-1501	|   30m	      |           |               29/04/2026
-ALTAIAVIVO-2175 |	7h 30m	  |           |               29/04/2026
-RHBR-7          |   1h 	      |           |               30/04/2026
-ALTAIAVIVO-2175 |	7h  	  |           |               30/04/2026
-RHBR-119        |   8h 	      |           |               01/05/2026
