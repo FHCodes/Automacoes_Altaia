@@ -30,11 +30,7 @@ def processa_catalogo(xml_path, mapping, info):
 
             oss_id, id = info[table_name]
 
-            lista_operation_todos.append(id)
-
             entity = False
-
-            lista_operation_todos.append(id)
 
             table_map = mapping[table_name]
 
@@ -46,10 +42,15 @@ def processa_catalogo(xml_path, mapping, info):
 
             columns_map = table_map.get('columns', {})
             entity_field_count = 0
-            entity_field_col = None  # <-- guarda a coluna com entityField true
+            entity_field_col = None
+            has_pk = False  
 
             for col in table.findall('column'):
                 col_name = col.get('bdcolname')
+
+                # Verifica se essa coluna é PK, independente de estar no columns_map
+                if col.get('dbn0type') == 'PK':
+                    has_pk = True
 
                 if col_name in columns_map:
                     col_info = columns_map[col_name]
@@ -66,7 +67,7 @@ def processa_catalogo(xml_path, mapping, info):
 
                     if col_info.get('entityField', False):
                         entity_field_count += 1
-                        entity_field_col = col  # guarda a referência
+                        entity_field_col = col
 
             # Regra: se tiver 2 ou mais -> cria ENTITY_FIELD_VALUE
             if entity_field_count >= 2:
@@ -82,7 +83,6 @@ def processa_catalogo(xml_path, mapping, info):
                 lista_operation_entity.append((id, entity_fields))
                 entity = True
 
-            # Nova regra: se tiver exatamente 1 -> seta a flag na própria coluna
             elif entity_field_count == 1 and entity_field_col is not None:
                 existing = entity_field_col.get('ExtraItemMeta')
                 if existing:
@@ -90,15 +90,18 @@ def processa_catalogo(xml_path, mapping, info):
                 else:
                     entity_field_col.set('ExtraItemMeta', 'entityField')
 
-            lista_oss.append((oss_id, version, entity))
+            # Só executa se a tabela tiver pelo menos 1 coluna com dbn0type="PK"
+            if has_pk:
+                lista_operation_todos.append(id)
+                lista_oss.append((oss_id, version, entity))
 
-            etree.SubElement(table, 'column', {
-                'bdcolname': 'PS_VERSION',
-                'bdtype': 'VARCHAR2(256)',
-                'dbn0type': 'ID',
-                'id': 'PS_VERSION',
-                'udn': 'psVersion'
-            })
+                etree.SubElement(table, 'column', {
+                    'bdcolname': 'PS_VERSION',
+                    'bdtype': 'VARCHAR2(256)',
+                    'dbn0type': 'ID',
+                    'id': 'PS_VERSION',
+                    'udn': 'psVersion'
+                })
 
     # 6. Salvar o novo XML modificado
     tree.write(
