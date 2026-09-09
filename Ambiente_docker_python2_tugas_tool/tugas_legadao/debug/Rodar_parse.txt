@@ -1,0 +1,24 @@
+python mediation-parsers.py CLARO "DATA_CLARO/readertest" --out="DATA_CLARO/csvoutput" --instance=XML --vendor=HUAWEI --model=OSS_RAN_PM_SRAN_CLARO  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+
+
+python2 mediation-parsers.py 2GERICSSON "DATA_2GERICSSON/readertest" --out="DATA_2GERICSSON/csvoutput" --instance=XML --vendor=ERICSSON --model=OSS_RAN_PM_ERICSSON  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+
+
+
+
+python2 mediation-parsers.py ERICSSON_OSS_RAN_PM "/opt/ptin/medrepo/staging/synchronizedRepository/ERICSSON/Performance2G/10.10.10.10/VIVO/20260703/M_C20260616.2000-20260616.2100_BSCSCCA_1005" --instance="ASN1" --vendor=ERICSSON --model=OSS_RAN_PM_ERICSSON --eventOriginId="23423" --parentEventId="123" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.10.10.10" --hostId="spviv-ranlen-sgr01"
+
+
+python3 mediation-parsers.py HUAWEI_OSS_RAN_PM "/opt/alticelabs/namf/medrepo/staging/synchronizedRepository/HUAWEI/Performance3G_CLARO/10.23.1.33/20260608/BLZ_HOST03_pmresult_67109365_30_202606072330_202606080000.xml" --instance=3GPP_32_435_CLARO --vendor=HUAWEI --model=OSS_RAN_PM_SRAN_CLARO --eventOriginId="23423" --parentEventId="123" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
+
+
+C:\Altaia\Vivo\script_dos_portugas\debug\debug\shelf\collectorprocess\collectors/specs\HUAWEI_OSS_RAN_PM\spec.xml'
+
+
+
+python2 mediation-parsers.py NOKIA "DATA_NOKIA/readertest" --out="DATA_NOKIA/csvoutput" --instance=3GPP --vendor=NOKIA --model=OSS_RAN_PM_NOKIA  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+
+
+
+python2 mediation-parsers.py ZTE "DATA_ZTE/readertest" --out="DATA_ZTE/csvoutput" --instance=CSV_RAN --vendor=ZTE --model=OSS_RAN_PM_4G  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+

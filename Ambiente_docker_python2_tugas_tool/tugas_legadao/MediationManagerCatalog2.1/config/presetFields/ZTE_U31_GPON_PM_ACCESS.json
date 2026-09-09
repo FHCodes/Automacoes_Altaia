@@ -1,0 +1,63 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "Start Time",
+      "sqlName" : "StartTime",
+      "udn" : "StartTime",
+      "desc" : "Start time of the record",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "End Time",
+      "sqlName" : "EndTime",
+      "udn" : "EndTime",
+      "desc" : "End time of the record",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "GRANULARITYPERIOD",
+      "sqlName" : "GranularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected",
+      "dataType" : "NUMBER",
+      "dataUnit": "MINUTES",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "DSTSAVING",
+      "sqlName" : "DSTSAVING",
+      "udn" : "DSTSAVING",
+      "desc" : "Daylight saving time",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "NE Location",
+      "sqlName" : "NELocation",
+      "udn" : "NELocation",
+      "desc" : "NE location",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "MO Location",
+      "sqlName" : "MOLocation",
+      "udn" : "MOLocation",
+      "desc" : "Component location",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

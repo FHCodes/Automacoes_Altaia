@@ -1,0 +1,49 @@
+{
+	"1" : {
+		"sheetName": "Objects",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "FunctionSubSet ID",
+				"ossId": "FunctionSubSet ID",
+				"hierarchy": "U2000/U2020 Performance Object Name",
+				"name": "FunctionSubSet Name",
+				"udn": "FunctionSubSet Name",
+				"desc": "FunctionSubSet Name",
+				"tableName": "FunctionSubSet ID"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Counters",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"ossId": "FunctionSubSet ID",
+				"name": "FunctionSubSet Name",
+				"udn": "FunctionSubSet Name",
+				"desc": "FunctionSubSet Name",
+				"tableName": "FunctionSubSet ID"
+			}
+		}
+	},
+	"3" : {
+		"sheetName": "Counters",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "FunctionSubSet ID",
+				"id": "Counter ID",
+				"bdcolname": "Counter ID",
+				"udn": "Counter Name",
+				"name": "Counter Name",
+				"desc": "Counter Name",
+				"bdtype": "Counter Type",
+				"dataType": "Counter Type",
+				"dataUnit": "Counter Unit",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

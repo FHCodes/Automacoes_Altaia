@@ -1,0 +1,96 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_CORE_PM_HSSFE",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "NETACT",
+		"version": "23.2",
+		"tech": "CORE",
+		"nameNomenclature": "NOKIA_NETACT_CORE_PM_HSSFE_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "OI_NOKIA_NETACT_CORE_PM_HSSFE",
+		"presetFields" : "OI_NOKIA_NETACT_CORE_PM_HSSFE"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "HSSFE_"
+				},
+				{
+					"field": "udn",
+					"value": "HSSFE_"
+				}
+			],
+			"measuredObject3GPP_NSN_UNI":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"unitSplittingHSS_V2":
+			[
+				{
+					"__comment": "trocar 'key' e 'regex' por cada doc",
+					"active": true,
+					"key": "SLB",
+					"regex": "SLB"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				],
+				"applyRegex2":
+				[
+					{
+						"field": "DISTNAME",
+						"pattern": "^.*/HSS-([^/]*)/(?P<SERVERTYPE>[^-]*)-.*$",
+						"newFields": ["SERVERTYPE"]
+					}
+				],
+				"fixedValue2":
+				[
+					{
+						"bdcolname": "SERVERTYPE",
+						"value": "VNF",
+						"newFieldId": "SERVERTYPELOCAL"
+					}
+				]
+			}
+		}
+	}
+}

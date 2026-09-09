@@ -1,0 +1,420 @@
+{
+	"BSC6900 GSM V900R022C10SPC500 Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BSC6900 UMTS V900R022C10SPC500 Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BSC6910 GSM V100R022C10SPC500 Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BSC6910 UMTS V100R022C10SPC500 Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 V100R016C10(gNodeB) Prameter List_NRM 04.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 V100R016C10SPC220 eNodeBFunction Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 V100R016C10SPC220 GBTSFunction Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 V100R016C10SPC220 gNodeBFunction Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 V100R016C10SPC220 Node Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 V100R016C10SPC220 NodeBFunction Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 V100R016C10SPC220 RFAFunction Parameter List.xls":
+	{
+		"1" : {
+			"sheetName": "Parameter List",
+			"unit": {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "MO",
+					"ossId": "MO",
+					"name": "MO",
+					"udn": "MO",
+					"desc": "MO",
+					"tableName": "MO",
+					"hierarchy": "pois",
+					"tech": "Applicable Mode"
+				}
+			}
+		},
+		"2" : {
+			"sheetName": "Parameter List",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "MO",
+					"id": "Parameter ID",
+					"bdcolname": "Parameter ID",
+					"udn": "Parameter Name",
+					"name": "Parameter Name",
+					"desc": "Meaning",
+					"bdtype": "Value Type",
+					"dataType": "Value Type",
+					"dataUnit": "Unit",
+					"multiplicity": "Multiplicity"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+    "regex": "",
+    "header": {
+        "tags": {
+            "fileHeader": {
+                "attrs": {
+                    "dnPrefix": ["DNPREFIX"],
+                    "vendorName": ["VENDORNAME"]
+                }
+            },
+            "fileSender": {
+                "attrs": {
+                    "elementType": ["ELEMENTTYPE"]
+                }
+            },
+            "measCollec": {
+                "attrs": {
+                    "beginTime": ["BEGINTIME"]
+                }
+            },
+            "job": {
+                "attrs": {
+                    "jobId": [
+                        "JOBID",
+                        "MEASINFOID"
+                    ]
+                }
+            },
+            "managedElement": {
+                "attrs": {
+                    "localDn": ["LOCALDN"],
+                    "userLabel": ["USERLABEL"]
+                }
+            },
+            "granPeriod": {
+                "attrs": {
+                    "endTime": ["ENDTIME"],
+                    "duration": ["DURATION"]
+                }
+            }
+        }
+    },
+    "object": {
+        "tags": {
+            "measValue": {
+                "attrs": {
+                    "measObjLdn": ["MEASOBJLDN"]
+                }
+            }
+        }
+    }
+}

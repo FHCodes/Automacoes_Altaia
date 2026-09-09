@@ -1,0 +1,94 @@
+{
+	"collector" :
+	{
+		"name" : "OI_NOKIA_OSS_RAN_PM_5G",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "OSS_RAN_PM_5G",
+		"version": "5G20a",
+		"tech": "R5G",
+		"nameNomenclature": "NOKIA_OSS_RAN_PM_5G20a_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "OI_NOKIA_OSS_RAN_PM_5G",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"Nokia_num_name":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "NR_"
+				},
+				{
+					"field" : "udn",
+					"value" : "NR_"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"NOKIA_enrichment":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				],
+				"enrichment":
+				[
+					{
+						"scope": "NSN_NETACT_LTE",
+						"corrKey": [
+							{"DISTNAME": [""]}
+						],
+						"newField": [{"MRBTS_NAME": ["MRBTS_NAME"]}, {"NRBTS_NAME":["NRBTS_NAME"]}, {"CELL_NAME":["CELL_NAME"]}]
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

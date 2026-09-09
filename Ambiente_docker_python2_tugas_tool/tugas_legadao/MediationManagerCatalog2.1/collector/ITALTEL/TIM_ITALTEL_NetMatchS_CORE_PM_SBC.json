@@ -1,0 +1,54 @@
+{
+	"collector" :
+	{
+		"name" : "ITALTEL_NetMatchS_CORE_PM_SBC",
+		"collectorType" : "PM",
+		"vendor" : "ITALTEL",
+		"model" : "NetMatchS_CORE_PM_SBC",
+		"version" : "2.7",
+		"tech" : "SBC",
+		"nameNomenclature" : "ITALTEL_NetMatchS_CORE_PM_SBC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "TIM_ITALTEL_NetMatchS_CORE_PM_SBC",
+		"presetFields" : "TIM_ITALTEL_NetMatchS_CORE_PM_SBC"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"descriptionShortener":
+			[
+				1
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+		}
+	}
+}

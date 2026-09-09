@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_NOKIA_NETACT_CM_3G",
+		"collectorType" : "CM",
+		"vendor": "NOKIA",
+		"model": "NETACT",
+		"version": "WBTS18",
+		"tech": "R3G",
+		"nameNomenclature": "NOKIA_OSS_RAN_CM_3G_#_WBTS"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_NOKIA_NETACT_CM_3G",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"parameterNameAdder":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "distName"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

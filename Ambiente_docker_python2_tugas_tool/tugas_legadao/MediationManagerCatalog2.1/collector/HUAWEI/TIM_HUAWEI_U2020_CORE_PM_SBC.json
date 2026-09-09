@@ -1,0 +1,98 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2020_CORE_PM",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "SBC",
+		"version" : "V500R018C10SPC100",
+		"tech" : "SBC",
+		"nameNomenclature" : "HUAWEI_U2020_CORE_PM_SBC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_U2020_CORE_PM_SBC",
+		"presetFields" : "HUAWEI_U2020_CORE_PM_SBC"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "SBC_"
+				},
+				{
+					"field": "udn",
+					"value": "SBC_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRANV2" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "SE2900NE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "measObjLdn"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

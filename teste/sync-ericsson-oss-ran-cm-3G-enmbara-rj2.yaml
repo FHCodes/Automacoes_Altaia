@@ -1,0 +1,131 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sync-ericsson-oss-ran-cm-3g-enmbara-rj2
+spec:
+  schedule: 50 3 * * *
+  startingDeadlineSeconds: 60
+  concurrencyPolicy: Forbid
+  timeZone: America/Sao_Paulo
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          annotations:
+            io.kubernetes.cri-o.TrySkipVolumeSELinuxLabel: 'true'
+          labels:
+            app.kubernetes.io/component: namf
+            app.kubernetes.io/name: namf-sync
+            tef-l3-service-network-access: 'true'
+        spec:
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                - matchExpressions:
+                  - key: altaia-app/cronjob-access
+                    operator: In
+                    values:
+                    - "true"
+          topologySpreadConstraints:
+            - labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: "namf-sync"
+              maxSkew: 1
+              topologyKey: "kubernetes.io/hostname"
+              whenUnsatisfiable: ScheduleAnyway
+          runtimeClassName: selinux
+          serviceAccountName: altaia-namf-app-sa
+          securityContext:
+            fsGroup: 1982
+            fsGroupChangePolicy: OnRootMismatch
+            runAsGroup: 1982
+            runAsUser: 1982
+            supplementalGroups:
+              - 1982
+          initContainers:
+            - name: ssh-container
+              image: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/sol-ssh-server:1.0.3
+              restartPolicy: Always # Marks it as a sidecar, keep running after initialization
+              imagePullPolicy: Always
+              args: ["PORT=2222", "GEN_HOST_KEY=no", "GEN_USER_KEY=no", "CP_KEYS_DIR=/opt/alticelabs/namf/sidecar/ssh_server"]
+              ports:
+                - containerPort: 2222
+              volumeMounts:
+                - name: sidecar-shared-volume
+                  mountPath: /opt/alticelabs/namf/sidecar #inside namf home (~/) folder, shared in both containers
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging
+              startupProbe:              #Guarantee that the ssh server is ready before starting the main application container
+                initialDelaySeconds: 1   #How many seconds to wait after the container has started
+                periodSeconds: 2         #How often (in seconds) to perform the probe
+                timeoutSeconds: 2        #Number of seconds after which the probe times out
+                failureThreshold: 10     #After 10 consecutive failures, the container will be marked unhealthy
+                exec:
+                  command: ["test", "-f", "/opt/alticelabs/namf/.ssh/ssh_server_ready"]
+
+          containers:
+            - name: sync-ericsson-oss-ran-cm-3g-enmbara-rj2
+              image: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-public/namf/namf-sync:3.2.2-3.2-11453d54
+              imagePullPolicy: IfNotPresent
+              env:
+                - name: TZ
+                  value: America/Sao_Paulo
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  sleep 20; \
+                  echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') cfg ssh server - Iniciando processamento..."; \
+                  mkdir /opt/alticelabs/namf/.ssh; \
+                  chmod 700 /opt/alticelabs/namf/.ssh; \
+                  cp -p /opt/alticelabs/namf/sidecar/ssh_server/ssh/* /opt/alticelabs/namf/.ssh; \
+                  echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') cfg ssh server - Processamento concluido"; \
+                  python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \
+                  /opt/alticelabs/namf/python/na-mf/collect/config/customization/ERICSSON_OSS_RAN_CM_3G_ENMBARA_RJ2_127.0.0.1.yml \
+                  127.0.0.1 \
+                  /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/ERICSSON/ParametersALL/200.100.136.78 \
+                  /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/ERICSSON/Parameters3G/200.100.136.78 \
+                  $(date +'%Y%m%d') namf  \
+                  --pingskip \
+                  --port 2222 \
+                  --statsreporting=MESSAGE \
+                  --triggerparse \
+                  --sourceid="200.100.136.78" 
+              volumeMounts:
+                - name: sidecar-shared-volume
+                  mountPath: /opt/alticelabs/namf/sidecar #inside namf home (~/) folder, shared in both containers
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/logging.cfg
+                  subPath: logging.cfg
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/customization/ERICSSON_OSS_RAN_CM_3G_ENMBARA_RJ2_127.0.0.1.yml
+                  subPath: ERICSSON_OSS_RAN_CM_3G_ENMBARA_RJ2_127.0.0.1.yml
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging
+#                - name: ssh-known-hosts
+#                  mountPath: /opt/alticelabs/namf/.ssh
+#                  readOnly: true
+              resources:
+                limits:
+                  memory: 4096Mi
+                  cpu: 1
+                requests:
+                  memory: 2048Mi
+                  cpu: 0.2
+          volumes:
+            - name: sidecar-shared-volume
+              emptyDir: {}
+            - name: configmap-namf-sync
+              configMap:
+                name: configmap-namf-sync
+            - name: storage
+              persistentVolumeClaim:
+                claimName: namf-shared-filesystem
+#            - name: ssh-known-hosts
+#              secret:
+#                secretName: secret-namf-sync
+#                items:
+#                  - key: ssh_known_hosts
+#                    path: known_hosts
+          restartPolicy: OnFailure

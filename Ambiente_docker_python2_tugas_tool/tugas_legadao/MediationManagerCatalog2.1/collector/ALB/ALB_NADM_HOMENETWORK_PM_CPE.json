@@ -1,0 +1,83 @@
+{
+	"collector" :
+	{
+		"name" : "ALB_NADM_HOMENETWORK_PM_CPE",
+		"collectorType" : "PM",
+		"vendor" : "ALB",
+		"model" : "NADM_HOMENETWORK_PM_CPE",
+		"version" : "2.3.0",
+		"tech" : "CPE",
+		"nameNomenclature" : "ALB_NADM_HOMENETWORK_PM_CPE_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc_V2",
+		"doc" : "",
+		"formatConfig" : "ALB_NADM_HOMENETWORK_PM_CPE",
+		"presetFields" : "ALB_NADM_HOMENETWORK_PM_CPE"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": ""
+				},
+				{
+					"field": "udn",
+					"value": ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

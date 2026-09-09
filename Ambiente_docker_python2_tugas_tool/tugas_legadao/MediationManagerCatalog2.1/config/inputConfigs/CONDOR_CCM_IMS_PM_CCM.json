@@ -1,0 +1,36 @@
+{
+	"1" : {
+		"sheetName": "Measurement List",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "UnitId",
+				"ossId": "UnitId",
+				"name": "Name",
+				"udn": "UnitId",
+				"desc": "Description",
+				"tableName": "tableName",
+				"hierarchy": "hierarchy"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Counter List",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "UnitId",
+				"id": "CounterId",
+				"bdcolname": "bdcolName",
+				"udn": "CounterId",
+				"name": "CounterId",
+				"desc": "Description",
+				"bdtype": "bdType",
+				"dataType": "bdType",
+				"dataUnit": "UnitVendor",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

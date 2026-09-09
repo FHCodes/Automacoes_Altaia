@@ -1,0 +1,57 @@
+{
+	"collector": {
+		"name" : "TIM_HUAWEI_OSS_RAN_CM_SRAN",
+		"collectorType" : "CM",
+		"vendor" : "HUAWEI",
+		"model" : "HUAWEI_OSS_RAN_CM_SRAN",
+		"version" : "20.1",
+		"tech" : "SRAN",
+		"nameNomenclature" : "HUAWEI_OSS_RAN_CM_SRAN_#_20_1"
+	},
+	"inputFormat": {
+		"format" : "excelHuawei_CMExportWithBitFields",
+		"doc" : "",
+		"formatConfig" : "TIM_HUAWEI_OSS_RAN_CM_SRAN",
+		"presetFields" : "TIM_HUAWEI_OSS_RAN_CM_SRAN"
+	},
+	"rules": {
+		"unit": {
+			"addPrefix":[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+			],
+			"addPrefixByTech":[
+				{
+					"field": "udn"
+				}
+			],
+			"huawei_GExport":[
+				0
+			],
+			"huaweiAddMissingHierarchyAttributes": [0],
+			"huaweiCMadaptToLegacy": [{"filename": "HUA_CM_SRAN_configToLegacy"}],
+			"columnNameReducer":[
+				{
+					"collectorType" : "CM"
+				}
+			]
+		},
+		"item" :{}
+	},
+	"outputFormat" : {
+		"format":"xml",
+		"catalogs" :[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" : {},
+		"ossCatalog" : {},
+		"operationsCatalog" : {
+			"unit" :{},
+			"item" :{}
+		}
+	}
+}

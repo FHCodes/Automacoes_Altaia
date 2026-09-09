@@ -1,0 +1,14 @@
+GERAR  a partir de json
+python2 run.py -o SQL -bc "ERICSSON/loading_ERICSSON_OSS_RAN_EBS_5G.json" -n ERICSSON_OSS_RAN_EBS_5G -cf FALSE -di BEGINTIME -na NAMF -s DBN0_ERI_RAN -liq
+ 
+ python2 run.py -o SQL -bc "DENODO/JSON/loading_DENODO_OSS_RAN_INVENTORY.json" -n DENODO_OSS_RAN_INVENTORY -cf FALSE -di DATA_COLETA -na NAMF -s DBN0_EXT_ENRICH --liq
+
+
+GERAR DO DIFF diff de catalogos
+python2 run.py -o Diff -v ERICSSON -c ERICSSON_OSS_RAN_EBS_5G -bc ERICSSON/velho/ERICSSON_OSS_RAN_EBS_5G_client.xml -nc ERICSSON/novo/ERICSSON_OSS_RAN_EBS_5G_client.xml
+
+
+python2 run.py -o SQL -v ERICSSON -c ERICSSON_OSS_RAN_EBS_5G \
+-bc ERICSSON/novo/ERICSSON_OSS_RAN_EBS_5G_client.xml \
+-n ERICSSON_OSS_RAN_EBS_5G -cf False -di BEGINTIME -na NAMF \
+-d "/mnt/c/Altaia/Vivo/script_dos_portugas/ToolsShelf/MediationManagerCatalog2.1/output/ERICSSON_OSS_RAN_EBS_5G_2025916.xls"

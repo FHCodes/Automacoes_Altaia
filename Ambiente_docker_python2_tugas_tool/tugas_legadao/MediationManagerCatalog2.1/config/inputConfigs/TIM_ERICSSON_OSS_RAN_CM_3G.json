@@ -1,0 +1,40 @@
+{
+	"1" : {
+		"sheetName": "Object List",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id" : "Name",
+				"ossId":"Name",
+				"name":"Name",
+				"udn":"Name",
+				"desc":"Description",
+				"tableName":"Name",
+				"hierarchy":"Hierarchy",
+				"isStruct":"isStruct",
+				"father":"OssId",
+				"Origin":"Origin"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Parameter List",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId":"MO",
+				"id":"Name",
+				"bdcolname":"Name",
+				"udn":"Name",
+				"name":"Name",
+				"desc":"Description",
+				"bdtype": "Type",
+				"dataType":"Type",
+				"dataUnit":"Type",
+				"isStruct":"isStruct",
+				"multiplicity":"Size"
+			}
+		}
+	}
+}

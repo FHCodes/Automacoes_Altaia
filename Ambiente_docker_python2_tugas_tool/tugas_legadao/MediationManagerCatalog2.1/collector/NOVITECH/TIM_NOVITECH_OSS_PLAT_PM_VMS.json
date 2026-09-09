@@ -1,0 +1,56 @@
+{
+	"collector" :
+	{
+		"name" : "NOVITECH_OSS_PLAT_PM_VMS",
+		"collectorType" : "PM",
+		"vendor" : "NOVITECH",
+		"model" : "OSS_PLAT_PM_VMS",
+		"version" : "1.00.5721",
+		"tech" : "VMS",
+		"nameNomenclature" : "NOVITECH_OSS_PLAT_PM_VMS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "TIM_NOVITECH_OSS_PLAT_PM_VMS",
+		"presetFields" : "TIM_NOVITECH_OSS_PLAT_PM_VMS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

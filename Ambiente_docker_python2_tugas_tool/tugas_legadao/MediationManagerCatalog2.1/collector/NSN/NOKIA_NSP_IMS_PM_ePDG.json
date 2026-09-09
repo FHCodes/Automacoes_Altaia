@@ -1,0 +1,85 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NSP_IMS_PM",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "7750 SRMG",
+		"version": "R9",
+		"tech": "ePDG",
+		"nameNomenclature": "NOKIA_NSP_IMS_PM_ePDG_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "Nokia_NSP_IMS_ePDG",
+		"presetFields" : "ePDG"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "ePDG_"
+				},
+				{
+					"field": "udn",
+					"value": "ePDG_"
+				}
+			],
+			"tableNameReducer":
+			[
+			    {
+			        "collectorType" : "PM"
+			    }
+			],
+			"measuredObjectGeneric":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "/",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex2":
+				[
+					{
+						"field": "LOCALDN",
+						"pattern": "MCC=(?P<MCC>.+?),MNC=(?P<MNC>.+?),ManagedElement=(?P<ManagedElement>.+)$",
+						"newFields": ["MCC", "MNC", "ManagedElement"]
+					}
+				],
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

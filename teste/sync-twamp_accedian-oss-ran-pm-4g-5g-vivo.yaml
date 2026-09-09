@@ -1,0 +1,99 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sync-twamp-accedian-oss-ran-pm-4g-5g-vivo
+spec:
+  schedule: 8,23,38,53 * * * *
+  startingDeadlineSeconds: 60
+  concurrencyPolicy: Forbid
+  timeZone: America/Sao_Paulo
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          annotations:
+            io.kubernetes.cri-o.TrySkipVolumeSELinuxLabel: 'true'
+          labels:
+            app.kubernetes.io/component: namf
+            app.kubernetes.io/name: namf-sync
+            tef-l3-service-network-access: 'true'
+        spec:
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                - matchExpressions:
+                  - key: altaia-app/cronjob-access
+                    operator: In
+                    values:
+                    - "true"
+          topologySpreadConstraints:
+            - labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: "namf-sync"
+              maxSkew: 1
+              topologyKey: "kubernetes.io/hostname"
+              whenUnsatisfiable: ScheduleAnyway
+          runtimeClassName: selinux
+          serviceAccountName: altaia-namf-app-sa
+          securityContext:
+            fsGroup: 1982
+            fsGroupChangePolicy: OnRootMismatch
+            runAsGroup: 1982
+            runAsUser: 1982
+            supplementalGroups:
+              - 1982
+          containers:
+            - name: sync-twamp-accedian-oss-ran-pm-4g-5g-vivo
+              image: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-public/namf/namf-sync:3.2.2-3.2-11453d54
+              imagePullPolicy: IfNotPresent
+              env:
+                - name: TZ
+                  value: America/Sao_Paulo
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  sleep 20;
+                  python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \
+                  /opt/alticelabs/namf/python/na-mf/collect/config/customization/TWAMP_ACCEDIAN_OSS_RAN_PM_4G_5G_VIVO_10.220.6.106.yml \
+                  10.220.6.106 \
+                  /home/skylight/data/pmfiles \
+                  /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/TWAMP_ACCEDIAN/Performance4G5G_VIVO \
+                  $(date +'%Y%m%d') altaia_sftp --password=u6Hy0\$e9K4h9 \
+                  --pingskip \
+                  --statsreporting=MESSAGE \
+                  --triggerparse
+              volumeMounts:
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/logging.cfg
+                  subPath: logging.cfg
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/customization/TWAMP_ACCEDIAN_OSS_RAN_PM_4G_5G_VIVO_10.220.6.106.yml
+                  subPath: TWAMP_ACCEDIAN_OSS_RAN_PM_4G_5G_VIVO_10.220.6.106.yml
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging
+                - name: ssh-known-hosts
+                  mountPath: /opt/alticelabs/namf/.ssh
+                  readOnly: true
+              resources:
+                limits:
+                  memory: 4096Mi
+                  cpu: 1
+                requests:
+                  memory: 2048Mi
+                  cpu: 0.2
+          volumes:
+            - name: configmap-namf-sync
+              configMap:
+                name: configmap-namf-sync
+            - name: storage
+              persistentVolumeClaim:
+                claimName: namf-shared-filesystem
+            - name: ssh-known-hosts
+              secret:
+                secretName: secret-namf-sync
+                items:
+                  - key: ssh_known_hosts
+                    path: known_hosts
+          restartPolicy: OnFailure

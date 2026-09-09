@@ -1,0 +1,368 @@
+{
+	"ADJNODE": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "ADJACENTNODEID",
+            "ANI",
+            "NODEBID",
+            "NODEB_NAME"
+        ],
+        "enrich": {},
+        "copy": [
+            {
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "BTS": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "BTSID",
+            "BTSNAME",
+            "BTS_NAME"
+        ],
+        "enrich": {
+            "BTSID": [
+                "BTSNAME"
+            ]
+        },
+        "copy": [
+            {
+                "BTSNAME": "BTS_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "CELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CELLID",
+            "CELL_NAME",
+            "ENODEB_NAME",
+            "LOCALCELLID",
+            "LOCAL_CELL_ID"
+        ],
+        "enrich": {},
+        "copy": [
+            {
+                "CELLID": "LOCAL_CELL_ID",
+                "ENODEBFUNCTIONNAME": "ENODEB_NAME",
+                "CELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "CNOPERATOR": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CN_ID",
+            "ENODEB_NAME",
+            "PLMN"
+        ],
+        "enrich": {},
+        "copy": [
+            {
+                "ENODEBFUNCTIONNAME": "ENODEB_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "ENODEBFUNCTION": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "ENODEB_NAME"
+        ],
+        "enrich": {
+            "RNCID": [
+                "RNCNAME"
+            ]
+        },
+        "copy": [
+            {
+                "ENODEBFUNCTIONNAME": "ENODEB_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "GCELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "BTSID",
+            "BTSNAME",
+            "BTS_NAME",
+            "CELLID",
+            "CELL_NAME",
+            "LOCELL"
+        ],
+        "enrich": {
+            "BTSID": [
+                "BTSNAME"
+            ]
+        },
+        "copy": [
+            {
+                "BTSNAME": "BTS_NAME",
+                "CELLID": "LOCELL",
+				"CELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "GNODEBFUNCTION": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "GNODEB_NAME"
+        ],
+        "enrich": {},
+        "copy": [
+            {
+                "GNODEBFUNCTIONNAME": "GNODEB_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "GTRX": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CELLNAME",
+            "LABEL",
+            "TRX_NAME",
+            "TRXNO"
+        ],
+        "enrich": {
+            "CELLID": [
+                "CELLNAME"
+            ]
+        },
+        "copy": [
+            {
+                "CELLNAME": "LABEL",
+				"TRXNAME": "TRX_NAME",
+				"TRXNO": "TRXNO",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "LOCELL": {
+        "fields": [
+            "CLASSNAME",
+            "OBJECT",
+            "LOCELL",
+            "NODEBID",
+            "FDN"
+        ],
+        "enrich": {
+            "CELLID": [
+                "LOCALCELLNAME"
+            ],
+            "LOCELL": [
+                "CELLNAME"
+            ]
+        },
+        "copy": [
+            {
+                "CELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "NRCELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CELLID",
+            "CELL_NAME",
+            "GNODEB_NAME",
+            "LOCELL",
+            "NRCELLID"
+        ],
+        "enrich": {},
+        "copy": [
+            {
+                "CELLID": "LOCELL",
+				"GNODEBFUNCTIONNAME": "GNODEB_NAME",
+				"CELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "NRDUCELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CELLID",
+            "CELL_NAME",
+            "GNODEB_NAME",
+            "LOCELL",
+            "NRDUCELLID"
+        ],
+        "enrich": {},
+        "copy": [
+            {
+                "GNODEBFUNCTIONNAME": "GNODEB_NAME",
+                "CELLID": "LOCELL",
+				"NRDUCELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "UCELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CELLID",
+            "CELL_NAME",
+            "LOCELL",
+            "LOGICRNCID",
+            "FUNCION",
+            "NODEBID"
+        ],
+        "enrich": {
+            "LOGICRNCID": [
+                "RNCNAME"
+            ]
+        },
+        "copy": [
+            {
+                "RNCNAME": "RNC_NAME",
+				"NODEBNAME": "FUNCTION",
+                "CELLID": "LOCELL",
+				"CELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+        
+    },
+    "UCNOPERATOR": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CN_ID",
+            "PLMN"
+        ],
+        "enrich": {},
+        "copy": [
+            {
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "ULOCELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CELLNAME",
+            "CELL_NAME",
+            "NODEBID",
+            "NODEB_NAME"
+        ],
+        "enrich": {
+            "CELLID": [
+                "LOCALCELLNAME"
+            ],
+            "LOCELL": [
+                "CELLNAME"
+            ]
+        },
+        "copy": [
+            {
+                "ULOCELLID": "LOCELL",
+                "CELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "UTRANEXTERNALCELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "CELLID",
+            "ENODEB_NAME",
+            "LOCELL",
+            "CELL_NAME",
+            "CELLNAME"
+        ],
+        "enrich": {
+            "CELLID": [
+                "CELLNAME"
+            ],
+            "RNCID": [
+                "RNCNAME"
+            ]
+        },
+        "copy": [
+            {
+                "ENODEBFUNCTIONNAME": "ENODEB_NAME",
+                "ULOCELLID": "LOCELL",
+				"CELLID": "LOCELL",
+                "CELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    },
+    "UTRANNCELL": {
+        "fields": [
+            "CORRKEY",
+            "CLASSNAME",
+            "OBJECT",
+            "ENODEB_NAME",
+            "LOCALLCELLID",
+            "LOCELL",
+            "CELL_NAME"
+        ],
+        "enrich": {
+            "RNCID": [
+                "RNCNAME"
+            ]
+        },
+        "copy": [
+            {
+                "RNCNAME": "RNC_NAME",
+                "ENODEBFUNCTIONNAME": "ENODEB_NAME",
+                "CELLID": "LOCELL",
+                "LOCALCELLID": "LOCELL",
+				"CELLNAME": "CELL_NAME",
+				"NEIGHBOURCELLNAME": "CELL_NAME",
+                "FDN": "CORRKEY",
+                "NE_NAME": "OBJECT"
+            }
+        ]
+    }
+}

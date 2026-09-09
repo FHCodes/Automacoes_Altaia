@@ -1,0 +1,81 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_NOKIA_NETACT_CM_2G.json",
+		"collectorType" : "CM",
+		"vendor": "NOKIA",
+		"model": "NETACT",
+		"version": "BSC18",
+		"tech": "R2G",
+		"nameNomenclature": "NOKIA_OSS_RAN_CM_2G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_NOKIA_NETACT_CM_2G",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"multiplicityConverter":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObjectGeneric":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"parameterNameAdder":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "DISTNAME"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_CoreCS_collRel01",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "MRS",
+		"version" : "6.10.2",
+		"tech" : "CoreCs",
+		"nameNomenclature" : "ERICSSON_performance_#_MRS_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "./en_lzn7450017_r54a/",
+		"formatConfig" : "ERICSSON_OSSRC_4G_collRel01",
+		"presetFields" : "CoreCS_PTP"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableSizeParticioner":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "MRS_"
+				},
+				{
+					"field": "udn",
+					"value": "MRS_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : "",
+					"startText" : ""
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex2": [
+					{
+						"field": "nedistinguishedname",
+						"pattern": "SubNetwork=(?P<SubNetwork1>.+?),(SubNetwork=(?P<SubNetwork2>.+?),)?MeContext=(?P<MeContext>.+)",
+						"newFields": ["SubNetwork1", "SubNetwork2", "MeContext"]
+					}
+				],
+				"applyRegex": [
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item" :
+			{
+				"splitMultiValue": [
+					{
+						"delimiter": ","
+					}
+				]
+			}
+		}
+	}
+}

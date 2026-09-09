@@ -1,0 +1,88 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NSP_CORE_PM",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "NSP_EPC",
+		"version": "20.0",
+		"tech": "CMM",
+		"nameNomenclature": "NOKIA_NSP_CORE_PM_#_CMM20"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NSP_CORE_PM_CMM",
+		"presetFields" : "NOKIA_NSP_CORE_PM_CMM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CMM_"
+				},
+				{
+					"field": "udn",
+					"value": "CMM_"
+				}
+			],
+			"tableNameReducer":
+			[
+			    {
+			        "collectorType" : "PM"
+			    }
+			],
+			"nokiaMeasuredObjectCMM":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : ",",
+					"sepCharPattern" : "=",
+					"interChar" : ", ",
+					"startText" : ""
+				}
+			],
+			"nokiaMeasuredObjectCMM2":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : ",",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASOBJLDN"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

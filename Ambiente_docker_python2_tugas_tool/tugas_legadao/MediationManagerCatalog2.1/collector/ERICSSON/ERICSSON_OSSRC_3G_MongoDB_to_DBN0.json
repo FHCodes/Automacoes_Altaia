@@ -1,0 +1,89 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSSRC_3G_MongoDB_to_DBN0",
+		"collectorType" : "CM",
+		"vendor" : "ERICSSON",
+		"model" : "",
+		"version" : "W19Q2",
+		"tech" : "R3G",
+		"nameNomenclature" : "ERICSSON_parameters_#_OSSRC_CM_OI_3G"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_OSSRC_4G_MongoDB_to_DBN0",
+		"presetFields" : "3G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"measuredObjectParameters" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : "SubNetwork1-MeContext-"
+				}
+			],
+			"Ericsson_Parameters_highLevel" :
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "FDN"
+					}
+				],
+				"unitSplitv2_ericsson": [
+					{
+						"field": "FDN"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_OSS_PLAT_PM_SMSC",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "HUAWEI_OSS_PLAT_PM_SMSC",
+		"version" : "V100R001C60",
+		"tech" : "SMSC",
+		"nameNomenclature" : "HUAWEI_OSS_PLAT_PM_SMSC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "TIM_HUAWEI_OSS_PLAT_PM_SMSC",
+		"presetFields" : "TIM_HUAWEI_OSS_PLAT_PM_SMSC"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

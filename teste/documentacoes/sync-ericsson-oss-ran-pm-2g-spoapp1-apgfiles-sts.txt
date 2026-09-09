@@ -1,0 +1,23 @@
+Documentação de Sincronização: sync-ericsson-oss-ran-pm-2g-spoapp1-apgfiles-sts
+
+1. Visão Geral
+Este processo consiste em um CronJob do Kubernetes que realiza a automação de coleta de dados.
+
+2. Cronograma e Políticas de Execução
+* Agendamento (Cron): 7,22,37,52 * * * *
+* Fuso Horário: America/Sao_Paulo
+* Concorrência: Forbid
+* Prazo Limite de Inicialização: 60 segundos
+* Política de Reinício: OnFailure
+
+3. Fluxo de Execução do Script
+* Comando Completo: /bin/sh -c sleep 20; \ python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \ /opt/alticelabs/namf/python/na-mf/collect/config/customization/ERICSSON_OSS_RAN_PM_2G_SPOAPP1_APGFILES_STS_10.11.196.107.yml \ 10.11.196.107 \ /var/opt/ericsson/sgw/outputfiles/apgfiles/sts \ /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/ERICSSON/Performance2G \ $(date +'%Y%m%d') dbn0 --password=vIvo1234 \ --pingskip \ --statsreporting=MESSAGE \ --triggerparse 
+
+4. Infraestrutura Kubernetes e Recursos
+* Imagem do Container: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-public/namf/namf-sync:3.2.2-3.2-11453d54
+* Capacidade Computacional (Requests/Limits): CPU: 0.2/1 | Memória: 2048Mi/4096Mi
+* Segurança (Security Context): UID/GID N/A | Runtime: selinux
+* Volumes Utilizados:
+  - configmap-namf-sync
+  - storage
+  - ssh-known-hosts

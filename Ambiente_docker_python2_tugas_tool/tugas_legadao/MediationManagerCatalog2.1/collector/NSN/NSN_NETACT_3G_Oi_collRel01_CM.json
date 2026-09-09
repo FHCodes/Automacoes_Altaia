@@ -1,0 +1,72 @@
+{
+	"collector" :
+	{
+		"name" : "NSN_NETACT_3G_Oi_collRel01_CM",
+		"collectorType" : "CM",
+		"vendor": "NSN_Param_3G",
+		"model": "NETACT",
+		"version": "WBTS20",
+		"tech": "R3G",
+		"nameNomenclature": "NSN_parameters_#_Netact_CM_3G_WBTS"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_3G_Oi_collRel01_CM",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "distName"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

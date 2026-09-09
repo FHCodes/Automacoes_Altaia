@@ -1,0 +1,97 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSSRC_4G_collRel01",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "",
+		"version" : "L18Q3",
+		"tech" : "R4G",
+		"nameNomenclature" : "ERICSSON_performance_#_ERICSSON_4G_OSSRC_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_OSSRC_4G_collRel01",
+		"presetFields" : "4G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"ericssonHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : "",
+					"startText" : ""
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"tableSizeParticioner_Ericsson":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "fdn"
+					}
+				]
+			},
+			"item" :
+			{
+				"splitMultiValue": [
+					{
+						"delimiter": ","
+					}
+				]
+			}
+		}
+	}
+}

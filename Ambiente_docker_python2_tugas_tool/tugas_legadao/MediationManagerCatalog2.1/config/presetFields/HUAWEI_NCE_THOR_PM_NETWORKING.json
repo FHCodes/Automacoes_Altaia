@@ -1,0 +1,73 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "STARTTIME",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Date and time of measurement.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "COLLECTIONTIME",
+      "sqlName" : "CollectionTime",
+      "udn" : "CollectionTime",
+      "desc" : "Indicates the collection time (local time).",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "GRANULARITYPERIOD",
+      "sqlName" : "GranularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity period interval.",
+      "dataType" : "NUMBER",
+      "dataUnit": "MINUTES",
+      "dbn0type" : "MT",
+      "correctTypeCust": "INTEGER"
+    },
+    {
+      "id" : "DEVICEID",
+      "sqlName" : "DeviceID",
+      "udn" : "DeviceID",
+      "desc" : "Indicates the device DN.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "DEVICENAME",
+      "sqlName" : "DeviceName",
+      "udn" : "DeviceName",
+      "desc" : "Indicates the device name.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "RESOURCEID",
+      "sqlName" : "ResourceID",
+      "udn" : "ResourceID",
+      "desc" : "Indicates the resource DN.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "RESOURCENAME",
+      "sqlName" : "ResourceName",
+      "udn" : "ResourceName",
+      "desc" : "Indicates the resource name.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

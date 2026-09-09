@@ -1,0 +1,75 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_CORE_PM",
+		"collectorType" : "PM",
+		"vendor": "Nokia",
+		"model": "NETACT_CORE_PM_CBAM",
+		"version": "23",
+		"tech": "CBAM",
+		"nameNomenclature": "NOKIA_NETACT_CORE_PM_CBAM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_CORE_PM_CBAM",
+		"presetFields" : "NOKIA_NETACT_CORE_PM_CBAM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CBAM_"
+				},
+				{
+					"field": "udn",
+					"value": "CBAM_"
+				}
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ".*"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"collector" :
+	{
+		"name" : "NetactOSS155_CORE_collRel01",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "NETACT165",
+		"version": "18.5",
+		"tech": "CORE",
+		"nameNomenclature": "NSN_performance_#_NetactOSS155_CORE_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_CORE_RADIO_collRel01",
+		"presetFields" : "CORE155_PTP"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "TIAMS_"
+				},
+				{
+					"field": "udn",
+					"value": "TIAMS_"
+				}
+			],
+			"measuredObject3GPP_NSN_UNI":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

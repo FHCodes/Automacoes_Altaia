@@ -1,0 +1,8 @@
+{
+    "connection_string": "localhost:27017",
+    "username": "namf",
+    "password": "namf",
+    "db": "snmp",
+    "instances_collection": "instances",
+    "entities_collection": "entities"
+}

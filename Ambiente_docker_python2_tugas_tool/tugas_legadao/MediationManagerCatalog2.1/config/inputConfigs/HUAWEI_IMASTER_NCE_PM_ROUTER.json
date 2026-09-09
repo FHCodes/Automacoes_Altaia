@@ -1,0 +1,36 @@
+{
+	"1" : {
+		"sheetName": "V8 PMS Indicator",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "INDICATOR GROUP ID",
+				"ossId": "INDICATOR GROUP ID",
+				"name": "INDICATOR GROUP NAME",
+				"udn": "udn_t",
+				"desc": "INDICATOR GROUP NAME",
+				"tableName": "table_name",
+				"hierarchy": "hidfsdf"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "V8 PMS Indicator",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "INDICATOR GROUP ID",
+				"id": "INDICATOR NAME",
+				"bdcolname": "INDICATOR ID",
+				"udn": "til_c",
+				"name": "INDICATOR NAME",
+				"desc": "INDICATOR NAME",
+				"bdtype": "bd_type",
+				"dataType": "d_type",
+				"dataUnit": "Unit",
+				"multiplicity": "None"
+			}
+		}	
+	}
+}

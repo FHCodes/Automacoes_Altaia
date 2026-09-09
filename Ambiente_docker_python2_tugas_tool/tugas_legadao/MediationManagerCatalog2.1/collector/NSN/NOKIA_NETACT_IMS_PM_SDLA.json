@@ -1,0 +1,75 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_IMS_PM_SDLA",
+		"collectorType" : "PM",
+		"vendor": "Nokia",
+		"model": "NETACT_IMS_PM_SDLA",
+		"version": "23",
+		"tech": "SDLA",
+		"nameNomenclature": "NOKIA_NETACT_IMS_PM_SDLA_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_IMS_PM_SDL",
+		"presetFields" : "NOKIA_NETACT_IMS_PM_SDL"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "SDLA_"
+				},
+				{
+					"field": "udn",
+					"value": "SDLA_"
+				}
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ".*"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

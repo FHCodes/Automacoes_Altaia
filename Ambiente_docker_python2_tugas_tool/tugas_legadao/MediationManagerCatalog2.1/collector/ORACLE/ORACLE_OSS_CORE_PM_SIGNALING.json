@@ -1,0 +1,107 @@
+{
+	"collector" :
+	{
+		"name" : "ORACLE_OSS_CORE_PM_SIGNALING",
+		"collectorType" : "PM",
+		"vendor" : "ORACLE",
+		"model" : "OSS_CORE_PM_SIGNALING",
+		"version" : "23.4.0",
+		"tech" : "5G",
+		"nameNomenclature" : "ORACLE_OSS_CORE_PM_SIGNALING_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc_V2",
+		"doc" : "",
+		"formatConfig" : "ORACLE_OSS_CORE_PM_SIGNALING",
+		"presetFields" : "ORACLE_OSS_CORE_PM_SIGNALING"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": ""
+				},
+				{
+					"field": "udn",
+					"value": ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			],
+			"oracle_signaling":
+			[
+				{
+					"regex" : "",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startField" : "",
+					"additionalFields" : ["app", "application", "bastion", "cluster", "instance", "job", "kubernetes_namespace", "kubernetes_pod_name", "pod_template_hash", "prometheus", "receive_cluster", "receive_replica", "release", "site_name", "sop_metrics"],
+					"fieldName" : "measObjLdn"
+				}
+			],			
+			"measurementPartitioner_partitionOf_PM2":
+			[
+				{
+					"format": "XML"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "REGEX"
+					}
+				],
+				"measurementParticioner":
+				[]				
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

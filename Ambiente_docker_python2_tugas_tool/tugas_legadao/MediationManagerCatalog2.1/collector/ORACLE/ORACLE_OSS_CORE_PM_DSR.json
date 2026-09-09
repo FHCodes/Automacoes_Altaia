@@ -1,0 +1,54 @@
+{
+	"collector" :
+	{
+		"name" : "ORACLE_OSS_CORE_PM_DSR",
+		"collectorType" : "PM",
+		"vendor" : "ORACLE",
+		"model" : "OSS_CORE_PM_DSR",
+		"version" : "8.5.1",
+		"tech" : "DSR",
+		"nameNomenclature" : "ORACLE_OSS_CORE_PM_DSR_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "ORACLE_OSS_CORE_PM_DSR",
+		"presetFields" : "ORACLE_OSS_CORE_PM_DSR"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"descriptionShortener":
+			[
+				1
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+		}
+	}
+}

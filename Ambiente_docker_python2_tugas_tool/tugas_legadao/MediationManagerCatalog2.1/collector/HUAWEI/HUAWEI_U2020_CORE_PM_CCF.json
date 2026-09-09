@@ -1,0 +1,98 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2020_CORE_PM",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "CCF",
+		"version" : "V600R020C10SPC207_M3",
+		"tech" : "CCF",
+		"nameNomenclature" : "HUAWEI_U2020_CORE_PM_CCF_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_U2020_CORE_PM_CCF",
+		"presetFields" : "HUAWEI_U2020_CORE_PM_CCF"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CCF_"
+				},
+				{
+					"field": "udn",
+					"value": "CCF_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRANV2":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "CCFNE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "OBJECT NAME"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

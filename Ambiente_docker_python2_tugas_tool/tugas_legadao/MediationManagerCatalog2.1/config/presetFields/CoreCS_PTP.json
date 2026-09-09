@@ -1,0 +1,145 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "measStartTime",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Start date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measEndTime",
+      "sqlName" : "endTime",
+      "udn" : "endTime",
+      "desc" : "End date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "granularityPeriod",
+      "sqlName" : "granularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "networkElementName",
+      "sqlName" : "networkElementName",
+      "udn" : "networkElementName",
+      "desc" : "Name of the Network Element the measurement corresponds to.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "neDistinguishedName",
+      "sqlName" : "distName",
+      "udn" : "distName",
+      "desc" : "Network Element Distinguished Name.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "neSoftwareRelease",
+      "sqlName" : "neSoftwareRelease",
+      "udn" : "neSoftwareRelease",
+      "desc" : "Network Element software version.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "measuredObjectID",
+      "sqlName" : "measuredObjectID",
+      "udn" : "measuredObjectID",
+      "desc" : "All MOs",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "SubNetwork1",
+      "sqlName" : "SubNetwork1",
+      "udn" : "SubNetwork1",
+      "desc" : "SubNetwork1",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SubNetwork2",
+      "sqlName" : "SubNetwork2",
+      "udn" : "SubNetwork2",
+      "desc" : "Network Element software version.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MeContext",
+      "sqlName" : "MeContext",
+      "udn" : "MeContext",
+      "desc" : "MeContext",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "userLabel",
+      "sqlName" : "userLabel",
+      "udn" : "userLabel",
+      "desc" : "userLabel",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "bdcolname":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"distName",
+      "desc":"Unique distName (first MO)",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"version",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"class",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"id",
+      "desc":"Identifier",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    }
+  ]
+}

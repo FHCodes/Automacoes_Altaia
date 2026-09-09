@@ -1,0 +1,99 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sync-huawei-oss-ran-cm-sran-vivo-taishan-rjdc-s03
+spec:
+  schedule: 30 1 * * *
+  startingDeadlineSeconds: 60
+  concurrencyPolicy: Forbid
+  timeZone: America/Sao_Paulo
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          annotations:
+            io.kubernetes.cri-o.TrySkipVolumeSELinuxLabel: 'true'
+          labels:
+            app.kubernetes.io/component: namf
+            app.kubernetes.io/name: namf-sync
+            tef-l3-service-network-access: 'true'
+        spec:
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                - matchExpressions:
+                  - key: altaia-app/cronjob-access
+                    operator: In
+                    values:
+                    - "true"
+          topologySpreadConstraints:
+            - labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: "namf-sync"
+              maxSkew: 1
+              topologyKey: "kubernetes.io/hostname"
+              whenUnsatisfiable: ScheduleAnyway
+          runtimeClassName: selinux
+          serviceAccountName: altaia-namf-app-sa
+          securityContext:
+            fsGroup: 1982
+            fsGroupChangePolicy: OnRootMismatch
+            runAsGroup: 1982
+            runAsUser: 1982
+            supplementalGroups:
+              - 1982
+          containers:
+            - name: sync-huawei-oss-ran-cm-sran-vivo-taishan-rjdc-s03
+              image: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-public/namf/namf-sync:3.2.2-3.2-11453d54
+              imagePullPolicy: IfNotPresent
+              env:
+                - name: TZ
+                  value: America/Sao_Paulo
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  sleep 20;
+                  python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/ftp-script.py \
+                  /opt/alticelabs/namf/python/na-mf/collect/config/customization/HUAWEI_OSS_RAN_CM_SRAN_VIVO_201.69.164.8.yml \
+                  201.69.164.8 \
+                  /opt/oss/server/var/fileint/cm/GExport \
+                  /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/HUAWEI/ParametersSRAN_VIVO \
+                  $(date --date='-1 day' +'%Y%m%d') ftpuser Changeme_123 \
+                  --pingskip \
+                  --statsreporting=MESSAGE \
+                  --triggerparse
+              volumeMounts:
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/logging.cfg
+                  subPath: logging.cfg
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/customization/HUAWEI_OSS_RAN_CM_SRAN_VIVO_201.69.164.8.yml
+                  subPath: HUAWEI_OSS_RAN_CM_SRAN_VIVO_201.69.164.8.yml
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging
+                - name: ssh-known-hosts
+                  mountPath: /opt/alticelabs/namf/.ssh
+                  readOnly: true
+              resources:
+                limits:
+                  memory: 4096Mi
+                  cpu: 1
+                requests:
+                  memory: 2048Mi
+                  cpu: 0.2
+          volumes:
+            - name: configmap-namf-sync
+              configMap:
+                name: configmap-namf-sync
+            - name: storage
+              persistentVolumeClaim:
+                claimName: namf-shared-filesystem
+            - name: ssh-known-hosts
+              secret:
+                secretName: secret-namf-sync
+                items:
+                  - key: ssh_known_hosts
+                    path: known_hosts
+          restartPolicy: OnFailure

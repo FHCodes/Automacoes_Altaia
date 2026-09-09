@@ -1,0 +1,79 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_SDC_PM_ACCESS",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "SDC_PM_ACCESS",
+		"version": "9.7.10R6.6",
+		"tech": "SDC",
+		"nameNomenclature": "NOKIA_SDC_PM_ACCESS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_SDC_PM_ACCESS",
+		"presetFields" : "NOKIA_SDC_PM_ACCESS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"unitIdRefactor":
+			[
+				{
+					"search_regex" : "[\\s\\.\\(\\)-]",
+					"replacement_string" : ""
+				}
+			],
+			"addPrefix":
+			[
+				{
+					"field": "udn",
+					"value": "SDC_"
+				},
+				{
+					"field": "sqlName",
+					"value": "SDC_"
+				}
+			],
+			"nokiaMeasuredObjectSDC":
+			[
+				{
+					"regex" : "",
+					"interChar" : "."
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "Object ID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"1" : {
+		"sheetName": "DU Measurements",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "Unit",
+				"ossId": "Unit",
+				"name": "Unit",
+				"udn": "Unit",
+				"desc": "Unit",
+				"tableName": "Unit",
+				"hierarchy": "Hierarchy"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "DU Counters 18.Q3.0",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "MO Class Name",
+				"id": "Counter",
+				"bdcolname": "Counter",
+				"udn": "Counter",
+				"name": "Counter",
+				"desc": "Description",
+				"bdtype": "Type",
+				"dataType": "Type",
+				"dataUnit": "Type",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

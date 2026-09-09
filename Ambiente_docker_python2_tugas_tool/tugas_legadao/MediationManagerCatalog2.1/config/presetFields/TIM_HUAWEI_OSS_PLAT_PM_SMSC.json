@@ -1,0 +1,45 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "beginTime",
+      "sqlName" : "beginTime",
+      "udn" : "beginTime",
+      "desc" : "Begin time of a statistical time segment",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "endTime",
+      "udn" : "endTime",
+      "desc" : "End time of a statistical time segment",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "interval",
+      "sqlName" : "interval",
+      "udn" : "Interval",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "SMSC",
+      "sqlName" : "SMSC",
+      "udn" : "SMSC",
+      "desc" : "SMSC Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

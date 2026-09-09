@@ -1,0 +1,100 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sync-ericsson-oss-ran-pm-3g-enmbara-rj2-pmic2
+spec:
+  schedule: 6,21,36,51 * * * *
+  startingDeadlineSeconds: 60
+  concurrencyPolicy: Forbid
+  timeZone: America/Sao_Paulo
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          annotations:
+            io.kubernetes.cri-o.TrySkipVolumeSELinuxLabel: 'true'
+          labels:
+            app.kubernetes.io/component: namf
+            app.kubernetes.io/name: namf-sync
+            tef-l3-service-network-access: 'true'
+        spec:
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                - matchExpressions:
+                  - key: altaia-app/cronjob-access
+                    operator: In
+                    values:
+                    - "true"
+          topologySpreadConstraints:
+            - labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: "namf-sync"
+              maxSkew: 1
+              topologyKey: "kubernetes.io/hostname"
+              whenUnsatisfiable: ScheduleAnyway
+          runtimeClassName: selinux
+          serviceAccountName: altaia-namf-app-sa
+          securityContext:
+            fsGroup: 1982
+            fsGroupChangePolicy: OnRootMismatch
+            runAsGroup: 1982
+            runAsUser: 1982
+            supplementalGroups:
+              - 1982
+          containers:
+            - name: sync-ericsson-oss-ran-pm-3g-enmbara-rj2-pmic2
+              image: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-public/namf/namf-sync:3.2.2-3.2-11453d54
+              imagePullPolicy: IfNotPresent
+              env:
+                - name: TZ
+                  value: America/Sao_Paulo
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  sleep 20;
+                  python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \
+                  /opt/alticelabs/namf/python/na-mf/collect/config/customization/ERICSSON_OSS_RAN_PM_3G_ENMBARA_RJ2_PMIC2_200.100.136.78.yml \
+                  200.100.136.78 \
+                  /ericsson/pmic2/XML \
+                  /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/ERICSSON/Performance3Gpmic2 \
+                  $(date +'%Y%m%d') dbn0 --password=hJI@m3Jm \
+                  --pingskip \
+                  --port 5023 \
+                  --statsreporting=MESSAGE \
+                  --triggerparse
+              volumeMounts:
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/logging.cfg
+                  subPath: logging.cfg
+                - name: configmap-namf-sync
+                  mountPath: /opt/alticelabs/namf/python/na-mf/collect/config/customization/ERICSSON_OSS_RAN_PM_3G_ENMBARA_RJ2_PMIC2_200.100.136.78.yml
+                  subPath: ERICSSON_OSS_RAN_PM_3G_ENMBARA_RJ2_PMIC2_200.100.136.78.yml
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging
+                - name: ssh-known-hosts
+                  mountPath: /opt/alticelabs/namf/.ssh
+                  readOnly: true
+              resources:
+                limits:
+                  memory: 4096Mi
+                  cpu: 1
+                requests:
+                  memory: 2048Mi
+                  cpu: 0.2
+          volumes:
+            - name: configmap-namf-sync
+              configMap:
+                name: configmap-namf-sync
+            - name: storage
+              persistentVolumeClaim:
+                claimName: namf-shared-filesystem
+            - name: ssh-known-hosts
+              secret:
+                secretName: secret-namf-sync
+                items:
+                  - key: ssh_known_hosts
+                    path: known_hosts
+          restartPolicy: OnFailure

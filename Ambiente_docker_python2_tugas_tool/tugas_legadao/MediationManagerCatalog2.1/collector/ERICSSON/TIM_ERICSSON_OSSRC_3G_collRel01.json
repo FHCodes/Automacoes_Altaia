@@ -1,0 +1,130 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_ERICSSON_OSSRC_3G_collRel01",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS",
+		"version" : "W23Q3",
+		"tech" : "R3G",
+		"nameNomenclature" : "ERICSSON_OSS_RAN_PM_3G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_RAN_PM_3G",
+		"presetFields" : "TIM_3G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "UMTS_"
+				},
+				{
+					"field": "udn",
+					"value": "UMTS_"
+				}
+			],
+			"tableSizeParticioner_Ericsson":
+			[
+				0
+			],
+			"measurementPartitioner_partitionOf_PM":
+			[
+				{
+					"format": "XML",
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"ericssonHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : "",
+					"startText" : ""
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{	"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				],
+				"applyRegex2": [
+					{
+						"field": "NEDISTINGUISHEDNAME",
+						"pattern": "SubNetwork=(?P<SubNetwork1>.+?),SubNetwork=(?P<SubNetwork2>.+?),MeContext=(?P<MeContext>.+)$",
+						"newFields": ["SUBNETWORK1", "SUBNETWORK2", "MECONTEXT"]
+					}
+				],
+				"measurementParticioner":
+				[]
+			},
+			"item" :
+			{
+				"splitMultiValue": [
+					{
+						"delimiter": ","
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,114 @@
+{
+	"collector" :
+	{
+		"name" : "NSN_NETACT_2G_Oi_collRel01",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "NETACT_2G",
+		"version": "BSC20",
+		"tech": "R2G",
+		"nameNomenclature": "NOKIA_NETACT_2G_PM_#_v20"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_2G_Oi_collRel01",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"Nokia_num_name":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "BSC_"
+				},
+				{
+					"field" : "udn",
+					"value" : "BSC_"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"nokiaMeasuredObject3GPP_toOne_3GPP":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"nokiaMeasuredObject3GPP_toOne":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"nokiaMeasuredObject3GPP_toOne_3GPP":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"NOKIA_enrichment":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				],
+				"enrichment":
+				[
+					{
+						"scope": "NSN_NETACT_BSC",
+						"corrKey": [
+							{"DISTNAME": [""]}
+						],
+						"newField": [{"BSC_NAME": ["BSC"]}, {"BTS_NAME":["BCF"]}, {"CELLID":["BTS"]}, {"CELLNAME":["BTS"]}]
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

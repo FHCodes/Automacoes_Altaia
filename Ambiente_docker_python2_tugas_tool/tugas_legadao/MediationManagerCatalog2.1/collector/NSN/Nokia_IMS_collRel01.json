@@ -1,0 +1,71 @@
+{
+	"collector" :
+	{
+		"name" : "Nokia_IMS_collRel01",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "Netact",
+		"version": "20.5",
+		"tech": "IMS",
+		"nameNomenclature": "Nokia_performance_#_IMS_CSCF_LoadBalancer_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "Nokia_IMS_collRel01",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CFX_"
+				},
+				{
+					"field": "udn",
+					"value": "CFX_"
+				}
+			],
+			"measuredObject3GPP_NSN_UNI":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

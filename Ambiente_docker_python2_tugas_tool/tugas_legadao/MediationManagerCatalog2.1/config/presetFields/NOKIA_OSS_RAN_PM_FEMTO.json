@@ -1,0 +1,109 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "STARTTIME",
+      "sqlName" : "StartTime",
+      "udn" : "StartTime",
+      "desc" : "Start time of the record",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "EndTime",
+      "udn" : "EndTime",
+      "desc" : "End time of the record",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "GRANULARITYPERIOD",
+      "sqlName" : "GranularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected",
+      "dataType" : "NUMBER",
+      "dataUnit": "MINUTES",
+      "dbn0type" : "MT",
+      "correctTypeCust": "INTEGER"
+    },
+    {
+      "id" : "NEUN",
+      "sqlName" : "neun",
+      "udn" : "neun",
+      "desc" : "NA",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "NEDN",
+      "sqlName" : "nedn",
+      "udn" : "nedn",
+      "desc" : "NA",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "NESW",
+      "sqlName" : "nesw",
+      "udn" : "nesw",
+      "desc" : "NA",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "SUBNETWORK_1",
+      "sqlName" : "SubNetwork_1",
+      "udn" : "SubNetwork_1",
+      "desc" : "NA",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SUBNETWORK_2",
+      "sqlName" : "SubNetwork_2",
+      "udn" : "SubNetwork_2",
+      "desc" : "NA",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id": "SUBNETWORK_3",
+      "sqlName": "SubNetwork_3",
+      "udn": "SubNetwork_3",
+      "desc": "NA",
+      "dataType": "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type": "ID"
+    },
+    {
+      "id" : "SUBNETWORK_4",
+      "sqlName" : "SubNetwork_4",
+      "udn" : "SubNetwork_4",
+      "desc" : "NA",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MOID",
+      "sqlName" : "moid",
+      "udn" : "moid",
+      "desc" : "NA",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

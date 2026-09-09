@@ -1,0 +1,366 @@
+{
+	"BSC6910 GSM V100R025C10SPC500 Performance Counter List.xls":
+	{
+		"1" :
+		{
+			"sheetName" : "Objects",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "FunctionSubSet ID",
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet ID",
+					"udn": "FunctionSubSet ID",
+					"tableName": "FunctionSubSet ID",
+					"hierarchy": "MAE Performance Object Name",
+					"desc":""
+				}
+			}
+		},
+		"2" :
+		{
+			"sheetName" : "Counters",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet Name",
+					"udn": "FunctionSubSet ID",
+					"desc": "FunctionSubSet Name"
+				}
+			}
+		},
+		"3" :
+		{
+			"sheetName" : "Counters",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "FunctionSubSet ID",
+					"id": "Counter ID",
+					"bdcolname": "Counter ID",
+					"udn": "Counter Name",
+					"name": "Counter Name",
+					"desc": "Counter Description",
+					"bdtype": "Counter Type",
+					"dataType": "Counter Type",
+					"dataUnit": "Counter Type",
+					"multiplicity": "Size"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 eNodeBFunction V100R019C10SPC160 Performance Counter List.xls":
+	{
+		"1" :
+		{
+			"sheetName" : "Objects",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "FunctionSubSet ID",
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet ID",
+					"udn": "FunctionSubSet ID",
+					"desc": "ID",
+					"tableName": "FunctionSubSet ID",
+					"hierarchy": "MAE Performance Object Name"
+				}
+			}
+		},
+		"2" :
+		{
+			"sheetName" : "Counters",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet Name",
+					"udn": "FunctionSubSet ID",
+					"desc": "FunctionSubSet Name"
+				}
+			}
+		},
+		"3" :
+		{
+			"sheetName" : "Counters",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "FunctionSubSet ID",
+					"id": "Counter ID",
+					"bdcolname": "Counter ID",
+					"udn": "Counter Name",
+					"name": "Counter Name",
+					"desc": "Counter Description",
+					"bdtype": "Counter Type",
+					"dataType": "Counter Type",
+					"dataUnit": "Counter Type",
+					"multiplicity": "Size"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 GBTSFunction V100R019C10SPC160 Performance Counter List.xls":
+	{
+		"1" :
+		{
+			"sheetName" : "Objects",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "FunctionSubSet ID",
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet ID",
+					"udn": "FunctionSubSet ID",
+					"tableName": "FunctionSubSet ID",
+					"hierarchy": "MAE Performance Object Name",
+					"desc":""
+				}
+			}
+		},
+		"2" :
+		{
+			"sheetName" : "Counters",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet Name",
+					"udn": "FunctionSubSet ID",
+					"desc": "FunctionSubSet Name"
+				}
+			}
+		},
+		"3" :
+		{
+			"sheetName" : "Counters",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "FunctionSubSet ID",
+					"id": "Counter ID",
+					"bdcolname": "Counter ID",
+					"udn": "Counter Name",
+					"name": "Counter Name",
+					"desc": "Counter Description",
+					"bdtype": "Counter Type",
+					"dataType": "Counter Type",
+					"dataUnit": "Counter Type",
+					"multiplicity": "Size"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 gNodeBFunction V100R019C10SPC160 Performance Counter List.xls":
+	{
+		"1" :
+		{
+			"sheetName" : "Objects",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "FunctionSubSet ID",
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet ID",
+					"udn": "FunctionSubSet ID",
+					"tableName": "FunctionSubSet ID",
+					"hierarchy": "MAE Performance Object Name",
+					"desc":""
+				}
+			}
+		},
+		"2" :
+		{
+			"sheetName" : "Counters",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet Name",
+					"udn": "FunctionSubSet ID",
+					"desc": "FunctionSubSet Name"
+				}
+			}
+		},
+		"3" :
+		{
+			"sheetName" : "Counters",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "FunctionSubSet ID",
+					"id": "Counter ID",
+					"bdcolname": "Counter ID",
+					"udn": "Counter Name",
+					"name": "Counter Name",
+					"desc": "Counter Description",
+					"bdtype": "Counter Type",
+					"dataType": "Counter Type",
+					"dataUnit": "Counter Type",
+					"multiplicity": "Size"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 Node V100R019C10SPC160 Performance Counter List.xls":
+	{
+		"1" :
+		{
+			"sheetName" : "Objects",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "FunctionSubSet ID",
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet ID",
+					"udn": "FunctionSubSet ID",
+					"desc": "ID",
+					"tableName": "FunctionSubSet ID",
+					"hierarchy": "MAE Performance Object Name"
+				}
+			}
+		},
+		"2" :
+		{
+			"sheetName" : "Counters",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet Name",
+					"udn": "FunctionSubSet ID",
+					"desc": "FunctionSubSet Name"
+				}
+			}
+		},
+		"3" :
+		{
+			"sheetName" : "Counters",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "FunctionSubSet ID",
+					"id": "Counter ID",
+					"bdcolname": "Counter ID",
+					"udn": "Counter Name",
+					"name": "Counter Name",
+					"desc": "Counter Description",
+					"bdtype": "Counter Type",
+					"dataType": "Counter Type",
+					"dataUnit": "Counter Type",
+					"multiplicity": "Size"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 NodeBFunction V100R019C10SPC160 Performance Counter List.xls":
+	{
+		"1" :
+		{
+			"sheetName" : "Objects",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "FunctionSubSet ID",
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet ID",
+					"udn": "FunctionSubSet ID",
+					"tableName": "FunctionSubSet ID",
+					"hierarchy": "MAE Performance Object Name",
+					"desc":""
+				}
+			}
+		},
+		"2" :
+		{
+			"sheetName" : "Counters",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet Name",
+					"udn": "FunctionSubSet ID",
+					"desc": "FunctionSubSet Name"
+				}
+			}
+		},
+		"3" :
+		{
+			"sheetName" : "Counters",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "FunctionSubSet ID",
+					"id": "Counter ID",
+					"bdcolname": "Counter ID",
+					"udn": "Counter Name",
+					"name": "Counter Name",
+					"desc": "Counter Description",
+					"bdtype": "Counter Type",
+					"dataType": "Counter Type",
+					"dataUnit": "Counter Type",
+					"multiplicity": "Size"
+				}
+			}
+		}
+	},
+	"BTS3900&BTS5900 RFAFunction V100R019C10SPC160 Performance Counter List.xls":
+	{
+		"1" :
+		{
+			"sheetName" : "Objects",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"id": "FunctionSubSet ID",
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet ID",
+					"udn": "FunctionSubSet ID",
+					"tableName": "FunctionSubSet ID",
+					"hierarchy": "MAE Performance Object Name",
+					"desc":""
+				}
+			}
+		},
+		"2" :
+		{
+			"sheetName" : "Counters",
+			"unit" : {
+				"unitId": "ossId",
+				"fieldMatch": {
+					"ossId": "FunctionSubSet ID",
+					"name": "FunctionSubSet Name",
+					"udn": "FunctionSubSet ID",
+					"desc": "FunctionSubSet Name"
+				}
+			}
+		},
+		"3" :
+		{
+			"sheetName" : "Counters",
+			"item": {
+				"unitId": "unitId",
+				"itemId": "id",
+				"fieldMatch": {
+					"unitId": "FunctionSubSet ID",
+					"id": "Counter ID",
+					"bdcolname": "Counter ID",
+					"udn": "Counter Name",
+					"name": "Counter Name",
+					"desc": "Counter Description",
+					"bdtype": "Counter Type",
+					"dataType": "Counter Type",
+					"dataUnit": "Counter Type",
+					"multiplicity": "Size"
+				}
+			}
+		}
+	}
+}

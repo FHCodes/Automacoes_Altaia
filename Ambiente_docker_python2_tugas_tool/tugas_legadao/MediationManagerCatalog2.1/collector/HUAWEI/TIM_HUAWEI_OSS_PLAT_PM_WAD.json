@@ -1,0 +1,56 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_OSS_PLAT_PM_WAD",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "HUAWEI_OSS_PLAT_PM_WAD",
+		"version" : "V100R001C60",
+		"tech" : "WAD",
+		"nameNomenclature" : "HUAWEI_OSS_PLAT_PM_WAD_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "TIM_HUAWEI_OSS_PLAT_PM_WAD",
+		"presetFields" : "TIM_HUAWEI_OSS_PLAT_PM_WAD"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

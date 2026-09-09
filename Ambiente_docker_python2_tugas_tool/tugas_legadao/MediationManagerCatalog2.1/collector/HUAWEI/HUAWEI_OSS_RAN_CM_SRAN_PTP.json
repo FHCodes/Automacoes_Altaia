@@ -1,0 +1,58 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_OSS_RAN_CM_SRAN",
+		"collectorType" : "CM",
+		"vendor" : "HUAWEI",
+		"model" : "HUAWEI_OSS_RAN_CM_SRAN",
+		"version" : "19.1",
+		"tech" : "SRAN",
+		"nameNomenclature" : "HUAWEI_OSS_RAN_CM_SRAN_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei_CMExport_PTP",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_OSS_RAN_CM_SRAN_PTP",
+		"presetFields" : "HUAWEI_M2000_SRAN_PTP"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+			],
+			"Huawei_GExport_PTP":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :{},
+		"ossCatalog" :{},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{},
+			"item" :
+			{}
+		}
+	}
+}

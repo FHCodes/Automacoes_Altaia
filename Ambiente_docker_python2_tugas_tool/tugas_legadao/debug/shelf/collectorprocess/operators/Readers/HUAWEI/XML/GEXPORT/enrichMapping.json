@@ -1,0 +1,380 @@
+{
+	"GCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"BTSID",
+			"CELLID",
+			"NEWCELLNAME",
+			"CELLNAME",
+			"LAC",
+			"CI",
+			"CGI",
+			"FDN"
+		],
+		"enrich": {
+			"BTSID": [
+				"BTSNAME"
+			]
+		},
+		"copy": [
+			{
+				"CELLID": "LOCELL",
+				"CELLNAME": "CELL_NAME",
+				"FDN": "CORRKEY",
+				"BTSNAME": "BTS_NAME",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"UCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"CELLID",
+			"CELLNAME",
+			"LAC",
+			"LOCELL",
+			"NODEBNAME",
+			"NODEBID",
+			"LOGICRNCID",
+			"RNCNAME",
+			"FDN"
+		],
+		"enrich": {
+			"LOGICRNCID": [
+				"RNCNAME"
+			]
+		},
+		"copy": [
+			{
+				"CELLID": "LOCELL",
+				"CELLNAME": "CELL_NAME",
+				"FDN": "CORRKEY",
+				"RNCNAME": "RNC_NAME",
+				"NODEBNAME": "FUNCTION",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"CELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"CELLID",
+			"CELLNAME",
+			"LOCALCELLID",
+			"LOCAL_CELL_ID",
+			"FDN"
+		],
+		"enrich": {},
+		"copy": [
+			{
+				"CELLID": "LOCAL_CELL_ID",
+				"ENODEBFUNCTIONNAME": "ENODEB_NAME",
+				"CELLNAME": "CELL_NAME",
+				"FDN": "CORRKEY",
+				"BTSNAME": "BTS_NAME",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"NRCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"CELLID",
+			"NRCELLID",
+			"CELLNAME",
+			"FDN"
+		],
+		"enrich": {},
+		"copy": [
+			{
+				"CELLID": "LOCELL",
+				"GNODEBFUNCTIONNAME": "GNODEB_NAME",
+				"CELLNAME": "CELL_NAME",
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"NRDUCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"CELLID",
+			"CELL_NAME",
+			"NRDUCELLID",
+			"NRDUCELLNAME",
+			"FDN"
+		],
+		"enrich": {},
+		"copy": [
+			{
+				"CELLID": "LOCELL",
+				"GNODEBFUNCTIONNAME": "GNODEB_NAME",
+				"NRDUCELLNAME": "CELL_NAME",
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"BTS": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"BTSID",
+			"FDN"
+		],
+		"enrich": {
+			"BTSID": [
+				"BTSNAME"
+			]
+		},
+		"copy": [
+			{
+				"FDN": "CORRKEY",
+				"BTSNAME": "BTS_NAME",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"ADJNODE": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"RNC_NAME",
+			"NODEBNAME",
+			"NODEB_NAME",
+			"NODEBID",
+			"ANI",
+			"ADJACENTNODEID",
+			"FDN"
+		],
+		"enrich": {		
+		},
+		"copy": [
+			{
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"GTRX": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"CELL_NAME",
+			"CELLNAME",
+			"TRXNAME",
+			"TRXNO",
+			"FDN"
+		],
+		"enrich": {				
+			"CELLID": [
+				"CELLNAME"
+			]	
+		},
+		"copy": [
+			{
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT",
+				"CELLNAME": "LABEL",
+				"TRXNAME": "TRX_NAME",
+				"TRXNO": "TRXNO"
+			}
+		]
+	},
+	"CNOPERATOR": {
+		"fields": [
+			"CLASSNAME",
+			"ENODEBFUNCTIONNAME",
+			"CNOPERATORID",
+			"CNOPINDEX",
+			"CN_ID",
+			"CNOPERATORNAME",
+			"MCC",
+			"MNC",
+			"PLMN",
+			"FDN"
+		],
+		"enrich": {},
+		"copy": [
+			{
+				"ENODEBFUNCTIONNAME": "ENODEB_NAME",
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"LOCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"LOCELL",
+			"NODEBID",
+			"FDN"
+		],
+		"enrich": {
+			"LOCELL": [
+				"CELLNAME"
+			],
+			"CELLID": [
+				"LOCALCELLNAME"
+			]
+		},
+		"copy": [
+			{
+				"FDN": "CORRKEY",
+				"CELLNAME": "CELL_NAME",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"ULOCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"ULOCELLID",
+			"NODEBID",
+			"FDN"
+		],
+		"enrich": {
+			"LOCELL": [
+				"CELLNAME"
+			],
+			"CELLID": [
+				"LOCALCELLNAME"
+			]
+		},
+		"copy": [
+			{
+				"ULOCELLID": "LOCELL",
+				"FDN": "CORRKEY",
+				"CELLNAME": "CELL_NAME",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"UCNOPERATOR": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"RNC_NAME",
+			"CN_ID",
+			"PLMN",
+			"MCC",
+			"MNC",
+			"FDN"
+		],
+		"enrich": {},
+		"copy": [
+			{
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"UTRANEXTERNALCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"RNCID",
+			"CELLID",
+			"LOCELL",
+			"CELLNAME",
+			"MCC",
+			"MNC",
+			"LAC",
+			"FDN"
+		],
+		"enrich": {
+			"CELLID": [
+				"CELLNAME"
+			],
+			"RNCID": [
+				"RNCNAME"
+			]
+		},
+		"copy": [
+			{
+				"ULOCELLID": "LOCELL",
+				"CELLID": "LOCELL",
+				"RNCNAME": "RNC_NAME",
+				"CELLNAME": "CELL_NAME",
+				"ENODEBFUNCTIONNAME": "ENODEB_NAME",
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"UTRANNCELL": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"RNCID",
+			"LOCALCELLID",
+			"LOCELL",
+			"CELLNAME",
+			"NEIGHBOURCELLNAME",
+			"LOCALCELLNAME",
+			"MCC",
+			"MNC",
+			"FDN"
+		],
+		"enrich": {
+			"RNCID": [
+				"RNCNAME"
+			]
+		},
+		"copy": [
+			{
+				"ENODEBFUNCTIONNAME": "ENODEB_NAME",
+				"CELLID": "LOCELL",
+				"LOCALCELLID": "LOCELL",
+				"RNCNAME": "RNC_NAME",
+				"CELLNAME": "CELL_NAME",
+				"NEIGHBOURCELLNAME": "CELL_NAME",
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"ENODEBFUNCTION": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"ENODEBID",
+			"FDN"
+		],
+		"enrich": {
+			"RNCID": [
+				"RNCNAME"
+			]
+		},
+		"copy": [
+			{
+				"ENODEBFUNCTIONNAME": "ENODEB_NAME",
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	},
+	"GNODEBFUNCTION": {
+		"fields": [
+			"CLASSNAME",
+			"OBJECT",
+			"GNBID",
+			"FDN"
+		],
+		"enrich": {},
+		"copy": [
+			{
+				"GNODEBFUNCTIONNAME": "GNODEB_NAME",
+				"FDN": "CORRKEY",
+				"NE_NAME": "OBJECT"
+			}
+		]
+	}
+}

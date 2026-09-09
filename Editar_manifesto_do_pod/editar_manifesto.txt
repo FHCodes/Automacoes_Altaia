@@ -1,0 +1,3 @@
+oc edit deployment namf-namfd-full -n telefonica-altaia-namf
+
+oc edit deployment namf-namfd -n telefonica-altaia-namf

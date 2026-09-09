@@ -1,0 +1,23 @@
+Documentação de Sincronização: sync-ericsson-oss-ran-cm-4g-enmbara-rj2
+
+1. Visão Geral
+Este processo consiste em um CronJob do Kubernetes que realiza a automação de coleta de dados.
+
+2. Cronograma e Políticas de Execução
+* Agendamento (Cron): 50 4 * * *
+* Fuso Horário: America/Sao_Paulo
+* Concorrência: Forbid
+* Prazo Limite de Inicialização: 60 segundos
+* Política de Reinício: OnFailure
+
+3. Fluxo de Execução do Script
+* Comando Completo: /bin/sh -c sleep 20; \ echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') cfg ssh server - Iniciando processamento..."; \ mkdir /opt/alticelabs/namf/.ssh; \ chmod 700 /opt/alticelabs/namf/.ssh; \ cp -p /opt/alticelabs/namf/sidecar/ssh_server/ssh/* /opt/alticelabs/namf/.ssh; \ echo "***$(date '+%Y-%m-%d %H:%M:%S/%Z') cfg ssh server - Processamento concluido"; \ python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \ /opt/alticelabs/namf/python/na-mf/collect/config/customization/ERICSSON_OSS_RAN_CM_4G_ENMBARA_RJ2_127.0.0.1.yml \ 127.0.0.1 \ /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/ERICSSON/ParametersALL/200.100.136.78 \ /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/ERICSSON/Parameters4G/200.100.136.78 \ $(date +"%Y%m%d") namf \ --pingskip \ --port 2222 \ --statsreporting=MESSAGE \ --triggerparse \ --sourceid="200.100.136.78"  
+
+4. Infraestrutura Kubernetes e Recursos
+* Imagem do Container: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-public/namf/namf-sync:3.2.2-3.2-11453d54
+* Capacidade Computacional (Requests/Limits): CPU: 0.2/1 | Memória: 2048Mi/4096Mi
+* Segurança (Security Context): UID/GID N/A | Runtime: selinux
+* Volumes Utilizados:
+  - sidecar-shared-volume
+  - configmap-namf-sync
+  - storage

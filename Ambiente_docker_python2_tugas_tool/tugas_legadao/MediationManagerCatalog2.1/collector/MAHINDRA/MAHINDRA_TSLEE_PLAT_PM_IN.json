@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "MAHINDRA_TSLEE_PLAT_PM_IN",
+		"collectorType" : "PM",
+		"vendor" : "MAHINDRA",
+		"model" : "TSLEE_PLAT_PM_IN",
+		"version" : "V1",
+		"tech" : "MAHINDRA",
+		"nameNomenclature" : "MAHINDRA_TSLEE_PLAT_PM_IN_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "MAHINDRA_TSLEE_PLAT_PM_IN",
+		"presetFields" : "MAHINDRA_TSLEE_PLAT_PM_IN"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "INHZ_"
+				},
+				{
+					"field": "udn",
+					"value": "INHZ_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+		}
+	}
+}

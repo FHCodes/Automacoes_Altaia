@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Nokia Networks">
+<fileSender elementType="CMG"/>
+<measCollec beginTime="2023-01-11T01:35:00+02:00"/>
+</fileHeader>
+<measData>
+<managedElement/>
+<measInfo measInfoId="M2">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>avgVmFpCpuWorkerUsage avgMemoryUtilization avgVmFpCpuCombinedUsage vmCntrl2FabricPathMaxJitterX SDFsFpUtilization avgVmFpCpuCollapsedUsage SDFsLcpUtilization avgCpuUtilization vmCntrl1FabricDiscvPktLoss vmCntrl1FabricPathMaxJitterX avgVmFpCpuSchedulerUsage vmData1FabricDiscvPktLoss vmData2FabricPathMaxJitterX v4CamEntriesUtilization vmCntrl2FabricDiscvPktLoss vmData1FabricPathMaxJitterX vmData2FabricDiscvPktLoss avgVmFpCpuNicUsage v6CamEntriesUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-0/SLOT-1/MDA-1">
+<measResults>0.04 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0.02 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M64">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>minVmFpCpuCombinedUsage minVmFpCpuSchedulerUsage minVmFpCpuCollapsedUsage maxVmFpCpuCollapsedUsage maxVmFpCpuNicUsage minVmFpCpuWorkerUsage minVmFpCpuNicUsage maxVmFpCpuCombinedUsage maxMemoryUtilization maxCpuUtilization maxVmFpCpuSchedulerUsage maxVmFpCpuWorkerUsage</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-0/SLOT-1/MDA-1">
+<measResults>0 0 0 0 0.02 0.04 0.02 0 0 3 0 0.04</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M2">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>avgVmFpCpuWorkerUsage avgMemoryUtilization avgVmFpCpuCombinedUsage vmCntrl2FabricPathMaxJitterX SDFsFpUtilization avgVmFpCpuCollapsedUsage SDFsLcpUtilization avgCpuUtilization vmCntrl1FabricDiscvPktLoss vmCntrl1FabricPathMaxJitterX avgVmFpCpuSchedulerUsage vmData1FabricDiscvPktLoss vmData2FabricPathMaxJitterX v4CamEntriesUtilization vmCntrl2FabricDiscvPktLoss vmData1FabricPathMaxJitterX vmData2FabricDiscvPktLoss avgVmFpCpuNicUsage v6CamEntriesUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-0/SLOT-2/MDA-1">
+<measResults>0.04 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0.02 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M64">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>minVmFpCpuCombinedUsage minVmFpCpuSchedulerUsage minVmFpCpuCollapsedUsage maxVmFpCpuCollapsedUsage maxVmFpCpuNicUsage minVmFpCpuWorkerUsage minVmFpCpuNicUsage maxVmFpCpuCombinedUsage maxMemoryUtilization maxCpuUtilization maxVmFpCpuSchedulerUsage maxVmFpCpuWorkerUsage</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-0/SLOT-2/MDA-1">
+<measResults>0 0 0 0 0.02 0.04 0.02 0 0 3 0 0.04</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M2">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>avgVmFpCpuWorkerUsage avgMemoryUtilization avgVmFpCpuCombinedUsage vmCntrl2FabricPathMaxJitterX SDFsFpUtilization avgVmFpCpuCollapsedUsage SDFsLcpUtilization avgCpuUtilization vmCntrl1FabricDiscvPktLoss vmCntrl1FabricPathMaxJitterX avgVmFpCpuSchedulerUsage vmData1FabricDiscvPktLoss vmData2FabricPathMaxJitterX v4CamEntriesUtilization vmCntrl2FabricDiscvPktLoss vmData1FabricPathMaxJitterX vmData2FabricDiscvPktLoss avgVmFpCpuNicUsage v6CamEntriesUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-1/SLOT-3/MDA-1">
+<measResults>0.03 36 0 0 0 0 0 4 0 878 0 0 522 0.03 0 522 0 0 0.05</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M64">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>minVmFpCpuCombinedUsage minVmFpCpuSchedulerUsage minVmFpCpuCollapsedUsage maxVmFpCpuCollapsedUsage maxVmFpCpuNicUsage minVmFpCpuWorkerUsage minVmFpCpuNicUsage maxVmFpCpuCombinedUsage maxMemoryUtilization maxCpuUtilization maxVmFpCpuSchedulerUsage maxVmFpCpuWorkerUsage</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-1/SLOT-3/MDA-1">
+<measResults>0 0 0 0 0 0.03 0 0 36 4 0 0.04</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M67">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>avgNumberOfSgwPgwCmbSessions avgNumbOfActiEutrNbIotBear numberOfGyCCRsBuffered numberOfNemoOverEhrpdSessions numberOfNonIpPdnSessions numberOfEmergencyPdnSessions numberOfNemoOverLteSessions numberOfActiveGeranBearers numberOfHttpRedirections numberOfSgwPgwCmbIpv4v6Bearers numberOfIpv4HomeAgentSessions numberOfEhprdSessions numberOfSteeringSessions numberOfQosPolicers numberOfIpv4PdnSessions numberOfEmpsDedicatedBearers numberOf2G3GSessions numberOfIpLocalPools avgNumberOfSgwPgwCmbBearers numbOfSteeDefaSess numbOfPdnsWithDediBear numberOfPktDropWithABSon numbOfUnsoSsgSsnsInAttaRetr numOfSgwPgwCmbIpvPdnSes numberOfSuspendedSessions avgNumberOfActiveEutranBearers avgNumberOfPdnSessions numberOfEmpsSessions numberOfDedicatedBearers avgNumberOfBearers maxNumberOfPdnSessions numberOfTetheredSessions maxNumbOfActiEutrNbIotBear numberOfLapiSessions numbOfSgwPgwCmbIpv6PdnSess numbOfSgwPgwCmbIpv4PdnSess numbOfSgwPgwCmbDediBear numberOfIdleSessions numberOfWlanS2bSessions avgNumberOfDedicatedBearers numberOfSgwPgwCmbIdleBearers numberOfWlanS2aSessions avgNumberOfActiveUtranBearers numberOfWlanAPs numberOfTwagPortalSessions numbOfActiEutrNbIotBear numberOfSgwPgwCmbIpv4Bearers numberOfSgwPgwCmbIpv6Bearers numberOfActiveEutranBearers numberOfPdnSessions numbOfSgwPgwCmbDefaBear numberOfNemoOverHrpdSessions maxNumberOfSgwPgwCmbBearers numberOfTwagSamogSessions numbOfSgwPgwCmbNonIpPdnSess numberOfSgwPgwCmbBearers numberOfPauseChargeOnSessions maxNumberOfActiveUtranBearers numberOfSgwPgwCmbLapiSessions numberOfBearers numberOfTwagNswoSessions numberOfRealApns maxNumbOfSgwPgwCmbDediBear maxNumberOfActiveEutranBearers numberOfIpv4v6PdnSessions maxNumberOfBearers numberOfIpv6PdnSessions avgNumberOfActiveGeranBearers numberOfSgwPgwCmbActiveBearers maxNumberOfSgwPgwCmbSessions avgNumbOfSgwPgwCmbDediBear numberOfSgwPgwCmbPdnSessions numberOfNemoIpv4Subnets numberOfPageDscpArpChange numberOfActiveUtranBearers numberOfRedirectedSessions numberOfSxPeers maxNumberOfActiveGeranBearers numberOfEpdgSessions numbOfWiFiEmerPdnSess numbOfEmpsAdvPrioSess maxNumberOfDedicatedBearers</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-1/SLOT-3/MDA-1">
+<measResults>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M66">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>numberOfPauseChargeOnSessions numberOfNonIpPdnSessions numberOfEmergencyPdnSessions avgNumberOfPdnSessions numberOfBearers numberOfEmpsSessions numberOfDedicatedBearers avgNumberOfBearers maxNumberOfPdnSessions numberOfIpv4PdnSessions numberOfIpv4v6PdnSessions numberOfEmpsDedicatedBearers maxNumberOfBearers numberOfIpv6PdnSessions numberOfLapiSessions numbOfPdnsWithDediBear numberOfPdnSessions numberOfPageDscpArpChange numberOfPktDropWithABSon avgNumberOfDedicatedBearers maxNumberOfDedicatedBearers</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CP-ISA/GROUP-1/SLOT-3/MDA-1">
+<measResults>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG6">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>avgStorageUtilization avgMemoryUtilization maxStorageUtilization systemUpTimeDays systemUpTimeHours priFlashUtilization maxMemoryUtilization systemUpTimeMinutes maxCpuUtilization secFlashUtilization avgCpuUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CPM/CPMSLOT-21">
+<measResults>0 4 0 13 13 0 4 46 3 0 3</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG5">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>gnGtpPeerRestarts s2bGtpPeerRestarts gpuPathMgmtFailures s2bGtpPathMgmtFailures s2aGtpPathMgmtFailures mgwRestartCounterValue sxCupsPeerRestarts s2aGtpPeerRestarts sxCupsPathMgmtFailures n9PeerRestarts s4GtpPathMgmtFailures n3PathMgmtFailures s5GtpPeerRestarts s2aPmipPathMgmtFailures s5GtpPathMgmtFailures s1uGtpPeerRestarts n9PathMgmtFailures gpGtpPeerRestarts s2aPmipPeerRestarts s5uPeerRestarts s12GtpPathMgmtFailures gnuPathMgmtFailures s11GtpPathMgmtFailures s4uPeerRestarts s11GtpPeerRestarts n3PeerRestarts s5uPathMgmtFailures gpuPeerRestarts s1uGtpPathMgmtFailures s8GtpPathMgmtFailures gnGtpPathMgmtFailures s4GtpPeerRestarts s8uPathMgmtFailures s8GtpPeerRestarts s4uPathMgmtFailures s8uPeerRestarts gpGtpPathMgmtFailures s12GtpPeerRestarts gnuPeerRestarts</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CPM/CPMSLOT-21">
+<measResults>0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG4">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>s5Ipv4Peers s8Ipv4Peers s8uIpv4Peers s4Ipv6Peers s2bIpv4Peers s1uIpv4Peers rfIpv4Peers s2aPmipIpv4Peers gxIpv4Peers s11Ipv6Peers s4uIpv4Peers sdIpv6Peers staIpv4Peers swwTnlIpv4Peers sxCpIpv6Peers s12Ipv4Peers gpIpv4Peers dhcpIpv4Peers s4uIpv6Peers gpuIpv6Peers gyIpv4Peers s5uIpv4Peers rfIpv6Peers s6bIpv4Peers gpuIpv4Peers swwTnlIpv6Peers s8Ipv6Peers swwRadiusIpv6Peers n3Ipv4Peers swmIpv4Peers n9Ipv4Peers radIpv4Peers s2bIpv6Peers sxUpIpv6Peers s6bIpv6Peers swwRadiusIpv4Peers s11Ipv4Peers radIpv6Peers s2aGtpIpv4Peers gyIpv6Peers sxUpIpv4Peers numberOfApnsServed gpIpv6Peers gaIpv6Peers sxCpIpv4Peers s5uIpv6Peers gnIpv4Peers staIpv6Peers s8uIpv6Peers s1uIpv6Peers gnuIpv4Peers numberOfVprns n9Ipv6Peers gaIpv4Peers swmIpv6Peers s4Ipv4Peers n3Ipv6Peers gxIpv6Peers gnuIpv6Peers gnIpv6Peers s2aPmipIpv6Peers dhcpIpv6Peers s12Ipv6Peers s5Ipv6Peers piHAIpv4Peers s2aGtpIpv6Peers sdIpv4Peers</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-CPM/CPMSLOT-21">
+<measResults>0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M26">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>RxCea RxDwr RxPeerTransDisc TxDpa ConnectionFail TxAppMsgs TxDwr TxRetransAppMsgs RxSmallMsg RxInvalidCEA RxDwa RxDpa RxUnexpectedVersion TxDpr RxAppMsgs TxCer RxDpr ConnectionAttempt TxDwa RxLargeMsg</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-GX/VRNAME-Base/VRID-1/ADDRESS-10.50.0.102/PORT-3868">
+<measResults>0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M37">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>RxCea RxDwr RxPeerTransDisc TxDpa ConnectionFail TxAppMsgs TxDwr TxRetransAppMsgs RxSmallMsg RxInvalidCEA RxDwa RxDpa RxUnexpectedVersion TxDpr RxAppMsgs TxCer RxDpr ConnectionAttempt TxDwa RxLargeMsg</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-GX/VRNAME-Base/VRID-1/ADDRESS-10.50.0.102/PORT-3868">
+<measResults>0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M36">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>RxCea RxDwr RxPeerTransDisc TxDpa ConnectionFail TxAppMsgs TxDwr TxRetransAppMsgs RxSmallMsg RxInvalidCEA RxDwa RxDpa RxUnexpectedVersion TxDpr RxAppMsgs TxCer RxDpr ConnectionAttempt TxDwa RxLargeMsg</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-GX/VRNAME-Base/VRID-1/ADDRESS-10.50.0.102/PORT-3868">
+<measResults>0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M31">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>RxCea RxDwr RxPeerTransDisc TxDpa ConnectionFail TxAppMsgs TxDwr TxRetransAppMsgs RxSmallMsg RxInvalidCEA RxDwa RxDpa RxUnexpectedVersion TxDpr RxAppMsgs TxCer RxDpr ConnectionAttempt TxDwa RxLargeMsg</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-GX/VRNAME-Base/VRID-1/ADDRESS-10.50.0.102/PORT-3868">
+<measResults>0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M30">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>RxCea RxDwr RxPeerTransDisc TxDpa ConnectionFail TxAppMsgs TxDwr TxRetransAppMsgs RxSmallMsg RxInvalidCEA RxDwa RxDpa RxUnexpectedVersion TxDpr RxAppMsgs TxCer RxDpr ConnectionAttempt TxDwa RxLargeMsg</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-GX/VRNAME-Base/VRID-1/ADDRESS-10.50.0.102/PORT-3868">
+<measResults>0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M33">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>RxCea RxDwr RxPeerTransDisc TxDpa ConnectionFail TxAppMsgs TxDwr TxRetransAppMsgs RxSmallMsg RxInvalidCEA RxDwa RxDpa RxUnexpectedVersion TxDpr RxAppMsgs TxCer RxDpr ConnectionAttempt TxDwa RxLargeMsg</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-GX/VRNAME-Base/VRID-1/ADDRESS-10.50.0.102/PORT-3868">
+<measResults>0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M35">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>RxCea RxDwr RxPeerTransDisc TxDpa ConnectionFail TxAppMsgs TxDwr TxRetransAppMsgs RxSmallMsg RxInvalidCEA RxDwa RxDpa RxUnexpectedVersion TxDpr RxAppMsgs TxCer RxDpr ConnectionAttempt TxDwa RxLargeMsg</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-GX/VRNAME-Base/VRID-1/ADDRESS-10.50.0.102/PORT-3868">
+<measResults>0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M78">
+<granPeriod duration="PT300S" endTime="2023-01-11T01:40:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>SDFsFpTotal ulDropPackets SDFsAssigned dlDropPackets SDFsLcpTotal dlBytes ulPackets ulBytes dlPackets dlMaxMbps SDFsInUse ulMaxMbps</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMG-1/EPC-VSR/GPNAME-MSM/GROUP-1/SLOT-3/MDA-1">
+<measResults>8388608 0 0 0 402653184 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="2023-01-11T01:40:00+02:00"/>
+</fileFooter>
+</measCollecFile>

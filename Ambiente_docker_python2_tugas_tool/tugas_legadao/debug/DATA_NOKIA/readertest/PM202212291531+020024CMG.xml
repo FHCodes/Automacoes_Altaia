@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Nokia Networks">
+<fileSender elementType="CMG"/>
+<measCollec beginTime="2022-12-29T15:00:00+02:00"/>
+</fileHeader>
+<measData>
+<managedElement/>
+<measInfo measInfoId="M2">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:15:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>avgVmFpCpuWorkerUsage avgMemoryUtilization avgVmFpCpuCombinedUsage vmCntrl2FabricPathMaxJitterX SDFsFpUtilization avgVmFpCpuCollapsedUsage SDFsLcpUtilization avgCpuUtilization vmCntrl1FabricDiscvPktLoss vmCntrl1FabricPathMaxJitterX avgVmFpCpuSchedulerUsage vmData1FabricDiscvPktLoss vmData2FabricPathMaxJitterX v4CamEntriesUtilization vmCntrl2FabricDiscvPktLoss vmData1FabricPathMaxJitterX vmData2FabricDiscvPktLoss avgVmFpCpuNicUsage v6CamEntriesUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-1/MDA-1">
+<measResults>0.05 0 0 0 0 0 0 2 0 0 0.02 0 0 0 0 0 0 0.04 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M64">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:15:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>minVmFpCpuCombinedUsage minVmFpCpuSchedulerUsage minVmFpCpuCollapsedUsage maxVmFpCpuCollapsedUsage maxVmFpCpuNicUsage minVmFpCpuWorkerUsage minVmFpCpuNicUsage maxVmFpCpuCombinedUsage maxMemoryUtilization maxCpuUtilization maxVmFpCpuSchedulerUsage maxVmFpCpuWorkerUsage</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-1/MDA-1">
+<measResults>0 0 0 0 3.97 0.04 0.02 0 0 8 4.04 0.22</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M2">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:15:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>avgVmFpCpuWorkerUsage avgMemoryUtilization avgVmFpCpuCombinedUsage vmCntrl2FabricPathMaxJitterX SDFsFpUtilization avgVmFpCpuCollapsedUsage SDFsLcpUtilization avgCpuUtilization vmCntrl1FabricDiscvPktLoss vmCntrl1FabricPathMaxJitterX avgVmFpCpuSchedulerUsage vmData1FabricDiscvPktLoss vmData2FabricPathMaxJitterX v4CamEntriesUtilization vmCntrl2FabricDiscvPktLoss vmData1FabricPathMaxJitterX vmData2FabricDiscvPktLoss avgVmFpCpuNicUsage v6CamEntriesUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-2/MDA-1">
+<measResults>0.05 0 0 0 0 0 0 1 0 0 0.02 0 0 0 0 0 0 0.04 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M64">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:15:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>minVmFpCpuCombinedUsage minVmFpCpuSchedulerUsage minVmFpCpuCollapsedUsage maxVmFpCpuCollapsedUsage maxVmFpCpuNicUsage minVmFpCpuWorkerUsage minVmFpCpuNicUsage maxVmFpCpuCombinedUsage maxMemoryUtilization maxCpuUtilization maxVmFpCpuSchedulerUsage maxVmFpCpuWorkerUsage</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-2/MDA-1">
+<measResults>0 0 0 0 2.11 0.04 0.02 0 0 5 2.6 0.41</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG6">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:15:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>avgStorageUtilization avgMemoryUtilization maxStorageUtilization systemUpTimeDays systemUpTimeHours priFlashUtilization maxMemoryUtilization systemUpTimeMinutes maxCpuUtilization secFlashUtilization avgCpuUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CPM/CPMSLOT-21">
+<measResults>11 6 11 10 6 44 6 5 5 0 4</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG5">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:15:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>gnGtpPeerRestarts s2bGtpPeerRestarts gpuPathMgmtFailures s2bGtpPathMgmtFailures s2aGtpPathMgmtFailures mgwRestartCounterValue sxCupsPeerRestarts s2aGtpPeerRestarts sxCupsPathMgmtFailures n9PeerRestarts s4GtpPathMgmtFailures n3PathMgmtFailures s5GtpPeerRestarts s2aPmipPathMgmtFailures s5GtpPathMgmtFailures s1uGtpPeerRestarts n9PathMgmtFailures gpGtpPeerRestarts s2aPmipPeerRestarts s5uPeerRestarts s12GtpPathMgmtFailures gnuPathMgmtFailures s11GtpPathMgmtFailures s4uPeerRestarts s11GtpPeerRestarts n3PeerRestarts s5uPathMgmtFailures gpuPeerRestarts s1uGtpPathMgmtFailures s8GtpPathMgmtFailures gnGtpPathMgmtFailures s4GtpPeerRestarts s8uPathMgmtFailures s8GtpPeerRestarts s4uPathMgmtFailures s8uPeerRestarts gpGtpPathMgmtFailures s12GtpPeerRestarts gnuPeerRestarts</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CPM/CPMSLOT-21">
+<measResults>0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG4">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:15:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>s5Ipv4Peers s8Ipv4Peers s8uIpv4Peers s4Ipv6Peers s2bIpv4Peers s1uIpv4Peers rfIpv4Peers s2aPmipIpv4Peers gxIpv4Peers s11Ipv6Peers s4uIpv4Peers sdIpv6Peers staIpv4Peers swwTnlIpv4Peers sxCpIpv6Peers s12Ipv4Peers gpIpv4Peers dhcpIpv4Peers s4uIpv6Peers gpuIpv6Peers gyIpv4Peers s5uIpv4Peers rfIpv6Peers s6bIpv4Peers gpuIpv4Peers swwTnlIpv6Peers s8Ipv6Peers swwRadiusIpv6Peers n3Ipv4Peers swmIpv4Peers n9Ipv4Peers radIpv4Peers s2bIpv6Peers sxUpIpv6Peers s6bIpv6Peers swwRadiusIpv4Peers s11Ipv4Peers radIpv6Peers s2aGtpIpv4Peers gyIpv6Peers sxUpIpv4Peers numberOfApnsServed gpIpv6Peers gaIpv6Peers sxCpIpv4Peers s5uIpv6Peers gnIpv4Peers staIpv6Peers s8uIpv6Peers s1uIpv6Peers gnuIpv4Peers numberOfVprns n9Ipv6Peers gaIpv4Peers swmIpv6Peers s4Ipv4Peers n3Ipv6Peers gxIpv6Peers gnuIpv6Peers gnIpv6Peers s2aPmipIpv6Peers dhcpIpv6Peers s12Ipv6Peers s5Ipv6Peers piHAIpv4Peers s2aGtpIpv6Peers sdIpv4Peers</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CPM/CPMSLOT-21">
+<measResults>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M2">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:30:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>avgVmFpCpuWorkerUsage avgMemoryUtilization avgVmFpCpuCombinedUsage vmCntrl2FabricPathMaxJitterX SDFsFpUtilization avgVmFpCpuCollapsedUsage SDFsLcpUtilization avgCpuUtilization vmCntrl1FabricDiscvPktLoss vmCntrl1FabricPathMaxJitterX avgVmFpCpuSchedulerUsage vmData1FabricDiscvPktLoss vmData2FabricPathMaxJitterX v4CamEntriesUtilization vmCntrl2FabricDiscvPktLoss vmData1FabricPathMaxJitterX vmData2FabricDiscvPktLoss avgVmFpCpuNicUsage v6CamEntriesUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-1/MDA-1">
+<measResults>0.05 0 0 0 0 0 0 2 0 0 0.02 0 0 0 0 0 0 0.03 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M64">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:30:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>minVmFpCpuCombinedUsage minVmFpCpuSchedulerUsage minVmFpCpuCollapsedUsage maxVmFpCpuCollapsedUsage maxVmFpCpuNicUsage minVmFpCpuWorkerUsage minVmFpCpuNicUsage maxVmFpCpuCombinedUsage maxMemoryUtilization maxCpuUtilization maxVmFpCpuSchedulerUsage maxVmFpCpuWorkerUsage</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-1/MDA-1">
+<measResults>0 0 0 0 2.53 0.04 0.02 0 0 6 2.6 0.2</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M2">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:30:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>avgVmFpCpuWorkerUsage avgMemoryUtilization avgVmFpCpuCombinedUsage vmCntrl2FabricPathMaxJitterX SDFsFpUtilization avgVmFpCpuCollapsedUsage SDFsLcpUtilization avgCpuUtilization vmCntrl1FabricDiscvPktLoss vmCntrl1FabricPathMaxJitterX avgVmFpCpuSchedulerUsage vmData1FabricDiscvPktLoss vmData2FabricPathMaxJitterX v4CamEntriesUtilization vmCntrl2FabricDiscvPktLoss vmData1FabricPathMaxJitterX vmData2FabricDiscvPktLoss avgVmFpCpuNicUsage v6CamEntriesUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-2/MDA-1">
+<measResults>0.05 0 0 0 0 0 0 1 0 0 0.01 0 0 0 0 0 0 0.03 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="M64">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:30:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>minVmFpCpuCombinedUsage minVmFpCpuSchedulerUsage minVmFpCpuCollapsedUsage maxVmFpCpuCollapsedUsage maxVmFpCpuNicUsage minVmFpCpuWorkerUsage minVmFpCpuNicUsage maxVmFpCpuCombinedUsage maxMemoryUtilization maxCpuUtilization maxVmFpCpuSchedulerUsage maxVmFpCpuWorkerUsage</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CP-ISA/GROUP-0/SLOT-2/MDA-1">
+<measResults>0 0 0 0 0.84 0.04 0.01 0 0 4 2.23 0.26</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG6">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:30:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>avgStorageUtilization avgMemoryUtilization maxStorageUtilization systemUpTimeDays systemUpTimeHours priFlashUtilization maxMemoryUtilization systemUpTimeMinutes maxCpuUtilization secFlashUtilization avgCpuUtilization</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CPM/CPMSLOT-21">
+<measResults>11 6 11 10 6 44 6 20 6 0 4</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG5">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:30:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>gnGtpPeerRestarts s2bGtpPeerRestarts gpuPathMgmtFailures s2bGtpPathMgmtFailures s2aGtpPathMgmtFailures mgwRestartCounterValue sxCupsPeerRestarts s2aGtpPeerRestarts sxCupsPathMgmtFailures n9PeerRestarts s4GtpPathMgmtFailures n3PathMgmtFailures s5GtpPeerRestarts s2aPmipPathMgmtFailures s5GtpPathMgmtFailures s1uGtpPeerRestarts n9PathMgmtFailures gpGtpPeerRestarts s2aPmipPeerRestarts s5uPeerRestarts s12GtpPathMgmtFailures gnuPathMgmtFailures s11GtpPathMgmtFailures s4uPeerRestarts s11GtpPeerRestarts n3PeerRestarts s5uPathMgmtFailures gpuPeerRestarts s1uGtpPathMgmtFailures s8GtpPathMgmtFailures gnGtpPathMgmtFailures s4GtpPeerRestarts s8uPathMgmtFailures s8GtpPeerRestarts s4uPathMgmtFailures s8uPeerRestarts gpGtpPathMgmtFailures s12GtpPeerRestarts gnuPeerRestarts</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CPM/CPMSLOT-21">
+<measResults>0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="MG4">
+<granPeriod duration="PT900S" endTime="2022-12-29T15:30:00+02:00"/>
+<repPeriod duration="PT900S"/>
+<measTypes>s5Ipv4Peers s8Ipv4Peers s8uIpv4Peers s4Ipv6Peers s2bIpv4Peers s1uIpv4Peers rfIpv4Peers s2aPmipIpv4Peers gxIpv4Peers s11Ipv6Peers s4uIpv4Peers sdIpv6Peers staIpv4Peers swwTnlIpv4Peers sxCpIpv6Peers s12Ipv4Peers gpIpv4Peers dhcpIpv4Peers s4uIpv6Peers gpuIpv6Peers gyIpv4Peers s5uIpv4Peers rfIpv6Peers s6bIpv4Peers gpuIpv4Peers swwTnlIpv6Peers s8Ipv6Peers swwRadiusIpv6Peers n3Ipv4Peers swmIpv4Peers n9Ipv4Peers radIpv4Peers s2bIpv6Peers sxUpIpv6Peers s6bIpv6Peers swwRadiusIpv4Peers s11Ipv4Peers radIpv6Peers s2aGtpIpv4Peers gyIpv6Peers sxUpIpv4Peers numberOfApnsServed gpIpv6Peers gaIpv6Peers sxCpIpv4Peers s5uIpv6Peers gnIpv4Peers staIpv6Peers s8uIpv6Peers s1uIpv6Peers gnuIpv4Peers numberOfVprns n9Ipv6Peers gaIpv4Peers swmIpv6Peers s4Ipv4Peers n3Ipv6Peers gxIpv6Peers gnuIpv6Peers gnIpv6Peers s2aPmipIpv6Peers dhcpIpv6Peers s12Ipv6Peers s5Ipv6Peers piHAIpv4Peers s2aGtpIpv6Peers sdIpv4Peers</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMG-120/EPC-Panama-CMG22.8/GPNAME-CPM/CPMSLOT-21">
+<measResults>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="2022-12-29T15:30:00+02:00"/>
+</fileFooter>
+</measCollecFile>

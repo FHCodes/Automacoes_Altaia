@@ -1,0 +1,94 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_HUAWEI_U2020_CORE_PM_SSW",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "U2020_CORE_PM_SSW",
+		"version" : "V200R011C00",
+		"tech" : "MSOFTX3000",
+		"nameNomenclature" : "HUAWEI_U2020_CORE_PM_SSW_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "TIM_HUAWEI_U2020_CORE_PM_SSW",
+		"presetFields" : "TIM_HUAWEI_U2020_CORE_PM_SSW"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "SSW_"
+				},
+				{
+					"field": "udn",
+					"value": "SSW_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "MSCNE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "Object Name"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

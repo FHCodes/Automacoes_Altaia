@@ -1,0 +1,94 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2000_NGN_PM_UMG_GU",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "U2000",
+		"version" : "V200R011C00",
+		"tech" : "MSoftX3000",
+		"nameNomenclature" : "HUAWEI_performance_#_NGN_PM_MSoftX3000"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_U2000_NGN_PM_MSoftX3000",
+		"presetFields" : "HUAWEI_NGN_MSoftX3000"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "MSoftX3000_"
+				},
+				{
+					"field": "udn",
+					"value": "MSoftX3000_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRANV2" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "MSCServerNE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "Object Name"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

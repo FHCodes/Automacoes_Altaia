@@ -1,0 +1,44 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "beginTime",
+      "sqlName" : "beginTime",
+      "udn" : "beginTime",
+      "desc" : "Start time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "endTime",
+      "udn" : "endTime",
+      "desc" : "End time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measObjLdn",
+      "sqlName" : "measObjLdn",
+      "udn" : "measObjLdn",
+      "desc" : "Identifier of the object to which the counter applies",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "string",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "duration",
+      "sqlName" : "duration",
+      "udn" : "duration",
+      "desc" : "",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

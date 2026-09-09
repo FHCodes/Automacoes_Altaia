@@ -1,0 +1,36 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "startTime",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Start time of the measurement data collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "interval",
+      "sqlName" : "interval",
+      "udn" : "Interval",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "WAD",
+      "sqlName" : "WAD",
+      "udn" : "WAD",
+      "desc" : "WAD Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

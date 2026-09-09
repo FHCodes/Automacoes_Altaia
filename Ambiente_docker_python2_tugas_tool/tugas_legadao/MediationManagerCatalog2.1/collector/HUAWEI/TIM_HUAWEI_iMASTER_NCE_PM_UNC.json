@@ -1,0 +1,99 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_iMASTER_NCE_PM",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "iMASTER_NCE_PM_UNC",
+		"version" : "24.1.0",
+		"tech" : "UNC",
+		"nameNomenclature" : "HUAWEI_iMASTER_NCE_PM_UNC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc_V2",
+		"doc" : "",
+		"formatConfig" : "TIM_HUAWEI_iMASTER_NCE_PM_UNC",
+		"presetFields" : "TIM_HUAWEI_iMASTER_NCE_PM_UNC"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "UNC_"
+				},
+				{
+					"field": "udn",
+					"value": "UNC_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRAN":
+			[
+				{
+					"regex" : "",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startField" : "UNCNE",
+					"fieldName" : "Object Name"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+
+					{
+						"field": "Object Name"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_ERICSSON_OSS_RAN_CM_2G",
+		"collectorType" : "CM",
+		"vendor" : "ERICSSON",
+		"model" : "ERICSSON_OSS_RAN_CM_2G",
+		"version" : "G20Q4",
+		"tech" : "R2G",
+		"nameNomenclature" : "ERICSSON_OSS_RAN_CM_2G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_RAN_CM_2G",
+		"presetFields" : "TIM_Ericsson_2G"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM2G_"
+				},
+				{
+					"field": "udn",
+					"value": "CM2G_"
+				}
+			],
+			"tableSizeParticioner_Ericsson":
+			[
+				0
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObjectParameters" :
+			[
+				{
+					"regex" : "\n| ",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : "SubNetwork1-MeContext-"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+        "format":"XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "FDN"
+					}
+				],
+				"unitSplitv2_ericsson": [
+					{
+						"field": "FDN"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "folders" : {
+      "root": "",
+      "catalogs": "catalogs",
+      "colls": "collectors/specs",
+      "operators": "operators",
+      "config": "config"
+  },
+  "operationSpecFilesName" : "spec.xml",
+  "operationBaseName" : "Operator.py",
+  "kafkaConfigurationFileName" : "kafka_config.json",
+  "kafkaReprocessConfigurationFileName" : "kafka_reprocess_config.json",
+  "mongoConfigurationFileName" : "mongo_config.json",
+  "mongoSNMPConfigurationFileName" : "snmp_mongo_config.json",
+  "mongoNAMFConfigurationFileName" : "namf_mongo_config.json"
+}

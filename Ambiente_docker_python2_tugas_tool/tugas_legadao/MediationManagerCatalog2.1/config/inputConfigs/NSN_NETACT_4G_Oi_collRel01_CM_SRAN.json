@@ -1,0 +1,40 @@
+{
+	"1" :
+	{
+		"sheetName" : "MO",
+		"unit" : {
+			"unitId": "id",
+			"fieldMatch": {
+				"id": "ID",
+				"ossId": "ID",
+				"name": "ID",
+				"udn": "ID",
+				"desc": "Description",
+				"tableName": "ID",
+				"hierarchy": "Hierarchy",
+				"cmRestriction": "Object type"
+			}
+		}
+	},
+	"2" :
+	{
+		"sheetName" : "Parameters",
+		"item" : {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "MO",
+				"id": "ID",
+				"bdcolname": "ID",
+				"udn": "ID",
+				"name": "Name",
+				"desc": "Description",
+				"bdtype": "DataType",
+				"dataType": "DataType",
+				"dataUnit": "DataType",
+				"multiplicity": "Multiplicity",
+				"pCat": "Parameter Category"
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+Transformar catálogos OSS e Client antigos num novo catálogo unificado, de acordo com o NAMF

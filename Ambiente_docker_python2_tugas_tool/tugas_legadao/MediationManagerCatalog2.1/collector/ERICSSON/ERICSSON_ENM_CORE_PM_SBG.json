@@ -1,0 +1,91 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_SBG_PM",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "SBG",
+		"version" : "2.8.0",
+		"tech" : "SBG",
+		"nameNomenclature" : "ERICSSON_ENM_CORE_PM_SBG_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_SBG_PM_Excel",
+		"presetFields" : "vSBG"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"measuredObjectGeneric" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "MEASOBJLDN"
+					}
+				],
+				"applyRegex2": [
+					{
+						"field": "DNPREFIX",
+						"pattern": "SubNetwork=(?P<SUBNETWORK1>.+?),(SubNetwork=(?P<SUBNETWORK2>.+?),)?MeContext=(?P<MECONTEXT>.+)",
+						"newFields": ["SUBNETWORK1", "SUBNETWORK2", "MECONTEXT"]
+					},{
+						"field": "LOCALDN",
+						"pattern": "ManagedElement=(?P<MANAGEDELEMENT>.+)",
+						"newFields": ["MANAGEDELEMENT"]
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

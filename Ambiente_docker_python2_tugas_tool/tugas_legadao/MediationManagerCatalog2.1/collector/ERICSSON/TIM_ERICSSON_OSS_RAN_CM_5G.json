@@ -1,0 +1,126 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSS_RAN_CM_5G",
+		"collectorType" : "CM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS_RAN_CM_5G",
+		"version" : "NR23Q3",
+		"tech" : "RADIO5G",
+		"nameNomenclature" : "ERICSSON_OSS_RAN_CM_5G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX_CM",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_OSSRC_4G_MongoDB_to_DBN0",
+		"presetFields" : "5G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM5G_"
+				},
+				{
+					"field": "udn",
+					"value": "CM5G_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"measuredObjectParameters" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : "SubNetwork1-MeContext-"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"NRCELLNAME":
+			[
+				0
+			],
+			"setAttribute": [
+				{
+					"id": "RESERVEDBY",
+					"attribute": "bdtype",
+					"value": "VARCHAR2(3000)"
+				},
+				{
+					"id": "PUBLICKEY",
+					"attribute": "bdtype",
+					"value": "VARCHAR2(3000)"
+				},
+				{
+					"id": "EXTENSIONCONTENT",
+					"attribute": "bdtype",
+					"value": "VARCHAR2(3000)"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "FDN"
+					}
+				],
+				"unitSplitv2_ericsson": [
+					{
+						"field": "FDN"
+					}
+				],
+				"truncateValue": [
+					{
+						"id": "RESERVEDBY",
+						"startIndex": 0,
+						"endIndex": 2900,
+						"newFields": ["RESERVEDBY"],
+						"optional": true
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"collector" :
+	{
+		"name" : "Nokia_IMS_collRel01",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "CORE",
+		"version": "1.6",
+		"tech": "MPLS",
+		"nameNomenclature": "NSN_performance_#_CORE_MPLS_XML_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "Nokia_CORE_MPLS_collRel01_XML",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+			},
+			"item": {}
+		}
+	}
+}

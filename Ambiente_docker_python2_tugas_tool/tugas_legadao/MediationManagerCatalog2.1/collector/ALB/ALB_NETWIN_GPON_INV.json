@@ -1,0 +1,50 @@
+{
+	"collector" :
+	{
+		"name" : "ALB_NETWIN_GPON_INV",
+		"collectorType" : "PM",
+		"vendor" : "ALB",
+		"model" : "NETWIN_GPON_INV",
+		"version" : "V1",
+		"tech" : "GPON_INV",
+		"nameNomenclature" : "ALB_NETWIN_GPON_INV_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "ALB_NETWIN_GPON_INV",
+		"presetFields" : "ALB_NETWIN_GPON_INV"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+		}
+	}
+}

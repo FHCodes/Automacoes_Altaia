@@ -1,0 +1,98 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2020_CORE_PM",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "MRFP",
+		"version" : "V100R005C02SPC100",
+		"tech" : "MRFP",
+		"nameNomenclature" : "HUAWEI_U2020_CORE_PM_MRFP_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_U2020_CORE_PM_MRFP",
+		"presetFields" : "HUAWEI_U2020_CORE_PM_MRFP"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "MRFP_"
+				},
+				{
+					"field": "udn",
+					"value": "MRFP_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRANV2":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "MRFPNE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "OBJECT NAME"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

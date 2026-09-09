@@ -1,0 +1,91 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "startTime",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Start time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "endTime",
+      "udn" : "endTime",
+      "desc" : "Date and time for the end PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "interval",
+      "sqlName" : "GRANULARITYPERIOD",
+      "udn" : "granularityPeriod",
+      "desc" : "Time interval of measurement",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "distName",
+      "sqlName" : "distName",
+      "udn" : "distName",
+      "desc" : "Unique distName (first MO)",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "measuredObjectID",
+      "sqlName" : "MONITOREDOBJECTS",
+      "udn" : "MONITOREDOBJECTS",
+      "desc" : "All MOs",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "bdcolname":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"distName",
+      "desc":"Unique distName (first MO)",
+      "type":"VARCHAR2(256)",
+      "vendorType":"string",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"version",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"string",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"class",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"string",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"id",
+      "desc":"Identifier",
+      "type":"VARCHAR2(256)",
+      "vendorType":"string",
+      "dbn0type":"ID"
+    }
+  ]
+}

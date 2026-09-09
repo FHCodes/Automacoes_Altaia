@@ -1,0 +1,94 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2000_CORE_PM",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "USN9810",
+		"version" : "R19",
+		"tech" : "USN9810",
+		"nameNomenclature" : "HUAWEI_U2000_CORE_PM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_U2000_CORE_PM_USN9810",
+		"presetFields" : "HUAWEI_U2000_CORE_PM_USN9810"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "USN_"
+				},
+				{
+					"field": "udn",
+					"value": "USN_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRANV2" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "USNNE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "Object Name"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"collector" :
+	{
+		"name" : "Nokia_IMS_CTS_collRel01",
+		"collectorType" : "PM",
+		"vendor": "Nokia",
+		"model": "1360com",
+		"version": "13.1",
+		"tech": "CTS",
+		"nameNomenclature": "Nokia_performance_#_IMS_CTS_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_IMS_PM_CTS",
+		"presetFields" : "CTS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CTS_"
+				},
+				{
+					"field": "udn",
+					"value": "CTS_"
+				}
+			],
+			"measuredObjectGeneric2":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			],
+			"measurementPartitioner":
+			[
+				{
+					"format" : "json",
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "json",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"transformCatalog",
+			"loadingInventory",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASOBJLDN"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

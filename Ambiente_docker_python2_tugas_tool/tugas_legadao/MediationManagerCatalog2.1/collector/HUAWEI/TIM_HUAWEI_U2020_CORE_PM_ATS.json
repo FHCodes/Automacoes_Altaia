@@ -1,0 +1,98 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2020_CORE_PM",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "ATS",
+		"version" : "V500R020C10SPC116",
+		"tech" : "ATS",
+		"nameNomenclature" : "HUAWEI_U2020_CORE_PM_ATS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_HUAWEI_U2020_CORE_PM_ATS",
+		"presetFields" : "TIM_HUAWEI_U2020_CORE_PM_ATS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "ATS_"
+				},
+				{
+					"field": "udn",
+					"value": "ATS_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRANV2":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "ATSNE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "OBJECT NAME"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

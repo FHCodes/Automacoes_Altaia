@@ -1,0 +1,55 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "granularity Period",
+      "sqlName" : "granularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "bdcolname":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"distName",
+      "desc":"Unique distName (first MO)",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"version",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"class",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"id",
+      "desc":"Identifier",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "collector": {
+    "name": "HUAWEI_M2000_SRAN_PM_OI",
+    "collectorType": "PM",
+    "vendor": "HUAWEI",
+    "model": "OSS_RAN_PM_SRAN",
+    "version": "16.1",
+    "tech": "SRAN",
+    "nameNomenclature": "HUAWEI_RAN_PM_#_161_TIMOI"
+  },
+  "inputFormat": {
+    "format": "excelHuawei_SRAN",
+    "doc": "",
+    "formatConfig": "HUAWEI_M2000_SRAN_PM_OI",
+    "presetFields": "HUAWEI_M2000_SRAN"
+  },
+  "rules": {
+    "unit": {
+      "huaweiHierarchyRANV2": [
+        {
+          "regex": "",
+          "sepCharDoc": "",
+          "sepCharPattern": "",
+          "interChar": "",
+          "startField": "Object"
+        }
+      ],
+			"addPrefix":
+			[
+				{
+					"field" : "udn",
+					"value" : "T"
+				}
+			],
+      "translatePTPtoOI":
+      [
+        0
+      ]
+    },
+    "item": {}
+  },
+  "outputFormat": {
+    "catalogs": [
+      "clientCatalog",
+      "ossCatalog",
+      "operationsCatalog"
+    ],
+    "clientCatalog": {},
+    "ossCatalog": {},
+    "operationsCatalog": {
+      "unit": {
+        "applyRegex": [
+          {
+            "field": "Object Name"
+          }
+        ]
+      },
+      "item": {}
+    }
+  }
+}

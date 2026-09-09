@@ -1,0 +1,66 @@
+{
+	"collector" :
+	{
+		"name" : "ITALTEL_iMSC_CORE_PM",
+		"collectorType" : "PM",
+		"vendor" : "ITALTEL",
+		"model" : "iMSC_CORE_PM_SOFTSWITCH",
+		"version" : "4.5",
+		"tech" : "SOFTSWITCH",
+		"nameNomenclature" : "ITALTEL_iMSC_CORE_PM_SOFTSWITCH_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "TIM_ITALTEL_iMSC_CORE_PM_SOFTSWITCH",
+		"presetFields" : "TIM_ITALTEL_iMSC_CORE_PM_SOFTSWITCH"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+		}
+	}
+}

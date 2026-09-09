@@ -1,0 +1,79 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_CORE_PM",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "NETACT",
+		"version": "20.8",
+		"tech": "CORE_MSS",
+		"nameNomenclature": "NOKIA_NETACT_CORE_PM_MSS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_CORE_PM_MSS",
+		"presetFields" : "CORE_MSS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"Nokia_num_name":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "MSS_"
+				},
+				{
+					"field": "udn",
+					"value": "MSS_"
+				}
+			],
+			"measuredObject3GPP_NSN_UNI":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

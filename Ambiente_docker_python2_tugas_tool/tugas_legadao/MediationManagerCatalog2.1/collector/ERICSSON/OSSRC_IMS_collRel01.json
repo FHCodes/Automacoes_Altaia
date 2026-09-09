@@ -1,0 +1,93 @@
+{
+	"collector" :
+	{
+		"name" : "OSSRC_IMS_collRel01",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "IMS_HSS",
+		"version" : "14",
+		"tech" : "IMS",
+		"nameNomenclature" : "ERICSSON_performance_#_IMS_CSCF_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "OSSRC_IMS_collRel01",
+		"presetFields" : "Ericsson_IMS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"ericssonHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : "",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex2": [
+					{
+						"field": "nedistinguishedname",
+						"pattern": "^DC=(?P&lt;dc&gt;.+?),g3SubNetwork=(?P&lt;g3subnetwork&gt;.+?),g3ManagedElement=(?P&lt;g3ManagedElement&gt;.+?)$",
+						"newFields": ["dc", "g3subnetwork", "g3ManagedElement"]
+					}
+				],
+				"applyRegex": [
+					{
+						"field": "measuredobjectid"
+					}
+				]
+			},
+			"item" :
+			{
+				"splitMultiValue": [
+					{
+						"delimiter": ","
+					}
+				]
+			}
+		}
+	}
+}

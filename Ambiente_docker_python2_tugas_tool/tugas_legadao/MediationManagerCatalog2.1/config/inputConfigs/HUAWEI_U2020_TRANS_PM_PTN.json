@@ -1,0 +1,34 @@
+{
+	"1" :
+	{
+		"sheetName" : "Trans_Performance Mgmt",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "INDICATOR GROUP ID",
+				"ossId": "INDICATOR GROUP ID",
+				"name": "INDICATOR GROUP NAME",
+				"udn": "INDICATOR GROUP NAME",
+				"desc": "INDICATOR GROUP NAME",
+				"tableName": "INDICATOR GROUP NAME",
+				"hierarchy": "INDICATOR GROUP NAME"
+			}
+		},
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "INDICATOR GROUP ID",
+				"id": "INDICATOR NAME",
+				"bdcolname": "INDICATOR NAME",
+				"udn": "INDICATOR NAME",
+				"name": "INDICATOR NAME",
+				"bdtype": "dbn0Type",
+				"dataType": "dataType",
+				"dataUnit": "dbn0Type",
+				"desc": "INDICATOR NAME",
+				"multiplicity": "batatas"
+			}
+		}
+	}
+}

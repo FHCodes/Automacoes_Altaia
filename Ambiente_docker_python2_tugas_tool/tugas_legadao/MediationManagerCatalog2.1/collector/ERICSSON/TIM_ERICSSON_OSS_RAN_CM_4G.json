@@ -1,0 +1,122 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSS_RAN_CM_4G",
+		"collectorType" : "CM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS_RAN_CM_4G",
+		"version" : "L23Q3",
+		"tech" : "R4G",
+		"nameNomenclature" : "ERICSSON_OSS_RAN_CM_4G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX_CM",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_OSSRC_4G_MongoDB_to_DBN0",
+		"presetFields" : "4G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM4G_"
+				},
+				{
+					"field": "udn",
+					"value": "CM4G_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"measuredObjectParameters" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : "SubNetwork1-MeContext-"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"setAttribute": [
+				{
+					"id": "RESERVEDBY",
+					"attribute": "bdtype",
+					"value": "VARCHAR2(3000)"
+				},
+				{
+					"id": "PUBLICKEY",
+					"attribute": "bdtype",
+					"value": "VARCHAR2(3000)"
+				},
+				{
+					"id": "EXTENSIONCONTENT",
+					"attribute": "bdtype",
+					"value": "VARCHAR2(3000)"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "FDN"
+					}
+				],
+				"unitSplitv2_ericsson": [
+					{
+						"field": "FDN"
+					}
+				],
+				"truncateValue": [
+					{
+						"id": "RESERVEDBY",
+						"startIndex": 0,
+						"endIndex": 2900,
+						"newFields": ["RESERVEDBY"],
+						"optional": true
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

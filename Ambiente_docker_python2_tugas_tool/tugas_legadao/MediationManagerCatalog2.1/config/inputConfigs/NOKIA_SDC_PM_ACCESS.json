@@ -1,0 +1,37 @@
+{
+	"1" : {
+		"sheetName": "Rel6.6",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "Counter Name",
+				"ossId": "Counter Name",
+				"name": "Counter Name",
+				"udn": "Counter Name",
+				"desc": "Counter Name",
+				"tableName": "Counter Name",
+				"hierarchy": "Object identifiers"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Rel6.6",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Counter Name",
+				"id": "5529 SDC Parameter Name",
+				"bdcolname": "5529 SDC Parameter Name",
+				"udn": "5529 SDC Parameter Name",
+				"name": "5529 SDC Parameter Name",
+				"desc": "5520 AMS GUI Attribute Name",
+				"bdtype": "Parameter Type",
+				"dataType": "bdtype",
+				"dbn0type": "Parameter Type",
+				"dataUnit": "5529 SDC Units",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

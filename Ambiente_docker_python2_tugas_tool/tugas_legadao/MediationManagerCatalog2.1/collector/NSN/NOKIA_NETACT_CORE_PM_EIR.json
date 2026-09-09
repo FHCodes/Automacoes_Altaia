@@ -1,0 +1,79 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_CORE_PM_EIR",
+		"collectorType" : "PM",
+		"vendor": "Nokia",
+		"model": "NETACT19",
+		"version": "18SP3",
+		"tech": "CORE",
+		"nameNomenclature": "NOKIA_NETACT_CORE_PM_EIR_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_CORE_PM_EIR",
+		"presetFields" : "EIR"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableSizeParticioner":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "SDM_"
+				},
+				{
+					"field": "udn",
+					"value": "SDM_"
+				}
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

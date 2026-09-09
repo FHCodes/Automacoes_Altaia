@@ -1,0 +1,28 @@
+# GERAR OS CATALOGOS DE CMM DA NOKIA
+python run.py -c "NOKIA_NSP_CORE_PM_CMM" -d "Documentacao/Nokia_Cloud_Mobility_Manager_to_NetAct_(CMM)-25.3_Objects-Measurements-Counters-Alarms-teste.xls" -v "Nokia" -o "create"
+
+
+
+python run.py -c "NOKIA_NSP_CORE_PM_CMG" -d "Documentacao/Nokia_Cloud_Mobility_Gateway_to_NetAct_(CMG)-23.5_Objects-Measurements-Counters-Alarms-teste.xls" -v "Nokia" -o "create"
+
+
+# GERAR liquibase
+
+TIM
+python2 run.py -o POSQL -bc "/mnt/c/Altaia/Tim/scripts_dos_portugueses/MediationManagerCatalog2.1/ZTE/ZTE_OSS_RAN_PM_R4G/loading_ZTE_OSS_RAN_PM_R4G.json" -n ZTE_OSS_RAN_PM_R4G -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN
+ 
+
+python2 run.py -o POSQL -bc "ERICSSON/loading_ERICSSON_OSS_RAN_EBS_5G.json" -n ERICSSON_OSS_RAN_EBS_5G -cf FALSE -di BEGINTIME -na NAMF -s DBN0_ERI_RAN
+
+
+# ZTE DA VIVO
+
+--ZTE_OSS_RAN_PM_R4G
+python2 run.py -o SQL -bc "ZTE/ZTE_OSS_RAN_PM_R4G.json" -n ZTE_OSS_RAN_PM_R4G -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN --liq
+ 
+--ZTE_OSS_RAN_PM_R4G
+python2 run.py -o SQL -bc "ZTE/loading_ZTE_OSS_RAN_PM_R4G.json" -n ZTE_OSS_RAN_PM_R4G -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN --liq
+ 
+--ZTE_OSS_RAN_PM_R4G
+python2 run.py -o SQL -bc "ZTE/ZTE_OSS_RAN_PM_SRAN.json" -n ZTE_OSS_RAN_PM_SRAN -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN --liq
+ 

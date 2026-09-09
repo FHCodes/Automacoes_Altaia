@@ -1,0 +1,17 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "DURATION",
+      "sqlName" : "DURATION",
+      "udn" : "DURATION",
+      "desc" : "DURATION",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

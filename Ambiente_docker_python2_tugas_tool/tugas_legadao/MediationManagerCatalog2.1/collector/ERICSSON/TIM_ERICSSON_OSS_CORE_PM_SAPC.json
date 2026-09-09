@@ -1,0 +1,100 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSS_CORE_PM_SAPC",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS_CORE_PM_SAPC",
+		"version" : "1.19",
+		"tech" : "SAPC",
+		"nameNomenclature" : "ERICSSON_OSS_CORE_PM_SAPC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_CORE_PM_SAPC",
+		"presetFields" : "TIM_ERICSSON_OSS_CORE_PM_SAPC"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "SAPC_"
+				},
+				{
+					"field": "udn",
+					"value": "SAPC_"
+				}
+			],
+			"genericHierarchy":
+			[
+				{
+					"regex" : "",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startField" : "",
+					"fieldName" : "MEASOBJLDN"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex2_fix": [
+					{
+						"field": "LOCALDN",
+						"pattern": "ManagedElement=(?P<MANAGEDELEMENT>.+)",
+						"newFields": ["MANAGEDELEMENT"]
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

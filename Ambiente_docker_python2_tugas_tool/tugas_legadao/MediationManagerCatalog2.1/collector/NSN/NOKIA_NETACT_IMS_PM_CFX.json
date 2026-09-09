@@ -1,0 +1,83 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_IMS_PM",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "Netact",
+		"version": "23.2",
+		"tech": "VoWiFi",
+		"nameNomenclature": "NOKIA_NETACT_IMS_PM_CFX_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_IMS_PM_CFX",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CFX_"
+				},
+				{
+					"field": "udn",
+					"value": "CFX_"
+				}
+			],
+			"measuredObject3GPP_NSN_UNI":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				],
+				"filterDocs":
+				[
+					{
+						"by": "regex",
+						"field": "measuredObjectID",
+						"pattern" : ".*CSCF.+$"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

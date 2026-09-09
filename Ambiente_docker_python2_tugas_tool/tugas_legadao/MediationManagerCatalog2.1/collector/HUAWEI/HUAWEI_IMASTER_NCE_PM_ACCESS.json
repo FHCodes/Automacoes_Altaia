@@ -1,0 +1,56 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_IMASTER_NCE_PM_ACCESS",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "IMASTER_NCE_PM_ACCESS",
+		"version" : "V100R020C10",
+		"tech" : "ACESS",
+		"nameNomenclature" : "HUAWEI_IMASTER_NCE_PM_ACCESS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_IMASTER_NCE_PM_ACCESS",
+		"presetFields" : "HUAWEI_IMASTER_NCE_PM_ACCESS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

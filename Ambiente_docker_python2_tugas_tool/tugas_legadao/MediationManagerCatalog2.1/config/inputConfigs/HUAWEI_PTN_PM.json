@@ -1,0 +1,51 @@
+{
+	"1" :
+	{
+		"sheetName" : "Folha1",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "INDICATOR GROUP NAME",
+				"ossId": "INDICATOR GROUP NAME",
+				"name": "INDICATOR GROUP NAME",
+				"udn": "INDICATOR GROUP NAME",
+				"desc": "INDICATOR GROUP NAME",
+				"tableName": "INDICATOR GROUP NAME",
+				"hierarchy": "INDICATOR GROUP NAME"
+			}
+		}
+	},
+	"2" :
+	{
+		"sheetName" : "Folha1",
+		"item": {
+			"unitId": "ossId",
+			"itemId": "id",
+			"fieldMatch": {
+				"ossId": "INDICATOR GROUP NAME",
+				"id": "INDICATOR NAME",
+				"bdcolname": "INDICATOR NAME",
+				"udn": "INDICATOR NAME",
+				"name": "INDICATOR NAME",
+				"bdtype": "Unit",
+				"dataType": "Unit",
+				"dataUnit": "Unit",
+				"desc": "Description",
+				"multiplicity": "Multiplicity"
+			}
+		}
+	},
+	"3" :
+	{
+		"sheetName" : "Descriptions",
+		"item": {
+			"unitId": "ossId",
+			"itemId": "id",
+			"fieldMatch": {
+				"ossId": "INDICATOR GROUP NAME",
+				"id": "INDICATOR NAME",
+				"desc": "Description"
+			}
+		}
+	}
+}

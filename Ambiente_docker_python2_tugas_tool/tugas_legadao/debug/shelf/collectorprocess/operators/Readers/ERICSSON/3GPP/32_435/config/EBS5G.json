@@ -1,0 +1,49 @@
+{
+    "regex": "\\_(?:.(?!\\_))+$",
+    "header": {
+        "tags": {
+            "fileHeader": {
+                "attrs": {
+                    "vendorName": ["VENDORNAME"]
+                }
+            },
+            "fileSender": {
+                "attrs": {
+                    "localDn": ["LOCALDN"],
+                    "elementType": ["ELEMENTTYPE"]
+                }
+            },
+            "measCollec": {
+                "attrs": {
+                    "beginTime": ["BEGINTIME"]
+                }
+            },
+            "granPeriod": {
+                "attrs": {
+                    "endTime": ["ENDTIME"],
+                    "duration": ["DURATION"]
+                }
+            },
+            "managedElement": {
+                "attrs": {
+                    "swVersion": ["SWVERSION"],
+                    "localDn": ["LOCALDN"]
+                }
+            }
+        }
+    },
+    "object": {
+        "tags": {
+            "measInfo": {
+                "attrs": {
+                    "measInfoId": ["MEASINFOID"]
+                }
+            },
+            "measValue": {
+                "attrs": {
+                    "measObjLdn": ["MEASOBJLDN"]
+                }
+            } 
+        }
+    }
+}

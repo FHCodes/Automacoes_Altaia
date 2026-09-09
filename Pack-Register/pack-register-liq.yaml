@@ -1,0 +1,39 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: namf-pack-register-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: namf-dbn0-solution-scripts
+          image: "quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.4b"
+          imagePullPolicy: Always
+          env:
+            - name: LIQUIBASE_LIQUIBASE_SCHEMA_NAME
+              value: na_mf
+          envFrom:
+            - configMapRef:
+                name: namf-pack-register-conf
+            - secretRef:
+                name: secret-namf-pack-register
+          command:
+            - /bin/bash
+            - -c
+            - "liquibase update --changelog-file=src/db/sol.changeLog.yml"
+        - name: namf-install-catalogs
+          image: "quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.4b"
+          imagePullPolicy: Always
+          command:
+            - python3
+            - -u
+            - /opt/alticelabs/namf/pack-register/pack-register-upload.py
+          envFrom:
+            - configMapRef:
+                name: namf-pack-register-conf
+            - secretRef:
+                name: secret-namf-pack-register
+      restartPolicy: Never
+  ttlSecondsAfterFinished: 900
+  backoffLimit: 0

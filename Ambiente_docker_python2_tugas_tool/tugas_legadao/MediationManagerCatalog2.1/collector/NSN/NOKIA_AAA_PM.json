@@ -1,0 +1,79 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_AAA_PM",
+		"collectorType" : "PM",
+		"vendor": "Nokia",
+		"model": "NETACT",
+		"version": "18",
+		"tech": "AAA",
+		"nameNomenclature": "NOKIA_AAA_PM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_AAA_PM",
+		"presetFields" : "NOKIA_AAA_PM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableSizeParticioner":
+			[
+				0
+			],
+			"Nokia_AAA_tableName":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "AAA_"
+				},
+				{
+					"field": "udn",
+					"value": "AAA_"
+				}
+			],
+			"measuredObjectGeneric":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

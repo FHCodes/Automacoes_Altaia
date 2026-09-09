@@ -1,0 +1,57 @@
+{
+	"collector" :
+	{
+		"name" : "CONDOR_CCM_IMS_PM_CCM",
+		"collectorType" : "PM",
+		"vendor": "CONDOR",
+		"model": "CCM",
+		"version": "1.0RH",
+		"tech": "IMS",
+		"nameNomenclature": "CONDOR_CCM_IMS_PM_CCM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "CONDOR_CCM_IMS_PM_CCM",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CCM_"
+				},
+				{
+					"field": "udn",
+					"value": "CCM_"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit": {},
+			"item": {}
+		}
+	}
+}

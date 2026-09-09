@@ -1,0 +1,63 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_COMMANDS_NGN_PM",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "",
+		"version" : "",
+		"tech" : "",
+		"nameNomenclature" : "HUAWEI_COMMANDS_NGN_PM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_COMMANDS_NGN_PM",
+		"presetFields" : "HUAWEI_COMMANDS_NGN_PM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "NGN_"
+				},
+				{
+					"field": "udn",
+					"value": "NGN_"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

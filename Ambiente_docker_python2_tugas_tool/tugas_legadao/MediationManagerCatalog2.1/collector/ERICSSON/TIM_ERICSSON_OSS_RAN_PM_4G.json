@@ -1,0 +1,128 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_ERICSSON_OSS_RAN_PM_4G",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS_RAN_PM_4G",
+		"version" : "L23Q3",
+		"tech" : "RADIO4G",
+		"nameNomenclature" : "ERICSSON_OSS_RAN_PM_4G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_RAN_PM_4G",
+		"presetFields" : "4G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "LTE_"
+				},
+				{
+					"field": "udn",
+					"value": "LTE_"
+				}
+			],
+			"tableSizeParticioner_Ericsson":
+			[
+				0
+			],
+			"measurementPartitioner_partitionOf_PM":
+			[
+				{
+					"format": "XML",
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"ericssonHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : "",
+					"startText" : ""
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format":"XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				],
+				"applyRegex2": [
+					{
+						"field": "NEDISTINGUISHEDNAME",
+						"pattern": "SubNetwork=(?P<SUBNETWORK1>.+?),(SubNetwork=(?P<SUBNETWORK2>.+?),)?MeContext=(?P<MECONTEXT>.+)",
+						"newFields": ["SUBNETWORK1", "SUBNETWORK2", "MECONTEXT"]
+					}
+				],
+				"measurementParticioner":
+				[]
+			},
+			"item" :
+			{
+				"splitMultiValue": [
+					{
+						"delimiter": ","
+					}
+				]
+			}
+		}
+	}
+}

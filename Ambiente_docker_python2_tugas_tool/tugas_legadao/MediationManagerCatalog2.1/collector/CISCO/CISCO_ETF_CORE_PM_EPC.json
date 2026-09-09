@@ -1,0 +1,91 @@
+{
+	"collector" :
+	{
+		"name" : "CISCO_ETF_CORE_PM_EPC",
+		"collectorType" : "PM",
+		"vendor": "CISCO",
+		"model": "ETF_CORE_PM_EPC",
+		"version": "21.28",
+		"tech": "EPC",
+		"nameNomenclature": "CISCO_ETF_CORE_PM_EPC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelCiscoEPC",
+		"doc" : "",
+		"formatConfig" : "EPC_Cisco",
+		"presetFields" : "EPC_Cisco"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "vEPC_"
+				},
+				{
+					"field": "udn",
+					"value": "vEPC_"
+				}
+			],
+			"tableSizeParticioner":
+			[
+				0
+			],
+			"measurementPartitioner_partitionOf_PM2":
+			[
+				{
+					"format": "XML"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit": 
+			{
+				"convertTimezone":
+				[
+					{
+						"field": "DATETIME",
+						"newField": "DATETIME",
+						"def":
+						{
+							"inTz": "UTC",
+							"outTz": "Europe/Lisbon",
+							"inPattern": "%Y-%m-%d %H:%M:%S",
+							"outPattern": "%Y-%m-%d %H:%M:%S"
+						}
+					}
+				],
+				"measurementParticioner":
+				[]
+			},
+			"item": {}
+		}
+	}
+}

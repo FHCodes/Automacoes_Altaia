@@ -1,0 +1,61 @@
+{
+	"collector" :
+	{
+		"name" : "ALB_FTTH_AAA_PM_AAA",
+		"collectorType" : "PM",
+		"vendor" : "ALB",
+		"model" : "FTTH_AAA_PM_AAA",
+		"version" : "1",
+		"tech" : "AAA",
+		"nameNomenclature" : "ALB_FTTH_AAA_PM_AAA_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "ALB_FTTH_AAA_PM_AAA",
+		"presetFields" : "ALB_FTTH_AAA_PM_AAA"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "AAA_"
+				},
+				{
+					"field": "udn",
+					"value": "AAA_"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+		}
+	}
+}

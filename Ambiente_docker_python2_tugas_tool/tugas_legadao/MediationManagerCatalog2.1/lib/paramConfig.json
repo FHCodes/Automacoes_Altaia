@@ -1,0 +1,23 @@
+{
+  "NOKIA": {
+    "2G": ["BTS_NAME","BCF_NAME","BSC_NAME"],
+    "3G": ["WCEL_NAME","WBTS_NAME","RNC_NAME"],
+    "4G": ["LNCEL_NAME","LNBTS_NAME","MRBTS_NAME"],
+    "5G": ["NRCELL_NAME","NRBTS_NAME"]
+
+  },
+  "HUAWEI": {
+    "2G": ["CELL_NAME","BTS_NAME","BSC_NAME"],
+    "3G": ["CELL_NAME","NODEB_NAME","RNC_NAME"],
+    "4G": ["CELL_NAME","ENODEB_NAME"],
+    "5G": ["CELL_NAME","GNODEB_NAME"]
+
+  },
+  "ERICSSON": {
+    "2G_3GPP": ["GERANCELL","BSC_NAME"],
+    "2G": ["CELL_NAME","BSC_NAME","MSC_NAME"],
+    "3G": ["CELL_NAME","NODEB_NAME","RNC_NAME"],
+    "4G": ["EUTRANCELLFDD","ENODEB_NAME"],
+    "5G": ["NRCELL_NAME","GNODEB_NAME"]
+  }
+}

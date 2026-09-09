@@ -1,0 +1,9 @@
+{
+    "version": "1", 
+    "id": "{{ catalogID }}", 
+    "measUnits": [
+        {
+            "id": "TWAMP_TIM_RAN"
+        }
+    ]
+}

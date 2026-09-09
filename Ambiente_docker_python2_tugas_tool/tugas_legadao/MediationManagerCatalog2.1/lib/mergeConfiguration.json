@@ -1,0 +1,51 @@
+{
+    "client":
+    {
+        "table":
+        {
+            "ab": "False",
+            "active": "False",
+            "id": "False",
+            "ossId": "False",
+            "partitionof": "False",
+            "tableName": "False",
+            "tech": "False",
+            "udn": "False"
+        },
+        "column":
+        {
+            "id": "False",
+            "udn": "False",
+            "bdcolname": "False",
+            "bdtype": "False",
+            "dbn0type": "False"
+        }
+    },
+    "oss":
+    {
+        "unit":
+        {
+            "ab": "False",
+            "id": "False",
+            "ossId": "False",
+            "desc": "False",
+            "measuredobjects": "False",
+            "name": "False",
+            "tech": "False"
+        },
+        "item":
+        {
+            "id": "False",
+            "desc": "False",
+            "typeCust": "False",
+            "typeVendor": "False",
+            "unitVendor": "False",
+            "name": "False",
+            "v": "True"
+        }
+    },
+    "operations":
+    {
+
+    }
+}

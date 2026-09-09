@@ -1,0 +1,64 @@
+{
+	"collector" :
+	{
+		"name" : "NSN_NETACT_CORE_RADIO_collRel01",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "NETACT",
+		"version": "Ma17",
+		"tech": "CORE",
+		"nameNomenclature": "NSN_performance_#_CORE_MSS_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_CORE_RADIO_collRel01",
+		"presetFields" : "CORE_MSS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"Nokia_num_name":
+			[
+				0
+			],
+			"measuredObject3GPP_NSN_UNI":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

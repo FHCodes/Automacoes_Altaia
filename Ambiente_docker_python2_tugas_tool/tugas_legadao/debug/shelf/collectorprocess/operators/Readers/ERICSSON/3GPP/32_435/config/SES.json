@@ -1,0 +1,42 @@
+{
+    "regex": "",
+    "header": {
+        "tags": {
+            "fileHeader": {
+                "attrs": {
+                    "fileFormatVersion": ["fileformatversion"]
+                }
+            },
+            "job": {
+                "attrs": {
+                    "jobId": ["JOBID", "MEASINFOID"]
+                }
+            },
+            "measCollec": {
+                "attrs": {
+                    "beginTime": ["BEGINTIME"]
+                }
+            },
+            "granPeriod": {
+                "attrs": {
+                    "endTime": ["ENDTIME"],
+                    "duration": ["DURATION"]
+                }
+            }
+        }
+    },
+    "object": {
+        "tags": {
+            "repPeriod": {
+                "attrs": {
+                    "duration": ["DURATION"]
+                }
+            },
+            "measValue": {
+                "attrs": {
+                    "measObjLdn": ["MEASOBJLDN"]
+                }
+            } 
+        }
+    }
+}

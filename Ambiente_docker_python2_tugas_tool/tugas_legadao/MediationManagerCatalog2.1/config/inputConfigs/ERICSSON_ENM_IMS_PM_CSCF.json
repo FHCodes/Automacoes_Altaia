@@ -1,0 +1,39 @@
+{
+	"1" : {
+		"sheetName": "PmGroup",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "pmGroupId",
+				"ossId": "pmGroupId",
+				"name": "pmGroupId",
+				"udn": "pmGroupId",
+				"desc": "description",
+				"tableName": "pmGroupId",
+				"hierarchy": "Hierarchy",
+				"function": "moClass.mimName",
+				"partitionOf": "ossId"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "MeasurementType",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "ossId",
+				"id": "measurementTypeId",
+				"bdcolname": "measurementTypeId",
+				"udn": "measurementTypeId",
+				"name": "measurementTypeId",
+				"desc": "description",
+				"dbn0type": "dbn0type",
+				"bdtype": "collectionMethod",
+				"dataType": "collectionMethod",
+				"dataUnit": "collectionMethod",
+				"multiplicity": "multiplicity"
+			}
+		}
+	}
+}

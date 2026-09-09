@@ -1,0 +1,45 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NSP_CORE_PM",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "NSP_CORE_PM_CMM_CENAS",
+		"version": "18.5",
+		"tech": "CMM",
+		"nameNomenclature": "NOKIA_NSP_CORE_PM_CENAS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NSP_CORE_PM_",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+			},
+			"item": {}
+		}
+	}
+}

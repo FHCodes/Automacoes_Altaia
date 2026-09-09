@@ -1,0 +1,1968 @@
+{
+    "ANR": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ASPARAGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "BBPASSISTGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "BBPCOLLABORATIONGRP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "BCCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CAGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CAGROUPCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CAGROUPSCELLCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CAMGTCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA20001XRTTEXTCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA20001XRTTNCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA20001XRTTPREREG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA2000BANDCLASS": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA2000BCSCELLOP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA2000HRPDEXTCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA2000HRPDNCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA2000HRPDPREREG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA2000HRPDREFCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CDMA2000NFREQ": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLACBAR": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLACCESS": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLALGOEXTSWITCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLALGOSWITCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLAUXDUBIND": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLAUXENBBIND": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLBACKOFF": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLBF": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLBFMIMOPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCECFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCESCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCHPWRCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCOUNTERPARAGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCQIADAPTIVECFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCQIADJALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCSIRSPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLCSPCPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDACQCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDLCOMPALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDLICIC": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDLPCPDCCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDLPCPDSCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDLPCPDSCHPA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDLPCPHICH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDLSCHALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDMRSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDRXPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDRXSPECIALPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDSS": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDYNACBARALGOPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLDYNPOWERSHARING": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLEABALGOPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLEICIC": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLEMERGENCYAREA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLEMTCALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLHOPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLIDPRDUPT": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLIFINFO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLLAACOEXISTPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLLAAFCSPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLLCSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLLOWPOWER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLLTEFLEXBW": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLLTEFLEXBWITFCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMBFCS": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMBMSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMCPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMIMOPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMLB": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMLBAUTOGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMLBHO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMLBUESEL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMMALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMRO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLMULTICARRUNISCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLNPRSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLOP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLOPHOCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLPCALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLPDCCHALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLPRBVALMLB": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLPREALLOCGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLPRSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLPUCCHALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLQCIPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRACHALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRACHCECFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRACTHD": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRBRESERVE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRELAYALGOPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRESEL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRESELCDMA2000": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRESELGERAN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRESELTONR": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRESELUTRAN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRFSHUTDOWN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLRICALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSEL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSERVICEDIFFCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSHORTTTIALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSHUTDOWN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSIDELINKV2XCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSIMAP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSIMULOAD": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSLV2XCARRCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSRLTE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLSRSADAPTIVECFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLTTIBUNDLINGALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLUCIONPUSCHPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLUEMEASCONTROLCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULCOMPALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULICALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULICIC": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULICICMCPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULMIMOPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULPCCOMM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULPCDEDIC": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULSCHALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLULUNIFIEDOLC": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLUSPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLVMS": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CELLWTTXPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CEPUCCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CERACHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CLKDETECT": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CLUSTER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CLUSTERCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CLZEROBUFFERZONE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CNOPERATOR": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CNOPERATORHOCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CNOPERATORIPPATH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CNOPERATORQCIPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CNOPERATORSPIDCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CNOPERATORTA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CNOPSHARINGGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CONTIGINTRABANDCARR": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "COPROCRES": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "COUNTERCHECKPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CQIADAPTIVECFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CSFALLBACKBLINDHOCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CSFALLBACKHO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CSFALLBACKPOLICYCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "CSPCALGOPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DDCELLGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DEFAULTDCNCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DISTBASEDHO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DMIMOALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DMIMOCLUSTER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DMIMOCLUSTERCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DRX": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "DRXPARAGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ECO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EMC": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EMTCCESCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EMTCSIBCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENDCX2BLACKWHITELIST": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBALGOEXTSWITCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBALGOSWITCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBAUTOPOWEROFF": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBCIPHERCAP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBCLUSTER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBCONNSTATETIMER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBCOUNTERPARAGRP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBFLOWCTRLPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBIDBLACKLIST": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBINTEGRITYCAP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBMLB": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBMPRUES": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBNBPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBPATH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBRESMODEALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBSHARINGMODE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBSONDBCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ENODEBUSPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUAPN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUAPNTEMPLATE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUCELLALMCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUCELLSECTOREQM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUCOSCHDLCOMPCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUCOSCHULICSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUEPCINFO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUIPADDRESSPOOL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUPRBSECTOREQM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUPRBSECTOREQMGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EURRN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EURRNLANIP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EURRNPORT": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EURRNRT": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUSECTOREQMGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUSUBSCRIBER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUSUBSCRIBERTEMPLATE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANBLKNCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANEXTERNALCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANEXTERNALCELLPLMN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANINTERFREQNCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANINTERNFREQ": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANINTRAFREQNCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANNFREQRANSHARE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANNFREQSCELLOP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUTRANSPEPCICELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EUULCOSCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "EX2": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "FDDRESMODE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANEXTERNALCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANEXTERNALCELLPLMN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANINTERFARFCN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANINTERFCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANNCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANNETWORKCAPCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANNFGROUPSCELLOP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANNFREQGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANNFREQGROUPARFCN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GERANRANSHARE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GLOBALPROCSWITCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "GNB5QICONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBAIRINTFSECPARAM": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBAMFDOMAINNAME": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCAFREQUENCY": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCIPHERCAPB": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCUNG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCUNGINTERFACE": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCUS1": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCUS1OP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCUX2": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCUXN": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBCUXNINTERFACE": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBDULTENRSPCTSHRCG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBEUTRAEXTCELLPLMN": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBEUTRAEXTERNALCELL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBINTEGRITYCAPB": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBMOBILITYCOMMPARAM": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBNCELLPLMNLIST": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBNGSONCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBOPERATOR": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBPDCPPARAMGROUP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBSHARINGMODE": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBSIBCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBTRACKINGAREA": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBUACPARAMGROUP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBX2SONCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNBXNSONCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GNODEBPARAM": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "GSMINTERFARFCNCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "HENBTACRANGEGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "HIGHSPDADAPTIONPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "HOMEASCOMM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERFREQBLKCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERFREQHOGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERPLMNHOLIST": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATCELLSHUTDOWN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATHOCDMAHRPDGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATHOCOMM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATHOCOMMGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATHOGERANGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATHONRPARAMGRP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATHOUTRANGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERRATPOLICYCFGGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTERVENDORMLBALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTRAFREQBLKCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTRAFREQHOGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "INTRARATHOCOMM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "IOPSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "IPSERVICEQOS": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "IRATNCELLCLASSMGT": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LICENSESHARINGPOLICY": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LICRATIOSHAREPOLICY": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LIOPTATOMRULE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LIOPTFEATURE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LIOPTFUNCTION": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LIOPTRULE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LIOPTRULEMEMBER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LTENRSPCTSHRCELLGRP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "LWAMGTCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "M1": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "M2": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "M3": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MBMSPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MBSFNAREA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MBSFNAREACELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MBSFNSUBFRAME": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MCCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MCE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MLBQCIGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MMECAPINFO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MMEDOMAINNAME": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MMEFEATURECFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MRO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "MULTICARRUNIFIEDSCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NBCELLDYNPWRSHRPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NBCELLMULTIPRBCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NBSHARINGPOLICY": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NCELLCLASSMGT": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NCELLDLRSRPMEASPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NCELLPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NCELLPLMNLIST": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NCELLSRSMEASPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NRCELLALGOSWITCH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLCAMGMTCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLCOMP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLEUTRANNFREQ": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLEUTRANRELATION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLFREQRELATION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLHOEUTRANMEAGRP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLINTERFHOMEAGRP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLINTERRHOMEAGRP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLINTRAFHOMEAGRP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLMOBILITYCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLNSADCCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLQCIBEARER": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLRELATION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRCELLRESELCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLALGOSWITCH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLCHNPWR": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLCORESET": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLCOVERAGE": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLCSIRS": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLNSADCCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLOP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLPAGINGCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLPDCCH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLPDSCH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLPOWERSAVING": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLPRACH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLPUCCH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLPUSCH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLRIMCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLSELCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLSPCTCLOUD": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLSRSMEAS": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLSUL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLTRP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLTRPBEAM": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLTRPCUSTBEAM": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLTRPIFINFO": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLTRPMMWAVBEAM": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLUACBAR": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLUEPWRSAVING": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLUETIMERCONST": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLULPCCONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRDUCELLULTACONFIG": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NREXTERNALCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NREXTERNALCELLPLMN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NREXTERNALNCELL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NREXTERNALNCELLPLMN": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRINTERRATHOPARAM": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMCUPINTERFACE": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMDEPLOYMENT": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMDHCPSVRIP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMEUCELLRELATION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMEUEXTERNALNCELL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMGNODEBFUNCTION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMGPS": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMINTERFACEIP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMINTERFACEIP6": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMIPCLKLNK": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMMULTICELLSHARING": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNE": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNODE": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRCELL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRCELLEUTRANNFREQ": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRCELLFREQRELATION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRCELLRELATION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRCELLSULFREQUENCY": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRDUCELL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRDUCELLOP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRDUCELLSUL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRDUCELLSULRELATION": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNRDUCELLTRP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMNREXTERNALNCELL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMOMCH": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMPORT": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMREDINTFIP": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMTUNNEL": {
+        "from":"GNODEB_NAME",
+        "to":"GNODEBFUNCTIONNAME"
+    },
+    "NRMFBIFREQ": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NRNFREQ": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NRNRELATIONSHIP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NRSCGFREQCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NSADCALGOPARAM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "NSADCMGMTCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PARAAUTOOPTCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PCCFREQCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PCCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PDCPROHCPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PDSCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PHICHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PIMFREQCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PIMFREQGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PMCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRB": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRBDLGAPCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRBDLSCHCEALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRBPDCCHCECONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRBRACHCECONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRBSCHCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRBSECTOREQMGRPITEM": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRBULSCHCEALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRIVATEBAND": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PRIVATECABANDCOMB": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PUCCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "PUSCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "QCI5QICONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "QCIEUTRANRELATION": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "QCIGERANRELATION": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "QCIPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "QCIUTRANRELATION": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "QOSPOLICY": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "RACHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "RATFREQPRIORITYGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "RELAYEXTENDEDQCI": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "RFU": [
+        {
+        "from":"CN",
+        "to":"CABINETNO"
+        },
+        {
+        "from":"SN",
+        "to":"SLOTNO"
+        },
+        {
+        "from":"SRN",
+        "to":"SUBRACKNO"
+        }
+    ],
+    "RHUB": [
+        {
+        "from":"CN",
+        "to":"CABINETNO"
+        },
+        {
+        "from":"SN",
+        "to":"SLOTNO"
+        },
+        {
+        "from":"SRN",
+        "to":"SUBRACKNO"
+        }
+    ],
+    "RLCPDCPPARAGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "RLFTIMERCONSTGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "RRCCONNSTATETIMER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "RRU": [
+        {
+        "from":"CN",
+        "to":"CABINETNO"
+        },
+        {
+        "from":"SN",
+        "to":"SLOTNO"
+        },
+        {
+        "from":"SRN",
+        "to":"SUBRACKNO"
+        }
+    ],
+    "RRUJOINTCALPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "S1": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "S1INTERFACE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "S1REESTTIMER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SCAPPPARACFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SCCFREQCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SCPOLICY": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SCSERVICEQOS": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SECTORSPLITCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SECTORSPLITGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SERVERCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SERVICEDIFFSETTING": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SERVICEIDENTIFYPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SERVICEIFDLEARFCNGRP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SERVICEIFHOCFGGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SERVICEIRHOCFGGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SESSION": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SFNAUXRESBIND": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SFNAUXRESGRPBIND": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SFNEDGERRURELATION": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SIDELINKV2XCARRIER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SIDELINKV2XPSSCHCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SIDELINKV2XRESPLCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SIMULOAD": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SIMULOADPMITEMPLATE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SPECTRUMCLOUD": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SPIDCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SPIDGRPCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SPIDHPLMNLIST": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SRBCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SRBRLCPDCPCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SRSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SSRDCELLGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SUPERCOMBCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "SYMBOLPWRSAVING": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "TCEIPMAPPING": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "TCPACKLIMITALG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "TDDRESMODESWITCH": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "TIMEALIGNMENTTIMER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "TM9DEDICATEDCARRIER": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "TYPDRBBSR": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UECOMPAT": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UECOOPERATIONPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UEDIFFCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UESPECDRXPARAGROUP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UETIMERCONST": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ULCSALGOPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ULGUARDBANDCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ULINTERFSUPPRESSCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ULSPECTRUMSHRCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "ULZEROBUFFERZONE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "USERPRIORITY": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "USERQCIPRIORITY": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "USERVPFMPARA": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UTRANBLKNCELL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UTRANEXTERNALCELLPLMN": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UTRANNETWORKCAPCFG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UTRANNFREQ": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UTRANNFREQSCELLOP": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "UTRANRANSHARE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "VOICEAMRCONTROL": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "VOLTEALGOCONFIG": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "VQMALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "WTCPPROXYALGO": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "X2": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "X2AUTOSETUPOPERATOR": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "X2BLACKWHITELIST": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "X2INTERFACE": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    },
+    "XW": {
+        "from":"ENODEB_NAME",
+        "to":"ENODEBFUNCTIONNAME"
+    }
+}

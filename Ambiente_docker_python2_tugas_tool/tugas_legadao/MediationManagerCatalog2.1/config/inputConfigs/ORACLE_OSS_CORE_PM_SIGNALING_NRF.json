@@ -1,0 +1,39 @@
+{
+	"1" : {
+		"sheetName": "Families",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "FAMILY_ID",
+				"ossId": "FAMILY_ID",
+				"hierarchy": "REGEX",
+				"name": "TABLE_UDN",
+				"udn": "TABLE_UDN",
+				"desc": "TABLE_DESC",
+				"tableName": "TABLENAME",
+				"tech": "TECH",
+				"partitionOf" : "PARTITIONOF"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Counters",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "FAMILY_ID",
+				"id": "COLID",
+				"bdcolname": "COLNAME",
+				"udn": "COL_UDN",
+				"name": "COL_UDN",
+				"desc": "DESCRIPTION",
+				"bdtype": "BDTYPE",
+				"dbn0type": "DBN0TYPE",
+				"dataType": "TYPEVENDOR",
+				"dataUnit": "vazio",
+				"multiplicity": "indefinido"
+			}
+		}
+	}
+}

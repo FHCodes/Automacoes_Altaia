@@ -1,0 +1,55 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "BEGINTIME",
+      "sqlName" : "BEGINTIME",
+      "udn" : "beginTime",
+      "desc" : "Start time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "DURATION",
+      "sqlName" : "DURATION",
+      "udn" : "duration",
+      "desc" : "Granularity period interval.",
+      "dataType" : "NUMBER",
+      "dataUnit": "MINUTES",
+      "dbn0type" : "MT",
+      "correctTypeCust": "INTEGER"
+    },
+    {
+      "id" : "JOBID",
+      "sqlName" : "JOBID",
+      "udn" : "JobId",
+      "desc" : "Job Id",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "MEASOBJLDN",
+      "sqlName" : "MEASOBJLDN",
+      "udn" : "measObjLdn",
+      "desc" : "The LDN of the measured object",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

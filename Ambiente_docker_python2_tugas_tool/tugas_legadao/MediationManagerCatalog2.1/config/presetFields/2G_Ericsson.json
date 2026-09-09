@@ -1,0 +1,101 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "measStartTime",
+      "sqlName" : "measStartTime",
+      "udn" : "measStartTime",
+      "desc" : "Start time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measEndTime",
+      "sqlName" : "measEndTime",
+      "udn" : "measEndTime",
+      "desc" : "End time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "granularityPeriod",
+      "sqlName" : "granularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity Period duration",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "networkElementName",
+      "sqlName" : "networkElementName",
+      "udn" : "networkElementName",
+      "desc" : "Name of the Network Element the measurement corresponds to.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "objectID",
+      "sqlName" : "objectID",
+      "udn" : "objectID",
+      "desc" : "object ID",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "fileFormatVersion",
+      "sqlName" : "fileFormatVersion",
+      "udn" : "fileFormatVersion",
+      "desc" : "Version of the file format.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "senderType",
+      "sqlName" : "senderType",
+      "udn" : "senderType",
+      "desc" : "User configurable identifier of the type of network node that generated the file.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "sqlName":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP(3)",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"FDN",
+      "sqlName":"FDN",
+      "udn":"FDN",
+      "name":"FDN",
+      "desc":"FDN",
+      "dataType":"VARCHAR2(500)",
+      "dataUnit":"STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"BSC_NAME",
+      "sqlName":"BSC_NAME",
+      "udn":"BSC_NAME",
+      "name":"BSC_NAME",
+      "desc":"BSC_NAME",
+      "dataType":"VARCHAR2(256)",
+      "dataUnit":"STRING",
+      "dbn0type":"ID"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2000_TRANS_PM_PoTN",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "PoTN",
+		"version" : "V100R019C00",
+		"tech" : "PoTN",
+		"nameNomenclature" : "HUAWEI_U2000_TRANS_PM_PoTN_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei_PTN_PM",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_PTN_PM_v2",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"typeVendorConverter":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"1":
+	{
+		"sheetName" : "Units",
+		"unit" : {
+			"unitId": "id",
+			"fieldMatch": {
+				"id": "Measurement ID",
+				"ossId": "Measurement ID",
+				"name": "Measurement Name",
+				"udn": "UDN",
+				"desc": "Measurement Name",
+				"tableName": "Table Name",
+				"hierarchy": ""
+			}
+		}
+	},
+	"2":
+	{
+		"sheetName" : "Counters",
+		"item" : {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Measurement ID",
+				"id": "Counter Name",
+				"bdcolname": "Counter Name",
+				"udn": "Counter Name",
+				"name": "Counter Name",
+				"desc": "Counter Description",
+				"bdtype": "bdtype",
+				"dbn0type": "dbn0type",
+				"dataType": "bdtype",
+				"dataUnit": "bdtype",
+				"multiplicity": ""
+			}
+		}
+	}
+}

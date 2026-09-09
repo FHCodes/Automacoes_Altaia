@@ -1,0 +1,68 @@
+{
+	"1":
+	{
+		"sheetName" : "client",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "tableId",
+				"ossId": "ossId",
+				"name": "Measurement name",
+				"udn": "udn",
+				"tableName": "tableName",
+				"hierarchy": "x",
+				"desc": "x"
+			}
+		}
+	},
+	"2":
+	{
+		"sheetName" : "oss",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"ossId": "ossId",
+				"name": "tableName",
+				"hierarchy": "measuredobjects",
+				"desc": "tableDesc"
+			}
+		}
+	},
+	"3":
+	{
+		"sheetName": "client",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "ossId",
+				"id": "columnId",
+				"bdcolname": "bdcolname",
+				"udn": "columnUdn",
+				"name": "columnName",
+				"desc": "columnDesc",
+				"bdtype": "bdtype",
+				"dataType": "typeVendor",
+				"dataUnit": "unitVendor",
+				"multiplicity": "Multiplicity"
+			}
+		}
+	},
+	"4":
+	{
+		"sheetName" : "oss",
+		"item" : {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "ossId",
+				"id": "columnId",
+				"name": "columnName",
+				"desc": "columnDesc",
+				"dataType": "typeVendor",
+				"dataUnit": "unitVendor",
+				"multiplicity": "Multiplicity"
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"1":
+	{
+		"sheetName" : "Measurement List",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "OMeS ID",
+				"ossId": "NetAct ID",
+				"name": "Measurement name",
+				"udn": "OMeS ID",
+				"desc": "Description",
+				"tableName": "NetAct abbreviation",
+				"hierarchy": "Hierarchy"
+			}
+		}
+	},
+	"2":
+	{
+		"sheetName" : "Counter List",
+		"item" : {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "OssId",
+				"id": "3GPP Name",
+				"bdcolname": "bdcolname",
+				"udn": "3GPP Name",
+				"name": "Counter name",
+				"desc": "Meaning, Description",
+				"bdtype": "Unit",
+				"dataType": "Unit",
+				"dataUnit": "Unit",
+				"multiplicity": "Multiplicity"
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "regex": "(?i)\\d+|Job",
+    "header": {
+        "tags": {
+            "measCollec": {
+                "attrs": {
+                    "beginTime": ["BEGINTIME"]
+                }
+            },
+            "granPeriod": {
+                "attrs": {
+                    "endTime": ["ENDTIME"],
+                    "duration": ["DURATION"]
+                }
+            },
+            "job": {
+                "attrs": {
+                    "jobId": [
+                        "JOBID",
+                        "MEASINFOID"
+                    ]
+                }
+            }
+        }
+    },
+    "object": {
+        "tags": {
+            
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "STARTTIME",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Date and time of measurement",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "GRANULARITYPERIOD",
+      "sqlName" : "granularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity period interval",
+      "dataType" : "NUMBER",
+      "dataUnit": "MINUTES",
+      "dbn0type" : "MT",
+      "correctTypeCust": "INTEGER"
+    },
+    {
+      "id" : "NENAME",
+      "sqlName" : "neName",
+      "udn" : "neName",
+      "desc" : "CPE Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

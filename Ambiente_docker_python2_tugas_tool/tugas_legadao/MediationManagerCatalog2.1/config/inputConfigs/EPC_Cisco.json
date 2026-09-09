@@ -1,0 +1,59 @@
+{
+	"1" :
+	{
+		"sheetName" : "documentation",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "Schema",
+				"ossId": "Schema",
+				"name": "Schema",
+				"udn": "Schema",
+				"desc": "Schema",
+				"tableName": "Schema",
+				"hierarchy": "Hierarquia"
+			}
+		}
+	},
+	"2" :
+	{
+		"sheetName" : "documentation",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Schema",
+				"id": "Counter",
+				"bdcolname": "Counter",
+				"udn": "Counter",
+				"name": "Counter",
+				"desc": "Description",
+				"dbn0type": "Statistics-type",
+				"bdtype": "Statistics-type",
+				"dataType": "Data-type",
+				"dataUnit": "Statistics-type",
+				"multiplicity": "Size"
+			}
+		}
+	},
+	"3" : {
+		"sheetName": "disconnect-reasons",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Schema",
+				"id": "Disc-reason",
+				"bdcolname": "Disc-reason",
+				"udn": "Disc-reason",
+				"name": "Name",
+				"desc": "Description",
+				"dbn0type": "Counter-type",
+				"bdtype": "Counter-type",
+				"dataType": "Counter-type",
+				"dataUnit": "Counter-type",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

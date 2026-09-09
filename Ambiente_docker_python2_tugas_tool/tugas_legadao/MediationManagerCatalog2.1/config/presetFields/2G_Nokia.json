@@ -1,0 +1,108 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "startTime",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "endTime",
+      "udn" : "endTime",
+      "desc" : "Date and time for the end PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "interval",
+      "sqlName" : "interval",
+      "udn" : "interval",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "distName",
+      "sqlName" : "distName",
+      "udn" : "distName",
+      "desc" : "Unique distName (first MO)",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "measuredObjectID",
+      "sqlName" : "measuredObjectID",
+      "udn" : "measuredObjectID",
+      "desc" : "All MOs",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "sqlName":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"distName",
+      "sqlName":"distName",
+      "udn":"distName",
+      "desc":"Unique distName (first MO)",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"version",
+      "sqlName":"version",
+      "udn":"version",
+      "desc":"",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"class",
+      "sqlName":"class",
+      "udn":"class",
+      "desc":"",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"id",
+      "sqlName":"id",
+      "udn":"id",
+      "desc":"Identifier",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id" : "interval",
+      "sqlName" : "interval",
+      "udn" : "interval",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    }
+  ]
+}

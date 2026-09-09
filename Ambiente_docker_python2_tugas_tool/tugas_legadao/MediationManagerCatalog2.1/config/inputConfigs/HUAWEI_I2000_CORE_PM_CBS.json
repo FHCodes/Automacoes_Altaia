@@ -1,0 +1,37 @@
+{
+	"1" : {
+		"sheetName": "Folha1",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "tabela",
+				"ossId": "tabela",
+				"hierarchy": "U2000/U2020 Performance Object Name",
+				"name": "tableUdn",
+				"udn": "tableUdn",
+				"desc": "tableUdn",
+				"tableName": "tableName"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Folha1",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "tabela",
+				"id": "ContadorId",
+				"bdcolname": "BDName",
+				"udn": "Udn",
+				"name": "Udn",
+				"desc": "Udn",
+				"bdtype": "Formato",
+				"dbn0type": "Tipo",
+				"dataType": "Formato",
+				"dataUnit": "Formato",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

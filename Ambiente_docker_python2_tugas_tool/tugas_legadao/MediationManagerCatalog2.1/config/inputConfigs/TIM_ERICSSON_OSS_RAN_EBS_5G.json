@@ -1,0 +1,37 @@
+{
+	"1" : {
+		"sheetName": "Measurement List",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "Name",
+				"ossId": "Name",
+				"name": "Name",
+				"udn": "Name",
+				"desc": "Description",
+				"tableName": "Name",
+				"hierarchy": "Hierarchy"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "EBS Counters",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "MO Class",
+				"id": "Counter",
+				"bdcolname": "Counter",
+				"udn": "Counter",
+				"name": "Counter",
+				"desc": "Description",
+				"bdtype": "Counter Type",
+				"dataType": "Counter Type",
+				"dataUnit": "Counter Size",
+				"multiplicity": "Counter Size",
+				"compressed": "Compressed"
+			}
+		}
+	}
+}

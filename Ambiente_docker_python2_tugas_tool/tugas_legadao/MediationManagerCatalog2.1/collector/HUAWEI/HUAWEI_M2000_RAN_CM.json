@@ -1,0 +1,63 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_M2000_RAN_CM",
+		"collectorType" : "CM",
+		"vendor" : "HUAWEI",
+		"model" : "SRAN",
+		"version" : "16.1",
+		"tech" : "",
+		"nameNomenclature" : "HUAWEI_COMMANDS_NGN_PM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei_GExport",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_M2000_RAN_CM",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "GExport_"
+				},
+				{
+					"field": "udn",
+					"value": "GExport_"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

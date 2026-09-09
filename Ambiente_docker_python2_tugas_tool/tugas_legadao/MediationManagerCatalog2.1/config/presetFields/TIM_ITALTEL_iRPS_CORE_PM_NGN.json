@@ -1,0 +1,90 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "beginTime",
+      "sqlName" : "beginTime",
+      "udn" : "beginTime",
+      "desc" : "Begin time for the measurement collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "endTime",
+      "udn" : "endTime",
+      "desc" : "End time for the measurement collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "duration",
+      "sqlName" : "duration",
+      "udn" : "duration",
+      "desc" : "Interval when PM data is collected (60 min, 24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "measObjLdn",
+      "sqlName" : "measObjLdn",
+      "udn" : "measObjLdn",
+      "desc" : "The LDN of the measured object",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "jobId",
+      "sqlName" : "jobId",
+      "udn" : "jobId",
+      "desc" : "Job ID",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "IRPS",
+      "sqlName" : "IRPS",
+      "udn" : "iRPS",
+      "desc" : "iRPS",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "functionalId",
+      "sqlName" : "functionalId",
+      "udn" : "FunctionalId",
+      "desc" : "Functional ID",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "Application",
+      "sqlName" : "Application",
+      "udn" : "Application",
+      "desc" : "Application",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MeasurementDataObject",
+      "sqlName" : "MeasurementDataObject",
+      "udn" : "MeasurementDataObject",
+      "desc" : "Measurement Data Object",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

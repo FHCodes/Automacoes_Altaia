@@ -1,0 +1,62 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "STARTTIME",
+      "sqlName" : "BEGINTIME",
+      "udn" : "beginTime",
+      "desc" : "Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "INTERVAL",
+      "sqlName" : "DURATION",
+      "udn" : "duration",
+      "desc" : "Duration of the measurement period in minutes.",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "LOCALDN",
+      "sqlName" : "LOCALDN",
+      "udn" : "localDn",
+      "desc" : "localDn",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SWVERSION",
+      "sqlName" : "SWVERSION",
+      "udn" : "swVersion",
+      "desc" : "swVersion",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MEASUREDOBJECTID",
+      "sqlName" : "MEASOBJLDN",
+      "udn" : "measObjLdn",
+      "desc" : "All MOs",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

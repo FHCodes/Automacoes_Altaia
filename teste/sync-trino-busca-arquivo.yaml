@@ -1,0 +1,77 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sync-trino-busca-arquivo
+  namespace: telefonica-altaia-namf
+spec:
+  schedule: "0 20 * * *"
+  timeZone: "America/Sao_Paulo"
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 300
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          annotations:
+            io.kubernetes.cri-o.TrySkipVolumeSELinuxLabel: 'true'
+          labels:
+            app.kubernetes.io/component: namf
+            app.kubernetes.io/name: namf-sync
+            tef-l3-service-network-access: "true"
+        spec:
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                - matchExpressions:
+                  - key: altaia-app/cronjob-access
+                    operator: In
+                    values:
+                    - "true"
+          topologySpreadConstraints:
+            - labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: "namf-sync"
+              maxSkew: 1
+              topologyKey: "kubernetes.io/hostname"
+              whenUnsatisfiable: ScheduleAnyway
+          runtimeClassName: selinux
+          serviceAccountName: altaia-namf-app-sa
+          restartPolicy: OnFailure
+          securityContext:
+            fsGroup: 1982
+            fsGroupChangePolicy: OnRootMismatch
+            runAsGroup: 1982
+            runAsUser: 1982
+            supplementalGroups:
+              - 1982
+          containers:
+            - name: trino-container
+              image: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-conecta-trino:1.0.3
+              imagePullPolicy: Always
+              env:
+                - name: TZ
+                  value: America/Sao_Paulo
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  cd /app;
+                  sleep 20;
+                  python3 /app/conecta.py /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/TRINO/ParametersALL/187.100.227.120/
+              volumeMounts:
+                - name: storage
+                  mountPath: /opt/alticelabs/namf/medrepo/staging
+              resources:
+                limits:
+                  memory: 4096Mi
+                  cpu: "1"
+                requests:
+                  memory: 2048Mi
+                  cpu: "200m"
+          volumes:
+            - name: storage
+              persistentVolumeClaim:
+                claimName: namf-shared-filesystem

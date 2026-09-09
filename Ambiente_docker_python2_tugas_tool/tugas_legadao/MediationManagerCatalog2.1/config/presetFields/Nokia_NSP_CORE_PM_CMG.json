@@ -1,0 +1,89 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "STARTTIME",
+      "sqlName" : "STARTTIME",
+      "udn" : "startTime",
+      "desc" : "Start time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "INTERVAL",
+      "sqlName" : "INTERVAL",
+      "udn" : "interval",
+      "desc" : "interval",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "MEASUREDOBJECTID",
+      "sqlName" : "MEASUREDOBJECTID",
+      "udn" : "measuredObjectID",
+      "desc" : "Identifier of the object to which the counter applies",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "LOCALDN",
+      "sqlName" : "LOCALDN",
+      "udn" : "LOCALDN",
+      "desc" : "LOCALDN",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MNC",
+      "sqlName" : "MNC",
+      "udn" : "MNC",
+      "desc" : "MNC",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MCC",
+      "sqlName" : "MCC",
+      "udn" : "MCC",
+      "desc" : "MCC",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MANAGEDELEMENT",
+      "sqlName" : "MANAGEDELEMENT",
+      "udn" : "ManagedElement",
+      "desc" : "ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "ELEMENTTYPE",
+      "sqlName" : "ELEMENTTYPE",
+      "udn" : "elementType",
+      "desc" : "elementType",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

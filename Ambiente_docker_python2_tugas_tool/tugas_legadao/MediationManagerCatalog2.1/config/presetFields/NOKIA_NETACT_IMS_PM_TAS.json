@@ -1,0 +1,53 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "startTime",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "interval",
+      "sqlName" : "INTERVAL",
+      "udn" : "interval",
+      "desc" : "Interval when data is collected",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "distName",
+      "sqlName" : "distName",
+      "udn" : "distName",
+      "desc" : "Unique distName (first MO)",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "measuredObjectID",
+      "sqlName" : "measuredObjectID",
+      "udn" : "measuredObjectID",
+      "desc" : "All MOs",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

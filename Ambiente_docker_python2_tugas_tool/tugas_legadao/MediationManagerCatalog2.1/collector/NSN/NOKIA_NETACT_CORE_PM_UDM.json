@@ -1,0 +1,75 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_CORE_PM",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "NETACT_CORE_PM_UDM",
+		"version": "22.8.0",
+		"tech": "UDM",
+		"nameNomenclature": "NOKIA_NETACT_CORE_PM_UDM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_CORE_PM_UDM",
+		"presetFields" : "NOKIA_NETACT_CORE_PM_UDM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "UDM_"
+				},
+				{
+					"field": "udn",
+					"value": "UDM_"
+				}
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : "^.*"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

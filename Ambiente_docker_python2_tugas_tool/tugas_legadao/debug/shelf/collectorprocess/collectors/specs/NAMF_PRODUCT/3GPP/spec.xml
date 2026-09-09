@@ -1,0 +1,8 @@
+<spec>
+	<operation type="InputManagers" name="Files" path="">
+		<pattern>*</pattern>
+	</operation>
+	<operation type="Readers" name="ALB.3GPP.32_435" process_me="True" use_end_time="True" />
+	<operation type="OutputManagers" name="Kafka" print="True" />
+	<!--operation type="OutputManagers" name="CSV" catalog="NAMF_PRODUCT_ORACLE_client.xml" path=""/-->
+</spec>

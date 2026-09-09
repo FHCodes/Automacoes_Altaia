@@ -1,0 +1,45 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "Result Time",
+      "sqlName" : "ResultTime",
+      "udn" : "ResultTime",
+      "desc" : "Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "Granularity Period",
+      "sqlName" : "GranularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "Reliability",
+      "sqlName" : "Reliability",
+      "udn" : "Reliability",
+      "desc" : "Reliability",
+      "dataType" : "VARCHAR2(10)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "Object Name",
+      "sqlName" : "ObjectName",
+      "udn" : "ObjectName",
+      "desc" : "Measured Object Local Distinguish Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

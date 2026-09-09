@@ -1,0 +1,146 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "measStartTime",
+      "sqlName" : "measStartTime",
+      "udn" : "measStartTime",
+      "desc" : "Start time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measEndTime",
+      "sqlName" : "measEndTime",
+      "udn" : "measEndTime",
+      "desc" : "End time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "granularityPeriod",
+      "sqlName" : "granularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity Period duration",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "networkElementName",
+      "sqlName" : "networkElementName",
+      "udn" : "networkElementName",
+      "desc" : "Name of the Network Element the measurement corresponds to.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "neSoftwareRelease",
+      "sqlName" : "neSoftwareRelease",
+      "udn" : "neSoftwareRelease",
+      "desc" : "Network Element software version.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "neDistinguishedName",
+      "sqlName" : "neDistinguishedName",
+      "udn" : "neDistinguishedName",
+      "desc" : "Network Element Distinguished Name.",
+      "dataType" : "VARCHAR2(600)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measuredObjectID",
+      "sqlName" : "measuredObjectID",
+      "udn" : "measuredObjectID",
+      "desc" : "Measured Object Identifier",
+      "dataType" : "VARCHAR2(600)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measuredObjectType",
+      "sqlName" : "measuredObjectType",
+      "udn" : "measuredObjectType",
+      "desc" : "N/A",
+      "dataType" : "VARCHAR2(2000)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SubNetwork1",
+      "sqlName" : "SubNetwork1",
+      "udn" : "SubNetwork1",
+      "desc" : "N/A",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SubNetwork2",
+      "sqlName" : "SubNetwork2",
+      "udn" : "SubNetwork2",
+      "desc" : "N/A",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MeContext",
+      "sqlName" : "MeContext",
+      "udn" : "MeContext",
+      "desc" : "N/A",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "sqlName":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP(3)",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"FDN",
+      "sqlName":"FDN",
+      "udn":"FDN",
+      "name":"FDN",
+      "desc":"FDN",
+      "dataType":"VARCHAR2(500)",
+      "dataUnit":"STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"GNODEB_NAME",
+      "sqlName":"GNODEB_NAME",
+      "udn":"GNODEB_NAME",
+      "name":"GNODEB_NAME",
+      "desc":"GNODEB_NAME",
+      "dataType":"VARCHAR2(256)",
+      "dataUnit":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id" : "GRANULARITYPERIOD",
+      "sqlName" : "GRANULARITYPERIOD",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity Period duration",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "CM"
+    }
+  ]
+}

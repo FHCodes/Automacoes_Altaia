@@ -1,0 +1,53 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "startTime",
+      "sqlName" : "startTime",
+      "udn" : "startTime",
+      "desc" : "Start time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "interval",
+      "sqlName" : "interval",
+      "udn" : "interval",
+      "desc" : "Time interval of measurement",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "DISTNAME",
+      "sqlName" : "DISTNAME",
+      "udn" : "DISTNAME",
+      "desc" : "Distinguish Name of NetworkElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "measuredObjectID",
+      "sqlName" : "measuredObjectID",
+      "udn" : "measuredObjectID",
+      "desc" : "All MOs",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "dimension",
+      "sqlName" : "dimension",
+      "udn" : "dimension",
+      "desc" : "Name of data dimension",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

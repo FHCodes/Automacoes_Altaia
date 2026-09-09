@@ -1,0 +1,64 @@
+{
+  "collector": {
+    "name": "HUAWEI_M2000_SRAN_PM_PTP",
+    "collectorType": "PM",
+    "vendor": "HUAWEI",
+    "model": "OSS_RAN_PM_SRAN",
+    "version": "19.1",
+    "tech": "SRAN",
+    "nameNomenclature": "HUAWEI_OSS_SRAN_PM_#_19_1"
+  },
+  "inputFormat": {
+    "format": "excelHuawei_SRAN",
+    "doc": "",
+    "formatConfig": "HUAWEI_M2000_SRAN_PM_PTP",
+    "presetFields": "HUAWEI_M2000_SRAN_PTP"
+  },
+  "rules": {
+    "unit": {
+      "genericHierarchy": [
+        {
+          "regex": "",
+          "sepCharPattern": "=",
+          "interChar": ",",
+          "startField": "OBJECT",
+          "fieldName": "Object Name"
+        }
+      ],
+      "translateTo":[ {"filename":"configToLegacy_HUA_PTP" } ],
+      "addPrefix":
+      [
+        {
+          "field" : "udn",
+          "value" : "T"
+        }
+      ]
+    },
+    "item": {}
+  },
+  "outputFormat": {
+    "format" : "xml",
+    "catalogs": [
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+    "clientCatalog": {},
+    "ossCatalog": {},
+    "operationsCatalog": {
+      "unit": {
+        "filterDocs": [
+          {
+            "by": "regex",
+            "field": "Granularity Period",
+            "pattern": "60"
+          }
+        ]
+      },
+      "item": {}
+    }
+  }
+}

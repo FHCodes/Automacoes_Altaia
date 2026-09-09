@@ -1,0 +1,37 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "BEGINTIME",
+      "sqlName" : "BEGINTIME",
+      "udn" : "beginTime",
+      "desc" : "Start time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "GRANULARITYPERIOD",
+      "sqlName" : "GRANULARITYPERIOD",
+      "udn" : "GranularityPeriod",
+      "desc" : "Granularity period interval.",
+      "dataType" : "NUMBER",
+      "dataUnit": "MINUTES",
+      "dbn0type" : "MT",
+      "correctTypeCust": "INTEGER"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

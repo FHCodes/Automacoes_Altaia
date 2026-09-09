@@ -1,0 +1,107 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "BEGINTIME",
+      "sqlName" : "BEGINTIME",
+      "udn" : "BEGINTIME",
+      "desc" : "Start time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "LOCALDN",
+      "sqlName" : "LOCALDN",
+      "udn" : "localDn",
+      "desc" : "The LDN of the ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "MEASOBJLDN",
+      "sqlName" : "MEASOBJLDN",
+      "udn" : "measObjLdn",
+      "desc" : "The LDN of the measured object.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "ELEMENTTYPE",
+      "sqlName" : "ELEMENTTYPE",
+      "udn" : "elementType",
+      "desc" : "The element type, as specified in the key value and the productDesignation structure member in the productIdentity attribute of ManagedElement.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "VENDORNAME",
+      "sqlName" : "VENDORNAME",
+      "udn" : "vendorName",
+      "desc" : "Vendor name, that is, Ericsson.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SWVERSION",
+      "sqlName" : "SWVERSION",
+      "udn" : "swVersion",
+      "desc" : "The element type, as specified in the key value and the productRevision structure member in the productIdentity attribute value of ManagedElement.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "DURATION",
+      "sqlName" : "DURATION",
+      "udn" : "duration",
+      "desc" : "Interval when PM data is collected",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SubNetwork1",
+      "sqlName" : "SubNetwork1",
+      "udn" : "SubNetwork1",
+      "desc" : "N/A",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SubNetwork2",
+      "sqlName" : "SubNetwork2",
+      "udn" : "SubNetwork2",
+      "desc" : "N/A",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MeContext",
+      "sqlName" : "MeContext",
+      "udn" : "MeContext",
+      "desc" : "N/A",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "BEGINTIME",
+      "sqlName" : "BEGINTIME",
+      "udn" : "BEGINTIME",
+      "desc" : "Start time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "DNPREFIX",
+      "sqlName" : "DNPREFIX",
+      "udn" : "DNPREFIX",
+      "desc" : "DN prefix, as specified in the dnPrefix attribute of the ManagedElement.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "LOCALDN",
+      "sqlName" : "LOCALDN",
+      "udn" : "LOCALDN",
+      "desc" : "The LDN of the ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "MEASOBJLDN",
+      "sqlName" : "MEASOBJLDN",
+      "udn" : "MEASOBJLDN",
+      "desc" : "The LDN of the measured object.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "ELEMENTTYPE",
+      "sqlName" : "ELEMENTTYPE",
+      "udn" : "ELEMENTTYPE",
+      "desc" : "The element type, as specified in the key value and the productDesignation structure member in the productIdentity attribute of ManagedElement.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "VENDORNAME",
+      "sqlName" : "VENDORNAME",
+      "udn" : "VENDORNAME",
+      "desc" : "Vendor name, that is, Ericsson.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "ENDTIME",
+      "udn" : "ENDTIME",
+      "desc" : "End time of the measurement data collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SWVERSION",
+      "sqlName" : "SWVERSION",
+      "udn" : "SWVERSION",
+      "desc" : "The element type, as specified in the key value and the productRevision structure member in the productIdentity attribute value of ManagedElement.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SUBNETWORK1",
+      "sqlName" : "SUBNETWORK1",
+      "udn" : "SUBNETWORK1",
+      "desc" : "SUBNETWORK1",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SUBNETWORK2",
+      "sqlName" : "SUBNETWORK2",
+      "udn" : "SUBNETWORK2",
+      "desc" : "SUBNETWORK2",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MECONTEXT",
+      "sqlName" : "MECONTEXT",
+      "udn" : "MECONTEXT",
+      "desc" : "MECONTEXT",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MANAGEDELEMENT",
+      "sqlName" : "MANAGEDELEMENT",
+      "udn" : "MANAGEDELEMENT",
+      "desc" : "MANAGEDELEMENT",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "DURATION",
+      "sqlName" : "DURATION",
+      "udn" : "DURATION",
+      "desc" : "The granularity period in the format PTS, where n denotes seconds and can be 10, 30, 60, 300, 900, 1800, 3600, 43200, or 86400.",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

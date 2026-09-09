@@ -1,0 +1,53 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "DATETIME",
+      "sqlName" : "DATETIME",
+      "udn" : "DATETIME",
+      "desc" : "Datetime",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "EPC_NAME",
+      "sqlName" : "EPC_NAME",
+      "udn" : "EPC_NAME",
+      "desc" : "EPC Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "GranularityPeriod",
+      "sqlName" : "GranularityPeriod",
+      "udn" : "GranularityPeriod",
+      "desc" : "Interval when PM data is collected",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "DATE",
+      "sqlName" : "C_DATE",
+      "udn" : "DATE",
+      "desc" : "Date",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "TIME",
+      "sqlName" : "C_TIME",
+      "udn" : "TIME",
+      "desc" : "Time",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

@@ -1,0 +1,38 @@
+{
+	"1" : {
+		"sheetName": "families",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "FAMILY_ID",
+				"ossId": "FAMILY_ID",
+				"hierarchy": "MEASUREDOBJECTS",
+				"name": "TABLE_UDN",
+				"udn": "TABLE_UDN",
+				"desc": "TABLE_DESC",
+				"tableName": "TABLENAME",
+				"tech": "TECH"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "counters",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "FAMILY_ID",
+				"id": "COL_UDN/COL_ID",
+				"bdcolname": "COLNAME",
+				"udn": "COL_UDN/COL_ID",
+				"name": "COL_UDN/COL_ID",
+				"desc": "DESCRIPTION",
+				"bdtype": "BDTYPE",
+				"dbn0type": "DBN0TYPE",
+				"dataType": "TYPEVENDOR",
+				"dataUnit": "vazio",
+				"multiplicity": "indefinido"
+			}
+		}
+	}
+}

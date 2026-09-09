@@ -1,0 +1,171 @@
+{
+  "unit" :
+  {
+    "sqlName" :
+    {
+      "maxLength" : 27,
+      "regexUnwantedChar" : "",
+      "NSN":
+      {
+        "char" :
+        {
+          "PM" : "M",
+          "CM" : "P"
+        }
+      },
+      "HUAWEI":
+      {
+        "char" :
+        {
+          "PM" : "T",
+          "CM" : "P"
+        }
+      },
+      "ERICSSON":
+      {
+        "char" :
+        {
+          "PM" : "M",
+          "CM" : "P"
+        }
+      },
+      "GENERIC":
+      {
+        "char" :
+        {
+          "PM" : "M",
+          "CM" : "P"
+        }
+      }
+    }
+  },
+  "item" :
+  {
+    "sqlName" :
+    {
+      "maxLength" : 30,
+      "regexUnwantedChar" : "",
+      "NSN":
+      {
+        "char" :
+        {
+          "PM" : "C",
+          "CM" : "P"
+        }
+      },
+      "HUAWEI":
+      {
+        "char" :
+        {
+          "PM" : "C",
+          "CM" : "P"
+        }
+      },
+      "ERICSSON":
+      {
+        "char" :
+        {
+          "PM" : "C",
+          "CM" : "P"
+        }
+      },
+      "GENERIC":
+      {
+        "char" :
+        {
+          "PM" : "C",
+          "CM" : "P"
+        }
+      }
+    },
+    "bdtype": {
+      "INTEGER": "NUMBER",
+      "INT": "NUMBER",
+      "UINT": "NUMBER",
+      "FLOAT": "NUMBER",
+      "NUMBER": "NUMBER",
+      "UNSIGNEDBYTE": "NUMBER",
+      "UNSIGNEDINT": "NUMBER",
+      "UNSIGNEDSHORT": "NUMBER",
+      "BOOLEAN": "VARCHAR2(256)",
+      "STRING": "VARCHAR2(256)",
+      "GAUGE": "NUMBER",
+      "PDF": "VARCHAR2(600)",
+      "MAX": "NUMBER",
+      "CC/SUM": "NUMBER",
+      "CC": "NUMBER",
+      "CUMULATIVE COUNTER": "NUMBER",
+      "ACC": "NUMBER",
+      "SQR": "NUMBER",
+      "PEG": "NUMBER",
+      "SCAN": "NUMBER",
+      "DDM": "VARCHAR2(600)",
+      "INCREMENTAL": "NUMBER",
+      "LONG": "NUMBER",
+      "MANAGEDOBJECT": "VARCHAR2(256)",
+      "COUNTER": "NUMBER",
+      "STATUS COUNTER": "NUMBER",
+      "IDENTIFIER": "VARCHAR2(256)",
+      "PERCENTAGE": "NUMBER",
+      "BITMAP": "NUMBER",
+      "SI": "NUMBER",
+      "TIME": "TIMESTAMP(3)",
+      "TIMESTAMP": "TIMESTAMP(3)",
+      "%": "NUMBER",
+      "TRIGSQR": "NUMBER",
+      "TRIGSCAN": "NUMBER",
+      "TRIGACC": "NUMBER"
+    },
+    "typeCust": {
+      "INTEGER": "INTEGER",
+      "INT": "INTEGER",
+      "UINT": "INTEGER",
+      "FLOAT": "INTEGER",
+      "NUMBER": "INTEGER",
+      "UNSIGNEDBYTE": "INTEGER",
+      "UNSIGNEDINT": "INTEGER",
+      "UNSIGNEDSHORT": "INTEGER",
+      "BOOLEAN": "STRING",
+      "STRING": "STRING",
+      "GAUGE": "INTEGER",
+      "PDF": "STRING",
+      "MAX": "INTEGER",
+      "CC/SUM": "INTEGER",
+      "CC": "INTEGER",
+      "CUMULATIVE COUNTER": "INTEGER",
+      "ACC": "INTEGER",
+      "SQR": "INTEGER",
+      "PEG": "COUNTER",
+      "SCAN": "COUNTER",
+      "DDM": "STRING",
+      "INCREMENTAL": "COUNTER",
+      "LONG": "INTEGER",
+      "MANAGEDOBJECT": "STRING",
+      "COUNTER8": "COUNTER8",
+      "COUNTER16": "COUNTER16",
+      "COUNTER32": "COUNTER32",
+      "COUNTER64": "COUNTER64",
+      "COUNTER=32BIT": "COUNTER32",
+      "COUNTER=64BIT": "COUNTER64",
+      "COUNTER": "COUNTER",
+      "STATUS COUNTER": "COUNTER",
+      "IDENTIFIER": "STRING",
+      "PERCENTAGE": "INTEGER",
+      "BITMAP": "INTEGER",
+      "SI": "INTEGER",
+      "TIME": "TIMESTAMP",
+      "TIMESTAMP": "TIMESTAMP",
+      "%": "INTEGER",
+      "TRIGSQR": "INTEGER",
+      "TRIGSCAN": "INTEGER",
+      "TRIGACC": "INTEGER"
+    },
+    "dbn0typePDF":[
+      "PDF",
+      "DDM"
+    ]
+  },
+  "validations":[
+    ""
+  ]
+}

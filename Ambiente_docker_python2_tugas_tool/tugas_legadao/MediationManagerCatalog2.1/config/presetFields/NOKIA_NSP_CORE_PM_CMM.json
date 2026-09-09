@@ -1,0 +1,80 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "beginTime",
+      "sqlName" : "STARTTIME",
+      "udn" : "startTime",
+      "desc" : "Start time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "duration",
+      "sqlName" : "INTERVAL",
+      "udn" : "interval",
+      "desc" : "interval",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "measObjLdn",
+      "sqlName" : "MEASUREDOBJECTID",
+      "udn" : "measuredObjectID",
+      "desc" : "Identifier of the object to which the counter applies",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "localDn",
+      "sqlName" : "DISTNAME",
+      "udn" : "distName",
+      "desc" : "Network Element Distinguished Name.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "elementType",
+      "sqlName" : "ELEMENTTYPE",
+      "udn" : "elementType",
+      "desc" : "elementType",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "swVersion",
+      "sqlName" : "NESOFTWARERELEASE",
+      "udn" : "neSoftwareRelease",
+      "desc" : "Network Element software version.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "CMM",
+      "sqlName" : "CMM",
+      "udn" : "CMM",
+      "desc" : "CMM",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

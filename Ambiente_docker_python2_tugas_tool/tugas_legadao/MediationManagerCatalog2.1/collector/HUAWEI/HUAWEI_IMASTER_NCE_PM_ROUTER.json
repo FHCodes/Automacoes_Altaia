@@ -1,0 +1,56 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_IMASTER_NCE_PM_ROUTER",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "IMASTER_NCE_PM_ROUTER",
+		"version" : "V100R020C10",
+		"tech" : "ROUTER",
+		"nameNomenclature" : "HUAWEI_IMASTER_NCE_PM_ROUTER_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_IMASTER_NCE_PM_ROUTER",
+		"presetFields" : "HUAWEI_IMASTER_NCE_PM_ROUTER"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

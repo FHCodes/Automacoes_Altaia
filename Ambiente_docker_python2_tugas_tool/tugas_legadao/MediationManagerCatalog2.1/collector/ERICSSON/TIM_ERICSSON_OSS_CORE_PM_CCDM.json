@@ -1,0 +1,78 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_ERICSSON_OSS_CORE_PM_CCDM",
+		"collectorType" : "PM",
+		"vendor": "ERICSSON",
+		"model": "CCDM",
+		"version": "V1.5",
+		"tech": "CORE5G",
+		"nameNomenclature": "ERICSSON_OSS_CORE_PM_CCDM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_CORE_PM_CCDM",
+		"presetFields" : "TIM_ERICSSON_OSS_CORE_PM_CCDM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CCDM_"
+				},
+				{
+					"field": "udn",
+					"value": "CCDM_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"genericHierarchy":
+			[
+				{
+					"regex" : "",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startField" : "",
+					"fieldName" : "MEASOBJLDN"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+
+			},
+			"item": {}
+		}
+	}
+}

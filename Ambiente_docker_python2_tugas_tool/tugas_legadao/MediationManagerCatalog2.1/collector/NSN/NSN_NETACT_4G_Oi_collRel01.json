@@ -1,0 +1,94 @@
+{
+	"collector" :
+	{
+		"name" : "NSN_NETACT_4G_Oi_collRel01",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "NETACT_4G",
+		"version": "FL20C",
+		"tech": "R4G",
+		"nameNomenclature": "NOKIA_NETACT_4G_PM_#_FL20C"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_4G_Oi_collRel01",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"Nokia_num_name":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "M"
+				},
+				{
+					"field" : "udn",
+					"value" : "M"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"NOKIA_enrichment":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				],
+				"enrichment":
+				[
+					{
+						"scope": "NSN_NETACT_LTE",
+						"corrKey": [
+							{"DISTNAME": [""]}
+						],
+						"newField": [{"MRBTS_NAME": ["MRBTS_NAME"]}, {"LNBTS_NAME":["LNBTS_NAME"]}, {"CELL_NAME":["CELL_NAME"]}]
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

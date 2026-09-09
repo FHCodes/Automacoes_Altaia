@@ -1,0 +1,94 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2020_CORE_PM_UMG",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "U2020_CORE_PM_UMG",
+		"version" : "V200R010C20SPC150",
+		"tech" : "UMG8900",
+		"nameNomenclature" : "HUAWEI_U2020_CORE_PM_UMG_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_U2000_NGN_PM_MSoftX3000",
+		"presetFields" : "HUAWEI_3GPP"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "UMG_"
+				},
+				{
+					"field": "udn",
+					"value": "UMG_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"huaweiHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : "MGWNE"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "Object Name"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

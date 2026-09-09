@@ -1,0 +1,68 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_ERICSSON_OSS_CORE_PM_CCPC",
+		"collectorType" : "PM",
+		"vendor": "ERICSSON",
+		"model": "ERICSSON_OSS_CORE_PM_CCPC",
+		"version": "V1.7",
+		"tech": "CORE5G",
+		"nameNomenclature": "ERICSSON_OSS_CORE_PM_CCPC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_CORE_PM_CCPC",
+		"presetFields" : "TIM_ERICSSON_OSS_CORE_PM_CCPC"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"genericHierarchy":
+			[
+				{
+					"regex" : "",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startField" : "",
+					"fieldName" : "MEASOBJLDN"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format":"xml",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+
+			},
+			"item": {}
+		}
+	}
+}

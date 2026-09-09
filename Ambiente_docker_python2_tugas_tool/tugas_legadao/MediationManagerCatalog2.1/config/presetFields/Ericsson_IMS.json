@@ -1,0 +1,127 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "measStartTime",
+      "sqlName" : "measStartTime",
+      "udn" : "measStartTime",
+      "desc" : "Start time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measEndTime",
+      "sqlName" : "measEndTime",
+      "udn" : "measEndTime",
+      "desc" : "End time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "granularityPeriod",
+      "sqlName" : "granularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity Period duration",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "networkElementName",
+      "sqlName" : "networkElementName",
+      "udn" : "networkElementName",
+      "desc" : "Name of the Network Element the measurement corresponds to.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "neDistinguishedName",
+      "sqlName" : "neDistinguishedName",
+      "udn" : "neDistinguishedName",
+      "desc" : "Network Element Distinguished Name.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measuredObjectID",
+      "sqlName" : "measuredObjectID",
+      "udn" : "measuredObjectID",
+      "desc" : "Measured Object Identifier",
+      "dataType" : "VARCHAR2(600)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "dc",
+      "sqlName" : "dc",
+      "udn" : "dc",
+      "desc" : "dc",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "g3subnetwork",
+      "sqlName" : "g3subnetwork",
+      "udn" : "g3subnetwork",
+      "desc" : "g3subnetwork",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "g3ManagedElement",
+      "sqlName" : "g3ManagedElement",
+      "udn" : "g3ManagedElement",
+      "desc" : "g3ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "bdcolname":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"distName",
+      "desc":"Unique distName (first MO)",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"version",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"class",
+      "desc":"",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id":"id",
+      "desc":"Identifier",
+      "type":"VARCHAR2(256)",
+      "vendorType":"STRING",
+      "dbn0type":"ID"
+    }
+  ]
+}

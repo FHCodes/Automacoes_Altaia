@@ -1,0 +1,125 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "BEGINTIME",
+      "sqlName" : "BEGINTIME",
+      "udn" : "beginTime",
+      "desc" : "Start time of the measurement data collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "DNPREFIX",
+      "sqlName" : "DNPREFIX",
+      "udn" : "dnPrefix",
+      "desc" : "DN prefix, as specified in the dnPrefix attribute of the ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "LOCALDN",
+      "sqlName" : "LOCALDN",
+      "udn" : "localDn",
+      "desc" : "The LDN of the ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "MEASOBJLDN",
+      "sqlName" : "MEASOBJLDN",
+      "udn" : "measObjLdn",
+      "desc" : "The LDN of the measured object",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "ELEMENTTYPE",
+      "sqlName" : "ELEMENTTYPE",
+      "udn" : "elementType",
+      "desc" : "The element type, as specified in the key value and the productDesignation structure member in the productIdentity attribute of ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "VENDORNAME",
+      "sqlName" : "VENDORNAME",
+      "udn" : "vendorName",
+      "desc" : "Vendor name, that is, Ericsson",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "ENDTIME",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End time of the measurement data collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SWVERSION",
+      "sqlName" : "SWVERSION",
+      "udn" : "swVersion",
+      "desc" : "The element type, as specified in the key value and the productRevision structure member in the productIdentity attribute value of ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MECONTEXT",
+      "sqlName" : "MECONTEXT",
+      "udn" : "MeContext",
+      "desc" : "MeContext",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "HSS",
+      "sqlName" : "HSS",
+      "udn" : "HSS",
+      "desc" : "HSS",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SUBNETWORK1",
+      "sqlName" : "SUBNETWORK1",
+      "udn" : "SubNetwork1",
+      "desc" : "Sub Network Element 1",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "SUBNETWORK2",
+      "sqlName" : "SUBNETWORK2",
+      "udn" : "SubNetwork2",
+      "desc" : "Sub Network Element 2",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "DURATION",
+      "sqlName" : "DURATION",
+      "udn" : "duration",
+      "desc" : "Interval when PM data is collected",
+      "dataType" : "NUMBER",
+      "dataUnit" : "INTEGER",
+      "dbn0type" : "MT"
+    }
+  ],
+  "CM" :
+  [
+  ]
+}

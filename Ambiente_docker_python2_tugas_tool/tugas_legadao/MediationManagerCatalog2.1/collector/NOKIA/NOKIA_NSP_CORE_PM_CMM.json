@@ -1,0 +1,76 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_CORE_PM_CMM",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "NETACT_CORE_PM_CMM",
+		"version": "25.3",
+		"tech": "CMM",
+		"nameNomenclature": "NOKIA_NETACT_CORE_PM_CMM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_CORE_PM_CMM",
+		"presetFields" : "NOKIA_NETACT_CORE_PM_CMM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CMM_"
+				},
+				{
+					"field": "udn",
+					"value": "CMM_"
+				}
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "^PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : "^.*",
+					"hierarchySep": ","
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

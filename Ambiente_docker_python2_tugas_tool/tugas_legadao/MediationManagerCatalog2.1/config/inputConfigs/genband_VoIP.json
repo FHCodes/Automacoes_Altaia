@@ -1,0 +1,38 @@
+{
+	"1" :
+	{
+		"sheetName" : "Folha2",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "MO",
+				"ossId": "MO",
+				"name": "Name",
+				"udn": "MO",
+				"desc": "desc",
+				"tableName": "tableName",
+				"hierarchy": "Hierarquia"
+			}
+		}
+	},
+	"2" :
+	{
+		"sheetName" : "Folha1",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "MO",
+				"id": "Counter",
+				"bdcolname": "Counter",
+				"udn": "Counter",
+				"name": "CounterName",
+				"desc": "DescCounter",
+				"bdtype": "DataType",
+				"dataType": "DataType",
+				"dataUnit": "Unit",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

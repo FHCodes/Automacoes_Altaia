@@ -1,0 +1,128 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_ERICSSON_OSS_RAN_EBS_5G",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS_RAN_EBS_5G",
+		"version" : "EBS24Q2",
+		"tech" : "EBS_5G",
+		"nameNomenclature" : "ERICSSON_OSS_RAN_EBS_5G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_RAN_EBS_5G",
+		"presetFields" : "5G_EBS_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "EBS_"
+				},
+				{
+					"field": "udn",
+					"value": "EBS_"
+				}
+			],
+			"tableSizeParticioner_Ericsson":
+			[
+				0
+			],
+			"measurementPartitioner_partitionOf_PM":
+			[
+				{
+					"format": "XML",
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"ericssonHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : "",
+					"startText" : ""
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "MEASOBJLDN"
+					}
+				],
+				"applyRegex2": [
+					{
+						"field": "LOCALDN",
+						"pattern": "SubNetwork=(?P<SUBNETWORK1>.+?),(SubNetwork=(?P<SUBNETWORK2>.+?),)?MeContext=(?P<MECONTEXT>.+)",
+						"newFields": ["SUBNETWORK1", "SUBNETWORK2", "MECONTEXT"]
+					}
+				],
+				"measurementParticioner":
+				[]
+			},
+			"item" :
+			{
+				"splitMultiValue": [
+					{
+						"delimiter": ","
+					}
+				]
+			}
+		}
+	}
+}

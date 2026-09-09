@@ -1,0 +1,136 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_M2000_RAN_CM",
+		"collectorType" : "CM",
+		"vendor" : "HUAWEI",
+		"model" : "SRAN",
+		"version" : "16.1",
+		"tech" : "",
+		"nameNomenclature" : "HUAWEI_parameters_#_M2000_SRAN_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei_CMExportV2",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_M2000_4G_MongoDB_to_DBN0",
+		"presetFields" : "HUAWEI_M2000_SRAN"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				},
+				{
+					"field": "udn",
+					"value": "CM_"
+				}
+			],
+			"huawei_GExport":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"enrichment":
+				[
+					{
+						"scope": "HUAWEI_SRAN",
+						"corrKey":
+						[
+							{
+								"FDN": [""]
+							}
+						],
+						"newField":
+						[
+							{
+								"CELL_NAME": [
+									"CELLID",
+									"LOCALCELLID",
+									"LOCELL",
+									"ULOCELLID",
+									"ULOCELL",
+									"GLOCELLID",
+									"CELLNAME",
+									"LOCALCELLNAME",
+									"SRC2GNCELLID",
+									"SRC3GNCELLID",
+									"SRCLTENCELLID",
+									"INNCELLID",
+									"PRIMARYLOCALCELLID"
+								]
+							},
+							{
+								"BTS_NAME": [
+									"BTSNAME",
+									"BTSID",
+									"GBTSFUNCTIONNAME"
+								]
+							},
+							{
+								"BSC_NAME": [
+									"BSCID",
+									"BSCIDX",
+									"BSCTID",
+									"LOCALBSCID",
+									"BSCNAME"
+								]
+							},
+							{
+								"NODEB_NAME": [
+									"NODEBNAME",
+									"NODEBID",
+									"NODEBFUNCTIONNAME"
+								]
+							},
+							{
+								"RNC_NAME": [
+									"RNCID",
+									"RNCNAME",
+									"LOGICRNCID"
+								]
+							},
+							{
+								"ENODEB_NAME": [
+									"ENODEBID",
+									"ENODEBNAME",
+									"ENODEBFUNCTIONNAME"
+								]
+							}
+						]
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

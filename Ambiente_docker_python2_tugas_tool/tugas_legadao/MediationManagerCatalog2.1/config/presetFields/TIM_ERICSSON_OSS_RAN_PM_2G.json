@@ -1,0 +1,126 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "measStartTime",
+      "sqlName" : "measStartTime",
+      "udn" : "measStartTime",
+      "desc" : "Start time of the measurement data collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measEndTime",
+      "sqlName" : "measEndTime",
+      "udn" : "measEndTime",
+      "desc" : "End time of the measurement data collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "granularityPeriod",
+      "sqlName" : "granularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity Period duration",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "networkElementName",
+      "sqlName" : "networkElementName",
+      "udn" : "networkElementName",
+      "desc" : "Uniquely identifies the NE or EM",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "fileFormatVersion",
+      "sqlName" : "fileFormatVersion",
+      "udn" : "fileFormatVersion",
+      "desc" : "Format version identifier",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "senderType",
+      "sqlName" : "senderType",
+      "udn" : "senderType",
+      "desc" : "User configurable identifier of the type of network node that generated the file.",
+      "dataType" : "VARCHAR2(600)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },{
+      "id" : "NEUSERNAME",
+      "sqlName" : "NEUSERNAME",
+      "udn" : "NEUserName",
+      "desc" : "NEUserName",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },{
+      "id" : "VENDORNAME",
+      "sqlName" : "VENDORNAME",
+      "udn" : "VendorName",
+      "desc" : "VendorName",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "objectID",
+      "sqlName" : "objectID",
+      "udn" : "objectID",
+      "desc" : "Measured Object Identifier",
+      "dataType" : "VARCHAR2(600)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "BSCNAME",
+      "sqlName" : "BSCNAME",
+      "udn" : "BSCNAME",
+      "desc" : "BscName",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "sqlName":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP(3)",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"FDN",
+      "sqlName":"FDN",
+      "udn":"FDN",
+      "name":"FDN",
+      "desc":"FDN",
+      "dataType":"VARCHAR2(500)",
+      "dataUnit":"STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"RNC_NAME",
+      "sqlName":"RNC_NAME",
+      "udn":"RNC_NAME",
+      "name":"RNC_NAME",
+      "desc":"RNC_NAME",
+      "dataType":"VARCHAR2(256)",
+      "dataUnit":"STRING",
+      "dbn0type":"ID"
+    }
+  ]
+}

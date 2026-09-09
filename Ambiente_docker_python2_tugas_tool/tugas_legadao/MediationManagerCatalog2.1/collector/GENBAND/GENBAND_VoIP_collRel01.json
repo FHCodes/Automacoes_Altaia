@@ -1,0 +1,57 @@
+{
+	"collector" :
+	{
+		"name" : "GENBAND_VoIP_collRel01",
+		"collectorType" : "PM",
+		"vendor": "GENBAND",
+		"model": "VoIP",
+		"version": "1",
+		"tech": "GENBAND",
+		"nameNomenclature": "GENBAND_performance_#_VoIP_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "genband_VoIP",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "VoIP_"
+				},
+				{
+					"field": "udn",
+					"value": "VoIP_"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":	{},
+			"item": {}
+		}
+	}
+}

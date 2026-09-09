@@ -1,0 +1,39 @@
+{
+	"1" :
+	{
+		"sheetName" : "Units",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "Inventory Name",
+				"ossId": "Inventory Name",
+				"name": "Name",
+				"udn": "Table Name",
+				"desc": "Description",
+				"tableName": "Table Name",
+				"hierarchy": "INDICATOR GROUP NAME"
+			}
+		}
+	},
+	"2" :
+	{
+		"sheetName" : "Counters",
+		"item": {
+			"unitId": "ossId",
+			"itemId": "id",
+			"fieldMatch": {
+				"ossId": "Source Name",
+				"id": "Attribute/Counter Name",
+				"bdcolname": "Attribute/Counter Name",
+				"udn": "Attribute/Counter Name",
+				"name": "Attribute/Counter Name",
+				"dbn0type": "Mediation Type",
+				"bdtype": "Data Type",
+				"dataType": "Data Type",
+				"dataUnit": "Data Type",
+				"desc": "Description",
+				"multiplicity": "batatas"
+			}
+		}
+	}
+}

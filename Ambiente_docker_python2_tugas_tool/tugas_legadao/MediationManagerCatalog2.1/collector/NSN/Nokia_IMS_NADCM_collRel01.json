@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "Nokia_IMS_NADCM_collRel01",
+		"collectorType" : "PM",
+		"vendor": "NSN",
+		"model": "Netact",
+		"version": "19FP3",
+		"tech": "IMS",
+		"nameNomenclature": "NOKIA_NETACT_IMS_PM_NADCM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "Nokia_IMS_NADCM_collRel01",
+		"presetFields" : "NOKIA_NETACT_IMS_PM_NADCM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "NADCM_"
+				},
+				{
+					"field": "udn",
+					"value": "NADCM_"
+				}
+			],
+			"measuredObject3GPP_NSN_UNI":
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"columnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

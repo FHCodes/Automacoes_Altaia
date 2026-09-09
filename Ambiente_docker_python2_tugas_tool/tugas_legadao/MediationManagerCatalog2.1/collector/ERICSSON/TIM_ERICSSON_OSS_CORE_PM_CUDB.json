@@ -1,0 +1,56 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSS_CORE_PM_CUDB",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "CUDB",
+		"version" : "V1.15",
+		"tech" : "Ericsson",
+		"nameNomenclature" : "ERICSSON_OSS_CORE_PM_CUDB_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_CORE_PM_CUDB",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

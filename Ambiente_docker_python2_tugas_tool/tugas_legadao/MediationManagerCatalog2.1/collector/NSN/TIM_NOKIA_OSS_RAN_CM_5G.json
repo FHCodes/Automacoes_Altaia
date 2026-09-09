@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_NOKIA_OSS_RAN_CM_5G",
+		"collectorType" : "CM",
+		"vendor": "NOKIA",
+		"model": "NETACT",
+		"version": "NRBTSCL22R2",
+		"tech": "R5G",
+		"nameNomenclature": "NOKIA_OSS_RAN_CM_5G_#_NRBTSCL22R2"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_NOKIA_OSS_RAN_CM_5G",
+		"presetFields" : "TIM_2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM5G_"
+				}
+
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"parameterNameAdder":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "DISTNAME"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

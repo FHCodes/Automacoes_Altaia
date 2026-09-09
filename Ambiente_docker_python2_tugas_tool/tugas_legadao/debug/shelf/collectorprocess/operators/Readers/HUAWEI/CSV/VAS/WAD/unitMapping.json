@@ -1,0 +1,50 @@
+{
+    "RESULTADO": {
+        "unitID": "CAMPAIGNMANAGE",
+        "format": "%Y%m%d%H",
+        "granularity": 60,
+        "header": [
+            "SERVICE",
+            "STARTTIME",
+            "ACCOUNT",
+            "STATUS",
+            "AMOUNT"
+        ]
+    },
+    "TELCOMANAGER_WAD": {
+        "unitID": "GACTASKSTATUSLOG",
+        "format": "%Y-%m-%d%H:%M:%S",
+        "format2": "%Y/%m/%d%H:%M:%S",
+        "granularity": 1,
+        "header": [
+            "ARCHIVE_DATE",
+            "SITE",
+            "TASK_ID",
+            "TASK_NAME",
+            "TASK_STATUS",
+            "STARTTIME",
+            "TOTAL_NUMBER",
+            "DELIVER_NUMBER",
+            "P_ERROR",
+            "V_ERROR",
+            "U_ERROR",
+            "N_ERROR",
+            "I_ERROR",
+            "O_ERROR",
+            "E_ERROR",
+            "A_ERROR",
+            "D_ERROR",
+            "PERC_Y",
+            "PERC_P",
+            "PERC_V",
+            "PERC_U",
+            "PERC_N",
+            "PERC_I",
+            "PERC_O",
+            "PERC_E",
+            "PERC_A",
+            "PERC_D",
+            "THROUGHPUT"
+        ]
+    }
+}

@@ -1,0 +1,125 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_OSS_RAN_PM_FEMTO",
+		"collectorType" : "PM",
+		"vendor" : "NOKIA",
+		"model" : "FEMTO_3G_4G",
+		"version" : "3GLR16.1_4GSC17ASP",
+		"tech" : "FEMTO",
+		"nameNomenclature" : "NOKIA_OSS_RAN_PM_FEMTO_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc_V2",
+		"doc" : "",
+		"formatConfig" : "NOKIA_OSS_RAN_PM_FEMTO",
+		"presetFields" : "NOKIA_OSS_RAN_PM_FEMTO"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": ""
+				},
+				{
+					"field": "udn",
+					"value": ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"multipleFields_NEUN_NEDN" :
+			[
+				{
+					"fieldName": "NEUN",
+					"regex" : "",
+					"__sepCharDoc" : "?",
+					"__sepCharPattern" : "=",
+					"__interChar" : ",",
+					"startField" : "FemtoId",
+					"blockInRegex" : "="
+				},
+				{
+					"fieldName": "NEDN",
+					"regex" : "",
+					"__sepCharDoc" : "?",
+					"__sepCharPattern" : "=",
+					"__interChar" : ",",
+					"__startField" : "",
+					"blockInRegex" : "="
+				}
+			],
+			"multipleFieldsGeneric" :
+			[
+				{
+					"fieldName": "MOID",
+					"regex" : "",
+					"__sepCharDoc" : "?",
+					"__sepCharPattern" : "=",
+					"__interChar" : ",",
+					"__startField" : "",
+					"blockInRegex" : "="
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"__applyRegex": [
+
+					{
+						"field": "NEUN"
+					},
+					{
+						"field": "NEDN"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_NETACT_CORE_PM_FLEXINS",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "NETACT",
+		"version": "18.5",
+		"tech": "CORE_EPC",
+		"nameNomenclature": "NOKIA_NETACT_CORE_PM_FLEXINS_convert_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NOKIA_NETACT_CORE_PM_FLEXINS",
+		"presetFields" : "CORE_FLEXINS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+
+			"addSuffix":
+			[
+				{
+					"field": "sqlName",
+					"value": "_FLEXINS"
+				},
+				{
+					"field": "udn",
+					"value": "_FLEXINS"
+				}
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs":
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "measuredObjectID"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

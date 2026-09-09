@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "NSN_NETACT_4G_Oi_collRel01_CM",
+		"collectorType" : "CM",
+		"vendor": "NSN_Param_4G",
+		"model": "NETACT",
+		"version": "BTSMED19",
+		"tech": "BTSMED",
+		"nameNomenclature": "NSN_parameters_#_Netact_CM_4G"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_4G_Oi_collRel01_CM_SRAN",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM4G_"
+				}
+
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"parameterNameAdder":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "DISTNAME"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

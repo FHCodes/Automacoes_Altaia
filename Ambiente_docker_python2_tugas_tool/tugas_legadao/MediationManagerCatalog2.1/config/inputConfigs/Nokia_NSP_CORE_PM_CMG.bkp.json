@@ -1,0 +1,38 @@
+{
+	"1" :
+	{
+		"sheetName" : "MO",
+		"unit" : {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "ID",
+				"ossId": "ID",
+				"name": "ID",
+				"udn": "ID",
+				"desc": "ID",
+				"tableName": "ID",
+				"hierarchy": "Hierarquia"
+			}
+		}
+	},
+	"2" :
+	{
+		"sheetName" : "Counters",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "MO",
+				"id": "ID",
+				"bdcolname": "bdcolname",
+				"udn": "ID",
+				"name": "ID",
+				"desc": "Desc",
+				"bdtype": "FORMAT",
+				"dataType": "FORMAT",
+				"dataUnit": "UNIT",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

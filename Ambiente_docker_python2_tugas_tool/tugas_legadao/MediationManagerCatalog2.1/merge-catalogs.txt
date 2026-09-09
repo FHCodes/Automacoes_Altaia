@@ -1,0 +1,74 @@
+===========================
+##### merge-catalogs ######
+===========================
+
+Esta ferramenta serve para converter os catálogos(*_oss.xml,*_client.xml e *_operations.xml) em seus equivalentes .JSON 
+O processamento do NAMF é feito com os arquivos .json gerados.
+
+
+gerar JSON
+python2 main.py -tf -ld -li -v -pp --indir "./catalogs"
+
+python2 main.py -tf -ld -li -v -pp --indir "./catalogs"
+
+
+
+No diretório 'merge-catalogs/catalogs' copiar toda a estrutura de pastas catalogs\[Vendor]\[Pack]\[VerVendor] atualizada Na pasta config, atualizar config.json:
+    Em catalogsPath preencher o path full da pasta catalogs (pode ser /mnt/c/Users/.../catalogs/ ou apontar para onde baixou do git). 
+Obs.: a ferramenta não funciona com o path parcial. E não funciona com acentos no path.
+
+
+Em collector usar o nome [Pack]
+Em caso de upgrade sempre colocar uma versão acima, por exemplo esta no ambiente versão:2  , logo gerar os catalogos como versão:3 e assim por diante
+Em vendor usar [Vendor]
+Em units.granularityField:
+    No caso do Twamp usar INTERVAL. Huawei pode ser GRANULARITYPERIOD.
+Em units.granularityUnit: 
+    No caso do Twamp usar MINUTES. Huawei é MINUTES.
+Em datasource.defineTopic:  
+    Após a vírgula pode-se mudar o tópico do Kafka, o default é ProcessedEventsTopic, 
+    ou seja passando "", (sem valor após a vírgula) seria o mesmo que passar "", ProcessedEventsTopic
+Usar os seguintes nomes de fila/tópico Kafka:
+    ProcessedEventsRan01Topic: Usar para PM Ericsson
+    ProcessedEventsRan02Topic: Usar para PM Huawei
+    ProcessedEventsRan03Topic: Usar para PM Nokia
+    ProcessedEventsCore01Topic: Usar para PM da rede Core
+    ProcessedEventsTopic: Usar para CM Ericsson, Huawei e Nokia.
+Em datasource.id é o nome do datasource, no caso de Huawei seria HUAWEI_RAN
+Em datasource.schema é o nome do schema, o padrão é usar DBN0_[VendorAlias]_RAN
+Em datasource.user, repetir o nome do schema
+Em datasource.password, no caso usual, repetir o nome do schema
+
+Entrar na pasta do merge e rodar:
+    
+
+
+
+Vai gerar três arquivos na pasta json
+Comparar o arquivo original com o novo gerado. Usando HUAWEI_OSS_RAN_PM_SRAN como exemplo:
+•	./json/loading_HUAWEI_OSS_RAN_PM_SRAN.json
+Corresponde a :
+./catalogs/HUAWEI/HUAWEI_OSS_RAN_PM_SRAN/20.1/catalogs/loading/HUAWEI_OSS_RAN_PM_SRAN.json
+diff -w <(cat ./catalogs/HUAWEI/HUAWEI_OSS_RAN_PM_SRAN/20.1/catalogs/loading/HUAWEI_OSS_RAN_PM_SRAN.json | jq --sort-keys) <(cat ./json/loading_HUAWEI_OSS_RAN_PM_SRAN.json | jq --sort-keys) > ./json/diff_loading.txt
+•	./json/loadinv_HUAWEI_OSS_RAN_PM_SRAN.json
+Corresponde a :
+./catalogs/HUAWEI/HUAWEI_OSS_RAN_PM_SRAN/20.1/inventories/loading/HUAWEI_OSS_RAN_PM_SRAN.json
+diff -w <(cat ./catalogs/HUAWEI/HUAWEI_OSS_RAN_PM_SRAN/20.1/inventories/loading/HUAWEI_OSS_RAN_PM_SRAN.json | jq --sort-keys) <(cat ./json/loadinv_HUAWEI_OSS_RAN_PM_SRAN.json | jq --sort-keys) > ./json/diff_loadinv.txt
+•	./json/transform_HUAWEI_OSS_RAN_PM_SRAN.json
+Corresponde a :
+./catalogs/HUAWEI/HUAWEI_OSS_RAN_PM_SRAN/20.1/catalogs/transform/HUAWEI_OSS_RAN_PM_SRAN.json
+diff -w <(cat ./catalogs/HUAWEI/HUAWEI_OSS_RAN_PM_SRAN/20.1/catalogs/transform/HUAWEI_OSS_RAN_PM_SRAN.json | jq --sort-keys) <(cat ./json/transform_HUAWEI_OSS_RAN_PM_SRAN.json | jq --sort-keys) > ./json/diff_transform.txt
+
+Copiar os arquivos gerados para a pasta do Git:
+*_oss.xml, *_client.xml, *_operations.xml para [RepoGit]/namf-sol/imagem-vivo/automation-vivo/catalogs/[Vendor]/[Pack]/[VerVendor] (se já não foi feito)
+./json/loading_[Pack].json para [RepoGit]/namf-sol/imagem-vivo/automation-vivo/catalogs/[Vendor]/[Pack]/[VerVendor]/catalogs/loading/[Pack].json
+./json/loadinv_[Pack].json para [RepoGit]/namf-sol/imagem-vivo/automation-vivo/catalogs/[Vendor]/[Pack]/[VerVendor]/inventories/loading/[Pack].json
+./json/transform_[Pack].json para [RepoGit]/namf-sol/imagem-vivo/automation-vivo/catalogs/[Vendor]/[Pack]/[VerVendor]/catalogs/transform/[Pack].json
+
+
+
+TIM
+python2 run.py -o POSQL -bc "/mnt/c/Altaia/Tim/scripts_dos_portugueses/MediationManagerCatalog2.1/ZTE/ZTE_OSS_RAN_PM_R4G/loading_ZTE_OSS_RAN_PM_R4G.json" -n ZTE_OSS_RAN_PM_R4G -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN
+ 
+
+python2 run.py -o POSQL -bc "ERICSSON/loading_ERICSSON_OSS_RAN_EBS_5G.json" -n ERICSSON_OSS_RAN_EBS_5G -cf FALSE -di BEGINTIME -na NAMF -s DBN0_ERI_RAN

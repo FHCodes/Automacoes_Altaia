@@ -1,0 +1,114 @@
+{
+	"collector" :
+	{
+		"name" : "NOKIA_OSS_RAN_PM_3G",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "NETACT_3G",
+		"version": "WBTS20",
+		"tech": "R3G",
+		"nameNomenclature": "NOKIA_OSS_RAN_PM_3G_#_WBTS20"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_3G_Oi_collRel01",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"Nokia_num_name":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "RNC_"
+				},
+				{
+					"field" : "udn",
+					"value" : "RNC_"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"nokiaMeasuredObject":
+			[
+				{
+					"regex" : "^PLMN-",
+					"sepCharDoc" : ",",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : "",
+					"3gpp": true,
+					"omes": true
+				}
+			],
+			"NOKIA_enrichment":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				],
+				"enrichment":
+				[
+					{
+						"scope": "NSN_NETACT_RNC",
+						"corrKey": [
+							{
+								"RNC": [
+									"RNC",
+									"RNC_NAME"
+								]
+							},
+							{
+								"WBTS": [
+									"WBTS",
+									"WBTS_NAME"
+								]
+							},
+							{
+								"WCEL": [
+									"WCEL",
+									"CELLNAME",
+									"CELLID"
+								]
+							}
+						],
+						"newField": [{"RNC_NAME": ["RNC_NAME"]}, {"WBTS_NAME":["WBTS_NAME"]}, {"CELLNAME":["WCEL", "CELLNAME"]}, {"CELLID":["WCEL", "CELLID"]}]
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

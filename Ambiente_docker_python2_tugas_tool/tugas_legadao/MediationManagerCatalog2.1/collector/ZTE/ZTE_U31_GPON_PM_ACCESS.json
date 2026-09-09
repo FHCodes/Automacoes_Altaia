@@ -1,0 +1,98 @@
+{
+	"collector" :
+	{
+		"name" : "ZTE_U31_GPON_PM",
+		"collectorType" : "PM",
+		"vendor" : "ZTE",
+		"model" : "ACCESS",
+		"version" : "ZXA10C650_V1.2.2/ZXA10C350M_V4.2/ZXDSL9806H_V2.1.1P5",
+		"tech" : "ACCESS",
+		"nameNomenclature" : "ZTE_U31_GPON_PM_ACCESS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "ZTE_U31_GPON_PM_ACCESS",
+		"presetFields" : "ZTE_U31_GPON_PM_ACCESS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": ""
+				},
+				{
+					"field": "udn",
+					"value": ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ZTE" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "",
+					"sepCharPattern" : "",
+					"interChar" : "",
+					"startField" : ""
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "MO LOCATION"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

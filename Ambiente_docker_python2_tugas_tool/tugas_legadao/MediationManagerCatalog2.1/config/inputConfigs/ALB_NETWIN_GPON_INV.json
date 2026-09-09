@@ -1,0 +1,39 @@
+{
+	"1":
+	{
+		"sheetName" : "Objects",
+		"unit" : {
+			"unitId": "id",
+			"fieldMatch": {
+				"id": "Unit ID",
+				"ossId": "Unit ID",
+				"name": "Unit Name",
+				"udn": "UDN",
+				"desc": "Unit Desc",
+				"tableName": "Table Name",
+				"hierarchy": ""
+			}
+		}
+	},
+	"2":
+	{
+		"sheetName" : "Counters",
+		"item" : {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Unit ID",
+				"id": "Counter ID",
+				"bdcolname": "Counter ID",
+				"udn": "Counter Name",
+				"name": "Counter Name",
+				"desc": "Description",
+				"bdtype": "bdtype",
+				"dbn0type": "dbn0type",
+				"dataType": "bdtype",
+				"dataUnit": "bdtype",
+				"multiplicity": ""
+			}
+		}
+	}
+}

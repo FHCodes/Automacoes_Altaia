@@ -1,0 +1,107 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "Result Time",
+      "sqlName" : "RESULTTIME",
+      "udn" : "RESULTTIME",
+      "desc" : "Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "End Time",
+      "sqlName" : "ENDTIME",
+      "udn" : "END_TIME",
+      "desc" : "End Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "Granularity Period",
+      "sqlName" : "GRANULARITYPERIOD",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "Object Name",
+      "sqlName" : "MEASUREDOBJECTID",
+      "udn" : "MEASUREDOBJECTID",
+      "desc" : "ID Object Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "userLabel",
+      "sqlName" : "USERLABEL",
+      "udn" : "USERLABEL",
+      "desc" : "User Label",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "elementType",
+      "sqlName" : "ELEMENTTYPE",
+      "udn" : "ELEMENTTYPE",
+      "desc" : "Element Type",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id" : "DATETIME",
+      "sqlName" : "DATETIME",
+      "udn" : "dateTime",
+      "desc" : "Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "CLASSNAME",
+      "sqlName" : "CLASSNAME",
+      "udn" : "className",
+      "desc" : "Class Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "FDN",
+      "sqlName" : "FDN",
+      "udn" : "FDN",
+      "desc" : "Full Distinguished Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "NE_NAME",
+      "sqlName" : "NE_NAME",
+      "udn" : "NE_Name",
+      "desc" : "Network Element Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "GRANULARITY PERIOD",
+      "sqlName" : "GRANULARITYPERIOD",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    }
+  ]
+}

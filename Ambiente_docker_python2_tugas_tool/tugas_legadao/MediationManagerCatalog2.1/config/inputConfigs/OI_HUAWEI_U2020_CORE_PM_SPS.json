@@ -1,0 +1,64 @@
+{
+	"1" : {
+		"sheetName": "Counters",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "FunctionSubSet ID",
+				"ossId": "FunctionSubSet ID",
+				"name": "FunctionSubSet Name",
+				"udn": "FunctionSubSet Name",
+				"desc": "FunctionSubSet Name",
+				"tableName": "FunctionSubSet ID",
+				"hierarchy": "MAE Performance Object Name"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Objects",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "FunctionSubSet ID",
+				"ossId": "FunctionSubSet ID",
+				"name": "FunctionSubSet Name",
+				"udn": "FunctionSubSet Name",
+				"desc": "FunctionSubSet Name",
+				"hierarchy": "MAE Performance Object Name"
+			}
+		}
+	},
+	"3" : {
+		"sheetName": "Counters",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "FunctionSubSet ID",
+				"id": "Counter ID",
+				"bdcolname": "Counter ID",
+				"udn": "Counter Name",
+				"name": "Counter Name",
+				"desc": "Counter Name",
+				"bdtype": "Counter Type",
+				"dataType": "Counter Type",
+				"dataUnit": "Counter Unit",
+				"multiplicity": "Size"
+			}
+		}
+	},
+	"4" : {
+		"sheetName": "Counters",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "FunctionSubSet ID",
+				"ossId": "FunctionSubSet ID",
+				"name": "FunctionSubSet Name",
+				"udn": "FunctionSubSet Name",
+				"desc": "FunctionSubSet Name",
+				"tableName": "FunctionSubSet ID"
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "measStartTime",
+      "sqlName" : "MEASSTARTTIME",
+      "udn" : "measStartTime",
+      "desc" : "Start time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "measEndTime",
+      "sqlName" : "MEASENDTIME",
+      "udn" : "measEndTime",
+      "desc" : "End time of granularity period.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "granularityPeriod",
+      "sqlName" : "GRANULARITYPERIOD",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity Period duration",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "networkElementName",
+      "sqlName" : "NETWORKELEMENTNAME",
+      "udn" : "networkElementName",
+      "desc" : "Name of the Network Element the measurement corresponds to.",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id": "OBJECTID",
+      "sqlName": "OBJECTID",
+      "udn": "measuredObjectID",
+      "desc": "Object Identifier",
+      "dataType": "VARCHAR2(600)",
+      "dataUnit": "STRING",
+      "dbn0type": "PK"
+    }
+  ],
+  "CM" :
+  [
+    {
+      "id":"dateTime",
+      "sqlName":"dateTime",
+      "udn":"dateTime",
+      "name":"dateTime",
+      "desc":"Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType":"TIMESTAMP(3)",
+      "dataUnit":"TIMESTAMP",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"FDN",
+      "sqlName":"FDN",
+      "udn":"FDN",
+      "name":"FDN",
+      "desc":"FDN",
+      "dataType":"VARCHAR2(500)",
+      "dataUnit":"STRING",
+      "dbn0type":"PK"
+    },
+    {
+      "id":"BSC_NAME",
+      "sqlName":"BSC_NAME",
+      "udn":"BSCName",
+      "name":"BSC_NAME",
+      "desc":"BSC Name",
+      "dataType":"VARCHAR2(500)",
+      "dataUnit":"STRING",
+      "dbn0type":"ID"
+    },
+    {
+      "id" : "GRANULARITYPERIOD",
+      "sqlName" : "GRANULARITYPERIOD",
+      "udn" : "granularityPeriod",
+      "desc" : "Granularity Period duration",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "CM"
+    }
+  ]
+}

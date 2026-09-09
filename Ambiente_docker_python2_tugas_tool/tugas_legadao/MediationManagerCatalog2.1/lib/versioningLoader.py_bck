@@ -1,0 +1,322 @@
+__doc__ = \
+	__version__ = '1.0'
+__authors__ = ['Version 0.1: Bruno Silva <bruno-e-silva@alticelabs.com>']
+
+import json
+import ast, os, re
+from collections import OrderedDict
+from lib.functions import xmlReader
+from lib.objects.unit import unit
+from lib.objects.table import table
+from lib.objects.column import column
+from lib.Logger import Logger
+
+
+def getVersioningHistoric(collectorConfiguration):
+	path = 'C:/Users/withus/Documents/discovery-coll/trunk/conf/catalogos/collectorProcess/Catalogs/{:s}/Product_Packs_Shelf/{:s}/'.format(collectorConfiguration['vendor'], collectorConfiguration['name'])
+	path2 = 'C:/Users/withus/Desktop/Demandas/2019/Cisco/Cisco_ASR5000_collRel01/Desenvolvimento/CatalogoSVN_Corrigido100/'
+	data = getCientStruct(xmlReader(path2 + 'CISCO_performance_client_ASR5000_collRel01.xml'), dict())
+	data = getOssStruct(xmlReader(path2 + 'CISCO_performance_oss_ASR5000_collRel01.xml'), data)
+	return data
+
+	versionsList = [os.path.join(path, o) for o in os.listdir(path) if os.path.isdir(os.path.join(path, o))]
+	data = dict()
+	for version in versionsList:
+		clientRoot = None
+		ossRoot = None
+		versionFiles = [f for f in os.listdir(version) if os.path.isfile(os.path.join(version, f))]
+		for file in versionFiles:
+			if re.search(r'_client_.*.xml', file) is not None:
+				clientRoot = xmlReader(version + '/' + file)
+			elif re.search(r'_oss_.*.xml', file) is not None:
+				ossRoot = xmlReader(version + '/' + file)
+		data = getCientStruct(clientRoot, data)
+		data = getOssStruct(ossRoot, data)
+	return data
+
+def getCientStruct(root, data):
+	logger = Logger('processLogger').get()
+
+	for tableXml in root.findall('table'):
+		ossId = tableXml.get('ossId')
+		if ossId not in data.keys():
+			unitObj = unit()
+			unitObj.create(ossId, ossId, '', '', '')
+			data[ossId] = unitObj
+		else:
+			unitObj = data[ossId]
+
+		tableId = tableXml.get('id')
+		if tableId in unitObj.tables.keys():
+			tableObj = unitObj.tables[tableId]
+			pass
+		else:
+			tableObj = table()
+			tableObj.create(tableId, ossId, tableXml.get('tableName'), tableXml.get('udn'))
+			if re.search(ossId + '_(\d+)$', tableId) is not None:
+				tableObj.partitionOf = ossId
+			unitObj.addTable(tableId, tableObj)
+
+		for columnXml in tableXml.findall('column'):
+			columnId = columnXml.get('id')
+			if columnId in tableObj.counters.keys():
+				logger.warning(' * [versioningLoader] Duplicated column id \"{:s}\" was found on table \"{:s}\" * '.format(columnId, tableId))
+				continue
+			columnObj = column()
+			columnObj.create(columnId, '', columnXml.get('udn'), columnXml.get('bdcolname'), '', columnXml.get('dbn0type'), columnXml.get('bdtype'), '', '', '', 0)
+			if columnObj.dbn0type in ['PK', 'ID']:
+				unitObj.addAttribute(columnId, columnObj)
+			else:
+				tableObj.addCounter(columnId, columnObj)
+	return data
+
+def getOssStruct(root, data):
+	logger = Logger('processLogger').get()
+	#measuredobjects
+	for unitXml in root.findall('unit'):
+		ossId = unitXml.get('ossId')
+		if ossId not in data.keys():
+			logger.error(' * [versioningLoader] ossId \"{:s}\" was not found in client catalog. * '.format(ossId))
+		else:
+			unitObj = data[ossId]
+			unitObj.measuredObject = unitXml.get('measuredobjects')
+			unitObj.name = unitXml.get('name')
+			unitObj.desc = unitXml.get('desc')
+
+			tableList = unitObj.tables
+			for itemXml in unitXml.findall('item'):
+				itemId = itemXml.get('id')
+				if itemId in unitObj.attributes.keys():
+					continue
+
+				isMissing = True
+				for tableId in tableList.keys():
+					tableObj = tableList[tableId]
+					if itemId in tableObj.counters.keys():
+						isMissing = False
+						counterObj = tableObj.counters[itemId]
+						counterObj.name = itemXml.get('name')
+						counterObj.desc = itemXml.get('desc')
+						counterObj.typeCust = itemXml.get('typeVendor')
+						counterObj.typeVendor = itemXml.get('typeCust')
+						counterObj.unitVendor = itemXml.get('unitVendor')
+						break
+
+				if isMissing:
+					logger.warning(' * [versioningLoader] itemId \"{:s}\" from ossId \"{:s}\" was not found in client catalog. * '.format(itemId, ossId))
+	return data
+
+def convertData1(docData, collectorConfiguration):
+
+	versionData = getVersioningHistoric(collectorConfiguration)
+
+	data = dict()
+
+	for ossId in docData.keys():
+		unitObj = docData[ossId]
+		if ossId in versionData.keys():
+			#create unit
+			tUnitObj = unit()
+			tUnitObj.create(ossId, unitObj.typeId, unitObj.name, unitObj.desc, unitObj.measuredObject)
+			tUnitObj.attributes = unitObj.attributes
+			data[ossId] = tUnitObj
+
+			# Documentations table list
+			tablesList = unitObj.tables
+
+			# Versions unit object
+			vUnitObj = versionData[ossId]
+			# Versions table list
+			vTablesList = vUnitObj.tables
+
+			for tableId in tablesList.keys():
+				tableObj = tablesList[tableId]
+				vLastTableId, vLastTableNumber = getLastTablePartition(vTablesList, (tableId if tableObj.partitionOf == '' else tableObj.partitionOf))
+				countersLen = len(tableObj.counters.keys())
+				i = 0
+				while i < countersLen:
+					counterId = tableObj.counters.keys()[i]
+					counterFound = False
+					for vTableId in vTablesList.keys():
+						vTableObj = vTablesList[vTableId]
+						for vCounterId in vTableObj.counters.keys():
+							if counterId == vCounterId:
+								if vTableId == tableId or vTableId == tableObj.partitionOf or tableId == vTableObj.partitionOf or vTableObj.partitionOf == tableObj.partitionOf:
+									if tableId in tUnitObj.tables.keys():
+										tTableObj = tUnitObj.tables[tableId]
+										tTableObj.addCounter(counterId, tableObj.counters[counterId])
+										tUnitObj.partitionOf = vTableObj.partitionOf
+									else:
+										tTableObj = table()
+										tTableObj.create(tableId, ossId, tableObj.sqlName, tableObj.udn)
+										tUnitObj.addTable(tableId, tTableObj)
+										tTableObj.addCounter(counterId, tableObj.counters[counterId])
+									counterFound = True
+									del tableObj.counters[counterId]
+									countersLen -= 1
+							if counterFound:
+								break
+						if counterFound:
+							break
+					if not counterFound:
+						i += 1
+
+				#print tableObj.counters.keys()
+
+				for counterId in tableObj.counters.keys():
+					counterObj = tableObj.counters[counterId]
+					if (vTablesList[vLastTableId].numberOfCounters + tUnitObj.numberOfAttributes) < 970:
+						if vLastTableId not in tUnitObj.tables.keys():
+							tTableObj = table()
+							tTableObj.create(re.sub(r'_(\d+)$', '_' + str(vLastTableNumber+1), vLastTableId), ossId, re.sub(r'_(\d+)$', '_' + str(vLastTableNumber+1), vTablesList[vLastTableId].sqlName), re.sub(r'_(\d+)$', '_' + str(vLastTableNumber+1), vTablesList[vLastTableId].udn))
+							tUnitObj.addTable(vLastTableId, tTableObj)
+						else:
+							tTableObj = tUnitObj.getTable(vLastTableId)
+						tTableObj.addCounter(counterId, counterObj)
+					else:
+						tLastTableId, tLastTableNumber = getLastTablePartition(tUnitObj.tables, (tableId if tableObj.partitionOf == '' else tableObj.partitionOf))
+						if tLastTableNumber > vLastTableNumber:
+							tTableObj = tUnitObj.getTable(tLastTableId)
+							if (tTableObj.numberOfCounters + tUnitObj.numberOfAttributes) >= 970:
+								tTableObj = table()
+								tLastTableNumber += 1
+								tTableObj.create(re.sub(r'_(\d+)$', '_' + str(tLastTableNumber), tLastTableId), ossId, re.sub(r'_(\d+)$', '_' + str(tLastTableNumber), tUnitObj.getTable(tLastTableId).sqlName), re.sub(r'_(\d+)$', '_' + str(tLastTableNumber), tUnitObj.getTable(tLastTableId).udn))
+								tUnitObj.addTable(re.sub(r'_(\d+)$', '_' + str(tLastTableNumber), tLastTableId), tTableObj)
+							tTableObj.addCounter(counterId, counterObj)
+		else:
+			data[ossId] = unitObj
+
+	return data
+
+
+
+def convertData(docData, collectorConfiguration):
+	versionData = getVersioningHistoric(collectorConfiguration)
+
+	data = dict()
+
+	for ossId in docData.keys():
+		dUnitObj = docData[ossId]
+
+		if ossId in versionData.keys():
+			unitObj = unit()
+			unitObj.create(ossId, dUnitObj.typeId, dUnitObj.name, dUnitObj.desc, dUnitObj.measuredObject)
+			unitObj.attributes = dUnitObj.attributes
+			data[ossId] = unitObj
+
+			vUnitObj = versionData[ossId]
+
+			for attributeId in unitObj.attributes.keys():
+				for vAttributeId in vUnitObj.attributes.keys():
+					if attributeId == vAttributeId:
+						attributeObj = unitObj.getAttribute(attributeId)
+						vAttributeObj = vUnitObj.getAttribute(attributeId)
+						attributeObj.sqlName = vAttributeObj.sqlName
+						#attributeObj.udn = vAttributeObj.udn
+						#attributeObj.name = vAttributeObj.name
+
+
+			for dTableId in sorted(dUnitObj.tables.keys()):
+				dTableObj = dUnitObj.getTable(dTableId)
+
+				for dCounteId in sorted(dTableObj.counters.keys()):
+					dCounteObj = dTableObj.getCounter(dCounteId)
+					isNewCounter = True
+
+					for vTableId in sorted(vUnitObj.tables.keys()):
+						vTableObj = vUnitObj.getTable(vTableId)
+
+						if re.sub(r'_(\d+)$', '', dTableId) == re.sub(r'_(\d+)$', '', vTableId):
+							for vCounterId in sorted(vTableObj.counters.keys()):
+								vCounterObj = vTableObj.getCounter(vCounterId)
+
+								if vCounterId == dCounteId and isNewCounter:
+									if vTableId in unitObj.tables.keys():
+										tableObj = unitObj.getTable(vTableId)
+									else:
+										tableObj = table()
+										tableObj.create(vTableId, ossId, vTableObj.sqlName, vTableObj.udn)
+										unitObj.addTable(vTableId, tableObj)
+									dCounteObj.sqlName = vCounterObj.sqlName
+									#dCounteObj.udn = vCounterObj.udn
+									#dCounteObj.name = vCounterObj.name
+									tableObj.addCounter(dCounteId, dCounteObj)
+									isNewCounter = False
+
+					if isNewCounter:
+						print 'NewCounter: ' + dCounteId
+						vLastTableId, vLastTableNumber = getLastTablePartition(vUnitObj.tables, (re.sub(r'_(\d+)$', '', dTableId) if re.search(r'_(\d+)$', dTableId) is not None else dTableId))
+						vLastTableObj = vUnitObj.getTable(vLastTableId)
+						if (vLastTableObj.numberOfCounters + unitObj.numberOfAttributes) < 970:
+							if vLastTableId in unitObj.tables.keys():
+								vLastTableObj.addCounter(dCounteId, dCounteObj)
+								tableObj = unitObj.getTable(vLastTableId)
+								tableObj.addCounter(dCounteId, dCounteObj)
+								print 'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, vLastTableId)
+							else:
+								lastTableId, lastTableNumber = getLastTablePartition(unitObj.tables, (dTableObj.partitionOf if re.search(r'_(\d+)$', dTableId) is not None else dTableId))
+								if lastTableNumber > vLastTableNumber:
+									tableObj = unitObj.getTable(lastTableId)
+									if (tableObj.numberOfCounters + unitObj.numberOfAttributes) < 970:
+										tableObj.addCounter(dCounteId, dCounteObj)
+										print 'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, lastTableId)
+									else:
+										tableObj = table()
+										lastTableNumber = '_' + str(lastTableNumber + 1)
+										tableObj.create(re.sub(r'_(\d+)$', lastTableNumber, lastTableId), ossId, re.sub(r'_(\d+)$', lastTableNumber, vLastTableObj.sqlName), re.sub(r'_(\d+)$', lastTableNumber, vLastTableObj.udn))
+										tableObj.addCounter(dCounteId, dCounteObj)
+										unitObj.addTable(re.sub(r'_(\d+)$', lastTableNumber, lastTableId), tableObj)
+										print'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, re.sub(r'_(\d+)$', lastTableNumber, lastTableId))
+								else:
+									vLastTableObj.addCounter(dCounteId, dCounteObj)
+									tableObj = table()
+									tableObj.create(vLastTableId, ossId, vLastTableObj.sqlName, vLastTableObj.udn)
+									tableObj.addCounter(dCounteId, dCounteObj)
+									unitObj.addTable(vLastTableId, tableObj)
+									'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, vLastTableId)
+						else:
+							lastTableId, lastTableNumber = getLastTablePartition(unitObj.tables, (dTableObj.partitionOf if re.search(r'_(\d+)$', dTableId) is not None else dTableId))
+							if lastTableNumber > vLastTableNumber:
+								tableObj = unitObj.getTable(lastTableId)
+								if (tableObj.numberOfCounters + unitObj.numberOfAttributes) < 970:
+									tableObj.addCounter(dCounteId, dCounteObj)
+									'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, lastTableId)
+								else:
+									lastTableNumber = '_' + str(lastTableNumber + 1)
+									lastTableId = re.sub(r'_(\d+)$', lastTableNumber, lastTableId)
+									tableObj = table()
+									tableObj.create(lastTableId, ossId, re.sub(r'_(\d+)$', lastTableNumber, vLastTableObj.sqlName), re.sub(r'_(\d+)$', lastTableNumber, vLastTableObj.udn))
+									tableObj.addCounter(dCounteId, dCounteObj)
+									unitObj.addTable(lastTableId, tableObj)
+									'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, lastTableId)
+							else:
+								vLastTableNumber = '_' + str(vLastTableNumber + 1)
+								lastTableId = re.sub(r'_(\d+)$', vLastTableNumber, lastTableId)
+								if re.sub(r'_(\d+)$', vLastTableNumber, lastTableId) not in unitObj.tables.keys():
+									tableObj = table()
+									tableObj.create(lastTableId, ossId, re.sub(r'_(\d+)$', vLastTableNumber, vLastTableObj.sqlName), re.sub(r'_(\d+)$', vLastTableNumber, vLastTableObj.udn))
+									tableObj.addCounter(dCounteId, dCounteObj)
+									unitObj.addTable(lastTableId, tableObj)
+									'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, lastTableId)
+								else:
+									tableObj = unitObj.getTable(lastTableId)
+									tableObj.addCounter(dCounteId, dCounteObj)
+									'NewCounter: \"{:s}\" adicionado a tabela \"{:s}\"'.format(dCounteId, lastTableId)
+		else:
+			data[ossId] = dUnitObj
+
+	return data
+
+
+def getLastTablePartition(vTablesList, tableId):
+	lastTableId = tableId
+	lastTableNumber = 0
+	for vTablesId in vTablesList.keys():
+		if tableId in vTablesId:
+			if re.search(r'^' + tableId + '_(\d+)$', vTablesId) is not None:
+				tmp = int(re.sub(r'^.*._', '', vTablesId))
+				if tmp > lastTableNumber:
+					lastTableNumber = tmp
+					lastTableId = vTablesId
+
+	return lastTableId, lastTableNumber

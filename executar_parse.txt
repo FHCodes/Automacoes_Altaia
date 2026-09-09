@@ -1,0 +1,6 @@
+python3 mediation-parsers.py ZTE_OSS_RAN_PM "/opt/alticelabs/namf/medrepo/staging/ZTE/performace4G/20260827/UMEID_ITBBU_ARTPORT_20260827_0000-20260827_0015_R1.csv" --instance=CSV --vendor=ZTE --model=OSS_RAN_PM_R4G --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECTTIME" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
+
+
+OBSERVACOES:
+1 - mudar o spec de Readrs para reader-sol
+2 - mudar o importe no parse

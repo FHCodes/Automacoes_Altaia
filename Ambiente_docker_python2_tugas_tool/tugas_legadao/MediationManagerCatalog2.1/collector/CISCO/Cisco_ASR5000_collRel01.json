@@ -1,0 +1,73 @@
+{
+	"collector" :
+	{
+		"name" : "Cisco_ASR5000_collRel01",
+		"collectorType" : "PM",
+		"vendor": "CISCO",
+		"model": "ASR5000",
+		"version": "21.10",
+		"tech": "EPC",
+		"nameNomenclature": "CISCO_performance_#_ASR5000_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelCiscoEPC",
+		"doc" : "",
+		"formatConfig" : "EPC_Cisco",
+		"presetFields" : "Cisco_collRel01"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "EPC_"
+				},
+				{
+					"field": "udn",
+					"value": "EPC_"
+				}
+			],
+			"tableSizeParticioner":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"convertTimezone":
+				[
+					{
+						"field": "DATETIME",
+						"newField": "DATETIME",
+						"def":
+						{
+							"inTz": "UTC",
+							"outTz": "Europe/Lisbon",
+							"inPattern": "%Y-%m-%d %H:%M:%S",
+							"outPattern": "%Y-%m-%d %H:%M:%S"
+						}
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

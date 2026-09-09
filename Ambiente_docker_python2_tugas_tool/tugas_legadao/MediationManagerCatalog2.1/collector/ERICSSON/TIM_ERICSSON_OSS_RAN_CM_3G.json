@@ -1,0 +1,99 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSS_RAN_CM_3G",
+		"collectorType" : "CM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS_RAN_CM_3G",
+		"version" : "W23Q3",
+		"tech" : "RADIO3G",
+		"nameNomenclature" : "ERICSSON_OSS_RAN_CM_3G_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX_CM",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_RAN_CM_3G",
+		"presetFields" : "TIM_3G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"measuredObjectParameters" :
+			[
+				{
+					"regex" : "\n| ",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : "SubNetwork1-MeContext-"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"Ericsson_Parameters_highLevel":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "FDN"
+					}
+				],
+				"unitSplitv2_ericsson": [
+					{
+						"field": "FDN"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

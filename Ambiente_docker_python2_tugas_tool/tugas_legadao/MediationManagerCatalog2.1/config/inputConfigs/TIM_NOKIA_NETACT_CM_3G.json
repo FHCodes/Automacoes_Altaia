@@ -1,0 +1,39 @@
+{
+	"1" :
+	{
+		"sheetName" : "Object List",
+		"unit" : {
+			"unitId": "id",
+			"fieldMatch": {
+				"id": "ID",
+				"ossId": "ID",
+				"name": "ID",
+				"udn": "ID",
+				"desc": "Description",
+				"tableName": "ID",
+				"hierarchy": "Hierarchy",
+				"cmRestriction": "Object type"
+			}
+		}
+	},
+	"2" :
+	{
+		"sheetName" : "Parameter List",
+		"item" : {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Managed object",
+				"id": "Abbreviated name",
+				"bdcolname": "Abbreviated name",
+				"udn": "Abbreviated name",
+				"name": "Abbreviated name",
+				"desc": "Description",
+				"bdtype": "Data type",
+				"dataType": "Data type",
+				"dataUnit": "Data type",
+				"multiplicity": "Multiplicity"
+			}
+		}
+	}
+}

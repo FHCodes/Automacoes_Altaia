@@ -1,0 +1,94 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_NOKIA_OSS_RAN_PM_4G",
+		"collectorType" : "PM",
+		"vendor": "NOKIA",
+		"model": "NETACT_4G",
+		"version": "SBTS22R2",
+		"tech": "SRAN",
+		"nameNomenclature": "NOKIA_OSS_RAN_PM_4G_#_SBTS22R2"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_NOKIA_OSS_RAN_PM_4G",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"Nokia_num_name":
+			[
+				0
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "SRAN_"
+				},
+				{
+					"field" : "udn",
+					"value" : "SRAN_"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"NOKIA_enrichment":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "MEASUREDOBJECTID"
+					}
+				],
+				"enrichment":
+				[
+					{
+						"scope": "NSN_NETACT_LTE",
+						"corrKey": [
+							{"DISTNAME": [""]}
+						],
+						"newField": [{"MRBTS_NAME": ["MRBTS_NAME"]}, {"LNBTS_NAME":["LNBTS_NAME"]}, {"CELL_NAME":["CELL_NAME"]}]
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

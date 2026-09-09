@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSS_CORE_PM_HSS-FE",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "HSS-FE",
+		"version" : "V1.23",
+		"tech" : "Ericsson",
+		"nameNomenclature" : "ERICSSON_OSS_CORE_PM_HSS-FE_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_CORE_PM_HSS-FE",
+		"presetFields" : "TIM_ERICSSON_OSS_CORE_PM_HSS-FE"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "udn",
+					"value": "HSS_"
+				}
+			],
+			"ericssonHierarchyOSS" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "/",
+					"sepCharPattern" : "",
+					"interChar" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "MEASOBJLDN"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

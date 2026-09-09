@@ -1,0 +1,83 @@
+{
+	"collector" :
+	{
+		"name" : "FORTINET_PLTAFORM_FORTIAUTHENTICATOR_PM",
+		"collectorType" : "PM",
+		"vendor" : "FORTINET",
+		"model" : "PLTAFORM_FORTIAUTHENTICATOR_PM",
+		"version" : "1.0",
+		"tech" : "SES",
+		"nameNomenclature" : "FORTINET_PLTAFORM_FORTIAUTHENTICATOR_PM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc_V2",
+		"doc" : "",
+		"formatConfig" : "FORTINET_PLTAFORM_FORTIAUTHENTICATOR_PM",
+		"presetFields" : "FORTINET_PLTAFORM_FORTIAUTHENTICATOR_PM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": ""
+				},
+				{
+					"field": "udn",
+					"value": ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

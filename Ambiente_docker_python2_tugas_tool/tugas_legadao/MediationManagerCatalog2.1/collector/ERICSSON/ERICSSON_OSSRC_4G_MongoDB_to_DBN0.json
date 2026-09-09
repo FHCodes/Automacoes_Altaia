@@ -1,0 +1,92 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSSRC_4G_MongoDB_to_DBN0",
+		"collectorType" : "CM",
+		"vendor" : "ERICSSON",
+		"model" : "",
+		"version" : "L20Q2",
+		"tech" : "R4G",
+		"nameNomenclature" : "ERICSSON_parameters_#_ERICSSON_4G_OSSRC_OI_collRel01"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_OSSRC_4G_MongoDB_to_DBN0",
+		"presetFields" : "4G_Ericsson"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM4G_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			],
+			"measuredObjectParameters" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startText" : "SubNetwork1-MeContext-"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "CM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "FDN"
+					}
+				],
+				"unitSplitv2_ericsson": [
+					{
+						"field": "FDN"
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_I2000_CORE_PM_CBS",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "I2000",
+		"version" : "",
+		"tech" : "OCS",
+		"nameNomenclature" : "HUAWEI_I2000_CORE_PM_CBS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_I2000_CORE_PM_CBS",
+		"presetFields" : "emptyFormat"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CBS_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+				"copyValue":
+				{
+					"field": "HOSTNAME",
+					"destination": "CBS"
+				}
+			}
+		}
+	}
+}

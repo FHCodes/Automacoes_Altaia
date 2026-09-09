@@ -1,0 +1,37 @@
+{
+	"1" : {
+		"sheetName": "Measurement List",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "NetAct ID",
+				"ossId": "NetAct ID",
+				"name": "Measurement name",
+				"udn": "Measurement name",
+				"desc": "Description",
+				"tableName": "NetAct ID",
+				"#partitionOf": "NetAct ID",
+				"hierarchy": "OMeS DN"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Counter List",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Measurement ID",
+				"id": "ID",
+				"bdcolname": "ID",
+				"udn": "Counter name in view",
+				"name": "Counter name in view",
+				"desc": "Description",
+				"bdtype": "Data type",
+				"dataType": "Data type",
+				"dataUnit": "Unit",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

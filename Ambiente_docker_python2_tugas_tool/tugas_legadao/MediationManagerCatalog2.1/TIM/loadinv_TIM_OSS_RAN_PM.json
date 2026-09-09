@@ -1,0 +1,10 @@
+[
+    {
+        "datasourceId": "TWAMP_TIM_RAN",
+        "kafkaTopicId": "ProcessedEventsTopic",
+        "measUnitId": "TWAMP_TIM_RAN",
+        "schemaName": "DBN0_TIM_TWAMP",
+        "tableName": "TWAMP_TIM_RAN",
+        "catalogId": "{{ catalogID }}"
+    }
+]

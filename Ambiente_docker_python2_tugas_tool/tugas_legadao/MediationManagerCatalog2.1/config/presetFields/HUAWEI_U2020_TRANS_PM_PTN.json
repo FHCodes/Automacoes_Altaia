@@ -1,0 +1,54 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "ResourceName",
+      "sqlName" : "ResourceName",
+      "udn" : "ResourceName",
+      "desc" : "Resource Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "GranularityPeriod",
+      "sqlName" : "GranularityPeriod",
+      "udn" : "granularityPeriod",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "CollectionTime",
+      "sqlName" : "CollectionTime",
+      "udn" : "CollectionTime",
+      "desc" : "Collection Time",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "DeviceName",
+      "sqlName" : "DeviceName",
+      "udn" : "DeviceName",
+      "desc" : "Device Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "DeviceID",
+      "sqlName" : "DeviceID",
+      "udn" : "DeviceID",
+      "desc" : "Device ID",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

@@ -1,0 +1,122 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_ENM_NGN_PM_MTAS",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "NGN",
+		"version" : "1.20.0",
+		"tech" : "MTAS",
+		"nameNomenclature" : "ERICSSON_ENM_NGN_PM_MTAS_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEXInstance",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_ENM_IMS_PM_MTAS",
+		"presetFields" : "ERICSSON_ENM_NGN_PM_MTAS"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"measurementPartitioner_partitionOf":
+			[
+				{
+					"format": "json"
+				}
+			],
+			"replaceRegex":
+			[
+				{
+					"field": "sqlName",
+					"regex": "^MTAS",
+					"value": ""
+				},
+				{
+					"field": "sqlName",
+					"regex": "^VTAS",
+					"value": ""
+				},
+				{
+					"field": "sqlName",
+					"regex": "^MTA",
+					"value": ""
+				},
+				{
+					"field": "sqlName",
+					"regex": "^VTA",
+					"value": ""
+				}
+			],
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "MTAS_"
+				},
+				{
+					"field": "udn",
+					"value": "MTAS_"
+				}
+			],
+			"ericssonHierarchyMTAS" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : ",",
+					"interChar" : "",
+					"startText" : ""
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "MEASOBJLDN"
+					}
+				],
+				"applyRegex2": [
+					{
+						"field": "DNPREFIX",
+						"pattern": "SubNetwork=(?P<SUBNETWORK1>.+?),SubNetwork=(?P<SUBNETWORK2>.+?),MeContext=(?P<MECONTEXT>.+?)$",
+						"newFields": ["SUBNETWORK1", "SUBNETWORK2", "MECONTEXT"]
+					},
+					{
+						"field": "LOCALDN",
+						"pattern": "ManagedElement=(?P<MANAGEDELEMENT>.+?)$",
+						"newFields": ["MANAGEDELEMENT"]
+					}
+				]
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"1" : {
+		"sheetName": "TABELAS_TODAS",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "PO ID",
+				"ossId": "PO ID",
+				"hierarchy": "MO Location",
+				"name": "PO NAME = Name Table",
+				"udn": "Udn Table",
+				"desc": "DESC",
+				"tableName": "Table Name"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "TABELAS_TODAS",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"ossId": "PO ID",
+				"name": "PO NAME = Name Table",
+				"udn": "Udn Table",
+				"desc": "DESC",
+				"measuredobjects": "MO Location",
+				"tableName": "Table Name"
+			}
+		}
+	},
+	"3" : {
+		"sheetName": "TABELAS_TODAS",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "PO ID",
+				"id": "Counter ID = bdcolname",
+				"bdcolname": "Counter ID = bdcolname",
+				"udn": "Counter Name = Udn Counter",
+				"name": "Counter Name",
+				"desc": "DESC",
+				"bdtype": "bdtype",
+				"dataType": "bdtype",
+				"dataUnit": "DESC",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

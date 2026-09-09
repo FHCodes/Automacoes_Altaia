@@ -1,0 +1,37 @@
+{
+	"1" : {
+		"sheetName": "Measurement List",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "pmGroupId",
+				"ossId": "pmGroupId",
+				"name": "pmGroupId",
+				"udn": "pmGroupId",
+				"desc": "pmGroupId_Description",
+				"tableName": "pmGroupId",
+				"partitionOf": "pmGroupId",
+				"hierarchy": "OMeS DN"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Counter List",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "pmGroupId",
+				"id": "measurementTypeId",
+				"bdcolname": "measurementTypeId",
+				"udn": "measurementName",
+				"name": "measurementName",
+				"desc": "description",
+				"bdtype": "collectionMethod",
+				"dataType": "collectionMethod",
+				"dataUnit": "measurementResult",
+				"multiplicity": "multiplicity"
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+docker image rm ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-vivo:1.0.3
+docker image rm quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-vivo:1.0.3
+docker image pull ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-vivo:1.0.3
+docker image tag ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-vivo:1.0.3 quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-vivo:1.0.3
+docker image push quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-vivo:1.0.3
+
+
+docker image rm ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/automation-vivo:1.0.3
+docker image rm quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.3
+docker image pull ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/automation-vivo:1.0.3
+docker image tag ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/automation-vivo:1.0.3 quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.3
+docker image push quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.3
+
+
+docker image rm ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/sol-ssh-server:1.0.3
+docker image rm quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/sol-ssh-server:1.0.3
+docker image pull ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/sol-ssh-server:1.0.3
+docker image tag ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/sol-ssh-server:1.0.3 quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/sol-ssh-server:1.0.3
+docker image push quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/sol-ssh-server:1.0.3
+
+-----------------
+
+docker image rm ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-vivo:1.0.4b
+docker image rm quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-vivo:1.0.4b
+docker image pull ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-vivo:1.0.4b
+docker image tag ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-vivo:1.0.4b quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-vivo:1.0.4b
+docker image push quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-vivo:1.0.4b
+
+
+docker image rm ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/automation-vivo:1.0.4b
+docker image rm quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.4b
+docker image pull ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/automation-vivo:1.0.4b
+docker image tag ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/automation-vivo:1.0.4b quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.4b
+docker image push quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/automation-vivo:1.0.4b
+
+
+docker image rm ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/sol-ssh-server:1.0.4b
+docker image rm quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/sol-ssh-server:1.0.4b
+docker image pull ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/sol-ssh-server:1.0.4b
+docker image tag ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/sol-ssh-server:1.0.4b quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/sol-ssh-server:1.0.4b
+docker image push quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/sol-ssh-server:1.0.4b
+
+
+docker image rm ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-conecta-trino:1.0.4b
+docker image rm quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-conecta-trino:1.0.4b
+docker image pull ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-conecta-trino:1.0.4b
+docker image tag ghcr.io/alticelabsprojects/altaia-vivo-namf-sol/namf-vivo/namfd-conecta-trino:1.0.4b quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-conecta-trino:1.0.4b
+docker image push quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-sol/altaia-vivo/namfd-conecta-trino:1.0.4b
+ 

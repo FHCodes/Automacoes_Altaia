@@ -1,0 +1,21 @@
+Documentação de Sincronização: ${nome}
+
+1. Visão Geral
+Este processo consiste em um CronJob do Kubernetes que realiza a automação de coleta de dados.
+
+2. Cronograma e Políticas de Execução
+* Agendamento (Cron): ${schedule}
+* Fuso Horário: ${time_zone}
+* Concorrência: ${concurrency}
+* Prazo Limite de Inicialização: ${deadline} segundos
+* Política de Reinício: ${restart_policy}
+
+3. Fluxo de Execução do Script
+* Comando Completo: ${comando_full}
+
+4. Infraestrutura Kubernetes e Recursos
+* Imagem do Container: ${imagem}
+* Capacidade Computacional (Requests/Limits): CPU: ${cpu_req}/${cpu_lim} | Memória: ${mem_req}/${mem_lim}
+* Segurança (Security Context): UID/GID ${uid} | Runtime: ${runtime}
+* Volumes Utilizados:
+${volumes_lista}

@@ -1,0 +1,72 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "Result Time",
+      "sqlName" : "beginTime",
+      "udn" : "beginTime",
+      "desc" : "Date and time for the PM record (YYYY-MM-DD HH:MM:SS)",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "Granularity Period",
+      "sqlName" : "duration",
+      "udn" : "duration",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "Reliability",
+      "sqlName" : "Reliability",
+      "udn" : "Reliability",
+      "desc" : "Reliability",
+      "dataType" : "VARCHAR2(10)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "ENDTIME",
+      "udn" : "endTime",
+      "desc" : "End time for the measurement collection.",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "UserLabel",
+      "sqlName" : "managedElementUserLabel",
+      "udn" : "managedElementUserLabel",
+      "desc" : "Managed Element User Label",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "elementType",
+      "sqlName" : "elementType",
+      "udn" : "elementType",
+      "desc" : "Element Type",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+     {
+      "id" : "Object Name",
+      "sqlName" : "measObjLdn",
+      "udn" : "measObjLdn",
+      "desc" : "Measured Object Local Distinguish Name",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "PK"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

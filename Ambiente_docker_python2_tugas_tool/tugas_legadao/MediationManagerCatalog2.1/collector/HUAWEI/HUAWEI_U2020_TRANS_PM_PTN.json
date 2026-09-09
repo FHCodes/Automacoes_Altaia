@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "HUAWEI_U2020_TRANS_PM_PTN",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "PTN",
+		"version" : "V100R019C00",
+		"tech" : "PTN",
+		"nameNomenclature" : "HUAWEI_U2020_TRANS_PM_PTN_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelHuawei",
+		"doc" : "",
+		"formatConfig" : "HUAWEI_U2020_TRANS_PM_PTN",
+		"presetFields" : "HUAWEI_U2020_TRANS_PM_PTN"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "PTN_"
+				},
+				{
+					"field": "udn",
+					"value": "PTN_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				1
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

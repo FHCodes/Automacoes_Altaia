@@ -1,0 +1,45 @@
+{
+    "regex": "\\d+|Job",
+    "header": {
+        "tags": {
+            "fileHeader": {
+                "attrs": {
+                    "dnPrefix": ["DNPREFIX"],
+                    "vendorName": ["VENDORNAME"]
+                }
+            },
+            "measCollec": {
+                "attrs": {
+                    "beginTime": ["BEGINTIME"]
+                }
+            },
+            "granPeriod": {
+                "attrs": {
+                    "endTime": ["ENDTIME"],
+                    "duration": ["DURATION"]
+                }
+            },
+            "job": {
+                "attrs": {
+                    "jobId": [
+                        "JOBID"
+                    ]
+                }
+            },
+            "managedElement": {
+                "attrs": {
+                    "localDn": ["LOCALDN"]
+                }
+            }
+        }
+    },
+    "object": {
+        "tags": {
+            "measValue": {
+                "attrs": {
+                    "measObjLdn": ["MEASOBJLDN"]
+                }
+            }             
+        }
+    }
+}

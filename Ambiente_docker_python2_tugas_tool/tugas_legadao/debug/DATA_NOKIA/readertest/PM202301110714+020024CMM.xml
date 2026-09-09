@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Nokia Networks">
+<fileSender elementType="CMM"/>
+<measCollec beginTime="2023-01-11T06:45:00+02:00"/>
+</fileHeader>
+<measData>
+<managedElement/>
+<measInfo measInfoId="Memory_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M145C001 M145C000 M145C003 M145C002 M145C005 M145C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0">
+<measResults>2727 0 98 14060 1 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004 M128C007 M128C008</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0">
+<measResults>4 8 1 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="System_Miscellaneous">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M223C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0">
+<measResults>19846</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Memory_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M145C001 M145C000 M145C002</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1">
+<measResults>1536 0 19083</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1">
+<measResults>4 8</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="System_Miscellaneous">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M223C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1">
+<measResults>19846</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-0">
+<measResults>4 10 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-1">
+<measResults>5 10 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-2">
+<measResults>4 9 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-3">
+<measResults>4 8 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-4">
+<measResults>4 12 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-5">
+<measResults>4 8 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-6">
+<measResults>4 9 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/CORE-7">
+<measResults>5 12 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-0">
+<measResults>4 13 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-1">
+<measResults>4 11 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-2">
+<measResults>4 8 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-3">
+<measResults>3 8 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-4">
+<measResults>4 9 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-5">
+<measResults>4 8 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-6">
+<measResults>4 10 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C003 M153C004 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/CORE-7">
+<measResults>4 11 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/INTRFC-eth0">
+<measResults>662 362 323 67</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/INTRFC-eth1">
+<measResults>70 10 8 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/INTRFC-eth2">
+<measResults>0 0 0 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/INTRFC-eth3">
+<measResults>8 4 0 4</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/INTRFC-eth4">
+<measResults>203 0 55 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/INTRFC-eth0">
+<measResults>720 450 331 74</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/INTRFC-eth1">
+<measResults>70 10 8 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/INTRFC-eth2">
+<measResults>0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/INTRFC-eth3">
+<measResults>7 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/INTRFC-eth4">
+<measResults>204 0 55 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|">
+<measResults>68</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|data-logs">
+<measResults>11</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|data-pcmd">
+<measResults>5</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|data-perf">
+<measResults>20</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|data-pm">
+<measResults>4</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|data-redis">
+<measResults>5</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|data-store">
+<measResults>5</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|dev|shm">
+<measResults>4</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|home">
+<measResults>100</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|shared">
+<measResults>2</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc0/FSY-|tmp">
+<measResults>7</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|">
+<measResults>48</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|data-logs">
+<measResults>11</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|data-pcmd">
+<measResults>5</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|data-perf">
+<measResults>20</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|data-pm">
+<measResults>4</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|data-redis">
+<measResults>5</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|dev|shm">
+<measResults>4</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|home">
+<measResults>7</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|shared">
+<measResults>2</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-necc1/FSY-|tmp">
+<measResults>7</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="DBS_Session_Restoration">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M159C009 M159C008 M159C019 M159C007 M159C018 M159C006 M159C005 M159C016 M159C004 M159C015 M159C003 M159C014 M159C002 M159C013 M159C001 M159C012 M159C023 M159C000 M159C011 M159C022 M159C010 M159C021 M159C020</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0">
+<measResults>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Memory_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M145C001 M145C000 M145C003 M145C002 M145C005 M145C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0">
+<measResults>3618 0 90 27556 9 9</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004 M128C007 M128C008</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0">
+<measResults>6 6 6 7</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="System_Service">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M148C007 M148C008 M148C009 M148C003 M148C004 M148C005 M148C006 M148C010 M148C000 M148C011 M148C001 M148C012 M148C002</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0">
+<measResults>0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="System_Miscellaneous">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M223C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0">
+<measResults>19843</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="DBS_Session_Restoration">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M159C009 M159C008 M159C019 M159C007 M159C018 M159C006 M159C005 M159C016 M159C004 M159C015 M159C003 M159C014 M159C002 M159C013 M159C001 M159C012 M159C023 M159C000 M159C011 M159C022 M159C010 M159C021 M159C020</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1">
+<measResults>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Memory_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M145C001 M145C000 M145C003 M145C002 M145C005 M145C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1">
+<measResults>3623 0 90 27554 9 9</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004 M128C007 M128C008</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1">
+<measResults>5 6 6 6</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="System_Miscellaneous">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M223C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1">
+<measResults>19843</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-0">
+<measResults>7 2 3 602 385 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-1">
+<measResults>7 3 4 596 384 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-2">
+<measResults>8 7 8 550 391 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-3">
+<measResults>8 7 8 462 389 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-4">
+<measResults>8 7 8 589 488 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-5">
+<measResults>8 7 8 613 547 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-6">
+<measResults>8 7 8 630 708 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/CORE-7">
+<measResults>8 7 8 620 729 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-0">
+<measResults>6 2 3 660 377 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-1">
+<measResults>6 3 4 617 377 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-2">
+<measResults>7 6 7 590 379 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-3">
+<measResults>7 7 8 596 380 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-4">
+<measResults>7 7 8 603 717 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-5">
+<measResults>7 7 8 497 699 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-6">
+<measResults>7 7 8 538 379 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/CORE-7">
+<measResults>8 7 8 622 601 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/INTRFC-eth0">
+<measResults>363 263 94 133</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/INTRFC-eth1">
+<measResults>71 10 8 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/INTRFC-eth0">
+<measResults>337 198 73 46</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/INTRFC-eth1">
+<measResults>71 10 8 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/FSY-|">
+<measResults>23</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs0/FSY-|dev|shm">
+<measResults>0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/FSY-|">
+<measResults>23</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-dbs1/FSY-|dev|shm">
+<measResults>0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPPS_DNS">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M112C018 M112C017 M112C019 M112C010 M112C012 M112C011 M112C014 M112C013 M112C016 M112C015 M112C007 M112C006 M112C009 M112C008 M112C021 M112C020 M112C001 M112C023 M112C000 M112C022 M112C003 M112C025 M112C002 M112C024 M112C005 M112C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0">
+<measResults>0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 9 0 0 0 9 9</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPPS_DNS">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M112C018 M112C017 M112C019 M112C010 M112C012 M112C011 M112C014 M112C013 M112C016 M112C015 M112C007 M112C006 M112C009 M112C008 M112C021 M112C020 M112C001 M112C023 M112C000 M112C022 M112C003 M112C025 M112C002 M112C024 M112C005 M112C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2">
+<measResults>0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 9 0 0 0 9 9</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0">
+<measResults>1 2</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2">
+<measResults>1 2</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-0">
+<measResults>8 3 4 571 386 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-1">
+<measResults>8 1 3 514 378 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-2">
+<measResults>8 1 2 551 377 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-3">
+<measResults>9 1 2 619 381 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-4">
+<measResults>9 1 2 614 509 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-5">
+<measResults>9 1 2 818 613 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-6">
+<measResults>9 1 2 1268 716 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-7">
+<measResults>9 1 3 1016 636 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-8">
+<measResults>8 1 2 810 665 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/CORE-9">
+<measResults>8 2 3 708 714 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-0">
+<measResults>7 3 4 590 371 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-1">
+<measResults>7 1 2 482 369 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-2">
+<measResults>8 1 2 602 372 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-3">
+<measResults>8 1 2 719 376 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-4">
+<measResults>7 1 2 625 635 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-5">
+<measResults>7 1 2 697 664 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-6">
+<measResults>8 1 2 589 707 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-7">
+<measResults>8 1 2 715 712 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-8">
+<measResults>8 1 3 645 493 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/CORE-9">
+<measResults>8 1 2 558 598 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/INTRFC-eth0">
+<measResults>447 277 197 124</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/INTRFC-eth1">
+<measResults>71 10 8 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/INTRFC-eth0">
+<measResults>446 276 197 124</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/INTRFC-eth1">
+<measResults>71 10 8 1</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/FSY-|">
+<measResults>24</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps0/FSY-|dev|shm">
+<measResults>0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/FSY-|">
+<measResults>24</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-cpps2/FSY-|dev|shm">
+<measResults>0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="IPDS_DNS">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M134C008 M134C009 M134C006 M134C007 M134C004 M134C015 M134C005 M134C002 M134C013 M134C003 M134C014 M134C000 M134C011 M134C001 M134C012 M134C010</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0">
+<measResults>0 0 0 0 0 0 600 600 0 600 0 0 600 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="IPDS_DNS">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M134C008 M134C009 M134C006 M134C007 M134C004 M134C015 M134C005 M134C002 M134C013 M134C003 M134C014 M134C000 M134C011 M134C001 M134C012 M134C010</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1">
+<measResults>0 0 0 0 0 0 600 600 0 600 0 0 600 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0">
+<measResults>2 3</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M128C003 M128C004</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1">
+<measResults>2 3</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="IPDS_Inter_Service_Comm">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M135C006 M135C005 M135C007 M135C004 M135C011 M135C010</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/PTNER-cpps0">
+<measResults>6138 22373 8398 5624 2588 3667</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="IPDS_Inter_Service_Comm">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M135C006 M135C005 M135C007 M135C004 M135C011 M135C010</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/PTNER-cpps2">
+<measResults>6145 22371 8390 5626 2588 3665</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-0">
+<measResults>8 7 8 360 600 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-1">
+<measResults>7 0 0 267 651 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-2">
+<measResults>9 3 4 642 544 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-3">
+<measResults>6 6 6 1011 545 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-4">
+<measResults>7 6 7 711 712 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-5">
+<measResults>7 6 6 716 714 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-6">
+<measResults>6 0 0 297 721 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-7">
+<measResults>6 0 0 286 398 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-8">
+<measResults>6 0 0 365 718 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/CORE-9">
+<measResults>6 0 0 263 698 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-0">
+<measResults>7 6 7 558 566 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-1">
+<measResults>6 0 0 343 638 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-2">
+<measResults>8 3 4 415 714 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-3">
+<measResults>5 6 9 1141 629 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-4">
+<measResults>7 5 8 732 656 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-5">
+<measResults>7 5 7 651 518 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-6">
+<measResults>5 0 0 305 710 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-7">
+<measResults>5 0 0 308 686 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-8">
+<measResults>5 0 0 311 478 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="CPU_Usage_Per_Core">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M153C000 M153C003 M153C004 M153C001 M153C002 M153C005</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/CORE-9">
+<measResults>5 0 0 324 618 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/INTRFC-eth0">
+<measResults>349 0 130 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/INTRFC-eth1">
+<measResults>0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/INTRFC-eth3">
+<measResults>7 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/INTRFC-eth4">
+<measResults>0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/INTRFC-eth0">
+<measResults>275 0 83 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/INTRFC-eth1">
+<measResults>1 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/INTRFC-eth3">
+<measResults>7 3 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="Network_Utilization">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M147C002 M147C003 M147C000 M147C001</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/INTRFC-eth4">
+<measResults>0 0 0 0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/FSY-|">
+<measResults>26</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds0/FSY-|dev|shm">
+<measResults>0</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/FSY-|">
+<measResults>26</measResults>
+</measValue>
+</measInfo>
+<measInfo measInfoId="File_System_Usage">
+<granPeriod duration="PT300S" endTime="2023-01-11T06:50:00+02:00"/>
+<repPeriod duration="PT300S"/>
+<measTypes>M130C000</measTypes>
+<measValue measObjLdn="PLMN-PLMN/CMU-AF/CMM-1/VM-cmm-appliance-ipds1/FSY-|dev|shm">
+<measResults>0</measResults>
+</measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="2023-01-11T06:50:00+02:00"/>
+</fileFooter>
+</measCollecFile>

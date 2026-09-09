@@ -1,0 +1,35 @@
+{
+	"1" :
+	{
+		"sheetName" : "Counters",
+		"unit" : {
+			"unitId": "ossId",
+			"ossId": "id",
+			"fieldMatch": {
+				"id": "Unit ID",
+				"ossId": "Unit ID",
+				"name": "Unit ID",
+				"udn": "Unit ID",
+				"desc": "Unit ID",
+				"tableName": "Unit ID",
+				"hierarchy": "None"
+			}
+		},
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Unit ID",
+				"id": "Counter ID",
+				"bdcolname": "Counter ID",
+				"udn": "Counter Name",
+				"name": "Counter Name",
+				"bdtype": "dbn0type",
+				"dataType": "dataType",
+				"dataUnit": "dbn0type",
+				"desc": "Counter Description",
+				"multiplicity": "batatas"
+			}
+		}
+	}
+}

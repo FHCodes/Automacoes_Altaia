@@ -1,0 +1,37 @@
+{
+  "client" :
+  {
+    "table" :
+    [
+      "validateTableSize",
+      "validateTableName",
+      "validateTableUdn"
+    ],
+    "column" :
+    [
+      "validatebdcolname",
+      "validateBDType",
+      "validatedbn0type",
+      "validateColumnUdn"
+    ]
+  },
+  "oss" :
+  {
+    "unit" :
+    [
+      "validateUnitDescription"
+    ],
+    "item" :
+    [
+      "validateItemDescription",
+      "validateTypeCust"
+    ]
+  },
+  "operations" :
+  {
+    "unit" :
+    [],
+    "item" :
+    []
+  }
+}

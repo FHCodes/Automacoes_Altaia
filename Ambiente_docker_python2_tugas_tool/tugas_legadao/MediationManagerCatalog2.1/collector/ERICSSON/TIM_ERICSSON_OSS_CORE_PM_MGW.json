@@ -1,0 +1,115 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_OSS_CORE_PM_MGW",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "OSS_CORE_PM_MGW",
+		"version" : "R52A",
+		"tech" : "CORECS",
+		"nameNomenclature" : "ERICSSON_OSS_CORE_PM_MGW_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEX",
+		"doc" : "",
+		"formatConfig" : "TIM_ERICSSON_OSS_CORE_PM_MGW",
+		"presetFields" : "TIM_ERICSSON_OSS_CORE_PM_MGW"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "MGW_"
+				},
+				{
+					"field": "udn",
+					"value": "MGW_"
+				}
+			],
+			"tableSizeParticioner_Ericsson":
+			[
+				0
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"ericssonHierarchyRAN" :
+			[
+				{
+					"regex" : "",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "=",
+					"interChar" : "",
+					"startText" : ""
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format":"XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+			"ericssonParticioner" :
+			[]
+		},
+		"ossCatalog" :
+		{
+			"ericssonPDF" :
+			[]
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "measuredObjectID"
+					}
+				],
+				"applyRegex2": [
+					{
+						"field": "neDistinguishedName",
+						"pattern": "SubNetwork=(?P<SubNetwork1>.+?),(SubNetwork=(?P<SubNetwork2>.+?),)?MeContext=(?P<MeContext>.+)",
+						"newFields": ["SubNetwork1", "SubNetwork2", "MeContext"]
+					}
+				]
+			},
+			"item" :
+			{
+				"splitMultiValue": [
+					{
+						"delimiter": ","
+					}
+				]
+			}
+		}
+	}
+}

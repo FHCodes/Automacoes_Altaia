@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root model="OSS_RAN_PM_SRAN" ossversion="V5.75.20.10F18" vendor="ZTE">
+	<table active="TRUE" id="CPUUSUAGE" ossId="CPUUSUAGE" tableName="SRAN_CPUUSUAGE" tech="SRAN" udn="SRAN_Cpuusuage">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="HWFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="hwFunction" udn="Hwfunction"/>
+		<column bdcolname="C370010000" bdtype="NUMBER" dbn0type="MT" id="C370010000" udn="CpuUsageMax"/>
+		<column bdcolname="C370010001" bdtype="NUMBER" dbn0type="MT" id="C370010001" udn="CpuUsageAvg"/>
+		<column bdcolname="C370010002" bdtype="NUMBER" dbn0type="MT" id="C370010002" udn="MemoryUsageMax"/>
+		<column bdcolname="C370010003" bdtype="NUMBER" dbn0type="MT" id="C370010003" udn="MemoryUsageAvg"/>
+		<column bdcolname="C370010005" bdtype="NUMBER" dbn0type="MT" id="C370010005" udn="MemoryUsageRatioMax"/>
+		<column bdcolname="C370010006" bdtype="NUMBER" dbn0type="MT" id="C370010006" udn="MemoryUsageRatioAvg"/>
+	</table>
+	<table active="TRUE" id="TNETHPORTFLUX" ossId="TNETHPORTFLUX" tableName="SRAN_TNETHPORTFLUX" tech="SRAN" udn="SRAN_Tnethportflux">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="TNPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="TnPort" udn="Tnport"/>
+		<column bdcolname="C370020000" bdtype="NUMBER" dbn0type="MT" id="C370020000" udn="EthRevFrameMax"/>
+		<column bdcolname="C370020001" bdtype="NUMBER" dbn0type="MT" id="C370020001" udn="EthRevFrameAvg"/>
+		<column bdcolname="C370020002" bdtype="NUMBER" dbn0type="MT" id="C370020002" udn="EthSendFrameMax"/>
+		<column bdcolname="C370020003" bdtype="NUMBER" dbn0type="MT" id="C370020003" udn="EthSendFrameAvg"/>
+		<column bdcolname="C370020004" bdtype="NUMBER" dbn0type="MT" id="C370020004" udn="EthRevBytesSum"/>
+		<column bdcolname="C370020005" bdtype="NUMBER" dbn0type="MT" id="C370020005" udn="EthSendBytesSum"/>
+		<column bdcolname="C370020006" bdtype="NUMBER" dbn0type="MT" id="C370020006" udn="EthRevSpeed"/>
+		<column bdcolname="C370020007" bdtype="NUMBER" dbn0type="MT" id="C370020007" udn="EthSendSpeed"/>
+		<column bdcolname="C370020008" bdtype="NUMBER" dbn0type="MT" id="C370020008" udn="EthRevBytesUsage"/>
+		<column bdcolname="C370020009" bdtype="NUMBER" dbn0type="MT" id="C370020009" udn="EthSendBytesUsage"/>
+		<column bdcolname="C370020010" bdtype="NUMBER" dbn0type="MT" id="C370020010" udn="EthRevSpeedMax"/>
+		<column bdcolname="C370020011" bdtype="NUMBER" dbn0type="MT" id="C370020011" udn="EthSendSpeedMax"/>
+		<column bdcolname="C370020032" bdtype="NUMBER" dbn0type="MT" id="C370020032" udn="EthSendBandwidthUsageMax"/>
+		<column bdcolname="C370020033" bdtype="NUMBER" dbn0type="MT" id="C370020033" udn="EthRevBandwidthUsageMax"/>
+		<column bdcolname="C370020034" bdtype="NUMBER" dbn0type="MT" id="C370020034" udn="EthSendBandwidthCfg"/>
+		<column bdcolname="C370020035" bdtype="NUMBER" dbn0type="MT" id="C370020035" udn="EthRevBandwidthCfg"/>
+		<column bdcolname="C370020036" bdtype="NUMBER" dbn0type="MT" id="C370020036" udn="EthEffectiveRevBytesSum"/>
+		<column bdcolname="C370020037" bdtype="NUMBER" dbn0type="MT" id="C370020037" udn="EthEffectiveSendBytesSum"/>
+		<column bdcolname="C370020038" bdtype="NUMBER" dbn0type="MT" id="C370020038" udn="EthEffectiveRevTime"/>
+		<column bdcolname="C370020039" bdtype="NUMBER" dbn0type="MT" id="C370020039" udn="EthEffectiveSendTime"/>
+		<column bdcolname="C370020044SUB0" bdtype="NUMBER" dbn0type="MT" id="C370020044[0]" udn="EthRevTimeOnBandwidthSub0"/>
+		<column bdcolname="C370020044SUB1" bdtype="NUMBER" dbn0type="MT" id="C370020044[1]" udn="EthRevTimeOnBandwidthSub1"/>
+		<column bdcolname="C370020044SUB2" bdtype="NUMBER" dbn0type="MT" id="C370020044[2]" udn="EthRevTimeOnBandwidthSub2"/>
+		<column bdcolname="C370020044SUB3" bdtype="NUMBER" dbn0type="MT" id="C370020044[3]" udn="EthRevTimeOnBandwidthSub3"/>
+		<column bdcolname="C370020044SUB4" bdtype="NUMBER" dbn0type="MT" id="C370020044[4]" udn="EthRevTimeOnBandwidthSub4"/>
+		<column bdcolname="C370020044SUB5" bdtype="NUMBER" dbn0type="MT" id="C370020044[5]" udn="EthRevTimeOnBandwidthSub5"/>
+		<column bdcolname="C370020044SUB6" bdtype="NUMBER" dbn0type="MT" id="C370020044[6]" udn="EthRevTimeOnBandwidthSub6"/>
+		<column bdcolname="C370020044SUB7" bdtype="NUMBER" dbn0type="MT" id="C370020044[7]" udn="EthRevTimeOnBandwidthSub7"/>
+		<column bdcolname="C370020044SUB8" bdtype="NUMBER" dbn0type="MT" id="C370020044[8]" udn="EthRevTimeOnBandwidthSub8"/>
+		<column bdcolname="C370020044SUB9" bdtype="NUMBER" dbn0type="MT" id="C370020044[9]" udn="EthRevTimeOnBandwidthSub9"/>
+		<column bdcolname="C370020045SUB0" bdtype="NUMBER" dbn0type="MT" id="C370020045[0]" udn="EthSendTimeOnBandwidthSub0"/>
+		<column bdcolname="C370020045SUB1" bdtype="NUMBER" dbn0type="MT" id="C370020045[1]" udn="EthSendTimeOnBandwidthSub1"/>
+		<column bdcolname="C370020045SUB2" bdtype="NUMBER" dbn0type="MT" id="C370020045[2]" udn="EthSendTimeOnBandwidthSub2"/>
+		<column bdcolname="C370020045SUB3" bdtype="NUMBER" dbn0type="MT" id="C370020045[3]" udn="EthSendTimeOnBandwidthSub3"/>
+		<column bdcolname="C370020045SUB4" bdtype="NUMBER" dbn0type="MT" id="C370020045[4]" udn="EthSendTimeOnBandwidthSub4"/>
+		<column bdcolname="C370020045SUB5" bdtype="NUMBER" dbn0type="MT" id="C370020045[5]" udn="EthSendTimeOnBandwidthSub5"/>
+		<column bdcolname="C370020045SUB6" bdtype="NUMBER" dbn0type="MT" id="C370020045[6]" udn="EthSendTimeOnBandwidthSub6"/>
+		<column bdcolname="C370020045SUB7" bdtype="NUMBER" dbn0type="MT" id="C370020045[7]" udn="EthSendTimeOnBandwidthSub7"/>
+		<column bdcolname="C370020045SUB8" bdtype="NUMBER" dbn0type="MT" id="C370020045[8]" udn="EthSendTimeOnBandwidthSub8"/>
+		<column bdcolname="C370020045SUB9" bdtype="NUMBER" dbn0type="MT" id="C370020045[9]" udn="EthSendTimeOnBandwidthSub9"/>
+	</table>
+	<table active="TRUE" id="UMELNK" ossId="UMELNK" tableName="SRAN_UMELNK" tech="SRAN" udn="SRAN_Umelnk">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="C370130000" bdtype="NUMBER" dbn0type="MT" id="C370130000" udn="LinkBreakCnt"/>
+		<column bdcolname="C370130001" bdtype="NUMBER" dbn0type="MT" id="C370130001" udn="OmcServeTime"/>
+	</table>
+	<table active="TRUE" id="RRUCARRIER" ossId="RRUCARRIER" tableName="SRAN_RRUCARRIER" tech="SRAN" udn="SRAN_Rrucarrier">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RFPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RfPort" udn="Rfport"/>
+		<column bdcolname="RACKID" bdtype="NUMBER" dbn0type="PK" id="RackID" udn="Rackid"/>
+		<column bdcolname="SHELFID" bdtype="NUMBER" dbn0type="PK" id="ShelfID" udn="Shelfid"/>
+		<column bdcolname="SLOTID" bdtype="NUMBER" dbn0type="PK" id="SlotID" udn="Slotid"/>
+		<column bdcolname="ANTID" bdtype="NUMBER" dbn0type="PK" id="AntID" udn="Antid"/>
+		<column bdcolname="BAND" bdtype="NUMBER" dbn0type="PK" id="Band" udn="Band"/>
+		<column bdcolname="RADIOMODE" bdtype="NUMBER" dbn0type="PK" id="RadioMode" udn="Radiomode"/>
+		<column bdcolname="CARRIERID" bdtype="NUMBER" dbn0type="PK" id="CarrierID" udn="Carrierid"/>
+		<column bdcolname="C370140000" bdtype="NUMBER" dbn0type="MT" id="C370140000" udn="TransmitPowerMax"/>
+		<column bdcolname="C370140001" bdtype="NUMBER" dbn0type="MT" id="C370140001" udn="TransmitPowerMin"/>
+		<column bdcolname="C370140002" bdtype="NUMBER" dbn0type="MT" id="C370140002" udn="TransmitPowerAvg"/>
+		<column bdcolname="C370140003" bdtype="NUMBER" dbn0type="MT" id="C370140003" udn="MainRssiMax"/>
+		<column bdcolname="C370140004" bdtype="NUMBER" dbn0type="MT" id="C370140004" udn="MainRssiMin"/>
+		<column bdcolname="C370140005" bdtype="NUMBER" dbn0type="MT" id="C370140005" udn="MainRssiAvg"/>
+		<column bdcolname="C370140006" bdtype="NUMBER" dbn0type="MT" id="C370140006" udn="DiversityRssiMax"/>
+		<column bdcolname="C370140007" bdtype="NUMBER" dbn0type="MT" id="C370140007" udn="DiversityRssiMin"/>
+		<column bdcolname="C370140008" bdtype="NUMBER" dbn0type="MT" id="C370140008" udn="DiversityRssiAvg"/>
+		<column bdcolname="C370140009" bdtype="NUMBER" dbn0type="MT" id="C370140009" udn="AgcCompensationMax"/>
+		<column bdcolname="C370140010" bdtype="NUMBER" dbn0type="MT" id="C370140010" udn="AgcCompensationMin"/>
+		<column bdcolname="C370140011" bdtype="NUMBER" dbn0type="MT" id="C370140011" udn="AgcCompensationAvg"/>
+	</table>
+	<table active="TRUE" id="RRUPA" ossId="RRUPA" tableName="SRAN_RRUPA" tech="SRAN" udn="SRAN_Rrupa">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RFPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RfPort" udn="Rfport"/>
+		<column bdcolname="RACKID" bdtype="NUMBER" dbn0type="PK" id="RackID" udn="Rackid"/>
+		<column bdcolname="SHELFID" bdtype="NUMBER" dbn0type="PK" id="ShelfID" udn="Shelfid"/>
+		<column bdcolname="SLOTID" bdtype="NUMBER" dbn0type="PK" id="SlotID" udn="Slotid"/>
+		<column bdcolname="ANTID" bdtype="NUMBER" dbn0type="PK" id="AntID" udn="Antid"/>
+		<column bdcolname="BAND" bdtype="NUMBER" dbn0type="PK" id="Band" udn="Band"/>
+		<column bdcolname="C370150000" bdtype="NUMBER" dbn0type="MT" id="C370150000" udn="VoltageStandingWaveRatio"/>
+		<column bdcolname="C370150001" bdtype="NUMBER" dbn0type="MT" id="C370150001" udn="PaTemperatureMax"/>
+		<column bdcolname="C370150002" bdtype="NUMBER" dbn0type="MT" id="C370150002" udn="PaTemperatureMin"/>
+		<column bdcolname="C370150003" bdtype="NUMBER" dbn0type="MT" id="C370150003" udn="PaTemperatureAvg"/>
+		<column bdcolname="C370150004" bdtype="NUMBER" dbn0type="MT" id="C370150004" udn="PaOnTime"/>
+		<column bdcolname="C370150005" bdtype="NUMBER" dbn0type="MT" id="C370150005" udn="PaOffTime"/>
+		<column bdcolname="C370150006" bdtype="NUMBER" dbn0type="MT" id="C370150006" udn="PaOffTimeMannul"/>
+		<column bdcolname="C370150007" bdtype="NUMBER" dbn0type="MT" id="C370150007" udn="PaOffTimePowerDown"/>
+		<column bdcolname="C370150008" bdtype="NUMBER" dbn0type="MT" id="C370150008" udn="PaOffTimeFault"/>
+		<column bdcolname="C370150009" bdtype="NUMBER" dbn0type="MT" id="C370150009" udn="PaTxPowerMax"/>
+		<column bdcolname="C370150010" bdtype="NUMBER" dbn0type="MT" id="C370150010" udn="PaTxPowerMin"/>
+		<column bdcolname="C370150011" bdtype="NUMBER" dbn0type="MT" id="C370150011" udn="PaTxPowerAvg"/>
+		<column bdcolname="C370150012" bdtype="NUMBER" dbn0type="MT" id="C370150012" udn="PaRevPowerMax"/>
+		<column bdcolname="C370150013" bdtype="NUMBER" dbn0type="MT" id="C370150013" udn="PaRevPowerMin"/>
+		<column bdcolname="C370150014" bdtype="NUMBER" dbn0type="MT" id="C370150014" udn="PaRevPowerAvg"/>
+		<column bdcolname="C370150015" bdtype="NUMBER" dbn0type="MT" id="C370150015" udn="PaVoltageAdjustAvg"/>
+		<column bdcolname="C370150016" bdtype="NUMBER" dbn0type="MT" id="C370150016" udn="PaOfdmShutdownDuration"/>
+	</table>
+	<table active="TRUE" id="ELECTSUPPLY" ossId="ELECTSUPPLY" tableName="SRAN_ELECTSUPPLY" tech="SRAN" udn="SRAN_Electsupply">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="HWFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="hwFunction" udn="Hwfunction"/>
+		<column bdcolname="C370160000" bdtype="NUMBER" dbn0type="MT" id="C370160000" udn="PowerMax"/>
+		<column bdcolname="C370160001" bdtype="NUMBER" dbn0type="MT" id="C370160001" udn="PowerMin"/>
+		<column bdcolname="C370160002" bdtype="NUMBER" dbn0type="MT" id="C370160002" udn="PowerAvg"/>
+		<column bdcolname="C370160003" bdtype="NUMBER" dbn0type="MT" id="C370160003" udn="VoltageMax"/>
+		<column bdcolname="C370160004" bdtype="NUMBER" dbn0type="MT" id="C370160004" udn="VoltageMin"/>
+		<column bdcolname="C370160005" bdtype="NUMBER" dbn0type="MT" id="C370160005" udn="VoltageAvg"/>
+		<column bdcolname="C370160006" bdtype="NUMBER" dbn0type="MT" id="C370160006" udn="CurrentMax"/>
+		<column bdcolname="C370160007" bdtype="NUMBER" dbn0type="MT" id="C370160007" udn="CurrentMin"/>
+		<column bdcolname="C370160008" bdtype="NUMBER" dbn0type="MT" id="C370160008" udn="CurrentAvg"/>
+	</table>
+	<table active="TRUE" id="SCAUDPLINK" ossId="SCAUDPLINK" tableName="SRAN_SCAUDPLINK" tech="SRAN" udn="SRAN_Scaudplink">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="SCAUDP" bdtype="VARCHAR2(255)" dbn0type="PK" id="SCAUDP" udn="Scaudp"/>
+		<column bdcolname="C370170000" bdtype="NUMBER" dbn0type="MT" id="C370170000" udn="DbgRevBytesSum"/>
+		<column bdcolname="C370170001" bdtype="NUMBER" dbn0type="MT" id="C370170001" udn="DbgSendBytesSum"/>
+		<column bdcolname="C370170002" bdtype="NUMBER" dbn0type="MT" id="C370170002" udn="DbgRevFrameSum"/>
+		<column bdcolname="C370170003" bdtype="NUMBER" dbn0type="MT" id="C370170003" udn="DbgSendFrameSum"/>
+	</table>
+	<table active="TRUE" id="BBUPOWER" ossId="BBUPOWER" tableName="SRAN_BBUPOWER" tech="SRAN" udn="SRAN_Bbupower">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="SUBRACK" bdtype="VARCHAR2(255)" dbn0type="PK" id="SubRack" udn="Subrack"/>
+		<column bdcolname="C370180000" bdtype="NUMBER" dbn0type="MT" id="C370180000" udn="BbuPowerMax"/>
+		<column bdcolname="C370180001" bdtype="NUMBER" dbn0type="MT" id="C370180001" udn="BbuPowerMin"/>
+		<column bdcolname="C370180002" bdtype="NUMBER" dbn0type="MT" id="C370180002" udn="BbuPowerAvg"/>
+		<column bdcolname="C370180003" bdtype="NUMBER" dbn0type="MT" id="C370180003" udn="BbuVoltageMax"/>
+		<column bdcolname="C370180004" bdtype="NUMBER" dbn0type="MT" id="C370180004" udn="BbuVoltageMin"/>
+		<column bdcolname="C370180005" bdtype="NUMBER" dbn0type="MT" id="C370180005" udn="BbuVoltageAvg"/>
+		<column bdcolname="C370180006" bdtype="NUMBER" dbn0type="MT" id="C370180006" udn="BbuCurrentMax"/>
+		<column bdcolname="C370180007" bdtype="NUMBER" dbn0type="MT" id="C370180007" udn="BbuCurrentMin"/>
+		<column bdcolname="C370180008" bdtype="NUMBER" dbn0type="MT" id="C370180008" udn="BbuCurrentAvg"/>
+	</table>
+	<table active="TRUE" id="RRUPOWER" ossId="RRUPOWER" tableName="SRAN_RRUPOWER" tech="SRAN" udn="SRAN_Rrupower">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370190000" bdtype="NUMBER" dbn0type="MT" id="C370190000" udn="RruTxPwrMax"/>
+		<column bdcolname="C370190001" bdtype="NUMBER" dbn0type="MT" id="C370190001" udn="RruTxPwrAvg"/>
+	</table>
+	<table active="TRUE" id="IPPD" ossId="IPPD" tableName="SRAN_IPPD" tech="SRAN" udn="SRAN_Ippd">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="IPPD" bdtype="VARCHAR2(255)" dbn0type="PK" id="IPPD" udn="Ippd"/>
+		<column bdcolname="VRFID" bdtype="VARCHAR2(255)" dbn0type="PK" id="vrfId" udn="Vrfid"/>
+		<column bdcolname="SRCIP" bdtype="VARCHAR2(255)" dbn0type="PK" id="srcIp" udn="Srcip"/>
+		<column bdcolname="DSTIP" bdtype="VARCHAR2(255)" dbn0type="PK" id="dstIp" udn="Dstip"/>
+		<column bdcolname="C370200000" bdtype="NUMBER" dbn0type="MT" id="C370200000" udn="PacketLossRate"/>
+		<column bdcolname="C370200001" bdtype="NUMBER" dbn0type="MT" id="C370200001" udn="AvgTimeDelay"/>
+		<column bdcolname="C370200002" bdtype="NUMBER" dbn0type="MT" id="C370200002" udn="AvgDelayJitter"/>
+	</table>
+	<table active="TRUE" id="COMP" ossId="COMP" tableName="SRAN_COMP" tech="SRAN" udn="SRAN_Comp">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="TNPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="TnPort" udn="Tnport"/>
+		<column bdcolname="C370210000" bdtype="NUMBER" dbn0type="MT" id="C370210000" udn="CompRevKbMax"/>
+		<column bdcolname="C370210001" bdtype="NUMBER" dbn0type="MT" id="C370210001" udn="CompRevKbAvg"/>
+		<column bdcolname="C370210002" bdtype="NUMBER" dbn0type="MT" id="C370210002" udn="CompSendKbMax"/>
+		<column bdcolname="C370210003" bdtype="NUMBER" dbn0type="MT" id="C370210003" udn="CompSendKbAvg"/>
+	</table>
+	<table active="TRUE" id="SCTPMEAS" ossId="SCTPMEAS" tableName="SRAN_SCTPMEAS" tech="SRAN" udn="SRAN_Sctpmeas">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="SCTP" bdtype="VARCHAR2(255)" dbn0type="PK" id="Sctp" udn="Sctp"/>
+		<column bdcolname="C370220000" bdtype="NUMBER" dbn0type="MT" id="C370220000" udn="SctpSendDataChunks"/>
+		<column bdcolname="C370220001" bdtype="NUMBER" dbn0type="MT" id="C370220001" udn="SctpRevDataChunks"/>
+		<column bdcolname="C370220002" bdtype="NUMBER" dbn0type="MT" id="C370220002" udn="SctpResendDataChunks"/>
+		<column bdcolname="C370220003" bdtype="NUMBER" dbn0type="MT" id="C370220003" udn="SctpCongestionNum"/>
+		<column bdcolname="C370220004" bdtype="NUMBER" dbn0type="MT" id="C370220004" udn="SctpCongestionTime"/>
+		<column bdcolname="C370220005" bdtype="NUMBER" dbn0type="MT" id="C370220005" udn="SctpAssociationBrokenTimes"/>
+		<column bdcolname="C370220006" bdtype="NUMBER" dbn0type="MT" id="C370220006" udn="SctpAvailableTime"/>
+		<column bdcolname="C370220007" bdtype="NUMBER" dbn0type="MT" id="C370220007" udn="SctpSendDataBytes"/>
+		<column bdcolname="C370220008" bdtype="NUMBER" dbn0type="MT" id="C370220008" udn="SctpRevDataBytes"/>
+		<column bdcolname="C370220009" bdtype="NUMBER" dbn0type="MT" id="C370220009" udn="SctpFastRetranDataChunks"/>
+		<column bdcolname="C370220010" bdtype="NUMBER" dbn0type="MT" id="C370220010" udn="SctpTimeoutRetran"/>
+		<column bdcolname="C370220011" bdtype="NUMBER" dbn0type="MT" id="C370220011" udn="SctpRevTsnOutOrder"/>
+		<column bdcolname="C370220012" bdtype="NUMBER" dbn0type="MT" id="C370220012" udn="SctpDuplicateTsnChunks"/>
+		<column bdcolname="C370220013" bdtype="NUMBER" dbn0type="MT" id="C370220013" udn="SctpAbortRetranThreshold"/>
+		<column bdcolname="C370220014" bdtype="NUMBER" dbn0type="MT" id="C370220014" udn="SctpUlpSendBytes"/>
+		<column bdcolname="C370220015" bdtype="NUMBER" dbn0type="MT" id="C370220015" udn="SctpDeliverToUlpBytes"/>
+		<column bdcolname="C370220016" bdtype="NUMBER" dbn0type="MT" id="C370220016" udn="SctpUlpSendMsg"/>
+		<column bdcolname="C370220017" bdtype="NUMBER" dbn0type="MT" id="C370220017" udn="SctpDeliverToUlpMsg"/>
+		<column bdcolname="C370220018" bdtype="NUMBER" dbn0type="MT" id="C370220018" udn="SctpSendFragDataChunks"/>
+		<column bdcolname="C370220019" bdtype="NUMBER" dbn0type="MT" id="C370220019" udn="SctpRevFragDataChunks"/>
+		<column bdcolname="C370220020" bdtype="NUMBER" dbn0type="MT" id="C370220020" udn="SctpSendShutdownChunks"/>
+		<column bdcolname="C370220021" bdtype="NUMBER" dbn0type="MT" id="C370220021" udn="SctpRevShutdownChunks"/>
+		<column bdcolname="C370220022" bdtype="NUMBER" dbn0type="MT" id="C370220022" udn="SctpSendAbortChunks"/>
+		<column bdcolname="C370220023" bdtype="NUMBER" dbn0type="MT" id="C370220023" udn="SctpRevAbortChunks"/>
+		<column bdcolname="C370220024" bdtype="NUMBER" dbn0type="MT" id="C370220024" udn="SctpDelaySamplingTimes"/>
+		<column bdcolname="C370220025" bdtype="NUMBER" dbn0type="MT" id="C370220025" udn="SctpTransDelayMin"/>
+		<column bdcolname="C370220026" bdtype="NUMBER" dbn0type="MT" id="C370220026" udn="SctpTransDelayMax"/>
+		<column bdcolname="C370220027" bdtype="NUMBER" dbn0type="MT" id="C370220027" udn="SctpTransDelayTotal"/>
+		<column bdcolname="C370220028" bdtype="NUMBER" dbn0type="MT" id="C370220028" udn="SctpTransJitterMin"/>
+		<column bdcolname="C370220029" bdtype="NUMBER" dbn0type="MT" id="C370220029" udn="SctpTransJitterMax"/>
+		<column bdcolname="C370220030" bdtype="NUMBER" dbn0type="MT" id="C370220030" udn="SctpTransJitterTotal"/>
+		<column bdcolname="C370220032" bdtype="NUMBER" dbn0type="MT" id="C370220032" udn="SctpDataTransmitTimes"/>
+		<column bdcolname="C370220033" bdtype="NUMBER" dbn0type="MT" id="C370220033" udn="SctpRevSendBytes"/>
+		<column bdcolname="C370220034" bdtype="NUMBER" dbn0type="MT" id="C370220034" udn="SctpTransRateAvg"/>
+		<column bdcolname="C370220035" bdtype="NUMBER" dbn0type="MT" id="C370220035" udn="SctpTransHighSpeedTime"/>
+		<column bdcolname="C370220036" bdtype="NUMBER" dbn0type="MT" id="C370220036" udn="SctpRevSendBytesHighSpeed"/>
+		<column bdcolname="C370220037" bdtype="NUMBER" dbn0type="MT" id="C370220037" udn="SctpTransRateHignSpeedAvg"/>
+		<column bdcolname="C370220038" bdtype="NUMBER" dbn0type="MT" id="C370220038" udn="SctpTransRateMax"/>
+		<column bdcolname="C370220039" bdtype="NUMBER" dbn0type="MT" id="C370220039" udn="SctpTransDelayAvg"/>
+		<column bdcolname="C370220040" bdtype="NUMBER" dbn0type="MT" id="C370220040" udn="SctpTransDelayTimes050"/>
+		<column bdcolname="C370220041" bdtype="NUMBER" dbn0type="MT" id="C370220041" udn="SctpTransDelayTimes50100"/>
+		<column bdcolname="C370220042" bdtype="NUMBER" dbn0type="MT" id="C370220042" udn="SctpTransDelayTimes100500"/>
+		<column bdcolname="C370220043" bdtype="NUMBER" dbn0type="MT" id="C370220043" udn="SctpTransDelayTimes5001000"/>
+		<column bdcolname="C370220044" bdtype="NUMBER" dbn0type="MT" id="C370220044" udn="SctpTransDelayTimesAbove1000"/>
+	</table>
+	<table active="TRUE" id="S1UMEAS" ossId="S1UMEAS" tableName="SRAN_S1UMEAS" tech="SRAN" udn="SRAN_S1umeas">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="S1U" bdtype="VARCHAR2(255)" dbn0type="PK" id="S1U" udn="S1u"/>
+		<column bdcolname="C370240000" bdtype="NUMBER" dbn0type="MT" id="C370240000" udn="S1-uSendThroughputMax"/>
+		<column bdcolname="C370240001" bdtype="NUMBER" dbn0type="MT" id="C370240001" udn="S1-uRevThroughputMax"/>
+		<column bdcolname="C370240002" bdtype="NUMBER" dbn0type="MT" id="C370240002" udn="S1-uSendThroughputAvg"/>
+		<column bdcolname="C370240003" bdtype="NUMBER" dbn0type="MT" id="C370240003" udn="S1-uRevThroughputAvg"/>
+		<column bdcolname="C370240004" bdtype="NUMBER" dbn0type="MT" id="C370240004" udn="S1-uSendGtpuThroughputAvg"/>
+		<column bdcolname="C370240005" bdtype="NUMBER" dbn0type="MT" id="C370240005" udn="S1-uRevGtpuThroughputAvg"/>
+		<column bdcolname="C370240006" bdtype="NUMBER" dbn0type="MT" id="C370240006" udn="S1-uSendGtpuTime"/>
+		<column bdcolname="C370240007" bdtype="NUMBER" dbn0type="MT" id="C370240007" udn="S1-uRevGtpuTime"/>
+		<column bdcolname="C370240008" bdtype="NUMBER" dbn0type="MT" id="C370240008" udn="S1-uSnedDiagosisAllPacket"/>
+		<column bdcolname="C370240009" bdtype="NUMBER" dbn0type="MT" id="C370240009" udn="S1-uRevDiagosisAllPacket"/>
+		<column bdcolname="C370240010" bdtype="NUMBER" dbn0type="MT" id="C370240010" udn="S1-uDiagosisLoopback"/>
+		<column bdcolname="C370240011" bdtype="NUMBER" dbn0type="MT" id="C370240011" udn="S1-uDiagosisTotalJitter"/>
+	</table>
+	<table active="TRUE" id="ACLFLUX" ossId="ACLFLUX" tableName="SRAN_ACLFLUX" tech="SRAN" udn="SRAN_Aclflux">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="IPSECTUNNEL" bdtype="VARCHAR2(255)" dbn0type="PK" id="IpSecTunnel" udn="Ipsectunnel"/>
+		<column bdcolname="C370250000" bdtype="NUMBER" dbn0type="MT" id="C370250000" udn="IpsecTransMatchNum"/>
+		<column bdcolname="C370250001" bdtype="NUMBER" dbn0type="MT" id="C370250001" udn="IpsecRevMatchNum"/>
+	</table>
+	<table active="TRUE" id="ESPTLS" ossId="ESPTLS" tableName="SRAN_ESPTLS" tech="SRAN" udn="SRAN_Esptls">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="C370290000" bdtype="NUMBER" dbn0type="MT" id="C370290000" udn="EspPktsSendNum"/>
+		<column bdcolname="C370290001" bdtype="NUMBER" dbn0type="MT" id="C370290001" udn="EspPktsRevNum"/>
+		<column bdcolname="C370290002" bdtype="NUMBER" dbn0type="MT" id="C370290002" udn="EspPktsRevDecodeFail"/>
+	</table>
+	<table active="TRUE" id="IPDATAFILTE" ossId="IPDATAFILTE" tableName="SRAN_IPDATAFILTE" tech="SRAN" udn="SRAN_Ipdatafilte">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="C370300050" bdtype="NUMBER" dbn0type="MT" id="C370300050" udn="AclMatchedTimes"/>
+		<column bdcolname="C370300051" bdtype="NUMBER" dbn0type="MT" id="C370300051" udn="AclDeniedTimes"/>
+	</table>
+	<table active="TRUE" id="TWAMPC1" ossId="TWAMPC1" tableName="SRAN_TWAMPC1" tech="SRAN" udn="SRAN_Twampc1">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="TWAMPCLIENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="TwampClient" udn="Twampclient"/>
+		<column bdcolname="C370310000" bdtype="NUMBER" dbn0type="MT" id="C370310000" udn="TwampSendDetectPktsNum"/>
+		<column bdcolname="C370310001" bdtype="NUMBER" dbn0type="MT" id="C370310001" udn="TwampRevDetectPktsNum"/>
+		<column bdcolname="C370310002" bdtype="NUMBER" dbn0type="MT" id="C370310002" udn="TwampDetectTransDelay"/>
+		<column bdcolname="C370310003" bdtype="NUMBER" dbn0type="MT" id="C370310003" udn="TwampDetectTransJitter"/>
+		<column bdcolname="C370310008" bdtype="NUMBER" dbn0type="MT" id="C370310008" udn="TwampFwdPacketLostNum"/>
+		<column bdcolname="C370310009" bdtype="NUMBER" dbn0type="MT" id="C370310009" udn="TwampBkdPacketLostNum"/>
+		<column bdcolname="C370310010" bdtype="NUMBER" dbn0type="MT" id="C370310010" udn="TwampRttDelayMax"/>
+		<column bdcolname="C370310011" bdtype="NUMBER" dbn0type="MT" id="C370310011" udn="TwampRttDelayMin"/>
+		<column bdcolname="C370310012" bdtype="NUMBER" dbn0type="MT" id="C370310012" udn="TwampRttDelayJitterMax"/>
+		<column bdcolname="C370310013" bdtype="NUMBER" dbn0type="MT" id="C370310013" udn="TwampRttDelayJitterMin"/>
+		<column bdcolname="C370310014" bdtype="NUMBER" dbn0type="MT" id="C370310014" udn="TwampFwdDelayJitter"/>
+		<column bdcolname="C370310015" bdtype="NUMBER" dbn0type="MT" id="C370310015" udn="TwampFwdDelayJitterMax"/>
+		<column bdcolname="C370310016" bdtype="NUMBER" dbn0type="MT" id="C370310016" udn="TwampFwdDelayJitterMin"/>
+		<column bdcolname="C370310017" bdtype="NUMBER" dbn0type="MT" id="C370310017" udn="TwampBkdDelayJitter"/>
+		<column bdcolname="C370310018" bdtype="NUMBER" dbn0type="MT" id="C370310018" udn="TwampBkdDelayJitterMax"/>
+		<column bdcolname="C370310019" bdtype="NUMBER" dbn0type="MT" id="C370310019" udn="TwampBkdDelayJitterMin"/>
+	</table>
+	<table active="TRUE" id="RIETHPORTPOWER" ossId="RIETHPORTPOWER" tableName="SRAN_RIETHPORTPOWER" tech="SRAN" udn="SRAN_Riethportpower">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RIPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiPort" udn="Riport"/>
+		<column bdcolname="C370330101" bdtype="NUMBER" dbn0type="MT" id="C370330101" udn="EthPortPowerMax"/>
+		<column bdcolname="C370330102" bdtype="NUMBER" dbn0type="MT" id="C370330102" udn="EthPortPowerMin"/>
+		<column bdcolname="C370330103" bdtype="NUMBER" dbn0type="MT" id="C370330103" udn="EthPortPowerAvg"/>
+	</table>
+	<table active="TRUE" id="RFCPORT" ossId="RFCPORT" tableName="SRAN_RFCPORT" tech="SRAN" udn="SRAN_Rfcport">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RFCPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RfcPort" udn="Rfcport"/>
+		<column bdcolname="C370340000" bdtype="NUMBER" dbn0type="MT" id="C370340000" udn="MaxTxPower"/>
+		<column bdcolname="C370340001" bdtype="NUMBER" dbn0type="MT" id="C370340001" udn="MniTxPower"/>
+		<column bdcolname="C370340002" bdtype="NUMBER" dbn0type="MT" id="C370340002" udn="AvgTxPower"/>
+		<column bdcolname="C370340003" bdtype="NUMBER" dbn0type="MT" id="C370340003" udn="MaxRxPower"/>
+		<column bdcolname="C370340004" bdtype="NUMBER" dbn0type="MT" id="C370340004" udn="MinRxPower"/>
+		<column bdcolname="C370340005" bdtype="NUMBER" dbn0type="MT" id="C370340005" udn="AvgRxPower"/>
+	</table>
+	<table active="TRUE" id="SYSRES" ossId="SYSRES" tableName="SRAN_SYSRES" tech="SRAN" udn="SRAN_Sysres">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="C370350100" bdtype="NUMBER" dbn0type="MT" id="C370350100" udn="SystemCpuUsageMax"/>
+		<column bdcolname="C370350101" bdtype="NUMBER" dbn0type="MT" id="C370350101" udn="SystemCpuUsageAvg"/>
+		<column bdcolname="C370350102" bdtype="NUMBER" dbn0type="MT" id="C370350102" udn="ServiceBoardCpuUsageMax"/>
+		<column bdcolname="C370350103" bdtype="NUMBER" dbn0type="MT" id="C370350103" udn="ServiceBoardCpuUsageAvg"/>
+	</table>
+	<table active="TRUE" id="BOARDTEMP" ossId="BOARDTEMP" tableName="SRAN_BOARDTEMP" tech="SRAN" udn="SRAN_Boardtemp">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370360000" bdtype="NUMBER" dbn0type="MT" id="C370360000" udn="BoardTempMax"/>
+	</table>
+	<table active="TRUE" id="RIOPTPORTERROR" ossId="RIOPTPORTERROR" tableName="SRAN_RIOPTPORTERROR" tech="SRAN" udn="SRAN_Rioptporterror">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RIPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiPort" udn="Riport"/>
+		<column bdcolname="C370380000" bdtype="NUMBER" dbn0type="MT" id="C370380000" udn="OptErrorRatioAvg"/>
+		<column bdcolname="C370380001" bdtype="NUMBER" dbn0type="MT" id="C370380001" udn="OptErrorRatioMax"/>
+	</table>
+	<table active="TRUE" id="RIPORTINFO" ossId="RIPORTINFO" tableName="SRAN_RIPORTINFO" tech="SRAN" udn="SRAN_Riportinfo">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RIPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiPort" udn="Riport"/>
+		<column bdcolname="C370390100" bdtype="NUMBER" dbn0type="MT" id="C370390100" udn="CombOptTxCurrentMax"/>
+		<column bdcolname="C370390101" bdtype="NUMBER" dbn0type="MT" id="C370390101" udn="CombOptTxCurrentMin"/>
+		<column bdcolname="C370390102" bdtype="NUMBER" dbn0type="MT" id="C370390102" udn="CombOptTxPowerMax"/>
+		<column bdcolname="C370390103" bdtype="NUMBER" dbn0type="MT" id="C370390103" udn="CombOptTxPowerMin"/>
+		<column bdcolname="C370390104" bdtype="NUMBER" dbn0type="MT" id="C370390104" udn="CombOptRxPowerMax"/>
+		<column bdcolname="C370390105" bdtype="NUMBER" dbn0type="MT" id="C370390105" udn="CombOptRxPowerMin"/>
+		<column bdcolname="C370390106" bdtype="NUMBER" dbn0type="MT" id="C370390106" udn="CombOptTempMax"/>
+	</table>
+	<table active="TRUE" id="ETHERNETMAC" ossId="ETHERNETMAC" tableName="SRAN_ETHERNETMAC" tech="SRAN" udn="SRAN_Ethernetmac">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="TNPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="TnPort" udn="Tnport"/>
+		<column bdcolname="C370400201" bdtype="NUMBER" dbn0type="MT" id="C370400201" udn="EthRevErrorCntSum"/>
+		<column bdcolname="C370400202" bdtype="NUMBER" dbn0type="MT" id="C370400202" udn="EthRevCrcErrorCntSum"/>
+		<column bdcolname="C370400203" bdtype="NUMBER" dbn0type="MT" id="C370400203" udn="EthRevDropCntSum"/>
+	</table>
+	<table active="TRUE" id="CLOCKSTATE" ossId="CLOCKSTATE" tableName="SRAN_CLOCKSTATE" tech="SRAN" udn="SRAN_Clockstate">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="C370410200" bdtype="NUMBER" dbn0type="MT" id="C370410200" udn="ReceiverUnlockedTimes"/>
+		<column bdcolname="C370410201" bdtype="NUMBER" dbn0type="MT" id="C370410201" udn="LockedSatellitesNumAvg"/>
+		<column bdcolname="C370410202" bdtype="NUMBER" dbn0type="MT" id="C370410202" udn="OcxoCtrlVoltageAvg"/>
+		<column bdcolname="C370410203" bdtype="NUMBER" dbn0type="MT" id="C370410203" udn="PllUnlockedTimes"/>
+		<column bdcolname="C370410204" bdtype="NUMBER" dbn0type="MT" id="C370410204" udn="ClockMode"/>
+		<column bdcolname="C370410205" bdtype="NUMBER" dbn0type="MT" id="C370410205" udn="SyncMode"/>
+		<column bdcolname="C370410206" bdtype="NUMBER" dbn0type="MT" id="C370410206" udn="ClockLockTime"/>
+		<column bdcolname="C370410207" bdtype="NUMBER" dbn0type="MT" id="C370410207" udn="ClockHoldTime"/>
+		<column bdcolname="C370410208" bdtype="NUMBER" dbn0type="MT" id="C370410208" udn="ClockFreerunTime"/>
+		<column bdcolname="C370410209" bdtype="NUMBER" dbn0type="MT" id="C370410209" udn="ClockAssistPhaseTime"/>
+		<column bdcolname="C370410210" bdtype="NUMBER" dbn0type="MT" id="C370410210" udn="ClockSrcHandoverTimes"/>
+		<column bdcolname="C370410211" bdtype="NUMBER" dbn0type="MT" id="C370410211" udn="ClockSwitchLockToHoldTimes"/>
+		<column bdcolname="C370410212" bdtype="NUMBER" dbn0type="MT" id="C370410212" udn="ClockSwitchLockToFreerunTimes"/>
+		<column bdcolname="C370410213" bdtype="NUMBER" dbn0type="MT" id="C370410213" udn="ClockSwitchLockToAssistphaseTimes"/>
+		<column bdcolname="C370410214" bdtype="NUMBER" dbn0type="MT" id="C370410214" udn="ClockSrcPhaseDiff"/>
+	</table>
+	<table active="TRUE" id="SUBRACKTEMP" ossId="SUBRACKTEMP" tableName="SRAN_SUBRACKTEMP" tech="SRAN" udn="SRAN_Subracktemp">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="SUBRACK" bdtype="VARCHAR2(255)" dbn0type="PK" id="SubRack" udn="Subrack"/>
+		<column bdcolname="C370420000" bdtype="NUMBER" dbn0type="MT" id="C370420000" udn="BbuAvgTemp"/>
+	</table>
+	<table active="TRUE" id="CABINETNOISE" ossId="CABINETNOISE" tableName="SRAN_CABINETNOISE" tech="SRAN" udn="SRAN_Cabinetnoise">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="CABINET" bdtype="VARCHAR2(255)" dbn0type="PK" id="Cabinet" udn="Cabinet"/>
+		<column bdcolname="C370430000" bdtype="NUMBER" dbn0type="MT" id="C370430000" udn="CabinetSoundPressureNoise"/>
+		<column bdcolname="C370430001" bdtype="NUMBER" dbn0type="MT" id="C370430001" udn="CabinetSoundPowerNoise"/>
+	</table>
+	<table active="TRUE" id="POWERENERGY" ossId="POWERENERGY" tableName="SRAN_POWERENERGY" tech="SRAN" udn="SRAN_Powerenergy">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="EPM" bdtype="VARCHAR2(255)" dbn0type="PK" id="EPm" udn="Epm"/>
+		<column bdcolname="C370440000" bdtype="NUMBER" dbn0type="MT" id="C370440000" udn="InputElectricEnergy"/>
+	</table>
+	<table active="TRUE" id="RIECPRIFLUX" ossId="RIECPRIFLUX" tableName="SRAN_RIECPRIFLUX" tech="SRAN" udn="SRAN_Riecpriflux">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RIPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiPort" udn="Riport"/>
+		<column bdcolname="C370450000" bdtype="NUMBER" dbn0type="MT" id="C370450000" udn="EcpriRevBytes"/>
+		<column bdcolname="C370450001" bdtype="NUMBER" dbn0type="MT" id="C370450001" udn="EcpriSendBytes"/>
+		<column bdcolname="C370450002" bdtype="NUMBER" dbn0type="MT" id="C370450002" udn="EcpriRevSpeedAvg"/>
+		<column bdcolname="C370450003" bdtype="NUMBER" dbn0type="MT" id="C370450003" udn="EcpriSendSpeedAvg"/>
+		<column bdcolname="C370450004" bdtype="NUMBER" dbn0type="MT" id="C370450004" udn="EcpriRevSpeedMax"/>
+		<column bdcolname="C370450005" bdtype="NUMBER" dbn0type="MT" id="C370450005" udn="EcpriSendSpeedMax"/>
+		<column bdcolname="C370450006" bdtype="NUMBER" dbn0type="MT" id="C370450006" udn="EcpriUpRevPackets"/>
+		<column bdcolname="C370450007" bdtype="NUMBER" dbn0type="MT" id="C370450007" udn="EcpriUpRevErrPackets"/>
+		<column bdcolname="C370450008" bdtype="NUMBER" dbn0type="MT" id="C370450008" udn="EcpriDownSendPackets"/>
+		<column bdcolname="C370450009" bdtype="NUMBER" dbn0type="MT" id="C370450009" udn="EcpriDownRevPackets"/>
+		<column bdcolname="C370450010" bdtype="NUMBER" dbn0type="MT" id="C370450010" udn="EcpriDownRevErrPackets"/>
+		<column bdcolname="C370450011" bdtype="NUMBER" dbn0type="MT" id="C370450011" udn="EcpriUpSendPackets"/>
+	</table>
+	<table active="TRUE" id="NEPOWERMEAS" ossId="NEPOWERMEAS" tableName="SRAN_NEPOWERMEAS" tech="SRAN" udn="SRAN_Nepowermeas">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="C370460300" bdtype="NUMBER" dbn0type="MT" id="C370460300" udn="NePwrAvg"/>
+		<column bdcolname="C370460301" bdtype="NUMBER" dbn0type="MT" id="C370460301" udn="PwrAvgGnodeb"/>
+		<column bdcolname="C370460302" bdtype="NUMBER" dbn0type="MT" id="C370460302" udn="PwrAvgGsm"/>
+		<column bdcolname="C370460303" bdtype="NUMBER" dbn0type="MT" id="C370460303" udn="PwrAvgUmts"/>
+		<column bdcolname="C370460304" bdtype="NUMBER" dbn0type="MT" id="C370460304" udn="PwrAvgLte"/>
+		<column bdcolname="C370460305" bdtype="NUMBER" dbn0type="MT" id="C370460305" udn="PwrAvgNb"/>
+		<column bdcolname="C370460306" bdtype="NUMBER" dbn0type="MT" id="C370460306" udn="AvgBbuPwrNr"/>
+		<column bdcolname="C370460307" bdtype="NUMBER" dbn0type="MT" id="C370460307" udn="AvgBbuPwrLte"/>
+		<column bdcolname="C370460308" bdtype="NUMBER" dbn0type="MT" id="C370460308" udn="AvgBbuPwrNb-iot"/>
+		<column bdcolname="C370460309" bdtype="NUMBER" dbn0type="MT" id="C370460309" udn="AvgBbuPwrUmts"/>
+		<column bdcolname="C370460310" bdtype="NUMBER" dbn0type="MT" id="C370460310" udn="AvgBbuPwrGsm"/>
+		<column bdcolname="C370460311" bdtype="NUMBER" dbn0type="MT" id="C370460311" udn="AvgRrusPwrNr"/>
+		<column bdcolname="C370460312" bdtype="NUMBER" dbn0type="MT" id="C370460312" udn="AvgRrusPwrLte"/>
+		<column bdcolname="C370460313" bdtype="NUMBER" dbn0type="MT" id="C370460313" udn="AvgRrusPwrNb-iot"/>
+		<column bdcolname="C370460314" bdtype="NUMBER" dbn0type="MT" id="C370460314" udn="AvgRrusPwrUmts"/>
+		<column bdcolname="C370460315" bdtype="NUMBER" dbn0type="MT" id="C370460315" udn="AvgRrusPwrGsm"/>
+		<column bdcolname="C370460316" bdtype="NUMBER" dbn0type="MT" id="C370460316" udn="NePwrMax"/>
+	</table>
+	<table active="TRUE" id="RRUPOWERCONSUMPTION" ossId="RRUPOWERCONSUMPTION" tableName="SRAN_RRUPOWERCONSUMPTION" tech="SRAN" udn="SRAN_Rrupowerconsumption">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370470100" bdtype="NUMBER" dbn0type="MT" id="C370470100" udn="RruPwrAvg"/>
+	</table>
+	<table active="TRUE" id="CLOCKSOURCEGNSS" ossId="CLOCKSOURCEGNSS" tableName="SRAN_CLOCKSOURCEGNSS" tech="SRAN" udn="SRAN_Clocksourcegnss">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="SUPPORTFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="SupportFunction" udn="Supportfunction"/>
+		<column bdcolname="CLOCKSYNCCONFIG" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSyncConfig" udn="Clocksyncconfig"/>
+		<column bdcolname="CLOCKSOURCEGNSS" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSourceGnss" udn="Clocksourcegnss"/>
+		<column bdcolname="C370480000" bdtype="NUMBER" dbn0type="MT" id="C370480000" udn="AntennaOpenTimes"/>
+		<column bdcolname="C370480001" bdtype="NUMBER" dbn0type="MT" id="C370480001" udn="AntennaShortTimes"/>
+		<column bdcolname="C370480002" bdtype="NUMBER" dbn0type="MT" id="C370480002" udn="AvgLockGpsSateTimes"/>
+		<column bdcolname="C370480003" bdtype="NUMBER" dbn0type="MT" id="C370480003" udn="AvgCnrGpsSateL1c/a"/>
+		<column bdcolname="C370480004" bdtype="NUMBER" dbn0type="MT" id="C370480004" udn="AvgLockBdsSateTimes"/>
+		<column bdcolname="C370480005" bdtype="NUMBER" dbn0type="MT" id="C370480005" udn="AvgCnrBdsSateB1i"/>
+		<column bdcolname="C370480006" bdtype="NUMBER" dbn0type="MT" id="C370480006" udn="AvgLockGlonSateTimes"/>
+		<column bdcolname="C370480007" bdtype="NUMBER" dbn0type="MT" id="C370480007" udn="AvgCnrGlonSateL1of"/>
+		<column bdcolname="C370480008" bdtype="NUMBER" dbn0type="MT" id="C370480008" udn="AvgLockGaliSateTimes"/>
+		<column bdcolname="C370480009" bdtype="NUMBER" dbn0type="MT" id="C370480009" udn="AvgCnrGaliSateE1"/>
+		<column bdcolname="C370480010" bdtype="NUMBER" dbn0type="MT" id="C370480010" udn="AvgCnrGpsSateL5"/>
+		<column bdcolname="C370480011" bdtype="NUMBER" dbn0type="MT" id="C370480011" udn="AvgCnrGpsSateB1c"/>
+		<column bdcolname="C370480012" bdtype="NUMBER" dbn0type="MT" id="C370480012" udn="AvgCnrGpsSateB2a"/>
+	</table>
+	<table active="TRUE" id="CLOCKSOURCE1588" ossId="CLOCKSOURCE1588" tableName="SRAN_CLOCKSOURCE1588" tech="SRAN" udn="SRAN_Clocksource1588">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="SUPPORTFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="SupportFunction" udn="Supportfunction"/>
+		<column bdcolname="CLOCKSYNCCONFIG" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSyncConfig" udn="Clocksyncconfig"/>
+		<column bdcolname="CLOCKSOURCE1588" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSource1588" udn="Clocksource1588"/>
+		<column bdcolname="C370490000" bdtype="NUMBER" dbn0type="MT" id="C370490000" udn="AvgLinkPdv"/>
+		<column bdcolname="C370490001" bdtype="NUMBER" dbn0type="MT" id="C370490001" udn="MinToffset"/>
+		<column bdcolname="C370490002" bdtype="NUMBER" dbn0type="MT" id="C370490002" udn="MaxToffset"/>
+		<column bdcolname="C370490003" bdtype="NUMBER" dbn0type="MT" id="C370490003" udn="ToffsetJitter"/>
+		<column bdcolname="C370490004" bdtype="NUMBER" dbn0type="MT" id="C370490004" udn="MaxSsmSynce1588"/>
+		<column bdcolname="C370490005" bdtype="NUMBER" dbn0type="MT" id="C370490005" udn="SsmNumSynce1588"/>
+		<column bdcolname="C370490006" bdtype="NUMBER" dbn0type="MT" id="C370490006" udn="AnnMsgRevNum"/>
+		<column bdcolname="C370490007" bdtype="NUMBER" dbn0type="MT" id="C370490007" udn="SyncMsgRevNum"/>
+		<column bdcolname="C370490008" bdtype="NUMBER" dbn0type="MT" id="C370490008" udn="FollowUpRevNum"/>
+		<column bdcolname="C370490009" bdtype="NUMBER" dbn0type="MT" id="C370490009" udn="DelayReqSendNum"/>
+		<column bdcolname="C370490010" bdtype="NUMBER" dbn0type="MT" id="C370490010" udn="DelayRespRevNum"/>
+		<column bdcolname="C370490011" bdtype="NUMBER" dbn0type="MT" id="C370490011" udn="MaxFreqOffsetSync1588"/>
+		<column bdcolname="C370490012" bdtype="NUMBER" dbn0type="MT" id="C370490012" udn="MinFreqOffsetSync1589"/>
+	</table>
+	<table active="TRUE" id="CLOCKSOURCEPPSTOD" ossId="CLOCKSOURCEPPSTOD" tableName="SRAN_CLOCKSOURCEPPSTOD" tech="SRAN" udn="SRAN_Clocksourceppstod">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="SUPPORTFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="SupportFunction" udn="Supportfunction"/>
+		<column bdcolname="CLOCKSYNCCONFIG" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSyncConfig" udn="Clocksyncconfig"/>
+		<column bdcolname="CLOCKSOURCEPPSTOD" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSourcePpsTod" udn="Clocksourceppstod"/>
+		<column bdcolname="C370500000" bdtype="NUMBER" dbn0type="MT" id="C370500000" udn="PulsePerSecTimes"/>
+	</table>
+	<table active="TRUE" id="FANBOARD" ossId="FANBOARD" tableName="SRAN_FANBOARD" tech="SRAN" udn="SRAN_Fanboard">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370510000" bdtype="NUMBER" dbn0type="MT" id="C370510000" udn="FanSpeed"/>
+	</table>
+	<table active="TRUE" id="RIECPRIFLUXA" ossId="RIECPRIFLUXA" tableName="SRAN_RIECPRIFLUXA" tech="SRAN" udn="SRAN_Riecprifluxa">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="RIPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiPort" udn="Riport"/>
+		<column bdcolname="C370520000" bdtype="NUMBER" dbn0type="MT" id="C370520000" udn="EcpriUpPacketErrAvg"/>
+		<column bdcolname="C370520001" bdtype="NUMBER" dbn0type="MT" id="C370520001" udn="EcpriUpPacketErrMax"/>
+		<column bdcolname="C370520002" bdtype="NUMBER" dbn0type="MT" id="C370520002" udn="EcpriDowmPacketErrAvg"/>
+		<column bdcolname="C370520003" bdtype="NUMBER" dbn0type="MT" id="C370520003" udn="EcpriDownPacketErrMax"/>
+	</table>
+	<table active="TRUE" id="CLOCKSOURCESYNCE" ossId="CLOCKSOURCESYNCE" tableName="SRAN_CLOCKSOURCESYNCE" tech="SRAN" udn="SRAN_Clocksourcesynce">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="SUPPORTFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="SupportFunction" udn="Supportfunction"/>
+		<column bdcolname="CLOCKSYNCCONFIG" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSyncConfig" udn="Clocksyncconfig"/>
+		<column bdcolname="CLOCKSOURCESYNCE" bdtype="VARCHAR2(255)" dbn0type="PK" id="ClockSourceSyncE" udn="Clocksourcesynce"/>
+		<column bdcolname="C370530000" bdtype="NUMBER" dbn0type="MT" id="C370530000" udn="MaxSsmMsgSynce"/>
+		<column bdcolname="C370530001" bdtype="NUMBER" dbn0type="MT" id="C370530001" udn="SsmMsgNumSynce"/>
+		<column bdcolname="C370530002" bdtype="NUMBER" dbn0type="MT" id="C370530002" udn="MaxFreqOffsetSynce"/>
+		<column bdcolname="C370530003" bdtype="NUMBER" dbn0type="MT" id="C370530003" udn="MinFreqOffsetSynce"/>
+	</table>
+	<table active="TRUE" id="RIECPRILINKQUALITY" ossId="RIECPRILINKQUALITY" tableName="SRAN_RIECPRILINKQUALITY" tech="SRAN" udn="SRAN_Riecprilinkquality">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="RICABLE" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiCable" udn="Ricable"/>
+		<column bdcolname="UPRIPORTRACKID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortRackID" udn="Upriportrackid"/>
+		<column bdcolname="UPRIPORTSHELFID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortShelfID" udn="Upriportshelfid"/>
+		<column bdcolname="UPRIPORTSLOTID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortSlotID" udn="Upriportslotid"/>
+		<column bdcolname="UPRIPORTPORTID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortportID" udn="Upriportportid"/>
+		<column bdcolname="DOWNRIPORTRACKID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortRackID" udn="Downriportrackid"/>
+		<column bdcolname="DOWNRIPORTSHELFID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortShelfID" udn="Downriportshelfid"/>
+		<column bdcolname="DOWNRIPORTSLOTID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortSlotID" udn="Downriportslotid"/>
+		<column bdcolname="DOWNRIPORTPORTID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortportID" udn="Downriportportid"/>
+		<column bdcolname="C370540001" bdtype="NUMBER" dbn0type="MT" id="C370540001" udn="UpTimeDelayAvg"/>
+		<column bdcolname="C370540002" bdtype="NUMBER" dbn0type="MT" id="C370540002" udn="DownTimeDelayAvg"/>
+		<column bdcolname="C370540003" bdtype="NUMBER" dbn0type="MT" id="C370540003" udn="UpDelayJitterAvg"/>
+		<column bdcolname="C370540004" bdtype="NUMBER" dbn0type="MT" id="C370540004" udn="DownDelayJitterAvg"/>
+		<column bdcolname="C370540005" bdtype="NUMBER" dbn0type="MT" id="C370540005" udn="UpPacketLossRateAvg"/>
+		<column bdcolname="C370540006" bdtype="NUMBER" dbn0type="MT" id="C370540006" udn="DownPacketLossRateAvg"/>
+	</table>
+	<table active="TRUE" id="RIECPRILINKTRAFFIC" ossId="RIECPRILINKTRAFFIC" tableName="SRAN_RIECPRILINKTRAFFIC" tech="SRAN" udn="SRAN_Riecprilinktraffic">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="RICABLE" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiCable" udn="Ricable"/>
+		<column bdcolname="UPRIPORTRACKID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortRackID" udn="Upriportrackid"/>
+		<column bdcolname="UPRIPORTSHELFID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortShelfID" udn="Upriportshelfid"/>
+		<column bdcolname="UPRIPORTSLOTID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortSlotID" udn="Upriportslotid"/>
+		<column bdcolname="UPRIPORTPORTID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortportID" udn="Upriportportid"/>
+		<column bdcolname="DOWNRIPORTRACKID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortRackID" udn="Downriportrackid"/>
+		<column bdcolname="DOWNRIPORTSHELFID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortShelfID" udn="Downriportshelfid"/>
+		<column bdcolname="DOWNRIPORTSLOTID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortSlotID" udn="Downriportslotid"/>
+		<column bdcolname="DOWNRIPORTPORTID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortportID" udn="Downriportportid"/>
+		<column bdcolname="C370550000" bdtype="NUMBER" dbn0type="MT" id="C370550000" udn="UpRevBytes"/>
+		<column bdcolname="C370550001" bdtype="NUMBER" dbn0type="MT" id="C370550001" udn="DownSendBytes"/>
+		<column bdcolname="C370550002" bdtype="NUMBER" dbn0type="MT" id="C370550002" udn="UpRevSpeedAvg"/>
+		<column bdcolname="C370550003" bdtype="NUMBER" dbn0type="MT" id="C370550003" udn="DownSendSpeedAvg"/>
+		<column bdcolname="C370550004" bdtype="NUMBER" dbn0type="MT" id="C370550004" udn="UpRevPackets"/>
+		<column bdcolname="C370550005" bdtype="NUMBER" dbn0type="MT" id="C370550005" udn="UpRevErrPackets"/>
+		<column bdcolname="C370550006" bdtype="NUMBER" dbn0type="MT" id="C370550006" udn="DownSendPackets"/>
+		<column bdcolname="C370550007" bdtype="NUMBER" dbn0type="MT" id="C370550007" udn="UpSendBytes"/>
+		<column bdcolname="C370550008" bdtype="NUMBER" dbn0type="MT" id="C370550008" udn="DownRevBytes"/>
+		<column bdcolname="C370550009" bdtype="NUMBER" dbn0type="MT" id="C370550009" udn="UpSendSpeedAvg"/>
+		<column bdcolname="C370550010" bdtype="NUMBER" dbn0type="MT" id="C370550010" udn="DownRevSpeedAvg"/>
+		<column bdcolname="C370550011" bdtype="NUMBER" dbn0type="MT" id="C370550011" udn="UpSendPackets"/>
+		<column bdcolname="C370550012" bdtype="NUMBER" dbn0type="MT" id="C370550012" udn="DownRevPackets"/>
+		<column bdcolname="C370550013" bdtype="NUMBER" dbn0type="MT" id="C370550013" udn="DownRevErrPackets"/>
+	</table>
+	<table active="TRUE" id="GNSS" ossId="GNSS" tableName="SRAN_GNSS" tech="SRAN" udn="SRAN_Gnss">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="GNSS" bdtype="VARCHAR2(255)" dbn0type="PK" id="Gnss" udn="Gnss"/>
+		<column bdcolname="RACKID" bdtype="NUMBER" dbn0type="PK" id="RackID" udn="Rackid"/>
+		<column bdcolname="SHELFID" bdtype="NUMBER" dbn0type="PK" id="ShelfID" udn="Shelfid"/>
+		<column bdcolname="SLOTID" bdtype="NUMBER" dbn0type="PK" id="SlotID" udn="Slotid"/>
+		<column bdcolname="C370560000" bdtype="NUMBER" dbn0type="MT" id="C370560000" udn="GnssAntennaOpenTimes"/>
+		<column bdcolname="C370560001" bdtype="NUMBER" dbn0type="MT" id="C370560001" udn="GnssAntennaShortTimes"/>
+		<column bdcolname="C370560002" bdtype="NUMBER" dbn0type="MT" id="C370560002" udn="AvgGnssLockGpsNum"/>
+		<column bdcolname="C370560003" bdtype="NUMBER" dbn0type="MT" id="C370560003" udn="AvgGnssLockGpsCnr"/>
+	</table>
+	<table active="TRUE" id="TRANSLINK" ossId="TRANSLINK" tableName="SRAN_TRANSLINK" tech="SRAN" udn="SRAN_Translink">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="RICABLE" bdtype="VARCHAR2(255)" dbn0type="PK" id="RiCable" udn="Ricable"/>
+		<column bdcolname="UPRIPORTRACKID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortRackID" udn="Upriportrackid"/>
+		<column bdcolname="UPRIPORTSHELFID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortShelfID" udn="Upriportshelfid"/>
+		<column bdcolname="UPRIPORTSLOTID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortSlotID" udn="Upriportslotid"/>
+		<column bdcolname="UPRIPORTPORTID" bdtype="NUMBER" dbn0type="PK" id="UpRiPortportID" udn="Upriportportid"/>
+		<column bdcolname="DOWNRIPORTRACKID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortRackID" udn="Downriportrackid"/>
+		<column bdcolname="DOWNRIPORTSHELFID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortShelfID" udn="Downriportshelfid"/>
+		<column bdcolname="DOWNRIPORTSLOTID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortSlotID" udn="Downriportslotid"/>
+		<column bdcolname="DOWNRIPORTPORTID" bdtype="NUMBER" dbn0type="PK" id="DownRiPortportID" udn="Downriportportid"/>
+		<column bdcolname="C370570000" bdtype="NUMBER" dbn0type="MT" id="C370570000" udn="UpOptPowerAttenuation"/>
+		<column bdcolname="C370570001" bdtype="NUMBER" dbn0type="MT" id="C370570001" udn="DownOptPowerAttenuation"/>
+	</table>
+	<table active="TRUE" id="RRUPOWERENERGYSAVING" ossId="RRUPOWERENERGYSAVING" tableName="SRAN_RRUPOWERENERGYSAVING" tech="SRAN" udn="SRAN_Rrupowerenergysaving">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370580000" bdtype="NUMBER" dbn0type="MT" id="C370580000" udn="CarrShutdownDuration"/>
+		<column bdcolname="C370580001" bdtype="NUMBER" dbn0type="MT" id="C370580001" udn="DeepSleepDuration"/>
+		<column bdcolname="C370580002" bdtype="NUMBER" dbn0type="MT" id="C370580002" udn="OfdmShutdownDuration"/>
+		<column bdcolname="C370580003" bdtype="NUMBER" dbn0type="MT" id="C370580003" udn="ChannelShutdownDuration"/>
+		<column bdcolname="C370580004" bdtype="NUMBER" dbn0type="MT" id="C370580004" udn="EnergySaveDuration"/>
+		<column bdcolname="C370580005" bdtype="NUMBER" dbn0type="MT" id="C370580005" udn="IntelligentPowerOffDuration"/>
+		<column bdcolname="C370580006" bdtype="NUMBER" dbn0type="MT" id="C370580006" udn="DynamicVoltageAdjustDuration"/>
+	</table>
+	<table active="TRUE" id="AAUCARRIER" ossId="AAUCARRIER" tableName="SRAN_AAUCARRIER" tech="SRAN" udn="SRAN_Aaucarrier">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="INTERNALFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="InternalFunction" udn="Internalfunction"/>
+		<column bdcolname="CHANNEL" bdtype="VARCHAR2(255)" dbn0type="PK" id="Channel" udn="Channel"/>
+		<column bdcolname="RACKID" bdtype="VARCHAR2(255)" dbn0type="PK" id="RackID" udn="Rackid"/>
+		<column bdcolname="SHELFID" bdtype="VARCHAR2(255)" dbn0type="PK" id="ShelfID" udn="Shelfid"/>
+		<column bdcolname="SLOTID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SlotID" udn="Slotid"/>
+		<column bdcolname="ANTID" bdtype="VARCHAR2(255)" dbn0type="PK" id="AntID" udn="Antid"/>
+		<column bdcolname="BAND" bdtype="VARCHAR2(255)" dbn0type="PK" id="Band" udn="Band"/>
+		<column bdcolname="RADIOMODE" bdtype="VARCHAR2(255)" dbn0type="PK" id="RadioMode" udn="Radiomode"/>
+		<column bdcolname="CARRIERID" bdtype="VARCHAR2(255)" dbn0type="PK" id="CarrierID" udn="Carrierid"/>
+		<column bdcolname="C370590000" bdtype="NUMBER" dbn0type="MT" id="C370590000" udn="ForwardTransmitPowerMax"/>
+		<column bdcolname="C370590001" bdtype="NUMBER" dbn0type="MT" id="C370590001" udn="ForwardTransmitPowerMin"/>
+		<column bdcolname="C370590002" bdtype="NUMBER" dbn0type="MT" id="C370590002" udn="ForwardTransmitPowerAvg"/>
+		<column bdcolname="C370590003" bdtype="NUMBER" dbn0type="MT" id="C370590003" udn="RssiMax"/>
+		<column bdcolname="C370590004" bdtype="NUMBER" dbn0type="MT" id="C370590004" udn="RssiMin"/>
+		<column bdcolname="C370590005" bdtype="NUMBER" dbn0type="MT" id="C370590005" udn="RssiAvg"/>
+	</table>
+	<table active="TRUE" id="AAUCHANNEL" ossId="AAUCHANNEL" tableName="SRAN_AAUCHANNEL" tech="SRAN" udn="SRAN_Aauchannel">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="INTERNALFUNCTION" bdtype="VARCHAR2(255)" dbn0type="PK" id="InternalFunction" udn="Internalfunction"/>
+		<column bdcolname="CHANNEL" bdtype="VARCHAR2(255)" dbn0type="PK" id="Channel" udn="Channel"/>
+		<column bdcolname="RACKID" bdtype="VARCHAR2(255)" dbn0type="PK" id="RackID" udn="Rackid"/>
+		<column bdcolname="SHELFID" bdtype="VARCHAR2(255)" dbn0type="PK" id="ShelfID" udn="Shelfid"/>
+		<column bdcolname="SLOTID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SlotID" udn="Slotid"/>
+		<column bdcolname="ANTID" bdtype="VARCHAR2(255)" dbn0type="PK" id="AntID" udn="Antid"/>
+		<column bdcolname="BAND" bdtype="VARCHAR2(255)" dbn0type="PK" id="Band" udn="Band"/>
+		<column bdcolname="C370600000" bdtype="NUMBER" dbn0type="MT" id="C370600000" udn="ChannelVswr"/>
+		<column bdcolname="C370600001" bdtype="NUMBER" dbn0type="MT" id="C370600001" udn="ChannelPaTemperatureMax"/>
+		<column bdcolname="C370600002" bdtype="NUMBER" dbn0type="MT" id="C370600002" udn="ChannelPaTemperatureMin"/>
+		<column bdcolname="C370600003" bdtype="NUMBER" dbn0type="MT" id="C370600003" udn="ChannelPaTemperatureAvg"/>
+		<column bdcolname="C370600004" bdtype="NUMBER" dbn0type="MT" id="C370600004" udn="ChannelPaOnTime"/>
+		<column bdcolname="C370600005" bdtype="NUMBER" dbn0type="MT" id="C370600005" udn="ChannelPaOffTime"/>
+		<column bdcolname="C370600009" bdtype="NUMBER" dbn0type="MT" id="C370600009" udn="ChannelPaTxPowerMax"/>
+		<column bdcolname="C370600010" bdtype="NUMBER" dbn0type="MT" id="C370600010" udn="ChannelPaTxPowerMin"/>
+		<column bdcolname="C370600011" bdtype="NUMBER" dbn0type="MT" id="C370600011" udn="ChannelPaTxPowerAvg"/>
+		<column bdcolname="C370600015" bdtype="NUMBER" dbn0type="MT" id="C370600015" udn="ChannelVoltageAdjustAvg"/>
+	</table>
+	<table active="TRUE" id="IPADDRPAIR" ossId="IPADDRPAIR" tableName="SRAN_IPADDRPAIR" tech="SRAN" udn="SRAN_Ipaddrpair">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="IPKPI" bdtype="VARCHAR2(255)" dbn0type="PK" id="IpKpi" udn="Ipkpi"/>
+		<column bdcolname="C370610000" bdtype="NUMBER" dbn0type="MT" id="C370610000" udn="IpAddrPairSendTrafficMax"/>
+		<column bdcolname="C370610001" bdtype="NUMBER" dbn0type="MT" id="C370610001" udn="IpAddrPairRevTrafficMax"/>
+		<column bdcolname="C370610002" bdtype="NUMBER" dbn0type="MT" id="C370610002" udn="IpAddrPairSendTrafficAvg"/>
+		<column bdcolname="C370610003" bdtype="NUMBER" dbn0type="MT" id="C370610003" udn="IpAddrPairRevTrafficAvg"/>
+		<column bdcolname="C370610004" bdtype="NUMBER" dbn0type="MT" id="C370610004" udn="IpAddrPairSendGtpuTrafficAvg"/>
+		<column bdcolname="C370610005" bdtype="NUMBER" dbn0type="MT" id="C370610005" udn="IpAddrPairRevGtpuTrafficAvg"/>
+		<column bdcolname="C370610006" bdtype="NUMBER" dbn0type="MT" id="C370610006" udn="IpAddrPairSendGtpuTime"/>
+		<column bdcolname="C370610007" bdtype="NUMBER" dbn0type="MT" id="C370610007" udn="IpAddrPairRevGtpuTime"/>
+	</table>
+	<table active="TRUE" id="IPADDRPAIRDSCP" ossId="IPADDRPAIRDSCP" tableName="SRAN_IPADDRPAIRDSCP" tech="SRAN" udn="SRAN_Ipaddrpairdscp">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="IPKPI" bdtype="VARCHAR2(255)" dbn0type="PK" id="IpKpi" udn="Ipkpi"/>
+		<column bdcolname="C370620000" bdtype="NUMBER" dbn0type="MT" id="C370620000" udn="IpAddrPairDscpSendTrafficMax"/>
+		<column bdcolname="C370620001" bdtype="NUMBER" dbn0type="MT" id="C370620001" udn="IpAddrPairDscpRevTrafficMax"/>
+		<column bdcolname="C370620002" bdtype="NUMBER" dbn0type="MT" id="C370620002" udn="IpAddrPairDscpSendTrafficAvg"/>
+		<column bdcolname="C370620003" bdtype="NUMBER" dbn0type="MT" id="C370620003" udn="IpAddrPairDscpRevTrafficAvg"/>
+	</table>
+	<table active="TRUE" id="IPADDRPAIRVLAN" ossId="IPADDRPAIRVLAN" tableName="SRAN_IPADDRPAIRVLAN" tech="SRAN" udn="SRAN_Ipaddrpairvlan">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="IPKPI" bdtype="VARCHAR2(255)" dbn0type="PK" id="IpKpi" udn="Ipkpi"/>
+		<column bdcolname="C370630000" bdtype="NUMBER" dbn0type="MT" id="C370630000" udn="IpAddrPairVlanSendTrafficMax"/>
+		<column bdcolname="C370630001" bdtype="NUMBER" dbn0type="MT" id="C370630001" udn="IpAddrPairVlanRevTrafficMax"/>
+		<column bdcolname="C370630002" bdtype="NUMBER" dbn0type="MT" id="C370630002" udn="IpAddrPairVlanSendTrafficAvg"/>
+		<column bdcolname="C370630003" bdtype="NUMBER" dbn0type="MT" id="C370630003" udn="IpAddrPairVlanRevTrafficAvg"/>
+	</table>
+	<table active="TRUE" id="TNOPTPORTINFO" ossId="TNOPTPORTINFO" tableName="SRAN_TNOPTPORTINFO" tech="SRAN" udn="SRAN_Tnoptportinfo">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="TNPORT" bdtype="VARCHAR2(255)" dbn0type="PK" id="TnPort" udn="Tnport"/>
+		<column bdcolname="C370640000" bdtype="NUMBER" dbn0type="MT" id="C370640000" udn="OptTxPowerMax"/>
+		<column bdcolname="C370640001" bdtype="NUMBER" dbn0type="MT" id="C370640001" udn="OptTxPowerMin"/>
+		<column bdcolname="C370640002" bdtype="NUMBER" dbn0type="MT" id="C370640002" udn="OptRxPowerMax"/>
+		<column bdcolname="C370640003" bdtype="NUMBER" dbn0type="MT" id="C370640003" udn="OptRxPowerMin"/>
+	</table>
+	<table active="TRUE" id="COLORINFO" ossId="COLORINFO" tableName="SRAN_COLORINFO" tech="SRAN" udn="SRAN_Colorinfo">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="TRANSPORTNETWORK" bdtype="VARCHAR2(255)" dbn0type="PK" id="TransportNetwork" udn="Transportnetwork"/>
+		<column bdcolname="C370650000" bdtype="NUMBER" dbn0type="MT" id="C370650000" udn="ColorMsgCount"/>
+		<column bdcolname="C370650001" bdtype="NUMBER" dbn0type="MT" id="C370650001" udn="ColorMsgLen"/>
+		<column bdcolname="C370650002" bdtype="NUMBER" dbn0type="MT" id="C370650002" udn="TotolCheckedColorMsgCount"/>
+		<column bdcolname="C370650003" bdtype="NUMBER" dbn0type="MT" id="C370650003" udn="SuccessCheckedColorMsgCount"/>
+		<column bdcolname="C370650004" bdtype="NUMBER" dbn0type="MT" id="C370650004" udn="SuccessCheckedColorMsgLen"/>
+		<column bdcolname="C370650005" bdtype="NUMBER" dbn0type="MT" id="C370650005" udn="NoneColorMsgCheckedCount"/>
+		<column bdcolname="C370650006" bdtype="NUMBER" dbn0type="MT" id="C370650006" udn="NoneColorMsgCheckedLen"/>
+		<column bdcolname="C370650007" bdtype="NUMBER" dbn0type="MT" id="C370650007" udn="AnColorMsgCheckedCount"/>
+		<column bdcolname="C370650008" bdtype="NUMBER" dbn0type="MT" id="C370650008" udn="AnColorMsgCheckedLen"/>
+		<column bdcolname="C370650009" bdtype="NUMBER" dbn0type="MT" id="C370650009" udn="DcColorMsgCheckedCount"/>
+		<column bdcolname="C370650010" bdtype="NUMBER" dbn0type="MT" id="C370650010" udn="DcColorMsgCheckedLen"/>
+		<column bdcolname="C370650011" bdtype="NUMBER" dbn0type="MT" id="C370650011" udn="PrColorMsgCheckedCount"/>
+		<column bdcolname="C370650012" bdtype="NUMBER" dbn0type="MT" id="C370650012" udn="PrColorMsgCheckedLen"/>
+		<column bdcolname="C370650013" bdtype="NUMBER" dbn0type="MT" id="C370650013" udn="CnColorMsgCheckedCount"/>
+		<column bdcolname="C370650014" bdtype="NUMBER" dbn0type="MT" id="C370650014" udn="CnColorMsgCheckedLen"/>
+		<column bdcolname="C370650015" bdtype="NUMBER" dbn0type="MT" id="C370650015" udn="SnColorMsgCheckedCount"/>
+		<column bdcolname="C370650016" bdtype="NUMBER" dbn0type="MT" id="C370650016" udn="SnColorMsgCheckedLen"/>
+		<column bdcolname="C370650017" bdtype="NUMBER" dbn0type="MT" id="C370650017" udn="ItColorMsgCheckedCount"/>
+		<column bdcolname="C370650018" bdtype="NUMBER" dbn0type="MT" id="C370650018" udn="ItColorMsgCheckedLen"/>
+		<column bdcolname="C370650019" bdtype="NUMBER" dbn0type="MT" id="C370650019" udn="WithoutColorMsgCount"/>
+		<column bdcolname="C370650020" bdtype="NUMBER" dbn0type="MT" id="C370650020" udn="IllegalColorMsgCount"/>
+		<column bdcolname="C370650021" bdtype="NUMBER" dbn0type="MT" id="C370650021" udn="CheckFailColorMsgCount"/>
+		<column bdcolname="C370650022" bdtype="NUMBER" dbn0type="MT" id="C370650022" udn="CrossErrorColorMsgCount"/>
+	</table>
+	<table active="TRUE" id="PROJECTIONPOWER" ossId="PROJECTIONPOWER" tableName="SRAN_PROJECTIONPOWER" tech="SRAN" udn="SRAN_Projectionpower">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370660000SUB0" bdtype="NUMBER" dbn0type="MT" id="C370660000[0]" udn="EmfRruMaxPowerOfBeamSub0"/>
+		<column bdcolname="C370660000SUB1" bdtype="NUMBER" dbn0type="MT" id="C370660000[1]" udn="EmfRruMaxPowerOfBeamSub1"/>
+		<column bdcolname="C370660000SUB2" bdtype="NUMBER" dbn0type="MT" id="C370660000[2]" udn="EmfRruMaxPowerOfBeamSub2"/>
+		<column bdcolname="C370660000SUB3" bdtype="NUMBER" dbn0type="MT" id="C370660000[3]" udn="EmfRruMaxPowerOfBeamSub3"/>
+		<column bdcolname="C370660000SUB4" bdtype="NUMBER" dbn0type="MT" id="C370660000[4]" udn="EmfRruMaxPowerOfBeamSub4"/>
+		<column bdcolname="C370660000SUB5" bdtype="NUMBER" dbn0type="MT" id="C370660000[5]" udn="EmfRruMaxPowerOfBeamSub5"/>
+		<column bdcolname="C370660000SUB6" bdtype="NUMBER" dbn0type="MT" id="C370660000[6]" udn="EmfRruMaxPowerOfBeamSub6"/>
+		<column bdcolname="C370660000SUB7" bdtype="NUMBER" dbn0type="MT" id="C370660000[7]" udn="EmfRruMaxPowerOfBeamSub7"/>
+		<column bdcolname="C370660000SUB8" bdtype="NUMBER" dbn0type="MT" id="C370660000[8]" udn="EmfRruMaxPowerOfBeamSub8"/>
+		<column bdcolname="C370660000SUB9" bdtype="NUMBER" dbn0type="MT" id="C370660000[9]" udn="EmfRruMaxPowerOfBeamSub9"/>
+		<column bdcolname="C370660000SUB10" bdtype="NUMBER" dbn0type="MT" id="C370660000[10]" udn="EmfRruMaxPowerOfBeamSub10"/>
+		<column bdcolname="C370660000SUB11" bdtype="NUMBER" dbn0type="MT" id="C370660000[11]" udn="EmfRruMaxPowerOfBeamSub11"/>
+		<column bdcolname="C370660000SUB12" bdtype="NUMBER" dbn0type="MT" id="C370660000[12]" udn="EmfRruMaxPowerOfBeamSub12"/>
+		<column bdcolname="C370660000SUB13" bdtype="NUMBER" dbn0type="MT" id="C370660000[13]" udn="EmfRruMaxPowerOfBeamSub13"/>
+		<column bdcolname="C370660000SUB14" bdtype="NUMBER" dbn0type="MT" id="C370660000[14]" udn="EmfRruMaxPowerOfBeamSub14"/>
+		<column bdcolname="C370660000SUB15" bdtype="NUMBER" dbn0type="MT" id="C370660000[15]" udn="EmfRruMaxPowerOfBeamSub15"/>
+		<column bdcolname="C370660000SUB16" bdtype="NUMBER" dbn0type="MT" id="C370660000[16]" udn="EmfRruMaxPowerOfBeamSub16"/>
+		<column bdcolname="C370660000SUB17" bdtype="NUMBER" dbn0type="MT" id="C370660000[17]" udn="EmfRruMaxPowerOfBeamSub17"/>
+		<column bdcolname="C370660000SUB18" bdtype="NUMBER" dbn0type="MT" id="C370660000[18]" udn="EmfRruMaxPowerOfBeamSub18"/>
+		<column bdcolname="C370660000SUB19" bdtype="NUMBER" dbn0type="MT" id="C370660000[19]" udn="EmfRruMaxPowerOfBeamSub19"/>
+		<column bdcolname="C370660000SUB20" bdtype="NUMBER" dbn0type="MT" id="C370660000[20]" udn="EmfRruMaxPowerOfBeamSub20"/>
+		<column bdcolname="C370660000SUB21" bdtype="NUMBER" dbn0type="MT" id="C370660000[21]" udn="EmfRruMaxPowerOfBeamSub21"/>
+		<column bdcolname="C370660000SUB22" bdtype="NUMBER" dbn0type="MT" id="C370660000[22]" udn="EmfRruMaxPowerOfBeamSub22"/>
+		<column bdcolname="C370660000SUB23" bdtype="NUMBER" dbn0type="MT" id="C370660000[23]" udn="EmfRruMaxPowerOfBeamSub23"/>
+		<column bdcolname="C370660000SUB24" bdtype="NUMBER" dbn0type="MT" id="C370660000[24]" udn="EmfRruMaxPowerOfBeamSub24"/>
+		<column bdcolname="C370660000SUB25" bdtype="NUMBER" dbn0type="MT" id="C370660000[25]" udn="EmfRruMaxPowerOfBeamSub25"/>
+		<column bdcolname="C370660000SUB26" bdtype="NUMBER" dbn0type="MT" id="C370660000[26]" udn="EmfRruMaxPowerOfBeamSub26"/>
+		<column bdcolname="C370660000SUB27" bdtype="NUMBER" dbn0type="MT" id="C370660000[27]" udn="EmfRruMaxPowerOfBeamSub27"/>
+		<column bdcolname="C370660000SUB28" bdtype="NUMBER" dbn0type="MT" id="C370660000[28]" udn="EmfRruMaxPowerOfBeamSub28"/>
+		<column bdcolname="C370660000SUB29" bdtype="NUMBER" dbn0type="MT" id="C370660000[29]" udn="EmfRruMaxPowerOfBeamSub29"/>
+		<column bdcolname="C370660000SUB30" bdtype="NUMBER" dbn0type="MT" id="C370660000[30]" udn="EmfRruMaxPowerOfBeamSub30"/>
+		<column bdcolname="C370660000SUB31" bdtype="NUMBER" dbn0type="MT" id="C370660000[31]" udn="EmfRruMaxPowerOfBeamSub31"/>
+		<column bdcolname="C370660001SUB0" bdtype="NUMBER" dbn0type="MT" id="C370660001[0]" udn="EmfRruAvgPowerOfBeamSub0"/>
+		<column bdcolname="C370660001SUB1" bdtype="NUMBER" dbn0type="MT" id="C370660001[1]" udn="EmfRruAvgPowerOfBeamSub1"/>
+		<column bdcolname="C370660001SUB2" bdtype="NUMBER" dbn0type="MT" id="C370660001[2]" udn="EmfRruAvgPowerOfBeamSub2"/>
+		<column bdcolname="C370660001SUB3" bdtype="NUMBER" dbn0type="MT" id="C370660001[3]" udn="EmfRruAvgPowerOfBeamSub3"/>
+		<column bdcolname="C370660001SUB4" bdtype="NUMBER" dbn0type="MT" id="C370660001[4]" udn="EmfRruAvgPowerOfBeamSub4"/>
+		<column bdcolname="C370660001SUB5" bdtype="NUMBER" dbn0type="MT" id="C370660001[5]" udn="EmfRruAvgPowerOfBeamSub5"/>
+		<column bdcolname="C370660001SUB6" bdtype="NUMBER" dbn0type="MT" id="C370660001[6]" udn="EmfRruAvgPowerOfBeamSub6"/>
+		<column bdcolname="C370660001SUB7" bdtype="NUMBER" dbn0type="MT" id="C370660001[7]" udn="EmfRruAvgPowerOfBeamSub7"/>
+		<column bdcolname="C370660001SUB8" bdtype="NUMBER" dbn0type="MT" id="C370660001[8]" udn="EmfRruAvgPowerOfBeamSub8"/>
+		<column bdcolname="C370660001SUB9" bdtype="NUMBER" dbn0type="MT" id="C370660001[9]" udn="EmfRruAvgPowerOfBeamSub9"/>
+		<column bdcolname="C370660001SUB10" bdtype="NUMBER" dbn0type="MT" id="C370660001[10]" udn="EmfRruAvgPowerOfBeamSub10"/>
+		<column bdcolname="C370660001SUB11" bdtype="NUMBER" dbn0type="MT" id="C370660001[11]" udn="EmfRruAvgPowerOfBeamSub11"/>
+		<column bdcolname="C370660001SUB12" bdtype="NUMBER" dbn0type="MT" id="C370660001[12]" udn="EmfRruAvgPowerOfBeamSub12"/>
+		<column bdcolname="C370660001SUB13" bdtype="NUMBER" dbn0type="MT" id="C370660001[13]" udn="EmfRruAvgPowerOfBeamSub13"/>
+		<column bdcolname="C370660001SUB14" bdtype="NUMBER" dbn0type="MT" id="C370660001[14]" udn="EmfRruAvgPowerOfBeamSub14"/>
+		<column bdcolname="C370660001SUB15" bdtype="NUMBER" dbn0type="MT" id="C370660001[15]" udn="EmfRruAvgPowerOfBeamSub15"/>
+		<column bdcolname="C370660001SUB16" bdtype="NUMBER" dbn0type="MT" id="C370660001[16]" udn="EmfRruAvgPowerOfBeamSub16"/>
+		<column bdcolname="C370660001SUB17" bdtype="NUMBER" dbn0type="MT" id="C370660001[17]" udn="EmfRruAvgPowerOfBeamSub17"/>
+		<column bdcolname="C370660001SUB18" bdtype="NUMBER" dbn0type="MT" id="C370660001[18]" udn="EmfRruAvgPowerOfBeamSub18"/>
+		<column bdcolname="C370660001SUB19" bdtype="NUMBER" dbn0type="MT" id="C370660001[19]" udn="EmfRruAvgPowerOfBeamSub19"/>
+		<column bdcolname="C370660001SUB20" bdtype="NUMBER" dbn0type="MT" id="C370660001[20]" udn="EmfRruAvgPowerOfBeamSub20"/>
+		<column bdcolname="C370660001SUB21" bdtype="NUMBER" dbn0type="MT" id="C370660001[21]" udn="EmfRruAvgPowerOfBeamSub21"/>
+		<column bdcolname="C370660001SUB22" bdtype="NUMBER" dbn0type="MT" id="C370660001[22]" udn="EmfRruAvgPowerOfBeamSub22"/>
+		<column bdcolname="C370660001SUB23" bdtype="NUMBER" dbn0type="MT" id="C370660001[23]" udn="EmfRruAvgPowerOfBeamSub23"/>
+		<column bdcolname="C370660001SUB24" bdtype="NUMBER" dbn0type="MT" id="C370660001[24]" udn="EmfRruAvgPowerOfBeamSub24"/>
+		<column bdcolname="C370660001SUB25" bdtype="NUMBER" dbn0type="MT" id="C370660001[25]" udn="EmfRruAvgPowerOfBeamSub25"/>
+		<column bdcolname="C370660001SUB26" bdtype="NUMBER" dbn0type="MT" id="C370660001[26]" udn="EmfRruAvgPowerOfBeamSub26"/>
+		<column bdcolname="C370660001SUB27" bdtype="NUMBER" dbn0type="MT" id="C370660001[27]" udn="EmfRruAvgPowerOfBeamSub27"/>
+		<column bdcolname="C370660001SUB28" bdtype="NUMBER" dbn0type="MT" id="C370660001[28]" udn="EmfRruAvgPowerOfBeamSub28"/>
+		<column bdcolname="C370660001SUB29" bdtype="NUMBER" dbn0type="MT" id="C370660001[29]" udn="EmfRruAvgPowerOfBeamSub29"/>
+		<column bdcolname="C370660001SUB30" bdtype="NUMBER" dbn0type="MT" id="C370660001[30]" udn="EmfRruAvgPowerOfBeamSub30"/>
+		<column bdcolname="C370660001SUB31" bdtype="NUMBER" dbn0type="MT" id="C370660001[31]" udn="EmfRruAvgPowerOfBeamSub31"/>
+		<column bdcolname="C370660002SUB0" bdtype="NUMBER" dbn0type="MT" id="C370660002[0]" udn="MaxPower2Sub0"/>
+		<column bdcolname="C370660002SUB1" bdtype="NUMBER" dbn0type="MT" id="C370660002[1]" udn="MaxPower2Sub1"/>
+		<column bdcolname="C370660002SUB2" bdtype="NUMBER" dbn0type="MT" id="C370660002[2]" udn="MaxPower2Sub2"/>
+		<column bdcolname="C370660002SUB3" bdtype="NUMBER" dbn0type="MT" id="C370660002[3]" udn="MaxPower2Sub3"/>
+		<column bdcolname="C370660002SUB4" bdtype="NUMBER" dbn0type="MT" id="C370660002[4]" udn="MaxPower2Sub4"/>
+		<column bdcolname="C370660002SUB5" bdtype="NUMBER" dbn0type="MT" id="C370660002[5]" udn="MaxPower2Sub5"/>
+		<column bdcolname="C370660002SUB6" bdtype="NUMBER" dbn0type="MT" id="C370660002[6]" udn="MaxPower2Sub6"/>
+		<column bdcolname="C370660002SUB7" bdtype="NUMBER" dbn0type="MT" id="C370660002[7]" udn="MaxPower2Sub7"/>
+		<column bdcolname="C370660002SUB8" bdtype="NUMBER" dbn0type="MT" id="C370660002[8]" udn="MaxPower2Sub8"/>
+		<column bdcolname="C370660002SUB9" bdtype="NUMBER" dbn0type="MT" id="C370660002[9]" udn="MaxPower2Sub9"/>
+		<column bdcolname="C370660002SUB10" bdtype="NUMBER" dbn0type="MT" id="C370660002[10]" udn="MaxPower2Sub10"/>
+		<column bdcolname="C370660002SUB11" bdtype="NUMBER" dbn0type="MT" id="C370660002[11]" udn="MaxPower2Sub11"/>
+		<column bdcolname="C370660002SUB12" bdtype="NUMBER" dbn0type="MT" id="C370660002[12]" udn="MaxPower2Sub12"/>
+		<column bdcolname="C370660002SUB13" bdtype="NUMBER" dbn0type="MT" id="C370660002[13]" udn="MaxPower2Sub13"/>
+		<column bdcolname="C370660002SUB14" bdtype="NUMBER" dbn0type="MT" id="C370660002[14]" udn="MaxPower2Sub14"/>
+		<column bdcolname="C370660002SUB15" bdtype="NUMBER" dbn0type="MT" id="C370660002[15]" udn="MaxPower2Sub15"/>
+		<column bdcolname="C370660002SUB16" bdtype="NUMBER" dbn0type="MT" id="C370660002[16]" udn="MaxPower2Sub16"/>
+		<column bdcolname="C370660002SUB17" bdtype="NUMBER" dbn0type="MT" id="C370660002[17]" udn="MaxPower2Sub17"/>
+		<column bdcolname="C370660002SUB18" bdtype="NUMBER" dbn0type="MT" id="C370660002[18]" udn="MaxPower2Sub18"/>
+		<column bdcolname="C370660002SUB19" bdtype="NUMBER" dbn0type="MT" id="C370660002[19]" udn="MaxPower2Sub19"/>
+		<column bdcolname="C370660002SUB20" bdtype="NUMBER" dbn0type="MT" id="C370660002[20]" udn="MaxPower2Sub20"/>
+		<column bdcolname="C370660002SUB21" bdtype="NUMBER" dbn0type="MT" id="C370660002[21]" udn="MaxPower2Sub21"/>
+		<column bdcolname="C370660002SUB22" bdtype="NUMBER" dbn0type="MT" id="C370660002[22]" udn="MaxPower2Sub22"/>
+		<column bdcolname="C370660002SUB23" bdtype="NUMBER" dbn0type="MT" id="C370660002[23]" udn="MaxPower2Sub23"/>
+		<column bdcolname="C370660002SUB24" bdtype="NUMBER" dbn0type="MT" id="C370660002[24]" udn="MaxPower2Sub24"/>
+		<column bdcolname="C370660002SUB25" bdtype="NUMBER" dbn0type="MT" id="C370660002[25]" udn="MaxPower2Sub25"/>
+		<column bdcolname="C370660003SUB0" bdtype="NUMBER" dbn0type="MT" id="C370660003[0]" udn="MaxPower3Sub0"/>
+		<column bdcolname="C370660003SUB1" bdtype="NUMBER" dbn0type="MT" id="C370660003[1]" udn="MaxPower3Sub1"/>
+		<column bdcolname="C370660003SUB2" bdtype="NUMBER" dbn0type="MT" id="C370660003[2]" udn="MaxPower3Sub2"/>
+		<column bdcolname="C370660003SUB3" bdtype="NUMBER" dbn0type="MT" id="C370660003[3]" udn="MaxPower3Sub3"/>
+		<column bdcolname="C370660003SUB4" bdtype="NUMBER" dbn0type="MT" id="C370660003[4]" udn="MaxPower3Sub4"/>
+		<column bdcolname="C370660003SUB5" bdtype="NUMBER" dbn0type="MT" id="C370660003[5]" udn="MaxPower3Sub5"/>
+		<column bdcolname="C370660003SUB6" bdtype="NUMBER" dbn0type="MT" id="C370660003[6]" udn="MaxPower3Sub6"/>
+		<column bdcolname="C370660003SUB7" bdtype="NUMBER" dbn0type="MT" id="C370660003[7]" udn="MaxPower3Sub7"/>
+		<column bdcolname="C370660003SUB8" bdtype="NUMBER" dbn0type="MT" id="C370660003[8]" udn="MaxPower3Sub8"/>
+		<column bdcolname="C370660003SUB9" bdtype="NUMBER" dbn0type="MT" id="C370660003[9]" udn="MaxPower3Sub9"/>
+		<column bdcolname="C370660003SUB10" bdtype="NUMBER" dbn0type="MT" id="C370660003[10]" udn="MaxPower3Sub10"/>
+		<column bdcolname="C370660003SUB11" bdtype="NUMBER" dbn0type="MT" id="C370660003[11]" udn="MaxPower3Sub11"/>
+		<column bdcolname="C370660003SUB12" bdtype="NUMBER" dbn0type="MT" id="C370660003[12]" udn="MaxPower3Sub12"/>
+		<column bdcolname="C370660003SUB13" bdtype="NUMBER" dbn0type="MT" id="C370660003[13]" udn="MaxPower3Sub13"/>
+		<column bdcolname="C370660003SUB14" bdtype="NUMBER" dbn0type="MT" id="C370660003[14]" udn="MaxPower3Sub14"/>
+		<column bdcolname="C370660003SUB15" bdtype="NUMBER" dbn0type="MT" id="C370660003[15]" udn="MaxPower3Sub15"/>
+		<column bdcolname="C370660003SUB16" bdtype="NUMBER" dbn0type="MT" id="C370660003[16]" udn="MaxPower3Sub16"/>
+		<column bdcolname="C370660003SUB17" bdtype="NUMBER" dbn0type="MT" id="C370660003[17]" udn="MaxPower3Sub17"/>
+		<column bdcolname="C370660003SUB18" bdtype="NUMBER" dbn0type="MT" id="C370660003[18]" udn="MaxPower3Sub18"/>
+		<column bdcolname="C370660003SUB19" bdtype="NUMBER" dbn0type="MT" id="C370660003[19]" udn="MaxPower3Sub19"/>
+		<column bdcolname="C370660003SUB20" bdtype="NUMBER" dbn0type="MT" id="C370660003[20]" udn="MaxPower3Sub20"/>
+		<column bdcolname="C370660003SUB21" bdtype="NUMBER" dbn0type="MT" id="C370660003[21]" udn="MaxPower3Sub21"/>
+		<column bdcolname="C370660003SUB22" bdtype="NUMBER" dbn0type="MT" id="C370660003[22]" udn="MaxPower3Sub22"/>
+		<column bdcolname="C370660003SUB23" bdtype="NUMBER" dbn0type="MT" id="C370660003[23]" udn="MaxPower3Sub23"/>
+		<column bdcolname="C370660003SUB24" bdtype="NUMBER" dbn0type="MT" id="C370660003[24]" udn="MaxPower3Sub24"/>
+		<column bdcolname="C370660003SUB25" bdtype="NUMBER" dbn0type="MT" id="C370660003[25]" udn="MaxPower3Sub25"/>
+		<column bdcolname="C370660004SUB0" bdtype="NUMBER" dbn0type="MT" id="C370660004[0]" udn="AvgPower2Sub0"/>
+		<column bdcolname="C370660004SUB1" bdtype="NUMBER" dbn0type="MT" id="C370660004[1]" udn="AvgPower2Sub1"/>
+		<column bdcolname="C370660004SUB2" bdtype="NUMBER" dbn0type="MT" id="C370660004[2]" udn="AvgPower2Sub2"/>
+		<column bdcolname="C370660004SUB3" bdtype="NUMBER" dbn0type="MT" id="C370660004[3]" udn="AvgPower2Sub3"/>
+		<column bdcolname="C370660004SUB4" bdtype="NUMBER" dbn0type="MT" id="C370660004[4]" udn="AvgPower2Sub4"/>
+		<column bdcolname="C370660004SUB5" bdtype="NUMBER" dbn0type="MT" id="C370660004[5]" udn="AvgPower2Sub5"/>
+		<column bdcolname="C370660004SUB6" bdtype="NUMBER" dbn0type="MT" id="C370660004[6]" udn="AvgPower2Sub6"/>
+		<column bdcolname="C370660004SUB7" bdtype="NUMBER" dbn0type="MT" id="C370660004[7]" udn="AvgPower2Sub7"/>
+		<column bdcolname="C370660004SUB8" bdtype="NUMBER" dbn0type="MT" id="C370660004[8]" udn="AvgPower2Sub8"/>
+		<column bdcolname="C370660004SUB9" bdtype="NUMBER" dbn0type="MT" id="C370660004[9]" udn="AvgPower2Sub9"/>
+		<column bdcolname="C370660004SUB10" bdtype="NUMBER" dbn0type="MT" id="C370660004[10]" udn="AvgPower2Sub10"/>
+		<column bdcolname="C370660004SUB11" bdtype="NUMBER" dbn0type="MT" id="C370660004[11]" udn="AvgPower2Sub11"/>
+		<column bdcolname="C370660004SUB12" bdtype="NUMBER" dbn0type="MT" id="C370660004[12]" udn="AvgPower2Sub12"/>
+		<column bdcolname="C370660004SUB13" bdtype="NUMBER" dbn0type="MT" id="C370660004[13]" udn="AvgPower2Sub13"/>
+		<column bdcolname="C370660004SUB14" bdtype="NUMBER" dbn0type="MT" id="C370660004[14]" udn="AvgPower2Sub14"/>
+		<column bdcolname="C370660004SUB15" bdtype="NUMBER" dbn0type="MT" id="C370660004[15]" udn="AvgPower2Sub15"/>
+		<column bdcolname="C370660004SUB16" bdtype="NUMBER" dbn0type="MT" id="C370660004[16]" udn="AvgPower2Sub16"/>
+		<column bdcolname="C370660004SUB17" bdtype="NUMBER" dbn0type="MT" id="C370660004[17]" udn="AvgPower2Sub17"/>
+		<column bdcolname="C370660004SUB18" bdtype="NUMBER" dbn0type="MT" id="C370660004[18]" udn="AvgPower2Sub18"/>
+		<column bdcolname="C370660004SUB19" bdtype="NUMBER" dbn0type="MT" id="C370660004[19]" udn="AvgPower2Sub19"/>
+		<column bdcolname="C370660004SUB20" bdtype="NUMBER" dbn0type="MT" id="C370660004[20]" udn="AvgPower2Sub20"/>
+		<column bdcolname="C370660004SUB21" bdtype="NUMBER" dbn0type="MT" id="C370660004[21]" udn="AvgPower2Sub21"/>
+		<column bdcolname="C370660004SUB22" bdtype="NUMBER" dbn0type="MT" id="C370660004[22]" udn="AvgPower2Sub22"/>
+		<column bdcolname="C370660004SUB23" bdtype="NUMBER" dbn0type="MT" id="C370660004[23]" udn="AvgPower2Sub23"/>
+		<column bdcolname="C370660004SUB24" bdtype="NUMBER" dbn0type="MT" id="C370660004[24]" udn="AvgPower2Sub24"/>
+		<column bdcolname="C370660004SUB25" bdtype="NUMBER" dbn0type="MT" id="C370660004[25]" udn="AvgPower2Sub25"/>
+		<column bdcolname="C370660005SUB0" bdtype="NUMBER" dbn0type="MT" id="C370660005[0]" udn="AvgPower3Sub0"/>
+		<column bdcolname="C370660005SUB1" bdtype="NUMBER" dbn0type="MT" id="C370660005[1]" udn="AvgPower3Sub1"/>
+		<column bdcolname="C370660005SUB2" bdtype="NUMBER" dbn0type="MT" id="C370660005[2]" udn="AvgPower3Sub2"/>
+		<column bdcolname="C370660005SUB3" bdtype="NUMBER" dbn0type="MT" id="C370660005[3]" udn="AvgPower3Sub3"/>
+		<column bdcolname="C370660005SUB4" bdtype="NUMBER" dbn0type="MT" id="C370660005[4]" udn="AvgPower3Sub4"/>
+		<column bdcolname="C370660005SUB5" bdtype="NUMBER" dbn0type="MT" id="C370660005[5]" udn="AvgPower3Sub5"/>
+		<column bdcolname="C370660005SUB6" bdtype="NUMBER" dbn0type="MT" id="C370660005[6]" udn="AvgPower3Sub6"/>
+		<column bdcolname="C370660005SUB7" bdtype="NUMBER" dbn0type="MT" id="C370660005[7]" udn="AvgPower3Sub7"/>
+		<column bdcolname="C370660005SUB8" bdtype="NUMBER" dbn0type="MT" id="C370660005[8]" udn="AvgPower3Sub8"/>
+		<column bdcolname="C370660005SUB9" bdtype="NUMBER" dbn0type="MT" id="C370660005[9]" udn="AvgPower3Sub9"/>
+		<column bdcolname="C370660005SUB10" bdtype="NUMBER" dbn0type="MT" id="C370660005[10]" udn="AvgPower3Sub10"/>
+		<column bdcolname="C370660005SUB11" bdtype="NUMBER" dbn0type="MT" id="C370660005[11]" udn="AvgPower3Sub11"/>
+		<column bdcolname="C370660005SUB12" bdtype="NUMBER" dbn0type="MT" id="C370660005[12]" udn="AvgPower3Sub12"/>
+		<column bdcolname="C370660005SUB13" bdtype="NUMBER" dbn0type="MT" id="C370660005[13]" udn="AvgPower3Sub13"/>
+		<column bdcolname="C370660005SUB14" bdtype="NUMBER" dbn0type="MT" id="C370660005[14]" udn="AvgPower3Sub14"/>
+		<column bdcolname="C370660005SUB15" bdtype="NUMBER" dbn0type="MT" id="C370660005[15]" udn="AvgPower3Sub15"/>
+		<column bdcolname="C370660005SUB16" bdtype="NUMBER" dbn0type="MT" id="C370660005[16]" udn="AvgPower3Sub16"/>
+		<column bdcolname="C370660005SUB17" bdtype="NUMBER" dbn0type="MT" id="C370660005[17]" udn="AvgPower3Sub17"/>
+		<column bdcolname="C370660005SUB18" bdtype="NUMBER" dbn0type="MT" id="C370660005[18]" udn="AvgPower3Sub18"/>
+		<column bdcolname="C370660005SUB19" bdtype="NUMBER" dbn0type="MT" id="C370660005[19]" udn="AvgPower3Sub19"/>
+		<column bdcolname="C370660005SUB20" bdtype="NUMBER" dbn0type="MT" id="C370660005[20]" udn="AvgPower3Sub20"/>
+		<column bdcolname="C370660005SUB21" bdtype="NUMBER" dbn0type="MT" id="C370660005[21]" udn="AvgPower3Sub21"/>
+		<column bdcolname="C370660005SUB22" bdtype="NUMBER" dbn0type="MT" id="C370660005[22]" udn="AvgPower3Sub22"/>
+		<column bdcolname="C370660005SUB23" bdtype="NUMBER" dbn0type="MT" id="C370660005[23]" udn="AvgPower3Sub23"/>
+		<column bdcolname="C370660005SUB24" bdtype="NUMBER" dbn0type="MT" id="C370660005[24]" udn="AvgPower3Sub24"/>
+		<column bdcolname="C370660005SUB25" bdtype="NUMBER" dbn0type="MT" id="C370660005[25]" udn="AvgPower3Sub25"/>
+	</table>
+	<table active="TRUE" id="BBUNRGSAVE" ossId="BBUNRGSAVE" tableName="SRAN_BBUNRGSAVE" tech="SRAN" udn="SRAN_Bbunrgsave">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370670000" bdtype="NUMBER" dbn0type="MT" id="C370670000" udn="BbuLowServiceDuration"/>
+		<column bdcolname="C370670001" bdtype="NUMBER" dbn0type="MT" id="C370670001" udn="BbuShallowSleepDuration"/>
+		<column bdcolname="C370670002" bdtype="NUMBER" dbn0type="MT" id="C370670002" udn="BbuDeepSleepDuration"/>
+		<column bdcolname="C370670003" bdtype="NUMBER" dbn0type="MT" id="C370670003" udn="BbuChipShutdownDuration"/>
+	</table>
+	<table active="TRUE" id="LOWPOWER" ossId="LOWPOWER" tableName="SRAN_LOWPOWER" tech="SRAN" udn="SRAN_Lowpower">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370700000" bdtype="NUMBER" dbn0type="MT" id="C370700000" udn="LowPowerDuration"/>
+	</table>
+	<table active="TRUE" id="BOARDNRGSAVE" ossId="BOARDNRGSAVE" tableName="SRAN_BOARDNRGSAVE" tech="SRAN" udn="SRAN_Boardnrgsave">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370710000" bdtype="NUMBER" dbn0type="MT" id="C370710000" udn="PbDeepSleepDuration"/>
+	</table>
+	<table active="TRUE" id="RRUPOWERTEMP" ossId="RRUPOWERTEMP" tableName="SRAN_RRUPOWERTEMP" tech="SRAN" udn="SRAN_Rrupowertemp">
+		<column bdcolname="GRANULARITYPERIOD" bdtype="NUMBER" dbn0type="MT" id="GRANULARITYPERIOD" udn="granularityPeriod"/>
+		<column bdcolname="COLLECTTIME" bdtype="TIMESTAMP(3)" dbn0type="PK" id="COLLECTTIME" udn="Collecttime"/>
+		<column bdcolname="SBNID" bdtype="VARCHAR2(255)" dbn0type="PK" id="SBNID" udn="Sbnid"/>
+		<column bdcolname="MEID" bdtype="VARCHAR2(255)" dbn0type="PK" id="MEID" udn="Meid"/>
+		<column bdcolname="MENAME" bdtype="VARCHAR2(255)" dbn0type="PK" id="MENAME" udn="Mename"/>
+		<column bdcolname="EQUIPMENT" bdtype="VARCHAR2(255)" dbn0type="PK" id="Equipment" udn="Equipment"/>
+		<column bdcolname="REPLACEABLEUNIT" bdtype="VARCHAR2(255)" dbn0type="PK" id="ReplaceableUnit" udn="Replaceableunit"/>
+		<column bdcolname="C370720000" bdtype="NUMBER" dbn0type="MT" id="C370720000" udn="BoardTempMax"/>
+	</table>
+</root>

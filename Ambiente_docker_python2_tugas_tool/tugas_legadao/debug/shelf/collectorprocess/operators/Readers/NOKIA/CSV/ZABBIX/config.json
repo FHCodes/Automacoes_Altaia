@@ -1,0 +1,470 @@
+{
+	"agent":{
+		"hostname": "",
+		"ping": {
+			"0": "ping_min", 
+			"1": "ping_max", 
+			"2": "ping_avg"
+		},
+		"version": ""
+	},
+	"kernel":{
+		"maxfiles": {
+			"0": "maxfiles_min",
+			"1": "maxfiles_max",
+			"2": "maxfiles_avg"
+		},
+		"maxproc": {
+			"0": "maxproc_min",
+			"1": "maxproc_max",
+			"2": "maxproc_avg"
+		}
+	},
+	"net.if.in":{
+		"if": "",
+		"mode": {
+			"dropped":{
+				"0": "dropped_min",
+				"1": "dropped_max",
+				"2": "dropped_avg"
+			},
+			"packets":{
+				"0": "packets_min",
+				"1": "packets_max",
+				"2": "packets_avg"
+			},
+			"errors":{
+				"0": "errors_min",
+				"1": "errors_max",
+				"2": "errors_avg"
+			},
+			"bytes":{
+				"0": "bytes_min",
+				"1": "bytes_max",
+				"2": "bytes_avg"
+			},
+			"":{
+				"0": "bytes_min",
+				"1": "bytes_max",
+				"2": "bytes_avg"
+			}
+		},
+		"param_key": "0"
+	},
+	"net.if.total":{
+		"if": "",
+		"mode": {
+			"dropped":{
+				"0": "dropped_min",
+				"1": "dropped_max",
+				"2": "dropped_avg"
+			},
+			"packets":{
+				"0": "packets_min",
+				"1": "packets_max",
+				"2": "packets_avg"
+			},
+			"errors":{
+				"0": "errors_min",
+				"1": "errors_max",
+				"2": "errors_avg"
+			},
+			"bytes":{
+				"0": "bytes_min",
+				"1": "bytes_max",
+				"2": "bytes_avg"
+			},
+			"":{
+				"0": "bytes_min",
+				"1": "bytes_max",
+				"2": "bytes_avg"
+			}
+		},
+		"param_key": "0"
+	},
+	"net.if.out":{
+		"if": "",
+		"mode": {
+			"dropped":{
+				"0": "dropped_min",
+				"1": "dropped_max",
+				"2": "dropped_avg"
+			},
+			"packets":{
+				"0": "packets_min",
+				"1": "packets_max",
+				"2": "packets_avg"
+			},
+			"errors":{
+				"0": "errors_min",
+				"1": "errors_max",
+				"2": "errors_avg"
+			},
+			"bytes":{
+				"0": "bytes_min",
+				"1": "bytes_max",
+				"2": "bytes_avg"
+			},
+			"":{
+				"0": "bytes_min",
+				"1": "bytes_max",
+				"2": "bytes_avg"
+			}
+		},
+		"param_key": "0"
+	},
+	"system.cpu.util":{
+		"cpu": {
+			"": "all"
+		},
+		"type": {
+			"": "user"
+		},
+		"mode": {
+			"avg1":{
+				"0": "avg1_min",
+				"1": "avg1_max",
+				"2": "avg1_avg"
+			},
+			"avg5":{
+				"0": "avg5_min",
+				"1": "avg5_max",
+				"2": "avg5_avg"
+			},
+			"avg15":{
+				"0": "avg15_min",
+				"1": "avg15_max",
+				"2": "avg15_avg"
+			},
+			"":{
+				"0": "avg1_min",
+				"1": "avg1_max",
+				"2": "avg1_avg"
+			}
+		},
+		"concat": "1",
+		"param_key": "0"
+	},
+	"system.cpu.load":{
+		"cpu": {
+			"": "all"
+		},
+		"mode": {
+			"avg1":{
+				"0": "avg1_min",
+				"1": "avg1_max",
+				"2": "avg1_avg"
+			},
+			"avg5":{
+				"0": "avg5_min",
+				"1": "avg5_max",
+				"2": "avg5_avg"
+			},
+			"avg15":{
+				"0": "avg15_min",
+				"1": "avg15_max",
+				"2": "avg15_avg"
+			},
+			"":{
+				"0": "avg1_min",
+				"1": "avg1_max",
+				"2": "avg1_avg"
+			}
+		},
+		"param_key": "0"
+	},
+	"net.tcp.service":{
+		"service": "",
+		"ip":{
+			"": "127.0.0.1"
+		},
+		"port": "",
+		"": {
+			"0": "service_value_min",
+			"1": "service_value_max",
+			"2": "service_value_avg"
+		},
+		"param_key":"0"
+	},
+	"proc.num":{
+		"name": {
+			"": "all processes"
+		},
+		"user": {
+			"": "all users"
+		},
+		"state": {
+			"all": {
+				"0": "all_min",
+				"1": "all_max",
+				"2": "all_avg"
+			},
+			"run": {
+				"0": "run_min",
+				"1": "run_max",
+				"2": "run_avg"
+			},
+			"sleep": {
+				"0": "sleep_min",
+				"1": "sleep_max",
+				"2": "sleep_avg"
+			},
+			"zomb": {
+				"0": "zomb_min",
+				"1": "zomb_max",
+				"2": "zomb_avg"
+			},
+			"": {
+				"0": "all_min",
+				"1": "all_max",
+				"2": "all_avg"
+			}
+		},
+		"cmdline": "",
+		"param_key":["0","1"]
+	},
+	"system":{
+		"boottime": {
+			"0": "boottime_min",
+			"1": "boottime_max",
+			"2": "boottime_avg"
+		},
+		"hostname": "",
+		"localtime": {
+			"0": "localtime_min",
+			"1": "localtime_max",
+			"2": "localtime_avg"
+		},
+		"uname": "",
+		"uptime": {
+			"0": "uptime_min",
+			"1": "uptime_max",
+			"2": "uptime_avg"
+		}
+	},
+	"system.cpu": {
+		"intr": {
+			"0": "intr_min",
+			"1": "intr_max",
+			"2": "intr_avg"
+		},
+		"switches": {
+			"0": "switches_min",
+			"1": "switches_max",
+			"2": "switches_avg"
+		}
+	},
+	"system.run": {
+		"command": "",
+		"mode": {
+			"wait": {
+				"0": "wait_min",
+				"1": "wait_max",
+				"2": "wait_avg"
+			},
+			"nowait": {
+				"0": "nowait_min",
+				"1": "nowait_max",
+				"2": "nowait_avg"
+			},
+			"": {
+				"0": "wait_min",
+				"1": "wait_max",
+				"2": "wait_avg"
+			}
+		}
+	},
+	"system.users":{
+		"num": {
+			"0": "num_value_min",
+			"1": "num_value_max",
+			"2": "num_value_avg"
+		}
+	},
+	"vfs.file.cksum": {
+		"file": "",
+		"": {
+			"0": "cksum_value_min",
+			"1": "cksum_value_max",
+			"2": "cksum_value_avg"
+		},
+		"param_key": "0"
+	},
+	"vfs.fs.inode":{
+		"fs": "",
+		"mode": {
+			"total": {
+				"0": "total_min",
+				"1": "total_max",
+				"2": "total_avg"
+			},
+			"free": {
+				"0": "free_min",
+				"1": "free_max",
+				"2": "free_avg"
+			},
+			"used": {
+				"0": "used_min",
+				"1": "used_max",
+				"2": "used_avg"
+			},
+			"pfree": {
+				"0": "pfree_min",
+				"1": "pfree_max",
+				"2": "pfree_avg"
+			},
+			"pused": {
+				"0": "pused_min",
+				"1": "pused_max",
+				"2": "pused_avg"
+			},
+			"": {
+				"0": "total_min",
+				"1": "total_max",
+				"2": "total_avg"
+			}
+		},
+		"param_key": "0"
+	},
+	"vfs.fs.size":{
+		"fs": "",
+		"mode": {
+			"total": {
+				"0": "total_min",
+				"1": "total_max",
+				"2": "total_avg"
+			},
+			"free": {
+				"0": "free_min",
+				"1": "free_max",
+				"2": "free_avg"
+			},
+			"used": {
+				"0": "used_min",
+				"1": "used_max",
+				"2": "used_avg"
+			},
+			"pfree": {
+				"0": "pfree_min",
+				"1": "pfree_max",
+				"2": "pfree_avg"
+			},
+			"pused": {
+				"0": "pused_min",
+				"1": "pused_max",
+				"2": "pused_avg"
+			},
+			"": {
+				"0": "total_min",
+				"1": "total_max",
+				"2": "total_avg"
+			}
+		},
+		"param_key": "0"
+	},
+	"vm.memory.size": {
+		"mode": {
+			"total": {
+				"0": "total_min",
+				"1": "total_max",
+				"2": "total_avg"
+			},
+			"active": {
+				"0": "active_min",
+				"1": "active_max",
+				"2": "active_avg"
+			},
+			"anon": {
+				"0": "anon_min",
+				"1": "anon_max",
+				"2": "anon_avg"
+			},
+			"buffers": {
+				"0": "buffers_min",
+				"1": "buffers_max",
+				"2": "buffers_avg"
+			},
+			"cached": {
+				"0": "cached_min",
+				"1": "cached_max",
+				"2": "cached_avg"
+			},
+			"exec": {
+				"0": "exec_min",
+				"1": "exec_max",
+				"2": "exec_avg"
+			},
+			"file": {
+				"0": "file_min",
+				"1": "file_max",
+				"2": "file_avg"
+			},
+			"free": {
+				"0": "free_min",
+				"1": "free_max",
+				"2": "free_avg"
+			},
+			"inactive": {
+				"0": "inactive_min",
+				"1": "inactive_max",
+				"2": "inactive_avg"
+			},
+			"pinned": {
+				"0": "pinned_min",
+				"1": "pinned_max",
+				"2": "pinned_avg"
+			},
+			"shared": {
+				"0": "shared_min",
+				"1": "shared_max",
+				"2": "shared_avg"
+			},
+			"wired": {
+				"0": "wired_min",
+				"1": "wired_max",
+				"2": "wired_avg"
+			},
+			"used": {
+				"0": "used_min",
+				"1": "used_max",
+				"2": "used_avg"
+			},
+			"pused": {
+				"0": "pused_min",
+				"1": "pused_max",
+				"2": "pused_avg"
+			},
+			"available": {
+				"0": "available_min",
+				"1": "available_max",
+				"2": "available_avg"
+			},
+			"pavailable": {
+				"0": "pavailable_min",
+				"1": "pavailable_max",
+				"2": "pavailable_avg"
+			},
+			"": {
+				"0": "total_min",
+				"1": "total_max",
+				"2": "total_avg"
+			}
+		}
+	},
+	"net.dns": {
+		"ip": "",
+		"name": "",
+		"type": {
+			"": "SOA"
+		},
+		"timeout": "",
+		"count": "",
+		"protocol": "",
+		"": {
+			"0": "dns_value_min",
+			"1": "dns_value_max",
+			"2": "dns_value_avg"
+		},
+		"param_key": ["0","1"]
+	}
+}

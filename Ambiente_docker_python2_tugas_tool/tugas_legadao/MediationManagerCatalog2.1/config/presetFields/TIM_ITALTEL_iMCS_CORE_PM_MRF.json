@@ -1,0 +1,126 @@
+{
+  "PM" :
+  [
+    {
+      "id" : "beginTime",
+      "sqlName" : "beginTime",
+      "udn" : "beginTime",
+      "desc" : "Begin time for the measurement collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "endTime",
+      "sqlName" : "endTime",
+      "udn" : "endTime",
+      "desc" : "End time for the measurement collection",
+      "dataType" : "TIMESTAMP(3)",
+      "dataUnit" : "TIMESTAMP",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "duration",
+      "sqlName" : "duration",
+      "udn" : "duration",
+      "desc" : "Interval when PM data is collected (60 min,24 hours)",
+      "dataType" : "NUMBER",
+      "dataUnit": "INTEGER",
+      "dbn0type" : "MT"
+    },
+    {
+      "id" : "vendorName",
+      "sqlName" : "vendorName",
+      "udn" : "vendorName",
+      "desc" : "The name of the vendor",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "elementType",
+      "sqlName" : "elementType",
+      "udn" : "elementType",
+      "desc" : "The element type, as specified in the key value and the product designation structure member in the product identity attribute of ManagedElement",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "swVersion",
+      "sqlName" : "swVersion",
+      "udn" : "swVersion",
+      "desc" : "The version of the software",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "userLabel",
+      "sqlName" : "userLabel",
+      "udn" : "userLabel",
+      "desc" : "User Label",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "measObjLdn",
+      "sqlName" : "measObjLdn",
+      "udn" : "measObjLdn",
+      "desc" : "The LDN of the measured object",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "PK"
+    },
+    {
+      "id" : "MEASUREMENTDATAOBJECT",
+      "sqlName" : "MEASUREMENTDATAOBJECT",
+      "udn" : "MeasurementDataObject",
+      "desc" : "Measurement Data Object",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "jobId",
+      "sqlName" : "jobId",
+      "udn" : "jobId",
+      "desc" : "Job ID",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit": "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "MRF",
+      "sqlName" : "MRF",
+      "udn" : "MRF",
+      "desc" : "MRF",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "functionalId",
+      "sqlName" : "functionalId",
+      "udn" : "FunctionalId",
+      "desc" : "Functional ID",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    },
+    {
+      "id" : "Application",
+      "sqlName" : "Application",
+      "udn" : "Application",
+      "desc" : "Application",
+      "dataType" : "VARCHAR2(256)",
+      "dataUnit" : "STRING",
+      "dbn0type" : "ID"
+    }
+  ],
+  "CM" :
+  [
+
+  ]
+}

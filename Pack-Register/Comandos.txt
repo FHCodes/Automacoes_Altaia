@@ -1,0 +1,7 @@
+kubectl delete -f pack-register.yaml -n telefonica-altaia-namf
+kubectl apply -f pack-register.yaml -n telefonica-altaia-namf
+
+
+
+kubectl delete -f pack-register-liq.yaml -n telefonica-altaia-namf
+kubectl apply -f pack-register-liq.yaml -n telefonica-altaia-namf

@@ -1,0 +1,83 @@
+{
+	"collector" :
+	{
+		"name" : "A10NETWORKS_THOR_LOADBALANCER_PM",
+		"collectorType" : "PM",
+		"vendor" : "A10NETWORKS",
+		"model" : "THOR_LOADBALANCER_PM",
+		"version" : "NA",
+		"tech" : "THOR",
+		"nameNomenclature" : "A10NETWORKS_THOR_LOADBALANCER_PM_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc_V2",
+		"doc" : "",
+		"formatConfig" : "A10NETWORKS_THOR_LOADBALANCER_PM",
+		"presetFields" : "A10NETWORKS_THOR_LOADBALANCER_PM"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": ""
+				},
+				{
+					"field": "udn",
+					"value": ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

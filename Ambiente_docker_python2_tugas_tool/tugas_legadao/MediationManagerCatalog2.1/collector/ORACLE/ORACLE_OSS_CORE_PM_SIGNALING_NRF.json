@@ -1,0 +1,111 @@
+{
+	"collector" :
+	{
+		"name" : "ORACLE_OSS_CORE_PM_SIGNALING_NRF",
+		"collectorType" : "PM",
+		"vendor" : "ORACLE",
+		"model" : "OSS_CORE_PM_SIGNALING_NRF",
+		"version" : "23.4.0",
+		"tech" : "CORE5G",
+		"nameNomenclature" : "ORACLE_OSS_CORE_PM_SIGNALING_NRF_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc_V2",
+		"doc" : "",
+		"formatConfig" : "ORACLE_OSS_CORE_PM_SIGNALING_NRF",
+		"presetFields" : "ORACLE_OSS_CORE_PM_SIGNALING_NRF"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": ""
+				},
+				{
+					"field": "udn",
+					"value": ""
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			],
+			"oracle_signaling":
+			[
+				{
+					"regex" : "",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startField" : "",
+					"additionalFields" : ["app_kubernetes_io_component","app_kubernetes_io_instance","app_kubernetes_io_managed_by","app_kubernetes_io_name","app_kubernetes_io_part_of","app_kubernetes_io_version","bastion","cluster","helm_sh_chart","instance","kubernetes_namespace","kubernetes_pod_name","pod_template_hash"],
+					"fieldName" : "measObjLdn"
+				}
+			],			
+			"measurementPartitioner_partitionOf_PM2":
+			[
+				{
+					"format": "XML"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "XML",
+		"catalogs" :
+		[
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+				"applyRegex": [
+					{
+						"field": "REGEX"
+					}
+				],
+				"applyRegex2": [
+					{
+						"field": "LOCALDN",
+						"pattern": "^.*ManagedElement=(?P<MANAGEDELEMENT>[^,]+)$",
+						"newFields": ["MANAGEDELEMENT"]
+					}
+				],
+				"measurementParticioner":
+				[]				
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

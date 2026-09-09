@@ -1,0 +1,68 @@
+{
+	"collector" :
+	{
+		"name" : "ERICSSON_ENM_IMS_PM_CSCF",
+		"collectorType" : "PM",
+		"vendor" : "ERICSSON",
+		"model" : "IMS",
+		"version" : "1.15.0",
+		"tech" : "CSCF",
+		"nameNomenclature" : "ERICSSON_ENM_IMS_PM_CSCF_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelEricssonALEXInstance",
+		"doc" : "",
+		"formatConfig" : "ERICSSON_ENM_IMS_PM_CSCF",
+		"presetFields" : "ERICSSON_ENM_IMS_PM_CSCF"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "xml",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

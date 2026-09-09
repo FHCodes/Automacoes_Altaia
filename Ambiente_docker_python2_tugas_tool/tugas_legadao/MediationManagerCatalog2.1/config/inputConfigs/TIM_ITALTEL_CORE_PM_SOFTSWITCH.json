@@ -1,0 +1,46 @@
+{
+	"1" : {
+		"sheetName": "Objects",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"id": "Unit",
+				"ossId": "Unit",
+				"tableName": "Unit",
+				"name": "Description",
+				"udn": "Description",
+				"desc": "Description"
+			}
+		}
+	},
+	"2" : {
+		"sheetName": "Counters",
+		"unit": {
+			"unitId": "ossId",
+			"fieldMatch": {
+				"ossId": "Table Name",
+				"tableName": "Table Name"
+			}
+		}
+	},
+	"3" : {
+		"sheetName": "Counters",
+		"item": {
+			"unitId": "unitId",
+			"itemId": "id",
+			"fieldMatch": {
+				"unitId": "Table Name",
+				"id": "Counter Name",
+				"bdcolname": "Counter Name",
+				"udn": "Description",
+				"name": "Description",
+				"desc": "Description",
+				"bdtype": "Unit",
+				"dataType": "Unit",
+				"dataUnit": "Unit",
+				"dbn0type": "dbn0type",
+				"multiplicity": "Size"
+			}
+		}
+	}
+}

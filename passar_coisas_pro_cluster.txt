@@ -1,0 +1,19 @@
+kubectl cp UMEID_ITBBU_ARTPORT_20260827_0000-20260827_0015_R1.csv namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/performace4G/20260827/
+
+kubectl cp UMEID_ITBBU_CELLACTUE_20260827_0000-20260827_0015_R1.csv namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/performace4G/20260827/
+
+
+
+
+kubectl cp UMEID_ITBBU_BBUPOWER_20260827_0000-20260827_0015_R2.csv namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/performaceSRAN/20260827/
+
+kubectl cp UMEID_ITBBU_CLOCKSTATE_20260827_0000-20260827_0015_R2.csv namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/performaceSRAN/20260827/
+
+
+
+
+
+
+
+
+python3 mediation-parsers.py ZTE_OSS_RAN_PM_R4G "/opt/alticelabs/namf/medrepo/staging/ZTE/performace4G/20260827/UMEID_ITBBU_ARTPORT_20260827_0000-20260827_0015_R1.csv" --instance=3GPP_32_435_CLARO --vendor=ZTE --model=OSS_RAN_PM_R4G --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECT" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"

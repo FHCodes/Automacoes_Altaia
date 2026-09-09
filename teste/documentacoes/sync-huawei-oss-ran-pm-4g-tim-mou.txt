@@ -1,0 +1,23 @@
+Documentação de Sincronização: sync-huawei-oss-ran-pm-4g-tim-mou
+
+1. Visão Geral
+Este processo consiste em um CronJob do Kubernetes que realiza a automação de coleta de dados.
+
+2. Cronograma e Políticas de Execução
+* Agendamento (Cron): 8 * * * *
+* Fuso Horário: America/Sao_Paulo
+* Concorrência: Forbid
+* Prazo Limite de Inicialização: 60 segundos
+* Política de Reinício: OnFailure
+
+3. Fluxo de Execução do Script
+* Comando Completo: /bin/sh -c sleep 20; python3 /opt/alticelabs/namf/bin/na-mf-standalone-collect-python-sync/rsync-script.py \ /opt/alticelabs/namf/python/na-mf/collect/config/customization/HUAWEI_OSS_RAN_PM_4G_TIM_MOU_10.43.83.177.yml \ 10.43.83.177 \ /home2/MOU_repository/receive/performance/TIM/Huawei/4G \ /opt/alticelabs/namf/medrepo/staging/synchronizedRepository/HUAWEI/Performance4G_TIM \ $(date +'%Y%m%d') openlabs --password=vivo@2026 \ --pingskip \ --statsreporting=MESSAGE \ --triggerparse 
+
+4. Infraestrutura Kubernetes e Recursos
+* Imagem do Container: quay.apps.mgmt.tdigital-vivo.com.br/altaia_full/namf-public/namf/namf-sync:3.2.2-3.2-11453d54
+* Capacidade Computacional (Requests/Limits): CPU: 0.2/1 | Memória: 2048Mi/4096Mi
+* Segurança (Security Context): UID/GID N/A | Runtime: selinux
+* Volumes Utilizados:
+  - configmap-namf-sync
+  - storage
+  - ssh-known-hosts

@@ -1,0 +1,32 @@
+{
+  "table": {
+    "active": "KEEP",
+    "id": "KEEP",
+    "ossId": "KEEP",
+    "partitionof": "KEEP",
+    "tableName": "UPDATE",
+    "tech": "KEEP",
+    "udn": "KEEP"
+  },
+  "column": {
+    "id": "KEEP",
+    "udn": "UPDATE",
+    "bdcolname": "KEEP",
+    "bdtype": "KEEP",
+    "dbn0type": "KEEP",
+    "desc": "UPDATE",
+    "typeCust": "KEEP",
+    "typeVendor": "KEEP",
+    "unitVendor": "KEEP",
+    "name": "KEEP",
+    "version": "UPDATE"
+  },
+  "unit": {
+    "id": "KEEP",
+    "ossId": "KEEP",
+    "desc": "KEEP",
+    "measuredobjects": ["CONCAT",","],
+    "name": "KEEP",
+    "tech": "KEEP"
+  }
+}

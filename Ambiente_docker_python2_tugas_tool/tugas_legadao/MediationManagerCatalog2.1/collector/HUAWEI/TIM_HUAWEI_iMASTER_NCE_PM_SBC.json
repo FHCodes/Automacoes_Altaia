@@ -1,0 +1,93 @@
+{
+	"collector" :
+	{
+		"name" : "TIM_HUAWEI_iMASTER_NCE_PM_SBC",
+		"collectorType" : "PM",
+		"vendor" : "HUAWEI",
+		"model" : "iMASTER_NCE_PM_SBC",
+		"version" : "V500R020C10SPC100",
+		"tech" : "SE2980",
+		"nameNomenclature" : "HUAWEI_iMASTER_NCE_PM_SBC_#"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "TIM_HUAWEI_iMASTER_NCE_PM_SBC",
+		"presetFields" : "TIM_HUAWEI_iMASTER_NCE_PM_SBC"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "SE2980_"
+				},
+				{
+					"field": "udn",
+					"value": "SE2980_"
+				}
+			],
+			"tableNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"genericHierarchy":
+			[
+				{
+					"regex" : "",
+					"sepCharPattern" : "=",
+					"interChar" : ",",
+					"startField" : "SE2980NE",
+					"fieldName" : "Object Name"
+				}
+			],
+			"ericssonColumnNameReducer":
+			[
+				{
+					"collectorType" : "PM"
+				}
+			],
+			"descriptionShortener":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format" : "json",
+		"catalogs" :
+		[
+			"loadingCatalog",
+			"loadingInventory",
+			"transformCatalog",
+			"clientCatalog",
+			"operationsCatalog",
+			"ossCatalog"
+		],
+		"clientCatalog" :
+		{
+		},
+		"ossCatalog" :
+		{
+		},
+		"operationsCatalog" :
+		{
+			"unit" :
+			{
+			},
+			"item" :
+			{
+			}
+		}
+	}
+}

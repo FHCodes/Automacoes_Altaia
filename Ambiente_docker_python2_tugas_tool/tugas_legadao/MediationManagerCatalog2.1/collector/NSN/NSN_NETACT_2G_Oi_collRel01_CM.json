@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "NSN_NETACT_2G_Oi_collRel01_CM",
+		"collectorType" : "CM",
+		"vendor": "NSN_Param_2G",
+		"model": "NETACT",
+		"version": "BSC20",
+		"tech": "R2G",
+		"nameNomenclature": "NSN_parameters_#_Netact_CM_2G_v20"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_2G_Oi_collRel01_CM",
+		"presetFields" : "2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM_"
+				}
+
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"parameterNameAdder":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "DISTNAME"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}

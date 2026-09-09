@@ -1,0 +1,7 @@
+{
+    "connectionString": "mongodb-service:27017",
+    "username": "namf",
+    "password": "namf",
+    "dbName": "namf",
+    "collectionName": "LOADING"
+}

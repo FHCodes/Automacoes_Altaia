@@ -1,0 +1,77 @@
+{
+	"collector" :
+	{
+		"name" : "NSN_NETACT_4G_Oi_collRel01_CM",
+		"collectorType" : "CM",
+		"vendor": "NOKIA",
+		"model": "NETACT",
+		"version": "xL22R2",
+		"tech": "R4G",
+		"nameNomenclature": "NOKIA_OSS_RAN_CM_4G_#_xL22R2"
+	},
+	"inputFormat" :
+	{
+		"format" : "excelNokiaBaseDoc",
+		"doc" : "",
+		"formatConfig" : "NSN_NETACT_4G_Oi_collRel01_CM",
+		"presetFields" : "TIM_2G_Nokia"
+	},
+	"rules" :
+	{
+		"unit" :
+		{
+			"addPrefix":
+			[
+				{
+					"field": "sqlName",
+					"value": "CM4G_"
+				}
+
+			],
+			"descriptionShortener" :
+			[
+				0
+			],
+			"measuredObject3GPP_NSN":
+			[
+				{
+					"regex" : "PLMN-",
+					"sepCharDoc" : "-",
+					"sepCharPattern" : "-",
+					"interChar" : "/",
+					"startText" : ""
+				}
+			],
+			"parameterNameAdder":
+			[
+				0
+			]
+		},
+		"item" :
+		{
+		}
+	},
+	"outputFormat" :
+	{
+		"format": "XML",
+		"catalogs":
+		[
+			"clientCatalog",
+			"ossCatalog",
+			"operationsCatalog"
+		],
+		"operationsCatalog":
+		{
+			"unit":
+			{
+				"applyRegex":
+				[
+					{
+						"field": "DISTNAME"
+					}
+				]
+			},
+			"item": {}
+		}
+	}
+}
