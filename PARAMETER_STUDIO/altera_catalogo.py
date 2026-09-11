@@ -35,7 +35,8 @@ def processa_catalogo(xml_path, mapping, info):
             table_map = mapping[table_name]
 
             if 'objectType' in table_map:
-                table.set('ObjectType', table_map['objectType'])
+                if table_map.get('objectType') and table_map['objectType'] != '-':
+                    table.set('ObjectType', table_map['objectType'])
 
             if 'dbn0Insert' in table_map:
                 table.set('Dbn0Insert', str(table_map['dbn0Insert']).lower())
