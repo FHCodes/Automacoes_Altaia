@@ -69330,3 +69330,18 @@
 2026-08-26 22:23:48,186 DEBUG:   * [createDBN0UsersRoles_AltaiaMediation_DBN0_ZTE_RAN_SCHEMA] Query was created *
 2026-08-26 22:23:48,186 DEBUG:   ######### END TIME:                2026.08.26 22:23:48  #########
 2026-08-26 22:23:48,187 DEBUG:   ######### END TIME:				2026.08.26 22:23:48  #########
+2026-09-15 17:33:37,816 DEBUG:   ######### START TIME:			  2026.09.15 17:33:37  #########
+2026-09-15 17:33:37,816 DEBUG:   ********** Starting SQL Creation Process               **********
+2026-09-15 17:33:37,817 DEBUG:   ######### START TIME:              2026.09.15 17:33:37  #########
+2026-09-15 17:33:37,818 ERROR:   * Catalog with the path "ZTE/ZTE_OSS_RAN_CM_R4G.json" wasn't found.
+2026-09-15 17:34:12,859 DEBUG:   ######### START TIME:			  2026.09.15 17:34:12  #########
+2026-09-15 17:34:12,859 DEBUG:   ********** Starting SQL Creation Process               **********
+2026-09-15 17:34:12,860 DEBUG:   ######### START TIME:              2026.09.15 17:34:12  #########
+2026-09-15 17:34:14,104 DEBUG:   * [liquibase-newTable] Query was created *
+2026-09-15 17:34:14,139 DEBUG:   * [partitionGenerator] Query was created *
+2026-09-15 17:34:14,236 DEBUG:   * [newTable] Query was created *
+2026-09-15 17:34:14,277 DEBUG:   * [truncateTable] Query was created *
+2026-09-15 17:34:14,282 DEBUG:   * [liq_00_createSchema_DBN0_ZTE_RAN] Query was created *
+2026-09-15 17:34:14,286 DEBUG:   * [createDBN0UsersRoles_AltaiaMediation_DBN0_ZTE_RAN_SCHEMA] Query was created *
+2026-09-15 17:34:14,287 DEBUG:   ######### END TIME:                2026.09.15 17:34:14  #########
+2026-09-15 17:34:14,294 DEBUG:   ######### END TIME:				2026.09.15 17:34:14  #########

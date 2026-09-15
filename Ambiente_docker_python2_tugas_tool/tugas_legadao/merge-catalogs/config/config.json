@@ -1,9 +1,9 @@
 {
-  "catalogsPath": "/app/tugas_legadao/merge-catalogs/catalogs/",
-   "collector": "ZTE_OSS_RAN_PM_SRAN",
+  "catalogsPath": "/app/merge-catalogs/catalogs/",
+   "collector": "ZTE_OSS_RAN_CM_R4G",
   "catalogVersion": "1",
   "vendor": "ZTE",
-  "model": "OSS_RAN_PM_SRAN",
+  "model": "OSS_RAN_CM_R4G",
   "units": {
     "active": "active",
     "id": "id",
