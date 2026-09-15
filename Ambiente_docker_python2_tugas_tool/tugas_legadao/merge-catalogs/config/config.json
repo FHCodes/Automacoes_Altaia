@@ -1,9 +1,9 @@
 {
   "catalogsPath": "/app/merge-catalogs/catalogs/",
-   "collector": "ZTE_OSS_RAN_CM_R4G",
+   "collector": "ZTE_OSS_RAN_CM_SRAN",
   "catalogVersion": "1",
   "vendor": "ZTE",
-  "model": "OSS_RAN_CM_R4G",
+  "model": "OSS_RAN_CM_SRAN",
   "units": {
     "active": "active",
     "id": "id",

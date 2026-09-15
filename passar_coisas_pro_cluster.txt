@@ -11,6 +11,35 @@ kubectl cp UMEID_ITBBU_CLOCKSTATE_20260827_0000-20260827_0015_R2.csv namf-namfd-
 
 
 
+################################## ZTE_OSS_RAN_CM_R4G ####################
+
+kubectl cp <ARQUIVOS> namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0000.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0000.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0015.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0015.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0030.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0030.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0045.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0045.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0045_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0045_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0100.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0100.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0100_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0100_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0115.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0115.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0115_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0115_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0130.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0130.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0130_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0130_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0145.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0145.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0145_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0145_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0200.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0200.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0200_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0200_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0215.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0215.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0215_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0215_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0230.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0230.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0230_R1.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0230_R1.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0245.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0245.zip
+kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0300.zip namf-namfd-7bb577fb54-467hf:/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0300.zip
+
+
+
+
+
 
 
 
