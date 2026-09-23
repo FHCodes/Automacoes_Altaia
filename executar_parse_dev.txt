@@ -31,6 +31,10 @@ python3 mediation-parsers.py ZTE_OSS_RAN_PM "/opt/alticelabs/namf/medrepo/stagin
 python3 mediation-parsers.py ZTE_OSS_RAN_PM "/opt/alticelabs/namf/medrepo/staging/ZTE/performace4G/20260915/UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0245.zip" --instance=CSV --vendor=ZTE --model=OSS_RAN_PM_SRAN --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECTTIME" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
 
 
+#########################ZTE_OSS_RAN_CM################################################
+python3 mediation-parsers.py ZTE_OSS_RAN_CM "/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260922/lte-V8.0.0-20260918003000-001.xml" --instance=3GPP_32_615 --vendor=ZTE --model=OSS_RAN_CM_R4G --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECTTIME" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
+
+python3 mediation-parsers.py ZTE_OSS_RAN_CM "/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260922/plat-V8.0.0-20260918003000-001.xml" --instance=3GPP_32_615 --vendor=ZTE --model=OSS_RAN_CM_SRAN --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECTTIME" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
 
 
 OBSERVACOES:

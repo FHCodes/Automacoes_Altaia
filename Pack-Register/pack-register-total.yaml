@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: namf-pack-register-job
+  name: namf-pack-register-total-job
 spec:
   template:
     spec:

@@ -1,0 +1,8 @@
+
+=================================================ZTE_OSS_RAN_PM_4G=====================================================================
+python mediation-parsers.py ZTE "DATA_ZTE/readertest" --out="DATA_ZTE/csvoutput" --instance=CSV_RAN --vendor=ZTE --model=OSS_RAN_PM_4G  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+
+python mediation-parsers.py ZTE "DATA_ZTE/readertest" --out="DATA_ZTE/csvoutput" --instance=CSV_RAN --vendor=ZTE --model=OSS_RAN_PM_4G  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+
+python mediation-parsers.py ZTE "DATA_ZTE/readertest" --out="DATA_ZTE/csvoutput" --instance=3GPP_32_615 --vendor=ZTE --model=OSS_RAN_CM_4G  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+

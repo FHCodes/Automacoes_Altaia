@@ -39,6 +39,13 @@ kubectl cp UMEID_ITBBU_ITBBUPLAT_PM_COMMON_ZTE_20260915_0300.zip namf-namfd-7bb5
 
 
 
+################################## ZTE_OSS_RAN_CM_SRAN ####################
+
+kubectl cp <Todos_xml_do_diretorio_atual> namf-namfd-75ccc46dcb-28v45:/opt/alticelabs/namf/medrepo/staging/ZTE/parameterSRAN/20260922
+kubectl cp plat-V8.0.0-20260918003000-001.xml namf-namfd-6b8f6f969-28ll6:/opt/alticelabs/namf/medrepo/staging/ZTE/parameterSRAN/20260922
+
+
+
 
 
 

@@ -20,7 +20,7 @@ python2 run.py -o SQL -bc "ZTE/loading_ZTE_OSS_RAN_PM_SRAN.json" -n ZTE_OSS_RAN_
 python2 run.py -o SQL -bc "ZTE/loading_ZTE_OSS_RAN_CM_R4G.json" -n ZTE_OSS_RAN_CM_R4G -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN --liq
 
 --ZTE_OSS_RAN_CM_SRAN
-python2 run.py -o SQL -bc "ZTE/loading_ZTE_OSS_RAN_CM_R4G.json" -n ZTE_OSS_RAN_CM_R4G -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN --liq
+python2 run.py -o SQL -bc "ZTE/loading_ZTE_OSS_RAN_CM_SRAN.json" -n ZTE_OSS_RAN_CM_SRAN -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN --liq
  
  
 

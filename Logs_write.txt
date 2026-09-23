@@ -1,0 +1,8 @@
+
+===============================ZTE_OSS_RAN_CM_R4G===================================================================
+kubectl logs namf-writer-5578f5dcd5-wk6xh --tail=1000 | grep -i "ORA-\|VSUNIVERSALWEIGHTTX\|CM4G\|error\|exception"
+
+
+
+===============================ZTE_OSS_RAN_CM_SRAN===================================================================
+kubectl logs namf-writer-5578f5dcd5-wk6xh --tail=1000 | grep -i "ORA-\|CM_\|error\|exception"
