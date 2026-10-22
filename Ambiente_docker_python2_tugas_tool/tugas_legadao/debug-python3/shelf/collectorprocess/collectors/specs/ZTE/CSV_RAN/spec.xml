@@ -1,0 +1,7 @@
+<spec>
+    <operation type="InputManagers" name="Files" path="">
+        <pattern>*</pattern>
+    </operation>
+    <operation type="Readers" name="ZTE.CSV_RAN" />
+    <operation type="OutputManagers" name="Kafka" print="True" />
+</spec>

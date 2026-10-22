@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root model="FEMTO" ossversion="SC24_FP1" vendor="NOKIA">
+	<!--Femtocell 4G e 5G (unificado) - fonte 4G: femtocell_4G_counters_reference_guide SC22A_SP1, SC22A_SP2, SC24_FP1; fonte 5G: femtocell_5G_counters_reference_guide SC22A_SP1, SC22A_SP2, SC24_FP1; divisao 5G: SOW FemtoCell5G v1.2-->
+
+	<unit id="GENERIC">
+
+		<!-- CPUID -->
+		<operation type="measurementPartition">
+			<measurement>CAPACITY_CPUID</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>CPUID</sharedField>
+		</operation>
+
+		<!-- SCCOMMON -->
+		<operation type="measurementPartition">
+			<measurement>NTP_SCCOMMON</measurement>
+			<measurement>OAM_SCCOMMON</measurement>
+			<measurement>OTA_SYNC_SCCOMMON</measurement>
+			<measurement>SYSTEM</measurement>
+			<measurement>SYSTEM_SCCOMMON</measurement>
+			<measurement>TRAFFIC_SCCOMMON</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>SCCOMMON</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY -->
+		<operation type="measurementPartition">
+			<measurement>CA_CELLIDENTITY</measurement>
+			<measurement>DRB</measurement>
+			<measurement>DRB_CELLIDENTITY</measurement>
+			<measurement>EMTC</measurement>
+			<measurement>ENDC</measurement>
+			<measurement>ERAB_CELLIDENTITY</measurement>
+			<measurement>HO_CELLIDENTITY</measurement>
+			<measurement>L1_4G</measurement>
+			<measurement>L1_5G</measurement>
+			<measurement>LGW</measurement>
+			<measurement>LTE_U</measurement>
+			<measurement>MAC</measurement>
+			<measurement>MAC_CELLIDENTITY</measurement>
+			<measurement>MM</measurement>
+			<measurement>MMEOVERLOAD_CELLIDENTITY</measurement>
+			<measurement>NBERAB_CELLIDENTITY</measurement>
+			<measurement>NBMAC</measurement>
+			<measurement>NBPAG</measurement>
+			<measurement>NBRRC_CELLIDENTITY</measurement>
+			<measurement>NBRRM</measurement>
+			<measurement>NBS1SIG</measurement>
+			<measurement>NRMOB</measurement>
+			<measurement>NSA</measurement>
+			<measurement>OPQCI</measurement>
+			<measurement>PAG</measurement>
+			<measurement>QF</measurement>
+			<measurement>RACH_CELLIDENTITY</measurement>
+			<measurement>RLC_CELLIDENTITY</measurement>
+			<measurement>RRC</measurement>
+			<measurement>RRC_CELLIDENTITY</measurement>
+			<measurement>RRM_CELLIDENTITY</measurement>
+			<measurement>RRU_5G</measurement>
+			<measurement>S1SIG_CELLIDENTITY</measurement>
+			<measurement>SINR</measurement>
+			<measurement>SM</measurement>
+			<measurement>SONANR</measurement>
+			<measurement>SONFHM</measurement>
+			<measurement>SONICIC</measurement>
+			<measurement>SONPCI</measurement>
+			<measurement>TRAFFIC</measurement>
+			<measurement>UECNTX</measurement>
+			<measurement>UECNTXNB</measurement>
+			<measurement>UECNTX_CELLIDENTITY</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+		</operation>
+
+		<!-- PLMNID:HENBID -->
+		<operation type="measurementPartition">
+			<measurement>L3S1AP</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>HENBID</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:CATMCELEVEL -->
+		<operation type="measurementPartition">
+			<measurement>RRC_CATMCELEVEL</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>CATMCELEVEL</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:CELEVEL -->
+		<operation type="measurementPartition">
+			<measurement>ERAB_CELEVEL</measurement>
+			<measurement>NBERAB_CELEVEL</measurement>
+			<measurement>NBRRC_CELEVEL</measurement>
+			<measurement>RACH_CELEVEL</measurement>
+			<measurement>RRC_CELEVEL</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>CELEVEL</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:CRNTI -->
+		<operation type="measurementPartition">
+			<measurement>UEMAC</measurement>
+			<measurement>UERLC</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>CRNTI</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:MMEIDENTIFIER -->
+		<operation type="measurementPartition">
+			<measurement>MMEOVERLOAD_MMEID</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>MMEIDENTIFIER</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:UECATTYPEIDX -->
+		<operation type="measurementPartition">
+			<measurement>CAPACITY_UECATTYPEIDX</measurement>
+			<measurement>CSFB</measurement>
+			<measurement>DRB_UECATTYPEIDX</measurement>
+			<measurement>ERAB_UECATTYPEIDX</measurement>
+			<measurement>HO_UECATTYPEIDX</measurement>
+			<measurement>MAC_UECATTYPEIDX</measurement>
+			<measurement>NRMOB_UECATTYPEIDX</measurement>
+			<measurement>REDIRECTION_UECATTYPEIDX</measurement>
+			<measurement>RLC_UECATTYPEIDX</measurement>
+			<measurement>RRC_UECATTYPEIDX</measurement>
+			<measurement>RRM_UECATTYPEIDX</measurement>
+			<measurement>RRU_4G</measurement>
+			<measurement>S1SIG_UECATTYPEIDX</measurement>
+			<measurement>SRB</measurement>
+			<measurement>SRVCC</measurement>
+			<measurement>UECNTX_UECATTYPEIDX</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>UECATTYPEIDX</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:ARFCN:RATTYPE -->
+		<operation type="measurementPartition">
+			<measurement>REDIRECTION_RATTYPE</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>ARFCN</sharedField>
+			<sharedField>RATTYPE</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:CRNTI:LCID -->
+		<operation type="measurementPartition">
+			<measurement>PDCPUEDRB</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>CRNTI</sharedField>
+			<sharedField>LCID</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:CRNTI:SRBID -->
+		<operation type="measurementPartition">
+			<measurement>PDCPUESRB</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>CRNTI</sharedField>
+			<sharedField>SRBID</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:UEMOBCATEGORY:UECATTYPEIDX -->
+		<operation type="measurementPartition">
+			<measurement>SONMRO_UECATTYPEIDX</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>UEMOBCATEGORY</sharedField>
+			<sharedField>UECATTYPEIDX</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:PLMNIDENTITY:NEIGHBORCELLIDENTITY:UECATTYPEIDX -->
+		<operation type="measurementPartition">
+			<measurement>SONMRO_NEIGHBORCELLID</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>PLMNIDENTITY</sharedField>
+			<sharedField>NEIGHBORCELLIDENTITY</sharedField>
+			<sharedField>UECATTYPEIDX</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:GLOBALENBIDPLMNIDENTITYLTE:CELLIDENTITYLTE:CELLTYPE:UECATTYPEIDX -->
+		<operation type="measurementPartition">
+			<measurement>HO_GLBENBIDPLMNIDLTE</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>GLOBALENBIDPLMNIDENTITYLTE</sharedField>
+			<sharedField>CELLIDENTITYLTE</sharedField>
+			<sharedField>CELLTYPE</sharedField>
+			<sharedField>UECATTYPEIDX</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:PLMNIDENTITYGERAN:LOCATIONAREACODEGERAN:CIINFOGERAN:RACPRESENTGERAN:ROUTINGAREACODEGERAN:UECATTYPEIDX -->
+		<operation type="measurementPartition">
+			<measurement>HO_PLMNIDENTITYGERAN</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>PLMNIDENTITYGERAN</sharedField>
+			<sharedField>LOCATIONAREACODEGERAN</sharedField>
+			<sharedField>CIINFOGERAN</sharedField>
+			<sharedField>RACPRESENTGERAN</sharedField>
+			<sharedField>ROUTINGAREACODEGERAN</sharedField>
+			<sharedField>UECATTYPEIDX</sharedField>
+		</operation>
+
+		<!-- PLMNID:CELLIDENTITY:PLMNIDENTITYUTRAN:LOCATIONAREACODEUTRAN:RACPRESENTUTRAN:ROUTINGAREACODEUTRAN:RNCIDUTRAN:UECATTYPEIDX -->
+		<operation type="measurementPartition">
+			<measurement>HO_PLMNIDENTITYUTRAN</measurement>
+			<sharedField>STARTTIME</sharedField>
+			<sharedField>ENDTIME</sharedField>
+			<sharedField>NEUN</sharedField>
+			<sharedField>NEDN</sharedField>
+			<sharedField>NESW</sharedField>
+			<sharedField>GRANULARITYPERIOD</sharedField>
+			<sharedField>SUBNETWORK_1</sharedField>
+			<sharedField>SUBNETWORK_2</sharedField>
+			<sharedField>SUBNETWORK_3</sharedField>
+			<sharedField>SUBNETWORK_4</sharedField>
+			<sharedField>SUBNETWORK_5</sharedField>
+			<sharedField>MANAGEDELEMENT</sharedField>
+			<sharedField>BSRFUNCTION</sharedField>
+			<sharedField>FEMTOID</sharedField>
+			<sharedField>BSRGROUPID</sharedField>
+			<sharedField>HNBID</sharedField>
+			<sharedField>FSN</sharedField>
+			<sharedField>BSRNAME</sharedField>
+			<sharedField>MANUALPSCUSED</sharedField>
+			<sharedField>OPMODE</sharedField>
+			<sharedField>MOID</sharedField>
+			<sharedField>PLMNID</sharedField>
+			<sharedField>CELLIDENTITY</sharedField>
+			<sharedField>PLMNIDENTITYUTRAN</sharedField>
+			<sharedField>LOCATIONAREACODEUTRAN</sharedField>
+			<sharedField>RACPRESENTUTRAN</sharedField>
+			<sharedField>ROUTINGAREACODEUTRAN</sharedField>
+			<sharedField>RNCIDUTRAN</sharedField>
+			<sharedField>UECATTYPEIDX</sharedField>
+		</operation>
+
+		<item id="NEDN">
+			<operation type="applyRegex">
+				<regex pattern="^SubNetwork=(?P&lt;SUBNETWORK_1&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_2&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_3&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_4&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_5&gt;[^=]*?),ManagedElement=(?P&lt;MANAGEDELEMENT&gt;[^=]*?),bsrFunction=(?P&lt;BSRFUNCTION&gt;[^=]*?)$">
+					<newField>SUBNETWORK_1</newField>
+					<newField>SUBNETWORK_2</newField>
+					<newField>SUBNETWORK_3</newField>
+					<newField>SUBNETWORK_4</newField>
+					<newField>SUBNETWORK_5</newField>
+					<newField>MANAGEDELEMENT</newField>
+					<newField>BSRFUNCTION</newField>
+				</regex>
+				<regex pattern="^SubNetwork=(?P&lt;SUBNETWORK_1&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_2&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_3&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_4&gt;[^=]*?),ManagedElement=(?P&lt;MANAGEDELEMENT&gt;[^=]*?),bsrFunction=(?P&lt;BSRFUNCTION&gt;[^=]*?)$">
+					<newField>SUBNETWORK_1</newField>
+					<newField>SUBNETWORK_2</newField>
+					<newField>SUBNETWORK_3</newField>
+					<newField>SUBNETWORK_4</newField>
+					<newField>MANAGEDELEMENT</newField>
+					<newField>BSRFUNCTION</newField>
+				</regex>
+				<regex pattern="^SubNetwork=(?P&lt;SUBNETWORK_1&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_2&gt;[^=]*?),SubNetwork=(?P&lt;SUBNETWORK_3&gt;[^=]*?),ManagedElement=(?P&lt;MANAGEDELEMENT&gt;[^=]*?),bsrFunction=(?P&lt;BSRFUNCTION&gt;[^=]*?)$">
+					<newField>SUBNETWORK_1</newField>
+					<newField>SUBNETWORK_2</newField>
+					<newField>SUBNETWORK_3</newField>
+					<newField>MANAGEDELEMENT</newField>
+					<newField>BSRFUNCTION</newField>
+				</regex>
+			</operation>
+		</item>
+		<item id="NEUN">
+			<operation type="applyRegex">
+				<regex pattern="^(?P&lt;FEMTOID&gt;[^=]*?),bsrGroupId=(?P&lt;BSRGROUPID&gt;[^=]*?),HNBId=(?P&lt;HNBID&gt;[^=]*?),Fsn=(?P&lt;FSN&gt;[^=]*?),bSRName=(?P&lt;BSRNAME&gt;[^=]*?),manualPscUsed=(?P&lt;MANUALPSCUSED&gt;[^=]*?),OpMode=(?P&lt;OPMODE&gt;[^=]*?)$">
+					<newField>FEMTOID</newField>
+					<newField>BSRGROUPID</newField>
+					<newField>HNBID</newField>
+					<newField>FSN</newField>
+					<newField>BSRNAME</newField>
+					<newField>MANUALPSCUSED</newField>
+					<newField>OPMODE</newField>
+				</regex>
+				<regex pattern="^(?P&lt;FEMTOID&gt;[^=]*?),HNBId=(?P&lt;HNBID&gt;[^=]*?),Fsn=(?P&lt;FSN&gt;[^=]*?),bSRName=(?P&lt;BSRNAME&gt;[^=]*?),manualPscUsed=(?P&lt;MANUALPSCUSED&gt;[^=]*?),OpMode=(?P&lt;OPMODE&gt;[^=]*?)$">
+					<newField>FEMTOID</newField>
+					<newField>HNBID</newField>
+					<newField>FSN</newField>
+					<newField>BSRNAME</newField>
+					<newField>MANUALPSCUSED</newField>
+					<newField>OPMODE</newField>
+				</regex>
+				<regex pattern="^(?P&lt;FEMTOID&gt;[^=]*?),bsrGroupId=(?P&lt;BSRGROUPID&gt;[^=]*?),HNBId=(?P&lt;HNBID&gt;[^=]*?),Fsn=(?P&lt;FSN&gt;[^=]*?),bSRName=(?P&lt;BSRNAME&gt;[^=]*?),manualPscUsed=(?P&lt;MANUALPSCUSED&gt;[^=]*?)$">
+					<newField>FEMTOID</newField>
+					<newField>BSRGROUPID</newField>
+					<newField>HNBID</newField>
+					<newField>FSN</newField>
+					<newField>BSRNAME</newField>
+					<newField>MANUALPSCUSED</newField>
+				</regex>
+				<regex pattern="^(?P&lt;FEMTOID&gt;[^=]*?),HNBId=(?P&lt;HNBID&gt;[^=]*?),Fsn=(?P&lt;FSN&gt;[^=]*?),bSRName=(?P&lt;BSRNAME&gt;[^=]*?),manualPscUsed=(?P&lt;MANUALPSCUSED&gt;[^=]*?)$">
+					<newField>FEMTOID</newField>
+					<newField>HNBID</newField>
+					<newField>FSN</newField>
+					<newField>BSRNAME</newField>
+					<newField>MANUALPSCUSED</newField>
+				</regex>
+			</operation>
+		</item>
+		<item id="MOID">
+			<operation type="applyRegex">
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),plmnIdentityGeran=(?P&lt;PLMNIDENTITYGERAN&gt;[^=]*?),locationAreaCodeGeran=(?P&lt;LOCATIONAREACODEGERAN&gt;[^=]*?),ciInfoGeran=(?P&lt;CIINFOGERAN&gt;[^=]*?),racPresentGeran=(?P&lt;RACPRESENTGERAN&gt;[^=]*?),routingAreaCodeGeran=(?P&lt;ROUTINGAREACODEGERAN&gt;[^=]*?),ueCatTypeIdx=(?P&lt;UECATTYPEIDX&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>PLMNIDENTITYGERAN</newField>
+					<newField>LOCATIONAREACODEGERAN</newField>
+					<newField>CIINFOGERAN</newField>
+					<newField>RACPRESENTGERAN</newField>
+					<newField>ROUTINGAREACODEGERAN</newField>
+					<newField>UECATTYPEIDX</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),plmnIdentityUtran=(?P&lt;PLMNIDENTITYUTRAN&gt;[^=]*?),locationAreaCodeUtran=(?P&lt;LOCATIONAREACODEUTRAN&gt;[^=]*?),racPresentUtran=(?P&lt;RACPRESENTUTRAN&gt;[^=]*?),routingAreaCodeUtran=(?P&lt;ROUTINGAREACODEUTRAN&gt;[^=]*?),rncIdUtran=(?P&lt;RNCIDUTRAN&gt;[^=]*?),ueCatTypeIdx=(?P&lt;UECATTYPEIDX&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>PLMNIDENTITYUTRAN</newField>
+					<newField>LOCATIONAREACODEUTRAN</newField>
+					<newField>RACPRESENTUTRAN</newField>
+					<newField>ROUTINGAREACODEUTRAN</newField>
+					<newField>RNCIDUTRAN</newField>
+					<newField>UECATTYPEIDX</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),globalEnbIdPlmnIdentityLte=(?P&lt;GLOBALENBIDPLMNIDENTITYLTE&gt;[^=]*?),cellIdentityLte=(?P&lt;CELLIDENTITYLTE&gt;[^=]*?),cellType=(?P&lt;CELLTYPE&gt;[^=]*?),ueCatTypeIdx=(?P&lt;UECATTYPEIDX&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>GLOBALENBIDPLMNIDENTITYLTE</newField>
+					<newField>CELLIDENTITYLTE</newField>
+					<newField>CELLTYPE</newField>
+					<newField>UECATTYPEIDX</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),plmnIdentity=(?P&lt;PLMNIDENTITY&gt;[^=]*?),neighborCellIdentity=(?P&lt;NEIGHBORCELLIDENTITY&gt;[^=]*?),ueCatTypeIdx=(?P&lt;UECATTYPEIDX&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>PLMNIDENTITY</newField>
+					<newField>NEIGHBORCELLIDENTITY</newField>
+					<newField>UECATTYPEIDX</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),arfcn=(?P&lt;ARFCN&gt;[^=]*?),ratType=(?P&lt;RATTYPE&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>ARFCN</newField>
+					<newField>RATTYPE</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),crnti=(?P&lt;CRNTI&gt;[^=]*?),lcId=(?P&lt;LCID&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>CRNTI</newField>
+					<newField>LCID</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),crnti=(?P&lt;CRNTI&gt;[^=]*?),srbid=(?P&lt;SRBID&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>CRNTI</newField>
+					<newField>SRBID</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),ueMobCategory=(?P&lt;UEMOBCATEGORY&gt;[^=]*?),ueCatTypeIdx=(?P&lt;UECATTYPEIDX&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>UEMOBCATEGORY</newField>
+					<newField>UECATTYPEIDX</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),catMCeLevel=(?P&lt;CATMCELEVEL&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>CATMCELEVEL</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),ceLevel=(?P&lt;CELEVEL&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>CELEVEL</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),crnti=(?P&lt;CRNTI&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>CRNTI</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),mmeIdentifier=(?P&lt;MMEIDENTIFIER&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>MMEIDENTIFIER</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?),ueCatTypeIdx=(?P&lt;UECATTYPEIDX&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+					<newField>UECATTYPEIDX</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),cellIdentity=(?P&lt;CELLIDENTITY&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>CELLIDENTITY</newField>
+				</regex>
+				<regex pattern="^plmnId=(?P&lt;PLMNID&gt;[^=]*?),henBId=(?P&lt;HENBID&gt;[^=]*?)$">
+					<newField>PLMNID</newField>
+					<newField>HENBID</newField>
+				</regex>
+				<regex pattern="^SCCommon=(?P&lt;SCCOMMON&gt;[^=]*?)$">
+					<newField>SCCOMMON</newField>
+				</regex>
+				<regex pattern="^cpuId=(?P&lt;CPUID&gt;[^=]*?)$">
+					<newField>CPUID</newField>
+				</regex>
+			</operation>
+		</item>
+	</unit>
+
+	<unit id="OTA_SYNC_SCCOMMON"></unit>
+	<unit id="TRAFFIC_SCCOMMON"></unit>
+	<unit id="SYSTEM_SCCOMMON"></unit>
+	<unit id="NTP_SCCOMMON"></unit>
+	<unit id="OAM_SCCOMMON"></unit>
+	<unit id="CA_CELLIDENTITY"></unit>
+	<unit id="CAPACITY_CPUID"></unit>
+	<unit id="CAPACITY_UECATTYPEIDX"></unit>
+	<unit id="CSFB"></unit>
+	<unit id="DRB_CELLIDENTITY"></unit>
+	<unit id="DRB_UECATTYPEIDX"></unit>
+	<unit id="EMTC"></unit>
+	<unit id="ENDC"></unit>
+	<unit id="ERAB_CELEVEL"></unit>
+	<unit id="ERAB_CELLIDENTITY"></unit>
+	<unit id="ERAB_UECATTYPEIDX"></unit>
+	<unit id="HO_CELLIDENTITY"></unit>
+	<unit id="HO_GLBENBIDPLMNIDLTE"></unit>
+	<unit id="HO_PLMNIDENTITYUTRAN"></unit>
+	<unit id="HO_PLMNIDENTITYGERAN"></unit>
+	<unit id="HO_UECATTYPEIDX"></unit>
+	<unit id="L1_4G"></unit>
+	<unit id="L3S1AP"></unit>
+	<unit id="LGW"></unit>
+	<unit id="LTE_U"></unit>
+	<unit id="MAC_CELLIDENTITY"></unit>
+	<unit id="MAC_UECATTYPEIDX"></unit>
+	<unit id="MMEOVERLOAD_CELLIDENTITY"></unit>
+	<unit id="MMEOVERLOAD_MMEID"></unit>
+	<unit id="NBERAB_CELEVEL"></unit>
+	<unit id="NBERAB_CELLIDENTITY"></unit>
+	<unit id="NBMAC"></unit>
+	<unit id="NBPAG"></unit>
+	<unit id="NBRRC_CELEVEL"></unit>
+	<unit id="NBRRC_CELLIDENTITY"></unit>
+	<unit id="NBRRM"></unit>
+	<unit id="NBS1SIG"></unit>
+	<unit id="NRMOB"></unit>
+	<unit id="NRMOB_UECATTYPEIDX"></unit>
+	<unit id="OPQCI"></unit>
+	<unit id="PAG"></unit>
+	<unit id="PDCPUEDRB"></unit>
+	<unit id="PDCPUESRB"></unit>
+	<unit id="RACH_CELEVEL"></unit>
+	<unit id="RACH_CELLIDENTITY"></unit>
+	<unit id="REDIRECTION_RATTYPE"></unit>
+	<unit id="REDIRECTION_UECATTYPEIDX"></unit>
+	<unit id="RLC_CELLIDENTITY"></unit>
+	<unit id="RLC_UECATTYPEIDX"></unit>
+	<unit id="RRC_CATMCELEVEL"></unit>
+	<unit id="RRC_CELEVEL"></unit>
+	<unit id="RRC_CELLIDENTITY"></unit>
+	<unit id="RRC_UECATTYPEIDX"></unit>
+	<unit id="RRM_CELLIDENTITY"></unit>
+	<unit id="RRM_UECATTYPEIDX"></unit>
+	<unit id="RRU_4G"></unit>
+	<unit id="S1SIG_CELLIDENTITY"></unit>
+	<unit id="S1SIG_UECATTYPEIDX"></unit>
+	<unit id="SINR"></unit>
+	<unit id="SONANR"></unit>
+	<unit id="SONFHM"></unit>
+	<unit id="SONICIC"></unit>
+	<unit id="SONMRO_NEIGHBORCELLID"></unit>
+	<unit id="SONMRO_UECATTYPEIDX"></unit>
+	<unit id="SONPCI"></unit>
+	<unit id="SRB"></unit>
+	<unit id="SRVCC"></unit>
+	<unit id="TRAFFIC"></unit>
+	<unit id="UECNTX_CELLIDENTITY"></unit>
+	<unit id="UECNTX_UECATTYPEIDX"></unit>
+	<unit id="UECNTXNB"></unit>
+	<unit id="UEMAC"></unit>
+	<unit id="UERLC"></unit>
+	<unit id="DRB"></unit>
+	<unit id="L1_5G"></unit>
+	<unit id="MAC"></unit>
+	<unit id="MM"></unit>
+	<unit id="NSA"></unit>
+	<unit id="QF"></unit>
+	<unit id="RRC"></unit>
+	<unit id="RRU_5G"></unit>
+	<unit id="SM"></unit>
+	<unit id="SYSTEM"></unit>
+	<unit id="UECNTX"></unit>
+
+</root>

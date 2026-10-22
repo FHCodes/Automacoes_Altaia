@@ -1,0 +1,1213 @@
+{
+    "version": "1", 
+    "id": "{{ catalogID }}", 
+    "measUnits": [
+        {
+            "id": "GENERIC", 
+            "measItems": [
+                {
+                    "id": "NEDN", 
+                    "operations": [
+                        {
+                            "type": "applyRegex", 
+                            "def": [
+                                {
+                                    "pattern": "^SubNetwork=(?P<SUBNETWORK_1>[^=]*?),SubNetwork=(?P<SUBNETWORK_2>[^=]*?),SubNetwork=(?P<SUBNETWORK_3>[^=]*?),SubNetwork=(?P<SUBNETWORK_4>[^=]*?),SubNetwork=(?P<SUBNETWORK_5>[^=]*?),ManagedElement=(?P<MANAGEDELEMENT>[^=]*?),bsrFunction=(?P<BSRFUNCTION>[^=]*?)$", 
+                                    "newFields": [
+                                        "SUBNETWORK_1", 
+                                        "SUBNETWORK_2", 
+                                        "SUBNETWORK_3", 
+                                        "SUBNETWORK_4", 
+                                        "SUBNETWORK_5", 
+                                        "MANAGEDELEMENT", 
+                                        "BSRFUNCTION"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^SubNetwork=(?P<SUBNETWORK_1>[^=]*?),SubNetwork=(?P<SUBNETWORK_2>[^=]*?),SubNetwork=(?P<SUBNETWORK_3>[^=]*?),SubNetwork=(?P<SUBNETWORK_4>[^=]*?),ManagedElement=(?P<MANAGEDELEMENT>[^=]*?),bsrFunction=(?P<BSRFUNCTION>[^=]*?)$", 
+                                    "newFields": [
+                                        "SUBNETWORK_1", 
+                                        "SUBNETWORK_2", 
+                                        "SUBNETWORK_3", 
+                                        "SUBNETWORK_4", 
+                                        "MANAGEDELEMENT", 
+                                        "BSRFUNCTION"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^SubNetwork=(?P<SUBNETWORK_1>[^=]*?),SubNetwork=(?P<SUBNETWORK_2>[^=]*?),SubNetwork=(?P<SUBNETWORK_3>[^=]*?),ManagedElement=(?P<MANAGEDELEMENT>[^=]*?),bsrFunction=(?P<BSRFUNCTION>[^=]*?)$", 
+                                    "newFields": [
+                                        "SUBNETWORK_1", 
+                                        "SUBNETWORK_2", 
+                                        "SUBNETWORK_3", 
+                                        "MANAGEDELEMENT", 
+                                        "BSRFUNCTION"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "NEUN", 
+                    "operations": [
+                        {
+                            "type": "applyRegex", 
+                            "def": [
+                                {
+                                    "pattern": "^(?P<FEMTOID>[^=]*?),bsrGroupId=(?P<BSRGROUPID>[^=]*?),HNBId=(?P<HNBID>[^=]*?),Fsn=(?P<FSN>[^=]*?),bSRName=(?P<BSRNAME>[^=]*?),manualPscUsed=(?P<MANUALPSCUSED>[^=]*?),OpMode=(?P<OPMODE>[^=]*?)$", 
+                                    "newFields": [
+                                        "FEMTOID", 
+                                        "BSRGROUPID", 
+                                        "HNBID", 
+                                        "FSN", 
+                                        "BSRNAME", 
+                                        "MANUALPSCUSED", 
+                                        "OPMODE"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^(?P<FEMTOID>[^=]*?),HNBId=(?P<HNBID>[^=]*?),Fsn=(?P<FSN>[^=]*?),bSRName=(?P<BSRNAME>[^=]*?),manualPscUsed=(?P<MANUALPSCUSED>[^=]*?),OpMode=(?P<OPMODE>[^=]*?)$", 
+                                    "newFields": [
+                                        "FEMTOID", 
+                                        "HNBID", 
+                                        "FSN", 
+                                        "BSRNAME", 
+                                        "MANUALPSCUSED", 
+                                        "OPMODE"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^(?P<FEMTOID>[^=]*?),bsrGroupId=(?P<BSRGROUPID>[^=]*?),HNBId=(?P<HNBID>[^=]*?),Fsn=(?P<FSN>[^=]*?),bSRName=(?P<BSRNAME>[^=]*?),manualPscUsed=(?P<MANUALPSCUSED>[^=]*?)$", 
+                                    "newFields": [
+                                        "FEMTOID", 
+                                        "BSRGROUPID", 
+                                        "HNBID", 
+                                        "FSN", 
+                                        "BSRNAME", 
+                                        "MANUALPSCUSED"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^(?P<FEMTOID>[^=]*?),HNBId=(?P<HNBID>[^=]*?),Fsn=(?P<FSN>[^=]*?),bSRName=(?P<BSRNAME>[^=]*?),manualPscUsed=(?P<MANUALPSCUSED>[^=]*?)$", 
+                                    "newFields": [
+                                        "FEMTOID", 
+                                        "HNBID", 
+                                        "FSN", 
+                                        "BSRNAME", 
+                                        "MANUALPSCUSED"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "id": "MOID", 
+                    "operations": [
+                        {
+                            "type": "applyRegex", 
+                            "def": [
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),plmnIdentityGeran=(?P<PLMNIDENTITYGERAN>[^=]*?),locationAreaCodeGeran=(?P<LOCATIONAREACODEGERAN>[^=]*?),ciInfoGeran=(?P<CIINFOGERAN>[^=]*?),racPresentGeran=(?P<RACPRESENTGERAN>[^=]*?),routingAreaCodeGeran=(?P<ROUTINGAREACODEGERAN>[^=]*?),ueCatTypeIdx=(?P<UECATTYPEIDX>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "PLMNIDENTITYGERAN", 
+                                        "LOCATIONAREACODEGERAN", 
+                                        "CIINFOGERAN", 
+                                        "RACPRESENTGERAN", 
+                                        "ROUTINGAREACODEGERAN", 
+                                        "UECATTYPEIDX"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),plmnIdentityUtran=(?P<PLMNIDENTITYUTRAN>[^=]*?),locationAreaCodeUtran=(?P<LOCATIONAREACODEUTRAN>[^=]*?),racPresentUtran=(?P<RACPRESENTUTRAN>[^=]*?),routingAreaCodeUtran=(?P<ROUTINGAREACODEUTRAN>[^=]*?),rncIdUtran=(?P<RNCIDUTRAN>[^=]*?),ueCatTypeIdx=(?P<UECATTYPEIDX>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "PLMNIDENTITYUTRAN", 
+                                        "LOCATIONAREACODEUTRAN", 
+                                        "RACPRESENTUTRAN", 
+                                        "ROUTINGAREACODEUTRAN", 
+                                        "RNCIDUTRAN", 
+                                        "UECATTYPEIDX"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),globalEnbIdPlmnIdentityLte=(?P<GLOBALENBIDPLMNIDENTITYLTE>[^=]*?),cellIdentityLte=(?P<CELLIDENTITYLTE>[^=]*?),cellType=(?P<CELLTYPE>[^=]*?),ueCatTypeIdx=(?P<UECATTYPEIDX>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "GLOBALENBIDPLMNIDENTITYLTE", 
+                                        "CELLIDENTITYLTE", 
+                                        "CELLTYPE", 
+                                        "UECATTYPEIDX"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),plmnIdentity=(?P<PLMNIDENTITY>[^=]*?),neighborCellIdentity=(?P<NEIGHBORCELLIDENTITY>[^=]*?),ueCatTypeIdx=(?P<UECATTYPEIDX>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "PLMNIDENTITY", 
+                                        "NEIGHBORCELLIDENTITY", 
+                                        "UECATTYPEIDX"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),arfcn=(?P<ARFCN>[^=]*?),ratType=(?P<RATTYPE>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "ARFCN", 
+                                        "RATTYPE"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),crnti=(?P<CRNTI>[^=]*?),lcId=(?P<LCID>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "CRNTI", 
+                                        "LCID"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),crnti=(?P<CRNTI>[^=]*?),srbid=(?P<SRBID>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "CRNTI", 
+                                        "SRBID"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),ueMobCategory=(?P<UEMOBCATEGORY>[^=]*?),ueCatTypeIdx=(?P<UECATTYPEIDX>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "UEMOBCATEGORY", 
+                                        "UECATTYPEIDX"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),catMCeLevel=(?P<CATMCELEVEL>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "CATMCELEVEL"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),ceLevel=(?P<CELEVEL>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "CELEVEL"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),crnti=(?P<CRNTI>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "CRNTI"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),mmeIdentifier=(?P<MMEIDENTIFIER>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "MMEIDENTIFIER"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?),ueCatTypeIdx=(?P<UECATTYPEIDX>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY", 
+                                        "UECATTYPEIDX"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),cellIdentity=(?P<CELLIDENTITY>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "CELLIDENTITY"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^plmnId=(?P<PLMNID>[^=]*?),henBId=(?P<HENBID>[^=]*?)$", 
+                                    "newFields": [
+                                        "PLMNID", 
+                                        "HENBID"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^SCCommon=(?P<SCCOMMON>[^=]*?)$", 
+                                    "newFields": [
+                                        "SCCOMMON"
+                                    ]
+                                }, 
+                                {
+                                    "pattern": "^cpuId=(?P<CPUID>[^=]*?)$", 
+                                    "newFields": [
+                                        "CPUID"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "operations": [
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "CPUID"
+                            ], 
+                            "measurements": [
+                                "CAPACITY_CPUID"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "SCCOMMON"
+                            ], 
+                            "measurements": [
+                                "NTP_SCCOMMON", 
+                                "OAM_SCCOMMON", 
+                                "OTA_SYNC_SCCOMMON", 
+                                "SYSTEM", 
+                                "SYSTEM_SCCOMMON", 
+                                "TRAFFIC_SCCOMMON"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY"
+                            ], 
+                            "measurements": [
+                                "CA_CELLIDENTITY", 
+                                "DRB", 
+                                "DRB_CELLIDENTITY", 
+                                "EMTC", 
+                                "ENDC", 
+                                "ERAB_CELLIDENTITY", 
+                                "HO_CELLIDENTITY", 
+                                "L1_4G", 
+                                "L1_5G", 
+                                "LGW", 
+                                "LTE_U", 
+                                "MAC", 
+                                "MAC_CELLIDENTITY", 
+                                "MM", 
+                                "MMEOVERLOAD_CELLIDENTITY", 
+                                "NBERAB_CELLIDENTITY", 
+                                "NBMAC", 
+                                "NBPAG", 
+                                "NBRRC_CELLIDENTITY", 
+                                "NBRRM", 
+                                "NBS1SIG", 
+                                "NRMOB", 
+                                "NSA", 
+                                "OPQCI", 
+                                "PAG", 
+                                "QF", 
+                                "RACH_CELLIDENTITY", 
+                                "RLC_CELLIDENTITY", 
+                                "RRC", 
+                                "RRC_CELLIDENTITY", 
+                                "RRM_CELLIDENTITY", 
+                                "RRU_5G", 
+                                "S1SIG_CELLIDENTITY", 
+                                "SINR", 
+                                "SM", 
+                                "SONANR", 
+                                "SONFHM", 
+                                "SONICIC", 
+                                "SONPCI", 
+                                "TRAFFIC", 
+                                "UECNTX", 
+                                "UECNTXNB", 
+                                "UECNTX_CELLIDENTITY"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "HENBID"
+                            ], 
+                            "measurements": [
+                                "L3S1AP"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "CATMCELEVEL"
+                            ], 
+                            "measurements": [
+                                "RRC_CATMCELEVEL"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "CELEVEL"
+                            ], 
+                            "measurements": [
+                                "ERAB_CELEVEL", 
+                                "NBERAB_CELEVEL", 
+                                "NBRRC_CELEVEL", 
+                                "RACH_CELEVEL", 
+                                "RRC_CELEVEL"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "CRNTI"
+                            ], 
+                            "measurements": [
+                                "UEMAC", 
+                                "UERLC"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "MMEIDENTIFIER"
+                            ], 
+                            "measurements": [
+                                "MMEOVERLOAD_MMEID"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "UECATTYPEIDX"
+                            ], 
+                            "measurements": [
+                                "CAPACITY_UECATTYPEIDX", 
+                                "CSFB", 
+                                "DRB_UECATTYPEIDX", 
+                                "ERAB_UECATTYPEIDX", 
+                                "HO_UECATTYPEIDX", 
+                                "MAC_UECATTYPEIDX", 
+                                "NRMOB_UECATTYPEIDX", 
+                                "REDIRECTION_UECATTYPEIDX", 
+                                "RLC_UECATTYPEIDX", 
+                                "RRC_UECATTYPEIDX", 
+                                "RRM_UECATTYPEIDX", 
+                                "RRU_4G", 
+                                "S1SIG_UECATTYPEIDX", 
+                                "SRB", 
+                                "SRVCC", 
+                                "UECNTX_UECATTYPEIDX"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "ARFCN", 
+                                "RATTYPE"
+                            ], 
+                            "measurements": [
+                                "REDIRECTION_RATTYPE"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "CRNTI", 
+                                "LCID"
+                            ], 
+                            "measurements": [
+                                "PDCPUEDRB"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "CRNTI", 
+                                "SRBID"
+                            ], 
+                            "measurements": [
+                                "PDCPUESRB"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "UEMOBCATEGORY", 
+                                "UECATTYPEIDX"
+                            ], 
+                            "measurements": [
+                                "SONMRO_UECATTYPEIDX"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "PLMNIDENTITY", 
+                                "NEIGHBORCELLIDENTITY", 
+                                "UECATTYPEIDX"
+                            ], 
+                            "measurements": [
+                                "SONMRO_NEIGHBORCELLID"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "GLOBALENBIDPLMNIDENTITYLTE", 
+                                "CELLIDENTITYLTE", 
+                                "CELLTYPE", 
+                                "UECATTYPEIDX"
+                            ], 
+                            "measurements": [
+                                "HO_GLBENBIDPLMNIDLTE"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "PLMNIDENTITYGERAN", 
+                                "LOCATIONAREACODEGERAN", 
+                                "CIINFOGERAN", 
+                                "RACPRESENTGERAN", 
+                                "ROUTINGAREACODEGERAN", 
+                                "UECATTYPEIDX"
+                            ], 
+                            "measurements": [
+                                "HO_PLMNIDENTITYGERAN"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "type": "measurementPartition", 
+                    "def": [
+                        {
+                            "sharedFields": [
+                                "STARTTIME", 
+                                "ENDTIME", 
+                                "NEUN", 
+                                "NEDN", 
+                                "NESW", 
+                                "GRANULARITYPERIOD", 
+                                "SUBNETWORK_1", 
+                                "SUBNETWORK_2", 
+                                "SUBNETWORK_3", 
+                                "SUBNETWORK_4", 
+                                "SUBNETWORK_5", 
+                                "MANAGEDELEMENT", 
+                                "BSRFUNCTION", 
+                                "FEMTOID", 
+                                "BSRGROUPID", 
+                                "HNBID", 
+                                "FSN", 
+                                "BSRNAME", 
+                                "MANUALPSCUSED", 
+                                "OPMODE", 
+                                "MOID", 
+                                "PLMNID", 
+                                "CELLIDENTITY", 
+                                "PLMNIDENTITYUTRAN", 
+                                "LOCATIONAREACODEUTRAN", 
+                                "RACPRESENTUTRAN", 
+                                "ROUTINGAREACODEUTRAN", 
+                                "RNCIDUTRAN", 
+                                "UECATTYPEIDX"
+                            ], 
+                            "measurements": [
+                                "HO_PLMNIDENTITYUTRAN"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "id": "OTA_SYNC_SCCOMMON"
+        }, 
+        {
+            "id": "TRAFFIC_SCCOMMON"
+        }, 
+        {
+            "id": "SYSTEM_SCCOMMON"
+        }, 
+        {
+            "id": "NTP_SCCOMMON"
+        }, 
+        {
+            "id": "OAM_SCCOMMON"
+        }, 
+        {
+            "id": "CA_CELLIDENTITY"
+        }, 
+        {
+            "id": "CAPACITY_CPUID"
+        }, 
+        {
+            "id": "CAPACITY_UECATTYPEIDX"
+        }, 
+        {
+            "id": "CSFB"
+        }, 
+        {
+            "id": "DRB_CELLIDENTITY"
+        }, 
+        {
+            "id": "DRB_UECATTYPEIDX"
+        }, 
+        {
+            "id": "EMTC"
+        }, 
+        {
+            "id": "ENDC"
+        }, 
+        {
+            "id": "ERAB_CELEVEL"
+        }, 
+        {
+            "id": "ERAB_CELLIDENTITY"
+        }, 
+        {
+            "id": "ERAB_UECATTYPEIDX"
+        }, 
+        {
+            "id": "HO_CELLIDENTITY"
+        }, 
+        {
+            "id": "HO_GLBENBIDPLMNIDLTE"
+        }, 
+        {
+            "id": "HO_PLMNIDENTITYUTRAN"
+        }, 
+        {
+            "id": "HO_PLMNIDENTITYGERAN"
+        }, 
+        {
+            "id": "HO_UECATTYPEIDX"
+        }, 
+        {
+            "id": "L1_4G"
+        }, 
+        {
+            "id": "L3S1AP"
+        }, 
+        {
+            "id": "LGW"
+        }, 
+        {
+            "id": "LTE_U"
+        }, 
+        {
+            "id": "MAC_CELLIDENTITY"
+        }, 
+        {
+            "id": "MAC_UECATTYPEIDX"
+        }, 
+        {
+            "id": "MMEOVERLOAD_CELLIDENTITY"
+        }, 
+        {
+            "id": "MMEOVERLOAD_MMEID"
+        }, 
+        {
+            "id": "NBERAB_CELEVEL"
+        }, 
+        {
+            "id": "NBERAB_CELLIDENTITY"
+        }, 
+        {
+            "id": "NBMAC"
+        }, 
+        {
+            "id": "NBPAG"
+        }, 
+        {
+            "id": "NBRRC_CELEVEL"
+        }, 
+        {
+            "id": "NBRRC_CELLIDENTITY"
+        }, 
+        {
+            "id": "NBRRM"
+        }, 
+        {
+            "id": "NBS1SIG"
+        }, 
+        {
+            "id": "NRMOB"
+        }, 
+        {
+            "id": "NRMOB_UECATTYPEIDX"
+        }, 
+        {
+            "id": "OPQCI"
+        }, 
+        {
+            "id": "PAG"
+        }, 
+        {
+            "id": "PDCPUEDRB"
+        }, 
+        {
+            "id": "PDCPUESRB"
+        }, 
+        {
+            "id": "RACH_CELEVEL"
+        }, 
+        {
+            "id": "RACH_CELLIDENTITY"
+        }, 
+        {
+            "id": "REDIRECTION_RATTYPE"
+        }, 
+        {
+            "id": "REDIRECTION_UECATTYPEIDX"
+        }, 
+        {
+            "id": "RLC_CELLIDENTITY"
+        }, 
+        {
+            "id": "RLC_UECATTYPEIDX"
+        }, 
+        {
+            "id": "RRC_CATMCELEVEL"
+        }, 
+        {
+            "id": "RRC_CELEVEL"
+        }, 
+        {
+            "id": "RRC_CELLIDENTITY"
+        }, 
+        {
+            "id": "RRC_UECATTYPEIDX"
+        }, 
+        {
+            "id": "RRM_CELLIDENTITY"
+        }, 
+        {
+            "id": "RRM_UECATTYPEIDX"
+        }, 
+        {
+            "id": "RRU_4G"
+        }, 
+        {
+            "id": "S1SIG_CELLIDENTITY"
+        }, 
+        {
+            "id": "S1SIG_UECATTYPEIDX"
+        }, 
+        {
+            "id": "SINR"
+        }, 
+        {
+            "id": "SONANR"
+        }, 
+        {
+            "id": "SONFHM"
+        }, 
+        {
+            "id": "SONICIC"
+        }, 
+        {
+            "id": "SONMRO_NEIGHBORCELLID"
+        }, 
+        {
+            "id": "SONMRO_UECATTYPEIDX"
+        }, 
+        {
+            "id": "SONPCI"
+        }, 
+        {
+            "id": "SRB"
+        }, 
+        {
+            "id": "SRVCC"
+        }, 
+        {
+            "id": "TRAFFIC"
+        }, 
+        {
+            "id": "UECNTX_CELLIDENTITY"
+        }, 
+        {
+            "id": "UECNTX_UECATTYPEIDX"
+        }, 
+        {
+            "id": "UECNTXNB"
+        }, 
+        {
+            "id": "UEMAC"
+        }, 
+        {
+            "id": "UERLC"
+        }, 
+        {
+            "id": "DRB"
+        }, 
+        {
+            "id": "L1_5G"
+        }, 
+        {
+            "id": "MAC"
+        }, 
+        {
+            "id": "MM"
+        }, 
+        {
+            "id": "NSA"
+        }, 
+        {
+            "id": "QF"
+        }, 
+        {
+            "id": "RRC"
+        }, 
+        {
+            "id": "RRU_5G"
+        }, 
+        {
+            "id": "SM"
+        }, 
+        {
+            "id": "SYSTEM"
+        }, 
+        {
+            "id": "UECNTX"
+        }
+    ]
+}

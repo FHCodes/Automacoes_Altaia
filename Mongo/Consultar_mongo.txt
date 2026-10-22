@@ -1,0 +1,38 @@
+// ===== PARÂMETRO =====
+const catalogId = "6ac81287f75aa64ea95a8778";
+// =====================
+
+const alvos = [
+  ["LOADING",             { catalogId: catalogId }],
+  ["LOADING_CATALOGS",    { catalogId: catalogId }],
+  ["LOADING_INVENTORIES", { catalogId: catalogId }],
+  ["SYNC_CATALOGS",       { _id: ObjectId(catalogId) }],
+  ["SYNC_INVENTORIES",    { catalogIds: catalogId }],
+  ["TRANSFORM",           { catalogId: catalogId }],
+  ["TRANSFORM_CATALOGS",  { catalogId: catalogId }],
+];
+
+print("catalogId: " + catalogId);
+print("---------------------------------------------");
+
+let total = 0;
+alvos.forEach(([nome, filtro]) => {
+  const n = db.getCollection(nome).countDocuments(filtro);
+  total += n;
+  print(nome.padEnd(22) + String(n).padStart(8) + (n === 0 ? "   vazio" : ""));
+});
+
+print("---------------------------------------------");
+print("TOTAL".padEnd(22) + String(total).padStart(8));
+print(total === 0
+  ? "Nada encontrado para este catalogId em nenhuma coleção."
+  : "Ainda existem registros para este catalogId.");
+
+// Extra: inventários que compartilham este catálogo com outro
+const compartilhados = db.getCollection("SYNC_INVENTORIES").countDocuments({
+  catalogIds: catalogId,
+  "catalogIds.1": { $exists: true }
+});
+if (compartilhados > 0) {
+  print("Atenção: " + compartilhados + " inventário(s) em SYNC_INVENTORIES compartilham este catálogo com outro.");
+}

@@ -1,9 +1,9 @@
 {
   "catalogsPath": "/app/merge-catalogs/catalogs/",
-   "collector": "ZTE_OSS_RAN_CM_SRAN",
+   "collector": "NOKIA_OSS_RAN_PM_FEMTO",
   "catalogVersion": "1",
-  "vendor": "ZTE",
-  "model": "OSS_RAN_CM_SRAN",
+  "vendor": "NOKIA",
+  "model": "OSS_RAN_PM_FEMTO",
   "units": {
     "active": "active",
     "id": "id",
@@ -40,10 +40,10 @@
   },
   "datasource": {
     "defineTopic": "ProcessedEventsRan03Topic",
-    "id": "ZTE_RAN",
-    "schema": "DBN0_ZTE_RAN",
-    "user": "DBN0_ZTE_RAN",
-    "password": "DBN0_ZTE_RAN",
+    "id": "NOK_FEMTO",
+    "schema": "DBN0_NOK_FEMTO",
+    "user": "DBN0_NOK_FEMTO",
+    "password": "DBN0_NOK_FEMTO",
     "isSNMP": false,
     "destinationBasePath": "/opt/ptin/medrepo/staging/SNMP_NAMF/"
   },

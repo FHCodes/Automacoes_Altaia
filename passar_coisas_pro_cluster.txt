@@ -46,6 +46,24 @@ kubectl cp plat-V8.0.0-20260918003000-001.xml namf-namfd-6b8f6f969-28ll6:/opt/al
 
 
 
+##################################NOKIA_OSS_RAN_PM_FEMTOCELL##############################################################
+kubectl cp 'A20250915.0000-0300-0015-0300_SubNetwork=cFCM,SubNetwork=FemtoBSR,SubNetwork=200,SubNetwork=200,ManagedElement=3,bsrFunction=0_CID=200,BSRID=3' namf-namfd-858b4cc97c-fjfd8:/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261013
+kubectl cp 'A20250915.0000-0300-0015-0300_SubNetwork=cFCM,SubNetwork=FemtoBSR,SubNetwork=200,SubNetwork=200,ManagedElement=4,bsrFunction=0_CID=200,BSRID=4' namf-namfd-858b4cc97c-fjfd8:/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261013
+ 
+
+
+
+kubectl cp A20261013.0000-0300-0015-0300_SubNetwork=SAM,SubNetwork=FemtoBSR,SubNetwork=2,ManagedElement=16,bsrFunction=0_CID=2,BSRID=16 namf-namfd-858b4cc97c-fjfd8:/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261013
+kubectl cp A20261013.0000-0300-0015-0300_SubNetwork=SAM,SubNetwork=FemtoBSR,SubNetwork=2,ManagedElement=22,bsrFunction=0_CID=2,BSRID=22 namf-namfd-858b4cc97c-fjfd8:/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261013
+kubectl cp A20261013.0000-0300-0015-0300_SubNetwork=SAM,SubNetwork=FemtoBSR,SubNetwork=2,ManagedElement=23,bsrFunction=0_CID=2,BSRID=23 namf-namfd-858b4cc97c-fjfd8:/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261013
+kubectl cp A20261013.0000-0300-0015-0300_SubNetwork=SAM,SubNetwork=FemtoBSR,SubNetwork=2,ManagedElement=24,bsrFunction=0_CID=2,BSRID=24 namf-namfd-858b4cc97c-fjfd8:/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261013
+ 
+ 
+ 
+ 
+
+
+
 
 
 

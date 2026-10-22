@@ -6,3 +6,12 @@ python mediation-parsers.py ZTE "DATA_ZTE/readertest" --out="DATA_ZTE/csvoutput"
 
 python mediation-parsers.py ZTE "DATA_ZTE/readertest" --out="DATA_ZTE/csvoutput" --instance=3GPP_32_615 --vendor=ZTE --model=OSS_RAN_CM_4G  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
 
+
+
+=================================================NOKIA_OSS_RAN_PM_4G=====================================================================
+python mediation-parsers.py NOKIA "DATA_NOKIA/readertest" --out="DATA_NOKIA/csvoutput" --instance=3GPP_32_432 --vendor=NOKIA --model=OSS_RAN_PM_FEMTOCELL  --eventOriginId="23423" --parentEventId="777" --fetchTime="2018-03-05T11:52:28.426+00:00" --eventType="COLLECT" --sourceId="10.112.22.22" --hostId="hostName"
+
+
+
+cd C:\Altaia
+kubectl cp telefonica-altaia-namf/namf-namfd-788fb9589f-4b6jk:/opt/alticelabs/namf/medrepo/staging/synchronizedRepository/TWAMP_ACCEDIAN/Performance4G5G_VIVO/10.220.6.106/20261002/FF2C268E-14A7-48B5-9019-CC18C2A8631F_history_2026-10-02_15h11m05sZ_TWAMP_all_60.csv.gz FF2C268E-14A7-48B5-9019-CC18C2A8631F_history_2026-10-02_15h11m05sZ_TWAMP_all_60.csv.gz -c namf-namfd

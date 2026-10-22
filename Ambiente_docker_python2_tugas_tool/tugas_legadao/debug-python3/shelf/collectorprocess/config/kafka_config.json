@@ -1,0 +1,11 @@
+{
+  "broker_list": "kafka-service:9092",
+  "topic": "GenericTopic",
+  "extra_configs": {
+    "queue.buffering.max.messages": 10000,
+    "request.required.acks": 0,
+    "compression.codec": "lz4",
+    "linger.ms": 0,
+    "api.version.request.timeout.ms":  30000
+  }
+}

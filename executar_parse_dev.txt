@@ -37,6 +37,14 @@ python3 mediation-parsers.py ZTE_OSS_RAN_CM "/opt/alticelabs/namf/medrepo/stagin
 python3 mediation-parsers.py ZTE_OSS_RAN_CM "/opt/alticelabs/namf/medrepo/staging/ZTE/parameter4G/20260922/plat-V8.0.0-20260918003000-001.xml" --instance=3GPP_32_615 --vendor=ZTE --model=OSS_RAN_CM_SRAN --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECTTIME" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
 
 
+#####################NOKIA_OSS_RAN_PM_FEMTOLL##############################################
+python3 mediation-parsers.py NOKIA_OSS_RAN_PM "/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261015/A20250915.0000-0300-0015-0300_SubNetwork=cFCM,SubNetwork=FemtoBSR,SubNetwork=200,SubNetwork=200,ManagedElement=3,bsrFunction=0_CID=200,BSRID=3" --instance=3GPP_32_432 --vendor=NOKIA --model=OSS_RAN_PM_FEMTO --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECTTIME" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
+
+python3 mediation-parsers.py NOKIA_OSS_RAN_PM "/opt/alticelabs/namf/medrepo/staging/NOKIA/performace4G/20261015/'A20250915.0000-0300-0015-0300_SubNetwork=cFCM,SubNetwork=FemtoBSR,SubNetwork=200,SubNetwork=200,ManagedElement=4,bsrFunction=0_CID=200,BSRID=4'" --instance=3GPP_32_432--vendor=NOKIA --model=OSS_RAN_PM_FEMTO --eventOriginId="23423" --parentEventId="123" --fetchTime="2026-08-27T18:00:00.000+00:00" --eventType="COLLECTTIME" --sourceId="10.23.1.34" --hostId="spviv-ranlen-sgr01"
+
+
+
+
 OBSERVACOES:
 1 - mudar o spec de Readrs para reader-sol
 2 - mudar o importe no parse

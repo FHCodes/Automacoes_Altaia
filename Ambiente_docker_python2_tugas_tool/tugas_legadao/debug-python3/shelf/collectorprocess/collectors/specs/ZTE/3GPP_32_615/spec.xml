@@ -1,0 +1,7 @@
+<spec>
+	<operation type="InputManagers" name="Files" path="">
+		<pattern>*</pattern>
+	</operation>
+	<operation type="Readers" name="ZTE.3GPP.32_615" consolidation="TRUE"/>
+	<operation type="OutputManagers" name="Kafka" print="True" />
+</spec>

@@ -1,0 +1,10 @@
+{
+  "broker_list": "kafka-service:9092",
+  "topic": "ReprocessMarkedEventsTopic",
+  "extra_configs": {
+    "queue.buffering.max.messages": 100000,
+    "request.required.acks": 0,
+    "compression.codec": "lz4",
+    "linger.ms": 0
+  }
+}

@@ -1,0 +1,682 @@
+[
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "GENERIC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "GENERIC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "OTA_SYNC_SCCOMMON",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_OTA_SYNC_SCCOMMON",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "TRAFFIC_SCCOMMON",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_TRAFFIC_SCCOMMON",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SYSTEM_SCCOMMON",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SYSTEM_SCCOMMON",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NTP_SCCOMMON",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NTP_SCCOMMON",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "OAM_SCCOMMON",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_OAM_SCCOMMON",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "CA_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_CA_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "CAPACITY_CPUID",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_CAPACITY_CPUID",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "CAPACITY_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_CAPACITY_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "CSFB",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_CSFB",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "DRB_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_DRB_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "DRB_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_DRB_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "EMTC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_EMTC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "ENDC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_ENDC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "ERAB_CELEVEL",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_ERAB_CELEVEL",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "ERAB_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_ERAB_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "ERAB_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_ERAB_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "HO_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_HO_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "HO_GLBENBIDPLMNIDLTE",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_HO_GLBENBIDPLMNIDLTE",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "HO_PLMNIDENTITYUTRAN",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_HO_PLMNIDENTITYUTRAN",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "HO_PLMNIDENTITYGERAN",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_HO_PLMNIDENTITYGERAN",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "HO_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_HO_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "L1_4G",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_L1_4G",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "L3S1AP",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_L3S1AP",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "LGW",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_LGW",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "LTE_U",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_LTE_U",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "MAC_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_MAC_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "MAC_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_MAC_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "MMEOVERLOAD_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_MMEOVERLOAD_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "MMEOVERLOAD_MMEID",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_MMEOVERLOAD_MMEID",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBERAB_CELEVEL",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBERAB_CELEVEL",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBERAB_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBERAB_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBMAC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBMAC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBPAG",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBPAG",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBRRC_CELEVEL",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBRRC_CELEVEL",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBRRC_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBRRC_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBRRM",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBRRM",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NBS1SIG",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NBS1SIG",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NRMOB",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NRMOB",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NRMOB_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NRMOB_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "OPQCI",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_OPQCI",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "PAG",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_PAG",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "PDCPUEDRB",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_PDCPUEDRB",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "PDCPUESRB",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_PDCPUESRB",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RACH_CELEVEL",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RACH_CELEVEL",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RACH_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RACH_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "REDIRECTION_RATTYPE",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_REDIRECTION_RATTYPE",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "REDIRECTION_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_REDIRECTION_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RLC_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RLC_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RLC_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RLC_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRC_CATMCELEVEL",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRC_CATMCELEVEL",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRC_CELEVEL",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRC_CELEVEL",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRC_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRC_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRC_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRC_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRM_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRM_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRM_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRM_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRU_4G",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRU_4G",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "S1SIG_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_S1SIG_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "S1SIG_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_S1SIG_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SINR",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SINR",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SONANR",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SONANR",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SONFHM",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SONFHM",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SONICIC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SONICIC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SONMRO_NEIGHBORCELLID",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SONMRO_NEIGHBORCELLID",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SONMRO_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SONMRO_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SONPCI",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SONPCI",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SRB",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SRB",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SRVCC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SRVCC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "TRAFFIC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_TRAFFIC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "UECNTX_CELLIDENTITY",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_UECNTX_CELLIDENTITY",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "UECNTX_UECATTYPEIDX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_UECNTX_UECATTYPEIDX",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "UECNTXNB",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_UECNTXNB",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "UEMAC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_UEMAC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "UERLC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_UERLC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "DRB",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_DRB",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "L1_5G",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_L1_5G",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "MAC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_MAC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "MM",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_MM",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "NSA",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_NSA",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "QF",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_QF",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRC",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRC",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "RRU_5G",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_RRU_5G",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SM",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SM",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "SYSTEM",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_SYSTEM",
+        "catalogId": "{{ catalogID }}"
+    },
+    {
+        "datasourceId": "NOK_FEMTO",
+        "kafkaTopicId": "ProcessedEventsRan03Topic",
+        "measUnitId": "UECNTX",
+        "schemaName": "DBN0_NOK_FEMTO",
+        "tableName": "FEMTO_UECNTX",
+        "catalogId": "{{ catalogID }}"
+    }
+]

@@ -5,6 +5,10 @@ python run.py -c "NOKIA_NSP_CORE_PM_CMM" -d "Documentacao/Nokia_Cloud_Mobility_M
 
 python run.py -c "NOKIA_NSP_CORE_PM_CMG" -d "Documentacao/Nokia_Cloud_Mobility_Gateway_to_NetAct_(CMG)-23.5_Objects-Measurements-Counters-Alarms-teste.xls" -v "Nokia" -o "create"
 
+# GERAR OS CATALOGOS DE FEMTOCELL DA NOKIA
+
+python2 run.py -c "NOKIA_OSS_RAN_PM_FEMTO" -d "Documentacao/femtocell_4G_counters_reference_guide_sc22a_sp1.xlsx" -v "Nokia" -o "create"
+
 
 
 ======================CRIAÇÃO DO LIQUIBASE=====================================
@@ -22,6 +26,8 @@ python2 run.py -o SQL -bc "ZTE/loading_ZTE_OSS_RAN_CM_R4G.json" -n ZTE_OSS_RAN_C
 --ZTE_OSS_RAN_CM_SRAN
 python2 run.py -o SQL -bc "ZTE/loading_ZTE_OSS_RAN_CM_SRAN.json" -n ZTE_OSS_RAN_CM_SRAN -cf FALSE -di COLLECTTIME -na NAMF -s DBN0_ZTE_RAN --liq
  
+--NOKIA_OSS_RAN_PM_FEMTO
+python2 run.py -o SQL -bc "NOKIA/loading_NOKIA_OSS_RAN_PM_FEMTO.json" -n NOKIA_OSS_RAN_PM_FEMTO -cf FALSE -di STARTTIME -na NAMF -s DBN0_NOK_FEMTO --liq
  
 
 

@@ -1,0 +1,62 @@
+// ===== PARÂMETROS =====
+const vendor   = "NOKIA";
+const model    = "OSS_RAN_PM_FEMTO";
+const func     = "PM";      // "function" é palavra reservada em JS
+const version  = 1;
+const DRY_RUN  = true;      // true = só conta | false = apaga de verdade
+// ======================
+ 
+const filtroLoading = { vendor: vendor, model: model, function: func, version: version };
+const ids = db.getCollection("LOADING").distinct("catalogId", filtroLoading);
+ 
+if (ids.length !== 1) {
+  throw new Error("Esperava 1 catalogId, veio " + ids.length + ": " + JSON.stringify(ids));
+}
+ 
+const catalogId = ids[0];
+print("catalogId: " + catalogId + (DRY_RUN ? "  [SIMULAÇÃO]" : "  [APAGANDO]"));
+ 
+// Trava: inventário compartilhado com outro catálogo
+const compartilhados = db.getCollection("SYNC_INVENTORIES").countDocuments({
+  catalogIds: catalogId,
+  "catalogIds.1": { $exists: true }
+});
+if (compartilhados > 0) {
+  throw new Error(compartilhados + " inventário(s) em SYNC_INVENTORIES compartilham este catálogo com outro. Use $pull neles antes.");
+}
+ 
+const alvos = [
+  ["LOADING",             { catalogId: catalogId }],
+  ["LOADING_CATALOGS",    { catalogId: catalogId }],
+  ["LOADING_INVENTORIES", { catalogId: catalogId }],
+  ["SYNC_CATALOGS",       { _id: ObjectId(catalogId) }],
+  ["SYNC_INVENTORIES",    { catalogIds: catalogId }],
+  ["TRANSFORM",           { catalogId: catalogId }],
+  ["TRANSFORM_CATALOGS",  { catalogId: catalogId }],
+];
+ 
+alvos.forEach(([nome, filtro]) => {
+  const col = db.getCollection(nome);
+  if (DRY_RUN) {
+    print(nome + ": " + col.countDocuments(filtro) + " documento(s) seriam apagados");
+  } else {
+    const r = col.deleteMany(filtro);
+    print(nome + ": " + r.deletedCount + " apagado(s)");
+  }
+});
+ 
+// Conferência final (só roda com DRY_RUN = false)
+if (!DRY_RUN) {
+  print("---- Conferência ----");
+  let sobrou = 0;
+ 
+  alvos.forEach(([nome, filtro]) => {
+    const restante = db.getCollection(nome).countDocuments(filtro);
+    sobrou += restante;
+    print(nome + ": " + restante + (restante === 0 ? "  OK" : "  <-- AINDA TEM REGISTRO"));
+  });
+ 
+  print(sobrou === 0
+    ? "Limpeza completa: nada sobrou em nenhuma coleção."
+    : "ATENÇÃO: sobraram " + sobrou + " documento(s). Verifique se algum serviço está recriando registros.");
+}

@@ -69367,3 +69367,66 @@
 2026-09-15 21:40:03,391 DEBUG:   * [createDBN0UsersRoles_AltaiaMediation_DBN0_ZTE_RAN_SCHEMA] Query was created *
 2026-09-15 21:40:03,391 DEBUG:   ######### END TIME:                2026.09.15 21:40:03  #########
 2026-09-15 21:40:03,395 DEBUG:   ######### END TIME:				2026.09.15 21:40:03  #########
+2026-09-23 18:40:06,680 DEBUG:   ######### START TIME:			  2026.09.23 18:40:06  #########
+2026-09-23 18:40:06,702 DEBUG:   ********** Starting Catalog Creation Process           **********
+2026-09-23 18:40:06,704 DEBUG:   ********** Processing information                      **********
+2026-09-23 18:40:06,705 DEBUG:   * Creating Catalog for collector NOKIA_OSS_RAN_PM_FEMTO         *
+2026-09-23 18:40:06,706 DEBUG:   * Collector config NOKIA_OSS_RAN_PM_FEMTO                       *
+2026-09-23 18:40:06,707 DEBUG:   *****************************************************************
+2026-09-23 18:40:06,709 DEBUG:   * Getting Catalog Configuration for NOKIA_OSS_RAN_PM_FEMTO      *
+2026-09-23 18:40:06,710 DEBUG:   * Getting Input Configuration format...                         *
+2026-09-23 18:48:12,649 DEBUG:   ######### START TIME:			  2026.09.23 18:48:12  #########
+2026-09-23 18:48:12,662 DEBUG:   ********** Starting Catalog Creation Process           **********
+2026-09-23 18:48:12,663 DEBUG:   ********** Processing information                      **********
+2026-09-23 18:48:12,664 DEBUG:   * Creating Catalog for collector NOKIA_OSS_RAN_PM_FEMTO         *
+2026-09-23 18:48:12,666 DEBUG:   * Collector config NOKIA_OSS_RAN_PM_FEMTO                       *
+2026-09-23 18:48:12,667 DEBUG:   *****************************************************************
+2026-09-23 18:48:12,669 DEBUG:   * Getting Catalog Configuration for NOKIA_OSS_RAN_PM_FEMTO      *
+2026-09-23 18:48:12,670 DEBUG:   * Getting Input Configuration format...                         *
+2026-09-28 19:31:05,341 DEBUG:   ######### START TIME:			  2026.09.28 19:31:05  #########
+2026-09-28 19:31:05,343 DEBUG:   ********** Starting SQL Creation Process               **********
+2026-09-28 19:31:05,345 DEBUG:   ######### START TIME:              2026.09.28 19:31:05  #########
+2026-09-28 19:31:06,423 DEBUG:   * [liquibase-newTable] Query was created *
+2026-09-28 19:31:06,433 DEBUG:   * [partitionGenerator] Query was created *
+2026-09-28 19:31:06,470 DEBUG:   * [newTable] Query was created *
+2026-09-28 19:31:06,487 DEBUG:   * [truncateTable] Query was created *
+2026-09-28 19:31:06,499 DEBUG:   * [liq_00_createSchema_DBN0_NOK_RAN] Query was created *
+2026-09-28 19:31:06,511 DEBUG:   * [createDBN0UsersRoles_AltaiaMediation_DBN0_NOK_RAN_SCHEMA] Query was created *
+2026-09-28 19:31:06,513 DEBUG:   ######### END TIME:                2026.09.28 19:31:06  #########
+2026-09-28 19:31:06,518 DEBUG:   ######### END TIME:				2026.09.28 19:31:06  #########
+2026-09-30 18:17:09,956 DEBUG:   ######### START TIME:			  2026.09.30 18:17:09  #########
+2026-09-30 18:17:09,956 DEBUG:   ********** Starting SQL Creation Process               **********
+2026-09-30 18:17:09,957 DEBUG:   ######### START TIME:              2026.09.30 18:17:09  #########
+2026-09-30 18:17:10,406 DEBUG:   * [liquibase-newTable] Query was created *
+2026-09-30 18:17:10,411 DEBUG:   * [partitionGenerator] Query was created *
+2026-09-30 18:17:10,428 DEBUG:   * [newTable] Query was created *
+2026-09-30 18:17:10,433 DEBUG:   * [truncateTable] Query was created *
+2026-09-30 18:17:10,437 DEBUG:   * [liq_00_createSchema_DBN0_NOK_FEMTO] Query was created *
+2026-09-30 18:17:10,441 DEBUG:   * [createDBN0UsersRoles_AltaiaMediation_DBN0_NOK_FEMTO_SCHEMA] Query was created *
+2026-09-30 18:17:10,441 DEBUG:   ######### END TIME:                2026.09.30 18:17:10  #########
+2026-09-30 18:17:10,443 DEBUG:   ######### END TIME:				2026.09.30 18:17:10  #########
+2026-10-14 20:52:14,000 DEBUG:   ######### START TIME:			  2026.10.14 20:52:13  #########
+2026-10-14 20:52:14,001 DEBUG:   ********** Starting SQL Creation Process               **********
+2026-10-14 20:52:14,002 DEBUG:   ######### START TIME:              2026.10.14 20:52:13  #########
+2026-10-14 20:52:14,529 DEBUG:   * [liquibase-newTable] Query was created *
+2026-10-14 20:52:14,534 DEBUG:   * [partitionGenerator] Query was created *
+2026-10-14 20:52:14,555 DEBUG:   * [newTable] Query was created *
+2026-10-14 20:52:14,560 DEBUG:   * [truncateTable] Query was created *
+2026-10-14 20:52:14,565 DEBUG:   * [liq_00_createSchema_DBN0_NOK_FEMTO] Query was created *
+2026-10-14 20:52:14,570 DEBUG:   * [createDBN0UsersRoles_AltaiaMediation_DBN0_NOK_FEMTO_SCHEMA] Query was created *
+2026-10-14 20:52:14,571 DEBUG:   ######### END TIME:                2026.10.14 20:52:14  #########
+2026-10-14 20:52:14,573 DEBUG:   ######### END TIME:				2026.10.14 20:52:14  #########
+2026-10-20 20:13:42,099 DEBUG:   ######### START TIME:			  2026.10.20 20:13:42  #########
+2026-10-20 20:13:42,101 DEBUG:   ********** Starting SQL Creation Process               **********
+2026-10-20 20:13:42,102 DEBUG:   ######### START TIME:              2026.10.20 20:13:42  #########
+2026-10-20 20:14:15,960 DEBUG:   ######### START TIME:			  2026.10.20 20:14:15  #########
+2026-10-20 20:14:15,960 DEBUG:   ********** Starting SQL Creation Process               **********
+2026-10-20 20:14:15,961 DEBUG:   ######### START TIME:              2026.10.20 20:14:15  #########
+2026-10-20 20:14:16,621 DEBUG:   * [liquibase-newTable] Query was created *
+2026-10-20 20:14:16,631 DEBUG:   * [partitionGenerator] Query was created *
+2026-10-20 20:14:16,671 DEBUG:   * [newTable] Query was created *
+2026-10-20 20:14:16,683 DEBUG:   * [truncateTable] Query was created *
+2026-10-20 20:14:16,695 DEBUG:   * [liq_00_createSchema_DBN0_NOK_FEMTO] Query was created *
+2026-10-20 20:14:16,705 DEBUG:   * [createDBN0UsersRoles_AltaiaMediation_DBN0_NOK_FEMTO_SCHEMA] Query was created *
+2026-10-20 20:14:16,706 DEBUG:   ######### END TIME:                2026.10.20 20:14:16  #########
+2026-10-20 20:14:16,710 DEBUG:   ######### END TIME:				2026.10.20 20:14:16  #########
